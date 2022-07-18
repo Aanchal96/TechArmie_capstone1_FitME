@@ -13,6 +13,7 @@
 		87C4A31528822B1000485A08 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 87C4A31328822B1000485A08 /* Main.storyboard */; };
 		87C4A31728822B1200485A08 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 87C4A31628822B1200485A08 /* Assets.xcassets */; };
 		87C4A31A28822B1200485A08 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 87C4A31828822B1200485A08 /* LaunchScreen.storyboard */; };
+		ED04E86F2885E441002D8CF4 /* logo_FitME.png in Resources */ = {isa = PBXBuildFile; fileRef = ED04E86E2885E441002D8CF4 /* logo_FitME.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		87C4A31628822B1200485A08 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		87C4A31928822B1200485A08 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		87C4A31B28822B1200485A08 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ED04E86E2885E441002D8CF4 /* logo_FitME.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = logo_FitME.png; path = ../../../../../Assets/logo_FitME.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 		87C4A30C28822B1000485A08 /* TechArmie_capstone1_FitME */ = {
 			isa = PBXGroup;
 			children = (
+				ED04E86B2885E3F2002D8CF4 /* Assets */,
 				87C4A30D28822B1000485A08 /* AppDelegate.swift */,
 				87C4A30F28822B1000485A08 /* SceneDelegate.swift */,
 				87C4A31128822B1000485A08 /* ViewController.swift */,
@@ -65,6 +68,14 @@
 				87C4A31B28822B1200485A08 /* Info.plist */,
 			);
 			path = TechArmie_capstone1_FitME;
+			sourceTree = "<group>";
+		};
+		ED04E86B2885E3F2002D8CF4 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				ED04E86E2885E441002D8CF4 /* logo_FitME.png */,
+			);
+			path = Assets;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -127,6 +138,7 @@
 			files = (
 				87C4A31A28822B1200485A08 /* LaunchScreen.storyboard in Resources */,
 				87C4A31728822B1200485A08 /* Assets.xcassets in Resources */,
+				ED04E86F2885E441002D8CF4 /* logo_FitME.png in Resources */,
 				87C4A31528822B1000485A08 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
