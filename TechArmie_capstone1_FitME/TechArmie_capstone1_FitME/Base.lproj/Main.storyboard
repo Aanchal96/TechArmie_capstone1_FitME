@@ -13,12 +13,94 @@
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="TechArmie_capstone1_FitME" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                    <view key="view" contentMode="scaleToFill" id="5q2-Zb-nTk">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IVq-Uz-HKV">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="welcome_fitme.png" translatesAutoresizingMaskIntoConstraints="NO" id="Cpf-FZ-ddp">
+                                        <rect key="frame" x="23" y="64" width="368" height="198"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="Cpf-FZ-ddp" secondAttribute="height" multiplier="184:99" id="UGW-8b-6it"/>
+                                        </constraints>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D5m-UP-3XK">
+                                        <rect key="frame" x="51" y="740.5" width="312" height="45"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="D5m-UP-3XK" secondAttribute="height" multiplier="312:45" id="A1i-3s-dXo"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="Create New Account">
+                                            <fontDescription key="titleFontDescription" name="Helvetica" family="Helvetica" pointSize="18"/>
+                                            <color key="baseForegroundColor" systemColor="labelColor"/>
+                                            <color key="baseBackgroundColor" red="0.94901961089999998" green="0.94901961089999998" blue="0.96862745289999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        </buttonConfiguration>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Already have an account ?" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LUj-Te-5FG">
+                                        <rect key="frame" x="23" y="790.5" width="255" height="35.5"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="LUj-Te-5FG" secondAttribute="height" multiplier="122:17" id="vvR-K7-9S1"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" weight="light" pointSize="17"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BeW-jx-XgS">
+                                        <rect key="frame" x="278" y="790.5" width="111" height="35.5"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="BeW-jx-XgS" secondAttribute="height" multiplier="25:8" id="Rdj-Fx-OT7"/>
+                                        </constraints>
+                                        <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain">
+                                            <attributedString key="attributedTitle">
+                                                <fragment content="Log In">
+                                                    <attributes>
+                                                        <font key="NSFont" size="17" name="Helvetica-Bold"/>
+                                                    </attributes>
+                                                </fragment>
+                                            </attributedString>
+                                        </buttonConfiguration>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="labelColor"/>
+                                <constraints>
+                                    <constraint firstItem="BeW-jx-XgS" firstAttribute="top" secondItem="D5m-UP-3XK" secondAttribute="bottom" constant="5" id="4cy-uK-2CV"/>
+                                    <constraint firstAttribute="bottom" secondItem="LUj-Te-5FG" secondAttribute="bottom" constant="70" id="5oh-EK-fgt"/>
+                                    <constraint firstItem="LUj-Te-5FG" firstAttribute="leading" secondItem="IVq-Uz-HKV" secondAttribute="leading" constant="23" id="6qh-2m-9I2"/>
+                                    <constraint firstAttribute="trailing" secondItem="D5m-UP-3XK" secondAttribute="trailing" constant="51" id="9xY-LX-RXv"/>
+                                    <constraint firstItem="Cpf-FZ-ddp" firstAttribute="top" secondItem="IVq-Uz-HKV" secondAttribute="top" constant="64" id="Ffc-pO-3z7"/>
+                                    <constraint firstItem="D5m-UP-3XK" firstAttribute="leading" secondItem="IVq-Uz-HKV" secondAttribute="leading" constant="51" id="HoZ-Vb-d4F"/>
+                                    <constraint firstItem="Cpf-FZ-ddp" firstAttribute="leading" secondItem="IVq-Uz-HKV" secondAttribute="leading" constant="23" id="KUk-77-HjD"/>
+                                    <constraint firstAttribute="trailing" secondItem="Cpf-FZ-ddp" secondAttribute="trailing" constant="23" id="KYi-iM-LzW"/>
+                                    <constraint firstItem="LUj-Te-5FG" firstAttribute="top" secondItem="D5m-UP-3XK" secondAttribute="bottom" constant="5" id="NiG-bO-zPz"/>
+                                    <constraint firstItem="BeW-jx-XgS" firstAttribute="leading" secondItem="LUj-Te-5FG" secondAttribute="trailing" id="UhQ-yK-Kzi"/>
+                                    <constraint firstAttribute="width" secondItem="IVq-Uz-HKV" secondAttribute="height" multiplier="207:448" id="gye-gZ-gdr"/>
+                                    <constraint firstAttribute="bottom" secondItem="BeW-jx-XgS" secondAttribute="bottom" constant="70" id="hTh-IK-YRK"/>
+                                    <constraint firstAttribute="trailing" secondItem="BeW-jx-XgS" secondAttribute="trailing" constant="25" id="orT-W7-hMW"/>
+                                    <constraint firstItem="LUj-Te-5FG" firstAttribute="top" secondItem="D5m-UP-3XK" secondAttribute="bottom" constant="5" id="rwu-kO-1QA"/>
+                                    <constraint firstItem="BeW-jx-XgS" firstAttribute="leading" secondItem="LUj-Te-5FG" secondAttribute="trailing" id="xwx-ca-Eo2"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="1Ak-zr-0dg"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="IVq-Uz-HKV" firstAttribute="top" secondItem="5q2-Zb-nTk" secondAttribute="top" id="LkO-Ap-ZMV"/>
+                            <constraint firstItem="IVq-Uz-HKV" firstAttribute="trailing" secondItem="1Ak-zr-0dg" secondAttribute="trailing" id="WYH-C6-3l8"/>
+                            <constraint firstAttribute="bottom" secondItem="IVq-Uz-HKV" secondAttribute="bottom" id="b4W-yu-LMq"/>
+                            <constraint firstItem="IVq-Uz-HKV" firstAttribute="leading" secondItem="1Ak-zr-0dg" secondAttribute="leading" id="myR-CF-jYb"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="btnLogin" destination="BeW-jx-XgS" id="MIe-rn-pjS"/>
+                        <outlet property="btnNewAccount" destination="D5m-UP-3XK" id="6AY-Up-Fex"/>
+                        <outlet property="lblAlreadyHaveAccount" destination="LUj-Te-5FG" id="bNn-b6-dFe"/>
+                        <outlet property="videoLayer" destination="IVq-Uz-HKV" id="2u2-iw-kFx"/>
+                        <outlet property="welcomeImg" destination="Cpf-FZ-ddp" id="dsB-lW-8a4"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -26,6 +108,10 @@
         </scene>
     </scenes>
     <resources>
+        <image name="welcome_fitme.png" width="360" height="360"/>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
