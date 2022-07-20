@@ -77,14 +77,15 @@
 		87C4A30C28822B1000485A08 /* TechArmie_capstone1_FitME */ = {
 			isa = PBXGroup;
 			children = (
+				ED7036EE2888BFD1002A312F /* ViewControllers */,
+				ED7036ED2888BFBD002A312F /* CommonControllers */,
+				ED7036EC2888BFB1002A312F /* Helpers */,
+				ED7036EB2888BFA7002A312F /* Services */,
+				ED7036EA2888BF96002A312F /* DataSource */,
+				ED7036E92888BF8C002A312F /* Models */,
 				ED7036DC2888BAA7002A312F /* Assets */,
 				87C4A30D28822B1000485A08 /* AppDelegate.swift */,
 				87C4A30F28822B1000485A08 /* SceneDelegate.swift */,
-				87C4A31128822B1000485A08 /* ViewController.swift */,
-				87C4A31328822B1000485A08 /* Main.storyboard */,
-				87C4A31628822B1200485A08 /* Assets.xcassets */,
-				87C4A31828822B1200485A08 /* LaunchScreen.storyboard */,
-				87C4A31B28822B1200485A08 /* Info.plist */,
 			);
 			path = TechArmie_capstone1_FitME;
 			sourceTree = "<group>";
@@ -101,9 +102,10 @@
 		ED7036DC2888BAA7002A312F /* Assets */ = {
 			isa = PBXGroup;
 			children = (
+				ED7036F32888C179002A312F /* Images */,
 				ED7036E52888BB7E002A312F /* Video */,
-				ED7036DD2888BAD4002A312F /* welcome_fitme.png */,
-				ED7036E22888BAE9002A312F /* logo_FitME.png */,
+				87C4A31628822B1200485A08 /* Assets.xcassets */,
+				87C4A31B28822B1200485A08 /* Info.plist */,
 			);
 			path = Assets;
 			sourceTree = "<group>";
@@ -115,6 +117,92 @@
 			);
 			name = Video;
 			path = "../../../../../../../Downloads/TechArmie_capstone1_FitME-Splash_Screen/TechArmie_capstone1_FitME/TechArmie_capstone1_FitME/Assets/Video";
+			sourceTree = "<group>";
+		};
+		ED7036E92888BF8C002A312F /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		ED7036EA2888BF96002A312F /* DataSource */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = DataSource;
+			sourceTree = "<group>";
+		};
+		ED7036EB2888BFA7002A312F /* Services */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		ED7036EC2888BFB1002A312F /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		ED7036ED2888BFBD002A312F /* CommonControllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = CommonControllers;
+			sourceTree = "<group>";
+		};
+		ED7036EE2888BFD1002A312F /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				ED7036F12888C029002A312F /* PostLogin */,
+				ED7036F02888C020002A312F /* PreLogin */,
+				ED7036EF2888C011002A312F /* Base */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		ED7036EF2888C011002A312F /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				87C4A31828822B1200485A08 /* LaunchScreen.storyboard */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		ED7036F02888C020002A312F /* PreLogin */ = {
+			isa = PBXGroup;
+			children = (
+				87C4A31328822B1000485A08 /* Main.storyboard */,
+				ED7036F22888C121002A312F /* Onboarding */,
+			);
+			path = PreLogin;
+			sourceTree = "<group>";
+		};
+		ED7036F12888C029002A312F /* PostLogin */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = PostLogin;
+			sourceTree = "<group>";
+		};
+		ED7036F22888C121002A312F /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				87C4A31128822B1000485A08 /* ViewController.swift */,
+			);
+			path = Onboarding;
+			sourceTree = "<group>";
+		};
+		ED7036F32888C179002A312F /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				ED7036DD2888BAD4002A312F /* welcome_fitme.png */,
+				ED7036E22888BAE9002A312F /* logo_FitME.png */,
+			);
+			path = Images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
