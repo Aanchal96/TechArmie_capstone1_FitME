@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		369A43555261385AE48E3196 /* Pods_TechArmie_capstone1_FitME.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9B1E93B6AAF5BFADC09ECDE /* Pods_TechArmie_capstone1_FitME.framework */; };
 		557D6E22288A0ED700906AAA /* AppStoryboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 557D6E21288A0ED700906AAA /* AppStoryboard.swift */; };
+		557D6E24288A134A00906AAA /* SignUpController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 557D6E23288A134A00906AAA /* SignUpController.swift */; };
 		55EB744E288A07AA00DFD58D /* Authentication.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 55EB744D288A07AA00DFD58D /* Authentication.storyboard */; };
 		55EB7450288A07D300DFD58D /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55EB744F288A07D300DFD58D /* LoginController.swift */; };
 		87C4A30E28822B1000485A08 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87C4A30D28822B1000485A08 /* AppDelegate.swift */; };
@@ -25,6 +26,7 @@
 /* Begin PBXFileReference section */
 		44F9DA4C26DB4FB650F74678 /* Pods-TechArmie_capstone1_FitME.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TechArmie_capstone1_FitME.release.xcconfig"; path = "Target Support Files/Pods-TechArmie_capstone1_FitME/Pods-TechArmie_capstone1_FitME.release.xcconfig"; sourceTree = "<group>"; };
 		557D6E21288A0ED700906AAA /* AppStoryboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppStoryboard.swift; path = TechArmie_capstone1_FitME/ViewControllers/PreLogin/Onboarding/AppStoryboard.swift; sourceTree = SOURCE_ROOT; };
+		557D6E23288A134A00906AAA /* SignUpController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpController.swift; sourceTree = "<group>"; };
 		55EB744D288A07AA00DFD58D /* Authentication.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Authentication.storyboard; sourceTree = "<group>"; };
 		55EB744F288A07D300DFD58D /* LoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
 		87C4A30A28822B1000485A08 /* TechArmie_capstone1_FitME.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TechArmie_capstone1_FitME.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -201,6 +203,7 @@
 			children = (
 				87C4A31128822B1000485A08 /* ViewController.swift */,
 				55EB744F288A07D300DFD58D /* LoginController.swift */,
+				557D6E23288A134A00906AAA /* SignUpController.swift */,
 			);
 			path = Onboarding;
 			sourceTree = "<group>";
@@ -320,6 +323,7 @@
 				55EB7450288A07D300DFD58D /* LoginController.swift in Sources */,
 				87C4A30E28822B1000485A08 /* AppDelegate.swift in Sources */,
 				87C4A31028822B1000485A08 /* SceneDelegate.swift in Sources */,
+				557D6E24288A134A00906AAA /* SignUpController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
