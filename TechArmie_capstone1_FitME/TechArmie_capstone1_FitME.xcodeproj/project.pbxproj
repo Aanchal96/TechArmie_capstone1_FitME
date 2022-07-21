@@ -16,7 +16,7 @@
 		87C4A31A28822B1200485A08 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 87C4A31828822B1200485A08 /* LaunchScreen.storyboard */; };
 		ED7036E02888BAD4002A312F /* welcome_fitme.png in Resources */ = {isa = PBXBuildFile; fileRef = ED7036DD2888BAD4002A312F /* welcome_fitme.png */; };
 		ED7036E32888BAE9002A312F /* logo_FitME.png in Resources */ = {isa = PBXBuildFile; fileRef = ED7036E22888BAE9002A312F /* logo_FitME.png */; };
-		ED7036E82888BB7E002A312F /* bg_video.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = ED7036E62888BB7E002A312F /* bg_video.mp4 */; };
+		EDA49040288A03E4008BB686 /* bg_video.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = EDA4903F288A03E4008BB686 /* bg_video.mp4 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,7 +33,7 @@
 		E6CB01F1DE75F6DB4537983D /* Pods-TechArmie_capstone1_FitME.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TechArmie_capstone1_FitME.debug.xcconfig"; path = "Target Support Files/Pods-TechArmie_capstone1_FitME/Pods-TechArmie_capstone1_FitME.debug.xcconfig"; sourceTree = "<group>"; };
 		ED7036DD2888BAD4002A312F /* welcome_fitme.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = welcome_fitme.png; sourceTree = "<group>"; };
 		ED7036E22888BAE9002A312F /* logo_FitME.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo_FitME.png; sourceTree = "<group>"; };
-		ED7036E62888BB7E002A312F /* bg_video.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = bg_video.mp4; sourceTree = "<group>"; };
+		EDA4903F288A03E4008BB686 /* bg_video.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = bg_video.mp4; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +83,7 @@
 				ED7036EB2888BFA7002A312F /* Services */,
 				ED7036EA2888BF96002A312F /* DataSource */,
 				ED7036E92888BF8C002A312F /* Models */,
+				87C4A31B28822B1200485A08 /* Info.plist */,
 				ED7036DC2888BAA7002A312F /* Assets */,
 				87C4A30D28822B1000485A08 /* AppDelegate.swift */,
 				87C4A30F28822B1000485A08 /* SceneDelegate.swift */,
@@ -105,7 +106,6 @@
 				ED7036F32888C179002A312F /* Images */,
 				ED7036E52888BB7E002A312F /* Video */,
 				87C4A31628822B1200485A08 /* Assets.xcassets */,
-				87C4A31B28822B1200485A08 /* Info.plist */,
 			);
 			path = Assets;
 			sourceTree = "<group>";
@@ -113,7 +113,7 @@
 		ED7036E52888BB7E002A312F /* Video */ = {
 			isa = PBXGroup;
 			children = (
-				ED7036E62888BB7E002A312F /* bg_video.mp4 */,
+				EDA4903F288A03E4008BB686 /* bg_video.mp4 */,
 			);
 			name = Video;
 			path = "../../../../../../../Downloads/TechArmie_capstone1_FitME-Splash_Screen/TechArmie_capstone1_FitME/TechArmie_capstone1_FitME/Assets/Video";
@@ -265,8 +265,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				ED7036E32888BAE9002A312F /* logo_FitME.png in Resources */,
-				ED7036E82888BB7E002A312F /* bg_video.mp4 in Resources */,
 				ED7036E02888BAD4002A312F /* welcome_fitme.png in Resources */,
+				EDA49040288A03E4008BB686 /* bg_video.mp4 in Resources */,
 				87C4A31A28822B1200485A08 /* LaunchScreen.storyboard in Resources */,
 				87C4A31728822B1200485A08 /* Assets.xcassets in Resources */,
 				87C4A31528822B1000485A08 /* Main.storyboard in Resources */,
