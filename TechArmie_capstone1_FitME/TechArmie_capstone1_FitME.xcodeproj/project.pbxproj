@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		369A43555261385AE48E3196 /* Pods_TechArmie_capstone1_FitME.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9B1E93B6AAF5BFADC09ECDE /* Pods_TechArmie_capstone1_FitME.framework */; };
+		557D6E22288A0ED700906AAA /* AppStoryboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 557D6E21288A0ED700906AAA /* AppStoryboard.swift */; };
+		55EB744E288A07AA00DFD58D /* Authentication.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 55EB744D288A07AA00DFD58D /* Authentication.storyboard */; };
+		55EB7450288A07D300DFD58D /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55EB744F288A07D300DFD58D /* LoginController.swift */; };
 		87C4A30E28822B1000485A08 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87C4A30D28822B1000485A08 /* AppDelegate.swift */; };
 		87C4A31028822B1000485A08 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87C4A30F28822B1000485A08 /* SceneDelegate.swift */; };
 		87C4A31228822B1000485A08 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87C4A31128822B1000485A08 /* ViewController.swift */; };
@@ -21,6 +24,9 @@
 
 /* Begin PBXFileReference section */
 		44F9DA4C26DB4FB650F74678 /* Pods-TechArmie_capstone1_FitME.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TechArmie_capstone1_FitME.release.xcconfig"; path = "Target Support Files/Pods-TechArmie_capstone1_FitME/Pods-TechArmie_capstone1_FitME.release.xcconfig"; sourceTree = "<group>"; };
+		557D6E21288A0ED700906AAA /* AppStoryboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppStoryboard.swift; path = TechArmie_capstone1_FitME/ViewControllers/PreLogin/Onboarding/AppStoryboard.swift; sourceTree = SOURCE_ROOT; };
+		55EB744D288A07AA00DFD58D /* Authentication.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Authentication.storyboard; sourceTree = "<group>"; };
+		55EB744F288A07D300DFD58D /* LoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
 		87C4A30A28822B1000485A08 /* TechArmie_capstone1_FitME.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TechArmie_capstone1_FitME.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		87C4A30D28822B1000485A08 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		87C4A30F28822B1000485A08 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -77,13 +83,13 @@
 		87C4A30C28822B1000485A08 /* TechArmie_capstone1_FitME */ = {
 			isa = PBXGroup;
 			children = (
+				87C4A31B28822B1200485A08 /* Info.plist */,
 				ED7036EE2888BFD1002A312F /* ViewControllers */,
 				ED7036ED2888BFBD002A312F /* CommonControllers */,
 				ED7036EC2888BFB1002A312F /* Helpers */,
 				ED7036EB2888BFA7002A312F /* Services */,
 				ED7036EA2888BF96002A312F /* DataSource */,
 				ED7036E92888BF8C002A312F /* Models */,
-				87C4A31B28822B1200485A08 /* Info.plist */,
 				ED7036DC2888BAA7002A312F /* Assets */,
 				87C4A30D28822B1000485A08 /* AppDelegate.swift */,
 				87C4A30F28822B1000485A08 /* SceneDelegate.swift */,
@@ -143,6 +149,7 @@
 		ED7036EC2888BFB1002A312F /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				557D6E21288A0ED700906AAA /* AppStoryboard.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -176,6 +183,7 @@
 			isa = PBXGroup;
 			children = (
 				87C4A31328822B1000485A08 /* Main.storyboard */,
+				55EB744D288A07AA00DFD58D /* Authentication.storyboard */,
 				ED7036F22888C121002A312F /* Onboarding */,
 			);
 			path = PreLogin;
@@ -192,6 +200,7 @@
 			isa = PBXGroup;
 			children = (
 				87C4A31128822B1000485A08 /* ViewController.swift */,
+				55EB744F288A07D300DFD58D /* LoginController.swift */,
 			);
 			path = Onboarding;
 			sourceTree = "<group>";
@@ -265,6 +274,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				ED7036E32888BAE9002A312F /* logo_FitME.png in Resources */,
+				55EB744E288A07AA00DFD58D /* Authentication.storyboard in Resources */,
 				ED7036E02888BAD4002A312F /* welcome_fitme.png in Resources */,
 				EDA49040288A03E4008BB686 /* bg_video.mp4 in Resources */,
 				87C4A31A28822B1200485A08 /* LaunchScreen.storyboard in Resources */,
@@ -305,7 +315,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				557D6E22288A0ED700906AAA /* AppStoryboard.swift in Sources */,
 				87C4A31228822B1000485A08 /* ViewController.swift in Sources */,
+				55EB7450288A07D300DFD58D /* LoginController.swift in Sources */,
 				87C4A30E28822B1000485A08 /* AppDelegate.swift in Sources */,
 				87C4A31028822B1000485A08 /* SceneDelegate.swift in Sources */,
 			);

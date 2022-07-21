@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="HJe-Lk-11z">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
@@ -63,6 +63,9 @@
                                                 </fragment>
                                             </attributedString>
                                         </buttonConfiguration>
+                                        <connections>
+                                            <action selector="logInBtnAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mIf-dl-Svb"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="labelColor"/>
@@ -94,6 +97,7 @@
                             <constraint firstItem="IVq-Uz-HKV" firstAttribute="leading" secondItem="1Ak-zr-0dg" secondAttribute="leading" id="myR-CF-jYb"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="Muq-BH-sq4"/>
                     <connections>
                         <outlet property="btnLogin" destination="BeW-jx-XgS" id="MIe-rn-pjS"/>
                         <outlet property="btnNewAccount" destination="D5m-UP-3XK" id="6AY-Up-Fex"/>
@@ -104,7 +108,25 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="90" y="75"/>
+            <point key="canvasLocation" x="1000.0000000000001" y="75"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="tY5-j5-F7s">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="HJe-Lk-11z" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="yjr-YF-CfF">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="Eaa-hP-jiq"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="akv-7Z-W4D" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="89.855072463768124" y="75"/>
         </scene>
     </scenes>
     <resources>

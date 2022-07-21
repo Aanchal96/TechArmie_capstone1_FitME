@@ -40,6 +40,10 @@ class ViewController: UIViewController {
         videoLayer.bringSubviewToFront(btnLogin)
         videoLayer.bringSubviewToFront(lblAlreadyHaveAccount)
     }
-
+    
+    @IBAction func logInBtnAction(_ sender: UIButton) {
+        let vc = LoginController.instantiate(fromAppStoryboard: .Authentication)
+        self.navigationController?.pushViewController(vc, animated: true)
+    }
 }
 
