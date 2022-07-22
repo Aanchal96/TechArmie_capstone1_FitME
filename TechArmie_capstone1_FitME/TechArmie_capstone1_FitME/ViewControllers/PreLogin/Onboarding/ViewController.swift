@@ -23,10 +23,13 @@ class ViewController: UIViewController {
     }
 
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.identifier == "Step1"{
-            _ = segue.destination as? FirstStepVC
-        }
-    }
+                if segue.identifier == "Step1"{
+                    if let destination = segue.destination as? FirstStepVC{
+                    _ = destination
+                    }
+                }
+            }
+    
     @IBAction func btnCreateAccount (_ sender: UIButton) {
         performSegue(withIdentifier: "Step1", sender: self)
     }

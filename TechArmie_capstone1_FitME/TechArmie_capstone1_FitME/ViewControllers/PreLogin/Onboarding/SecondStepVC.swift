@@ -26,12 +26,3 @@ class SecondStepVC : UIViewController
         txtAge.addBottomBorder()
     }
 }
-extension UITextField {
-    func addBottomBorder(){
-        let bottomLine = CALayer()
-        bottomLine.frame = CGRect(x: 0, y: self.frame.size.height - 1, width: self.frame.size.width-35, height: 0.5)
-        bottomLine.backgroundColor = UIColor.black.cgColor
-        borderStyle = .none
-        layer.addSublayer(bottomLine)
-    }
-}

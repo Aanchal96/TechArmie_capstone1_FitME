@@ -24,10 +24,12 @@ class FirstStepVC: UIViewController {
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.identifier == "Step1TO2"{
-            _ = segue.destination as? SecondStepVC
-        }
-    }
+                if segue.identifier == "Step1TO2"{
+                    if let destination = segue.destination as? SecondStepVC{
+                    _ = destination
+                    }
+                }
+            }
     
     @IBAction func goalOptionChanged(_ sender: UIButton) {
         switch(sender){

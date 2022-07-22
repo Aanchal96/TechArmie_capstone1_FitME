@@ -321,7 +321,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Your Height" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Lde-By-gad">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Your Height" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Lde-By-gad">
                                 <rect key="frame" x="42" y="420" width="344" height="34"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="Lde-By-gad" secondAttribute="height" multiplier="172:17" id="qNS-Xc-qAo"/>
@@ -342,7 +342,7 @@
                                 <color key="tintColor" red="0.93333333330000001" green="0.93725490199999995" blue="0.94509803920000002" alpha="1" colorSpace="calibratedRGB"/>
                                 <color key="selectedSegmentTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </segmentedControl>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Your Weight" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="RJQ-7U-SWE">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Your Weight" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="RJQ-7U-SWE">
                                 <rect key="frame" x="42" y="474" width="344" height="34"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="RJQ-7U-SWE" secondAttribute="height" multiplier="172:17" id="n79-hH-suw"/>
@@ -356,13 +356,13 @@
                                     <constraint firstAttribute="width" secondItem="LnJ-Qp-b70" secondAttribute="height" multiplier="85:31" id="9A6-b1-d3F"/>
                                 </constraints>
                                 <segments>
-                                    <segment title="cm"/>
-                                    <segment title="ft"/>
+                                    <segment title="kg"/>
+                                    <segment title="lbs"/>
                                 </segments>
                                 <color key="tintColor" red="0.93333333330000001" green="0.93725490199999995" blue="0.94509803920000002" alpha="1" colorSpace="calibratedRGB"/>
                                 <color key="selectedSegmentTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </segmentedControl>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Your Weight Goal" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="871-t7-O9z">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Your Weight Goal" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="871-t7-O9z">
                                 <rect key="frame" x="42" y="528" width="344" height="34"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="871-t7-O9z" secondAttribute="height" multiplier="172:17" id="8N5-rG-Liq"/>
@@ -448,7 +448,7 @@
                                     <constraint firstAttribute="width" secondItem="df6-0O-HBF" secondAttribute="height" multiplier="378:151" id="Exl-dQ-a2K"/>
                                 </constraints>
                             </view>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Your Age" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="k3j-5U-WZk">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Your Age" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="k3j-5U-WZk">
                                 <rect key="frame" x="42" y="366" width="344" height="34"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="k3j-5U-WZk" secondAttribute="height" multiplier="172:17" id="N0c-eh-jYb"/>
@@ -465,8 +465,13 @@
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Next">
-                                    <fontDescription key="titleFontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="28"/>
+                                    <fontDescription key="titleFontDescription" name="Avenir-Book" family="Avenir" pointSize="18"/>
                                 </buttonConfiguration>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="6"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="NDg-JO-Jal"/>
