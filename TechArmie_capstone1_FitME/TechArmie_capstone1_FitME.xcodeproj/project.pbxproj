@@ -18,9 +18,9 @@
 		87C4A31528822B1000485A08 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 87C4A31328822B1000485A08 /* Main.storyboard */; };
 		87C4A31728822B1200485A08 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 87C4A31628822B1200485A08 /* Assets.xcassets */; };
 		87C4A31A28822B1200485A08 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 87C4A31828822B1200485A08 /* LaunchScreen.storyboard */; };
+		87FF9560288B5DA300A05A07 /* bg_video.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 87FF955F288B5DA300A05A07 /* bg_video.mp4 */; };
 		ED7036E02888BAD4002A312F /* welcome_fitme.png in Resources */ = {isa = PBXBuildFile; fileRef = ED7036DD2888BAD4002A312F /* welcome_fitme.png */; };
 		ED7036E32888BAE9002A312F /* logo_FitME.png in Resources */ = {isa = PBXBuildFile; fileRef = ED7036E22888BAE9002A312F /* logo_FitME.png */; };
-		EDA49040288A03E4008BB686 /* bg_video.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = EDA4903F288A03E4008BB686 /* bg_video.mp4 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,11 +37,11 @@
 		87C4A31628822B1200485A08 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		87C4A31928822B1200485A08 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		87C4A31B28822B1200485A08 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		87FF955F288B5DA300A05A07 /* bg_video.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = bg_video.mp4; sourceTree = "<group>"; };
 		D9B1E93B6AAF5BFADC09ECDE /* Pods_TechArmie_capstone1_FitME.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TechArmie_capstone1_FitME.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E6CB01F1DE75F6DB4537983D /* Pods-TechArmie_capstone1_FitME.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TechArmie_capstone1_FitME.debug.xcconfig"; path = "Target Support Files/Pods-TechArmie_capstone1_FitME/Pods-TechArmie_capstone1_FitME.debug.xcconfig"; sourceTree = "<group>"; };
 		ED7036DD2888BAD4002A312F /* welcome_fitme.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = welcome_fitme.png; sourceTree = "<group>"; };
 		ED7036E22888BAE9002A312F /* logo_FitME.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo_FitME.png; sourceTree = "<group>"; };
-		EDA4903F288A03E4008BB686 /* bg_video.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = bg_video.mp4; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,7 +121,6 @@
 		ED7036E52888BB7E002A312F /* Video */ = {
 			isa = PBXGroup;
 			children = (
-				EDA4903F288A03E4008BB686 /* bg_video.mp4 */,
 			);
 			name = Video;
 			path = "../../../../../../../Downloads/TechArmie_capstone1_FitME-Splash_Screen/TechArmie_capstone1_FitME/TechArmie_capstone1_FitME/Assets/Video";
@@ -211,6 +210,7 @@
 		ED7036F32888C179002A312F /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				87FF955F288B5DA300A05A07 /* bg_video.mp4 */,
 				ED7036DD2888BAD4002A312F /* welcome_fitme.png */,
 				ED7036E22888BAE9002A312F /* logo_FitME.png */,
 			);
@@ -228,7 +228,6 @@
 				87C4A30628822B1000485A08 /* Sources */,
 				87C4A30728822B1000485A08 /* Frameworks */,
 				87C4A30828822B1000485A08 /* Resources */,
-				5ED12914080C9B580E26737E /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -279,8 +278,8 @@
 			files = (
 				ED7036E32888BAE9002A312F /* logo_FitME.png in Resources */,
 				55EB744E288A07AA00DFD58D /* Authentication.storyboard in Resources */,
+				87FF9560288B5DA300A05A07 /* bg_video.mp4 in Resources */,
 				ED7036E02888BAD4002A312F /* welcome_fitme.png in Resources */,
-				EDA49040288A03E4008BB686 /* bg_video.mp4 in Resources */,
 				87C4A31A28822B1200485A08 /* LaunchScreen.storyboard in Resources */,
 				87C4A31728822B1200485A08 /* Assets.xcassets in Resources */,
 				87C4A31528822B1000485A08 /* Main.storyboard in Resources */,
@@ -290,23 +289,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		5ED12914080C9B580E26737E /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-TechArmie_capstone1_FitME/Pods-TechArmie_capstone1_FitME-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-TechArmie_capstone1_FitME/Pods-TechArmie_capstone1_FitME-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TechArmie_capstone1_FitME/Pods-TechArmie_capstone1_FitME-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		D7014F34D3539E9173CBCAD7 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
