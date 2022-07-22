@@ -228,6 +228,7 @@
 				87C4A30628822B1000485A08 /* Sources */,
 				87C4A30728822B1000485A08 /* Frameworks */,
 				87C4A30828822B1000485A08 /* Resources */,
+				5ED12914080C9B580E26737E /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -289,6 +290,23 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		5ED12914080C9B580E26737E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TechArmie_capstone1_FitME/Pods-TechArmie_capstone1_FitME-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TechArmie_capstone1_FitME/Pods-TechArmie_capstone1_FitME-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TechArmie_capstone1_FitME/Pods-TechArmie_capstone1_FitME-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		D7014F34D3539E9173CBCAD7 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
