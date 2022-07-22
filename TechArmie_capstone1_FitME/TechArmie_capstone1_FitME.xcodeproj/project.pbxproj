@@ -12,7 +12,6 @@
 		7C5C14F5288A404700FDAF8D /* bg_video.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 7C5C14F4288A404700FDAF8D /* bg_video.mp4 */; };
 		7C5C14F7288A4A6D00FDAF8D /* FirstStepVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C5C14F6288A4A6D00FDAF8D /* FirstStepVC.swift */; };
 		7CDA8CD0288A7CB90029ECB1 /* SecondStepVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CDA8CCF288A7CB90029ECB1 /* SecondStepVC.swift */; };
-		7CDA8CD2288A85390029ECB1 /* Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7CDA8CD1288A85390029ECB1 /* Storyboard.storyboard */; };
 		7CDA8CD4288A85730029ECB1 /* ThirdStepVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CDA8CD3288A85730029ECB1 /* ThirdStepVC.swift */; };
 		87C4A30E28822B1000485A08 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87C4A30D28822B1000485A08 /* AppDelegate.swift */; };
 		87C4A31028822B1000485A08 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87C4A30F28822B1000485A08 /* SceneDelegate.swift */; };
@@ -28,7 +27,6 @@
 		7C5C14F4288A404700FDAF8D /* bg_video.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; name = bg_video.mp4; path = ../../../../../../Users/virdavindersingh/Downloads/bg_video.mp4; sourceTree = "<group>"; };
 		7C5C14F6288A4A6D00FDAF8D /* FirstStepVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstStepVC.swift; sourceTree = "<group>"; };
 		7CDA8CCF288A7CB90029ECB1 /* SecondStepVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondStepVC.swift; sourceTree = "<group>"; };
-		7CDA8CD1288A85390029ECB1 /* Storyboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Storyboard.storyboard; sourceTree = "<group>"; };
 		7CDA8CD3288A85730029ECB1 /* ThirdStepVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdStepVC.swift; sourceTree = "<group>"; };
 		87C4A30A28822B1000485A08 /* TechArmie_capstone1_FitME.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TechArmie_capstone1_FitME.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		87C4A30D28822B1000485A08 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -185,7 +183,6 @@
 			children = (
 				87C4A31328822B1000485A08 /* Main.storyboard */,
 				ED7036F22888C121002A312F /* Onboarding */,
-				7CDA8CD1288A85390029ECB1 /* Storyboard.storyboard */,
 			);
 			path = PreLogin;
 			sourceTree = "<group>";
@@ -281,7 +278,6 @@
 				7C5C14F5288A404700FDAF8D /* bg_video.mp4 in Resources */,
 				7C25508D288A501D00766C04 /* Main.storyboard in Resources */,
 				87C4A31A28822B1200485A08 /* LaunchScreen.storyboard in Resources */,
-				7CDA8CD2288A85390029ECB1 /* Storyboard.storyboard in Resources */,
 				87C4A31728822B1200485A08 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
