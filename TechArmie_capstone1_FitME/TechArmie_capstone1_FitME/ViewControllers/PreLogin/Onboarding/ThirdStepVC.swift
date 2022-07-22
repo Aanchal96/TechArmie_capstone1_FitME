@@ -10,12 +10,14 @@ import UIKit
 class ThirdStepVC : UIViewController
 {
     
-    
-    
+    @IBOutlet weak var btnBack: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         
+    }
+    @IBAction func back(_ sender: Any) {
+        self.dismiss(animated: true, completion: nil)
     }
 }

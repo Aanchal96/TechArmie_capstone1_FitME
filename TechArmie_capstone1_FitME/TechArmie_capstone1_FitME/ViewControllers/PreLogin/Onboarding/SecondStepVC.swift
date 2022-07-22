@@ -10,13 +10,14 @@ import Foundation
 import UIKit
 class SecondStepVC : UIViewController
 {
-    
-    
     @IBOutlet weak var txtWeightGoal: UITextField!
     @IBOutlet weak var txtWeight: UITextField!
     @IBOutlet weak var txtHeight: UITextField!
+    @IBOutlet weak var btnBack: UIButton!
+    @IBOutlet weak var imgFemale: UIImageView!
     @IBOutlet weak var txtAge: UITextField!
-
+    @IBOutlet weak var imgMale: UIImageView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -24,5 +25,44 @@ class SecondStepVC : UIViewController
         txtWeight.addBottomBorder()
         txtHeight.addBottomBorder()
         txtAge.addBottomBorder()
+
+        
+        let maleTapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(maleImageTapped(tapGestureRecognizer:)))
+        
+        let femaleTapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(femaleImageTapped(tapGestureRecognizer:)))
+        
+        imgFemale.isUserInteractionEnabled = true
+        imgFemale.addGestureRecognizer(femaleTapGestureRecognizer)
+        
+        imgMale.isUserInteractionEnabled = true
+        imgMale.addGestureRecognizer(maleTapGestureRecognizer)
     }
+    
+    @objc func maleImageTapped(tapGestureRecognizer: UITapGestureRecognizer)
+    {
+        imgMale.backgroundColor = CustomColors.primaryColor
+        imgFemale.backgroundColor = CustomColors.secondaryColor
+    }
+    
+    @objc func femaleImageTapped(tapGestureRecognizer: UITapGestureRecognizer)
+    {
+        imgMale.backgroundColor = CustomColors.secondaryColor
+        imgFemale.backgroundColor = CustomColors.primaryColor
+    }
+    
+    
+    @IBAction func back(_ sender: Any) {
+        self.dismiss(animated: true, completion: nil)
+    }
+    
+    @IBAction func goToNext(_ sender: Any) {
+        performSegue(withIdentifier: "Step2TO3", sender: nil)
+    }
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+                if segue.identifier == "Step2TO3"{
+                    if let destination = segue.destination as? SecondStepVC{
+                    _ = destination
+                    }
+                }
+            }
 }
