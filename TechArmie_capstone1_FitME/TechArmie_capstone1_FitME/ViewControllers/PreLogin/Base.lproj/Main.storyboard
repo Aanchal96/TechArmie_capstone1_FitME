@@ -136,16 +136,14 @@
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ubs-g1-lf4">
                                 <rect key="frame" x="30" y="299" width="354" height="72"/>
-                                <color key="backgroundColor" red="0.14901960780000001" green="0.25882352939999997" blue="0.29803921570000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="0.2235293984" green="0.32156863810000003" blue="0.3686274886" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="Ubs-g1-lf4" secondAttribute="height" multiplier="59:12" id="I1c-yv-IXZ"/>
                                 </constraints>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Lose Weight" subtitle="Burn fat &amp; Get Leaner" cornerStyle="dynamic" buttonSize="large">
-                                    <backgroundConfiguration key="background" cornerRadius="10">
-                                        <color key="backgroundColor" red="0.14901960780000001" green="0.25882352939999997" blue="0.29803921570000003" alpha="1" colorSpace="calibratedRGB"/>
-                                    </backgroundConfiguration>
+                                    <backgroundConfiguration key="background" cornerRadius="10"/>
                                     <fontDescription key="titleFontDescription" name="Avenir-Book" family="Avenir" pointSize="18"/>
                                     <fontDescription key="subtitleFontDescription" name="Avenir-Light" family="Avenir" pointSize="16"/>
                                 </buttonConfiguration>
@@ -154,6 +152,9 @@
                                         <real key="value" value="6"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="goalOptionChanged:" destination="WOt-jB-GdP" eventType="touchUpInside" id="jDs-vk-SG7"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yax-Ko-wMd">
                                 <rect key="frame" x="30" y="398" width="354" height="72"/>
@@ -173,6 +174,9 @@
                                         <real key="value" value="6"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="goalOptionChanged:" destination="WOt-jB-GdP" eventType="touchUpInside" id="Vzo-H4-Aey"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xiy-4k-bhX">
                                 <rect key="frame" x="30" y="497" width="354" height="72"/>
@@ -192,6 +196,9 @@
                                         <real key="value" value="6"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="goalOptionChanged:" destination="WOt-jB-GdP" eventType="touchUpInside" id="em3-mE-7gA"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="38c-kh-b6F">
                                 <rect key="frame" x="18" y="46" width="37" height="31"/>
@@ -206,6 +213,10 @@
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="exclusiveTouchEnabled" value="YES"/>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="back:" destination="WOt-jB-GdP" eventType="touchUpInside" id="2Jf-Kh-woa"/>
+                                    <segue destination="BYZ-38-t0r" kind="presentation" identifier="step1_back" modalPresentationStyle="fullScreen" id="kSp-YP-GQi"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mj2-GJ-Aog">
                                 <rect key="frame" x="108" y="48" width="196" height="26"/>
@@ -234,10 +245,10 @@
                                 </userDefinedRuntimeAttributes>
                             </progressView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kfS-Ac-HsW">
-                                <rect key="frame" x="30" y="596" width="354" height="41"/>
+                                <rect key="frame" x="30" y="596" width="354" height="47"/>
                                 <color key="backgroundColor" red="0.14901960780000001" green="0.25882352939999997" blue="0.29803921570000003" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" secondItem="kfS-Ac-HsW" secondAttribute="height" multiplier="354:41" id="iIr-iA-eGD"/>
+                                    <constraint firstAttribute="width" secondItem="kfS-Ac-HsW" secondAttribute="height" multiplier="354:47" id="iIr-iA-eGD"/>
                                 </constraints>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Button"/>
@@ -286,6 +297,13 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="t0V-61-v8F"/>
+                    <connections>
+                        <outlet property="btnBack" destination="38c-kh-b6F" id="3vf-M9-UKZ"/>
+                        <outlet property="btnBeActive" destination="Xiy-4k-bhX" id="MsP-Su-q25"/>
+                        <outlet property="btnGainWeight" destination="Yax-Ko-wMd" id="U7g-3U-WqN"/>
+                        <outlet property="btnLoseWeight" destination="Ubs-g1-lf4" id="vam-hr-U5w"/>
+                        <outlet property="btnNext" destination="kfS-Ac-HsW" id="kPh-Ql-BfW"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kla-XM-iI7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

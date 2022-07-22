@@ -9,21 +9,51 @@ import UIKit
 
 class FirstStepVC: UIViewController {
 
+    @IBOutlet weak var btnBack: UIButton!
+    @IBOutlet weak var btnLoseWeight: UIButton!
+    @IBOutlet weak var btnGainWeight: UIButton!
+    @IBOutlet weak var btnBeActive: UIButton!
+    @IBOutlet weak var btnNext: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    @IBAction func goalOptionChanged(_ sender: UIButton) {
+        switch(sender){
+        case btnLoseWeight:
+            btnLoseWeight.backgroundColor = CustomColors.primaryColor
+            btnGainWeight.backgroundColor = CustomColors.secondaryColor
+            btnBeActive.backgroundColor = CustomColors.secondaryColor
+            
+            btnLoseWeight.tintColor = CustomColors.white
+            btnGainWeight.tintColor = CustomColors.black
+            btnBeActive.tintColor = CustomColors.black
+            break
+        case btnGainWeight:
+            btnGainWeight.backgroundColor = CustomColors.primaryColor
+            btnLoseWeight.backgroundColor = CustomColors.secondaryColor
+            btnBeActive.backgroundColor = CustomColors.secondaryColor
+            
+            btnLoseWeight.tintColor = CustomColors.black
+            btnGainWeight.tintColor = CustomColors.white
+            btnBeActive.tintColor = CustomColors.black
+            break
+        case btnBeActive:
+            btnBeActive.backgroundColor = CustomColors.primaryColor
+            btnGainWeight.backgroundColor = CustomColors.secondaryColor
+            btnLoseWeight.backgroundColor = CustomColors.secondaryColor
+            
+            btnLoseWeight.tintColor = CustomColors.black
+            btnGainWeight.tintColor = CustomColors.black
+            btnBeActive.tintColor = CustomColors.white
+            break
+        default:
+            break
+        }
     }
-    */
-
+    
+    @IBAction func back(_ sender: Any) {
+        self.dismiss(animated: true, completion: nil)
+    }
 }
