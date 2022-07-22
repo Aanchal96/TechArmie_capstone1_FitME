@@ -19,6 +19,16 @@ class FirstStepVC: UIViewController {
         super.viewDidLoad()
     }
     
+    @IBAction func goToNext(_ sender: Any) {
+        performSegue(withIdentifier: "Step1TO2", sender: self)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "Step1TO2"{
+            _ = segue.destination as? SecondStepVC
+        }
+    }
+    
     @IBAction func goalOptionChanged(_ sender: UIButton) {
         switch(sender){
         case btnLoseWeight:

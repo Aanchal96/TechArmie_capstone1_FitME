@@ -12,16 +12,26 @@ class SecondStepVC : UIViewController
 {
     
     
-//    let vc = self.storyboard?.instantiateViewController(withIdentifier: "VC2ViewController") as! VC2ViewController
-//
-//    self.navigationController?.pushViewController(vc, animated: true)
-//
-//    self.present(vc, animated: true, completion: nil)
+    @IBOutlet weak var txtWeightGoal: UITextField!
+    @IBOutlet weak var txtWeight: UITextField!
+    @IBOutlet weak var txtHeight: UITextField!
+    @IBOutlet weak var txtAge: UITextField!
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        
+        txtWeightGoal.addBottomBorder()
+        txtWeight.addBottomBorder()
+        txtHeight.addBottomBorder()
+        txtAge.addBottomBorder()
     }
-    
+}
+extension UITextField {
+    func addBottomBorder(){
+        let bottomLine = CALayer()
+        bottomLine.frame = CGRect(x: 0, y: self.frame.size.height - 1, width: self.frame.size.width-35, height: 0.5)
+        bottomLine.backgroundColor = UIColor.black.cgColor
+        borderStyle = .none
+        layer.addSublayer(bottomLine)
+    }
 }
