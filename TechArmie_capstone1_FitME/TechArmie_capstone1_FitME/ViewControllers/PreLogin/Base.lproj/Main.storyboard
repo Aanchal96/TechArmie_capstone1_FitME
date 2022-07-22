@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="WOt-jB-GdP">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -37,6 +37,10 @@
                                             <color key="baseForegroundColor" systemColor="labelColor"/>
                                             <color key="baseBackgroundColor" red="0.94901961089999998" green="0.94901961089999998" blue="0.96862745289999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         </buttonConfiguration>
+                                        <connections>
+                                            <action selector="btnCreateAccount:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Tg5-al-Jfh"/>
+                                            <segue destination="WOt-jB-GdP" kind="presentation" identifier="Step1" modalPresentationStyle="fullScreen" id="biV-WR-GBo"/>
+                                        </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Already have an account ?" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LUj-Te-5FG">
                                         <rect key="frame" x="23" y="790.5" width="255" height="35.5"/>
@@ -94,6 +98,7 @@
                             <constraint firstItem="IVq-Uz-HKV" firstAttribute="leading" secondItem="1Ak-zr-0dg" secondAttribute="leading" id="myR-CF-jYb"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="JjH-6l-FhW"/>
                     <connections>
                         <outlet property="btnLogin" destination="BeW-jx-XgS" id="MIe-rn-pjS"/>
                         <outlet property="btnNewAccount" destination="D5m-UP-3XK" id="6AY-Up-Fex"/>
@@ -115,67 +120,172 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="destination-" translatesAutoresizingMaskIntoConstraints="NO" id="fZK-cb-nh2">
-                                <rect key="frame" x="155" y="103" width="105" height="98"/>
+                                <rect key="frame" x="148" y="118" width="118" height="120"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="fZK-cb-nh2" secondAttribute="height" multiplier="59:60" id="J6g-Qe-OeQ"/>
+                                </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What's your goal ?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UTf-su-Vto">
-                                <rect key="frame" x="113" y="216" width="191" height="25"/>
-                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="18"/>
+                                <rect key="frame" x="111" y="254" width="192" height="25"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="UTf-su-Vto" secondAttribute="height" multiplier="191:25" id="fgY-rG-gtg"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="18"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ubs-g1-lf4">
-                                <rect key="frame" x="66" y="281" width="282" height="56"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ubs-g1-lf4">
+                                <rect key="frame" x="30" y="299" width="354" height="72"/>
                                 <color key="backgroundColor" red="0.14901960780000001" green="0.25882352939999997" blue="0.29803921570000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="Ubs-g1-lf4" secondAttribute="height" multiplier="59:12" id="I1c-yv-IXZ"/>
+                                </constraints>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Lose Weight                                                                                           Burn fat &amp; Get Leaner" cornerStyle="dynamic">
+                                <buttonConfiguration key="configuration" style="plain" title="Lose Weight" subtitle="Burn fat &amp; Get Leaner" cornerStyle="dynamic" buttonSize="large">
                                     <backgroundConfiguration key="background" cornerRadius="10">
                                         <color key="backgroundColor" red="0.14901960780000001" green="0.25882352939999997" blue="0.29803921570000003" alpha="1" colorSpace="calibratedRGB"/>
                                     </backgroundConfiguration>
-                                    <fontDescription key="titleFontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="18"/>
+                                    <fontDescription key="titleFontDescription" name="Avenir-Book" family="Avenir" pointSize="18"/>
+                                    <fontDescription key="subtitleFontDescription" name="Avenir-Light" family="Avenir" pointSize="16"/>
                                 </buttonConfiguration>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="6"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yax-Ko-wMd">
-                                <rect key="frame" x="66" y="377" width="282" height="56"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yax-Ko-wMd">
+                                <rect key="frame" x="30" y="398" width="354" height="72"/>
                                 <color key="backgroundColor" red="0.92941176469999998" green="0.92941176469999998" blue="0.92941176469999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="Yax-Ko-wMd" secondAttribute="height" multiplier="59:12" id="5XY-J2-g9B"/>
+                                </constraints>
                                 <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Gain Weight                                                 Burn fat &amp; Get Leaner" cornerStyle="dynamic">
+                                <buttonConfiguration key="configuration" style="plain" title="Gain Weight" subtitle="Burn fat &amp; Get Leaner" cornerStyle="dynamic" buttonSize="large">
                                     <backgroundConfiguration key="background" cornerRadius="10"/>
-                                    <fontDescription key="titleFontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="18"/>
+                                    <fontDescription key="titleFontDescription" name="Avenir-Book" family="Avenir" pointSize="18"/>
+                                    <fontDescription key="subtitleFontDescription" name="Avenir-Light" family="Avenir" pointSize="16"/>
                                 </buttonConfiguration>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="6"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xiy-4k-bhX">
-                                <rect key="frame" x="66" y="473" width="282" height="56"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xiy-4k-bhX">
+                                <rect key="frame" x="30" y="497" width="354" height="72"/>
                                 <color key="backgroundColor" red="0.92941176469999998" green="0.92941176469999998" blue="0.92941176469999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="Xiy-4k-bhX" secondAttribute="height" multiplier="59:12" id="aqu-wJ-I4h"/>
+                                </constraints>
                                 <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Be Active                                                 feel Healthy &amp; Get Fitter" cornerStyle="dynamic">
+                                <buttonConfiguration key="configuration" style="plain" title="Be Active" subtitle="feel Healthy &amp; Get Fitter" cornerStyle="dynamic" buttonSize="large">
                                     <backgroundConfiguration key="background" cornerRadius="10" strokeWidth="7"/>
-                                    <fontDescription key="titleFontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="18"/>
+                                    <fontDescription key="titleFontDescription" name="Avenir-Book" family="Avenir" pointSize="18"/>
+                                    <fontDescription key="subtitleFontDescription" name="Avenir-Light" family="Avenir" pointSize="16"/>
                                 </buttonConfiguration>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="6"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="38c-kh-b6F">
+                                <rect key="frame" x="18" y="46" width="37" height="31"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="38c-kh-b6F" secondAttribute="height" multiplier="37:31" id="CyI-a4-gv7"/>
+                                    <constraint firstAttribute="width" constant="37" id="nrb-l3-5Gm"/>
+                                    <constraint firstAttribute="height" constant="31" id="p8u-aC-ld9"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <inset key="contentEdgeInsets" minX="5" minY="5" maxX="5" maxY="5"/>
+                                <state key="normal" image="icBack"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="exclusiveTouchEnabled" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mj2-GJ-Aog">
+                                <rect key="frame" x="108" y="48" width="196" height="26"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="Mj2-GJ-Aog" secondAttribute="height" multiplier="98:13" id="ODe-fB-EpI"/>
+                                </constraints>
+                                <attributedString key="attributedText">
+                                    <fragment content="Step 1 of 5">
+                                        <attributes>
+                                            <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            <font key="NSFont" size="17" name="Europa-Regular"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <progressView opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="fQc-FE-edE">
+                                <rect key="frame" x="0.0" y="85" width="414" height="4"/>
+                                <color key="progressTintColor" red="0.14901961389999999" green="0.2588235438" blue="0.29803922770000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="trackTintColor" red="0.94509803920000002" green="0.94901960780000005" blue="0.95294117649999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </progressView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kfS-Ac-HsW">
+                                <rect key="frame" x="30" y="596" width="354" height="41"/>
+                                <color key="backgroundColor" red="0.14901960780000001" green="0.25882352939999997" blue="0.29803921570000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="kfS-Ac-HsW" secondAttribute="height" multiplier="354:41" id="iIr-iA-eGD"/>
+                                </constraints>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Next">
+                                    <fontDescription key="titleFontDescription" name="Avenir-Book" family="Avenir" pointSize="18"/>
+                                </buttonConfiguration>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="6"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="xOf-ko-ACx"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="xOf-ko-ACx" firstAttribute="trailing" secondItem="Ubs-g1-lf4" secondAttribute="trailing" constant="66" id="1jP-5a-P98"/>
-                            <constraint firstItem="fZK-cb-nh2" firstAttribute="leading" secondItem="xOf-ko-ACx" secondAttribute="leading" constant="155" id="4jI-mw-FkC"/>
-                            <constraint firstItem="xOf-ko-ACx" firstAttribute="trailing" secondItem="Xiy-4k-bhX" secondAttribute="trailing" constant="66" id="A4T-7o-FMU"/>
-                            <constraint firstItem="Ubs-g1-lf4" firstAttribute="leading" secondItem="xOf-ko-ACx" secondAttribute="leading" constant="66" id="I6h-Ex-Om5"/>
-                            <constraint firstItem="xOf-ko-ACx" firstAttribute="trailing" secondItem="Yax-Ko-wMd" secondAttribute="trailing" constant="66" id="O8D-91-KZ1"/>
-                            <constraint firstItem="Xiy-4k-bhX" firstAttribute="leading" secondItem="xOf-ko-ACx" secondAttribute="leading" constant="66" id="Q7C-eU-eqW"/>
-                            <constraint firstItem="Ubs-g1-lf4" firstAttribute="top" secondItem="UTf-su-Vto" secondAttribute="bottom" constant="40" id="RRx-DR-tWN"/>
-                            <constraint firstItem="Yax-Ko-wMd" firstAttribute="top" secondItem="Ubs-g1-lf4" secondAttribute="bottom" constant="40" id="a3s-ox-KH4"/>
-                            <constraint firstItem="UTf-su-Vto" firstAttribute="top" secondItem="fZK-cb-nh2" secondAttribute="bottom" constant="15" id="ccc-Yf-n7i"/>
-                            <constraint firstItem="xOf-ko-ACx" firstAttribute="trailing" secondItem="UTf-su-Vto" secondAttribute="trailing" constant="110" id="ePm-Cz-f8T"/>
-                            <constraint firstItem="Xiy-4k-bhX" firstAttribute="top" secondItem="Yax-Ko-wMd" secondAttribute="bottom" constant="40" id="iST-Ik-UfS"/>
-                            <constraint firstItem="UTf-su-Vto" firstAttribute="leading" secondItem="xOf-ko-ACx" secondAttribute="leading" constant="113" id="lRh-8t-uTU"/>
-                            <constraint firstItem="xOf-ko-ACx" firstAttribute="trailing" secondItem="fZK-cb-nh2" secondAttribute="trailing" constant="154" id="qel-Mj-YFN"/>
-                            <constraint firstItem="fZK-cb-nh2" firstAttribute="top" secondItem="xOf-ko-ACx" secondAttribute="top" constant="59" id="uqI-kD-0x3"/>
-                            <constraint firstItem="Yax-Ko-wMd" firstAttribute="leading" secondItem="xOf-ko-ACx" secondAttribute="leading" constant="66" id="vmB-gQ-LXm"/>
+                            <constraint firstItem="fQc-FE-edE" firstAttribute="trailing" secondItem="xOf-ko-ACx" secondAttribute="trailing" id="0Ws-Jt-f6y"/>
+                            <constraint firstItem="xOf-ko-ACx" firstAttribute="trailing" secondItem="Mj2-GJ-Aog" secondAttribute="trailing" constant="110" id="0gX-Qc-7IA"/>
+                            <constraint firstItem="fQc-FE-edE" firstAttribute="leading" secondItem="xOf-ko-ACx" secondAttribute="leading" id="11n-he-FOu"/>
+                            <constraint firstItem="Mj2-GJ-Aog" firstAttribute="leading" secondItem="38c-kh-b6F" secondAttribute="trailing" constant="53" id="3FZ-qh-RgF"/>
+                            <constraint firstItem="fZK-cb-nh2" firstAttribute="top" secondItem="fQc-FE-edE" secondAttribute="bottom" constant="29" id="4Sa-8v-nIp"/>
+                            <constraint firstItem="fQc-FE-edE" firstAttribute="top" secondItem="Mj2-GJ-Aog" secondAttribute="bottom" constant="11" id="52O-Li-fbb"/>
+                            <constraint firstItem="Ubs-g1-lf4" firstAttribute="leading" secondItem="xOf-ko-ACx" secondAttribute="leading" constant="30" id="7Oc-Uj-ied"/>
+                            <constraint firstItem="xOf-ko-ACx" firstAttribute="trailing" secondItem="fZK-cb-nh2" secondAttribute="trailing" constant="148" id="9xs-Rc-udZ"/>
+                            <constraint firstItem="fQc-FE-edE" firstAttribute="top" secondItem="38c-kh-b6F" secondAttribute="bottom" constant="8" id="CUY-Tb-liC"/>
+                            <constraint firstItem="fQc-FE-edE" firstAttribute="top" secondItem="38c-kh-b6F" secondAttribute="bottom" constant="8" id="HHZ-1g-mGb"/>
+                            <constraint firstItem="38c-kh-b6F" firstAttribute="top" secondItem="xOf-ko-ACx" secondAttribute="top" constant="2" id="Ixs-9l-ztE"/>
+                            <constraint firstItem="fZK-cb-nh2" firstAttribute="leading" secondItem="xOf-ko-ACx" secondAttribute="leading" constant="148" id="KBX-w6-I5o"/>
+                            <constraint firstItem="Mj2-GJ-Aog" firstAttribute="top" secondItem="xOf-ko-ACx" secondAttribute="top" constant="4" id="KRg-GE-FRw"/>
+                            <constraint firstItem="xOf-ko-ACx" firstAttribute="trailing" secondItem="UTf-su-Vto" secondAttribute="trailing" constant="111" id="MB6-8P-oLy"/>
+                            <constraint firstItem="xOf-ko-ACx" firstAttribute="trailing" secondItem="kfS-Ac-HsW" secondAttribute="trailing" constant="30" id="Ods-mY-LgR"/>
+                            <constraint firstItem="UTf-su-Vto" firstAttribute="top" secondItem="fZK-cb-nh2" secondAttribute="bottom" constant="16" id="TYq-e0-Xl6"/>
+                            <constraint firstItem="xOf-ko-ACx" firstAttribute="trailing" secondItem="Xiy-4k-bhX" secondAttribute="trailing" constant="30" id="UAQ-tb-aIo"/>
+                            <constraint firstItem="Yax-Ko-wMd" firstAttribute="top" secondItem="Ubs-g1-lf4" secondAttribute="bottom" constant="27" id="VIp-OV-pxR"/>
+                            <constraint firstItem="Xiy-4k-bhX" firstAttribute="top" secondItem="Yax-Ko-wMd" secondAttribute="bottom" constant="27" id="ZSG-PH-8kv"/>
+                            <constraint firstItem="38c-kh-b6F" firstAttribute="leading" secondItem="xOf-ko-ACx" secondAttribute="leading" constant="18" id="acB-9S-Scw"/>
+                            <constraint firstItem="Yax-Ko-wMd" firstAttribute="leading" secondItem="xOf-ko-ACx" secondAttribute="leading" constant="30" id="emv-q3-urn"/>
+                            <constraint firstItem="kfS-Ac-HsW" firstAttribute="top" secondItem="Xiy-4k-bhX" secondAttribute="bottom" constant="27" id="fGi-cT-4ff"/>
+                            <constraint firstItem="UTf-su-Vto" firstAttribute="leading" secondItem="xOf-ko-ACx" secondAttribute="leading" constant="111" id="gJ5-df-tWJ"/>
+                            <constraint firstItem="Ubs-g1-lf4" firstAttribute="top" secondItem="UTf-su-Vto" secondAttribute="bottom" constant="20" id="hji-jf-nP9"/>
+                            <constraint firstItem="Xiy-4k-bhX" firstAttribute="leading" secondItem="xOf-ko-ACx" secondAttribute="leading" constant="30" id="kXH-mj-R0M"/>
+                            <constraint firstItem="kfS-Ac-HsW" firstAttribute="leading" secondItem="xOf-ko-ACx" secondAttribute="leading" constant="30" id="muh-MH-tL8"/>
+                            <constraint firstItem="xOf-ko-ACx" firstAttribute="trailing" secondItem="Ubs-g1-lf4" secondAttribute="trailing" constant="30" id="rZ3-qD-ekB"/>
+                            <constraint firstItem="xOf-ko-ACx" firstAttribute="trailing" secondItem="Yax-Ko-wMd" secondAttribute="trailing" constant="30" id="vUr-Sk-YwS"/>
+                            <constraint firstItem="Mj2-GJ-Aog" firstAttribute="leading" secondItem="38c-kh-b6F" secondAttribute="trailing" constant="53" id="z2p-6e-25q"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="t0V-61-v8F"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kla-XM-iI7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -579,6 +689,7 @@
         <image name="Male 1" width="103" height="113"/>
         <image name="Thumbs-up 1" width="73" height="73"/>
         <image name="destination-" width="105" height="98"/>
+        <image name="icBack" width="12" height="20.5"/>
         <image name="welcome_fitme.png" width="360" height="360"/>
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

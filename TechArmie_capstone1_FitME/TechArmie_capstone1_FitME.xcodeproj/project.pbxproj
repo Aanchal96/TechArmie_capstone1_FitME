@@ -9,8 +9,6 @@
 /* Begin PBXBuildFile section */
 		369A43555261385AE48E3196 /* Pods_TechArmie_capstone1_FitME.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9B1E93B6AAF5BFADC09ECDE /* Pods_TechArmie_capstone1_FitME.framework */; };
 		7C25508D288A501D00766C04 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 87C4A31328822B1000485A08 /* Main.storyboard */; };
-		7C5C14F5288A404700FDAF8D /* bg_video.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 7C5C14F4288A404700FDAF8D /* bg_video.mp4 */; };
-		7C5C14F7288A4A6D00FDAF8D /* FirstStepVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C5C14F6288A4A6D00FDAF8D /* FirstStepVC.swift */; };
 		7CDA8CD0288A7CB90029ECB1 /* SecondStepVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CDA8CCF288A7CB90029ECB1 /* SecondStepVC.swift */; };
 		7CDA8CD4288A85730029ECB1 /* ThirdStepVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CDA8CD3288A85730029ECB1 /* ThirdStepVC.swift */; };
 		7CDA8CDA288A9E090029ECB1 /* FourthStepVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CDA8CD9288A9E090029ECB1 /* FourthStepVC.swift */; };
@@ -22,12 +20,12 @@
 		87C4A31A28822B1200485A08 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 87C4A31828822B1200485A08 /* LaunchScreen.storyboard */; };
 		ED7036E02888BAD4002A312F /* welcome_fitme.png in Resources */ = {isa = PBXBuildFile; fileRef = ED7036DD2888BAD4002A312F /* welcome_fitme.png */; };
 		ED7036E32888BAE9002A312F /* logo_FitME.png in Resources */ = {isa = PBXBuildFile; fileRef = ED7036E22888BAE9002A312F /* logo_FitME.png */; };
+		ED986BF0288AC7B9005BCA62 /* bg_video.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = ED986BEF288AC7B9005BCA62 /* bg_video.mp4 */; };
+		ED986BF2288AE45A005BCA62 /* FirstStepVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED986BF1288AE45A005BCA62 /* FirstStepVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		44F9DA4C26DB4FB650F74678 /* Pods-TechArmie_capstone1_FitME.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TechArmie_capstone1_FitME.release.xcconfig"; path = "Target Support Files/Pods-TechArmie_capstone1_FitME/Pods-TechArmie_capstone1_FitME.release.xcconfig"; sourceTree = "<group>"; };
-		7C5C14F4288A404700FDAF8D /* bg_video.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; name = bg_video.mp4; path = ../../../../../../Users/virdavindersingh/Downloads/bg_video.mp4; sourceTree = "<group>"; };
-		7C5C14F6288A4A6D00FDAF8D /* FirstStepVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstStepVC.swift; sourceTree = "<group>"; };
 		7CDA8CCF288A7CB90029ECB1 /* SecondStepVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondStepVC.swift; sourceTree = "<group>"; };
 		7CDA8CD3288A85730029ECB1 /* ThirdStepVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdStepVC.swift; sourceTree = "<group>"; };
 		7CDA8CD9288A9E090029ECB1 /* FourthStepVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FourthStepVC.swift; sourceTree = "<group>"; };
@@ -44,6 +42,8 @@
 		E6CB01F1DE75F6DB4537983D /* Pods-TechArmie_capstone1_FitME.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TechArmie_capstone1_FitME.debug.xcconfig"; path = "Target Support Files/Pods-TechArmie_capstone1_FitME/Pods-TechArmie_capstone1_FitME.debug.xcconfig"; sourceTree = "<group>"; };
 		ED7036DD2888BAD4002A312F /* welcome_fitme.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = welcome_fitme.png; sourceTree = "<group>"; };
 		ED7036E22888BAE9002A312F /* logo_FitME.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo_FitME.png; sourceTree = "<group>"; };
+		ED986BEF288AC7B9005BCA62 /* bg_video.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = bg_video.mp4; sourceTree = "<group>"; };
+		ED986BF1288AE45A005BCA62 /* FirstStepVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstStepVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,7 +123,7 @@
 		ED7036E52888BB7E002A312F /* Video */ = {
 			isa = PBXGroup;
 			children = (
-				7C5C14F4288A404700FDAF8D /* bg_video.mp4 */,
+				ED986BEF288AC7B9005BCA62 /* bg_video.mp4 */,
 			);
 			name = Video;
 			path = "../../../../../../../Downloads/TechArmie_capstone1_FitME-Splash_Screen/TechArmie_capstone1_FitME/TechArmie_capstone1_FitME/Assets/Video";
@@ -202,7 +202,7 @@
 			isa = PBXGroup;
 			children = (
 				87C4A31128822B1000485A08 /* ViewController.swift */,
-				7C5C14F6288A4A6D00FDAF8D /* FirstStepVC.swift */,
+				ED986BF1288AE45A005BCA62 /* FirstStepVC.swift */,
 				7CDA8CCF288A7CB90029ECB1 /* SecondStepVC.swift */,
 				7CDA8CD3288A85730029ECB1 /* ThirdStepVC.swift */,
 				7CDA8CD9288A9E090029ECB1 /* FourthStepVC.swift */,
@@ -281,7 +281,7 @@
 			files = (
 				ED7036E32888BAE9002A312F /* logo_FitME.png in Resources */,
 				ED7036E02888BAD4002A312F /* welcome_fitme.png in Resources */,
-				7C5C14F5288A404700FDAF8D /* bg_video.mp4 in Resources */,
+				ED986BF0288AC7B9005BCA62 /* bg_video.mp4 in Resources */,
 				7C25508D288A501D00766C04 /* Main.storyboard in Resources */,
 				87C4A31A28822B1200485A08 /* LaunchScreen.storyboard in Resources */,
 				87C4A31728822B1200485A08 /* Assets.xcassets in Resources */,
@@ -321,11 +321,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				7CDA8CD0288A7CB90029ECB1 /* SecondStepVC.swift in Sources */,
+				ED986BF2288AE45A005BCA62 /* FirstStepVC.swift in Sources */,
 				87C4A31228822B1000485A08 /* ViewController.swift in Sources */,
 				7CDA8CDC288A9E3B0029ECB1 /* FifthStepVC.swift in Sources */,
 				7CDA8CD4288A85730029ECB1 /* ThirdStepVC.swift in Sources */,
 				7CDA8CDA288A9E090029ECB1 /* FourthStepVC.swift in Sources */,
-				7C5C14F7288A4A6D00FDAF8D /* FirstStepVC.swift in Sources */,
 				87C4A30E28822B1000485A08 /* AppDelegate.swift in Sources */,
 				87C4A31028822B1000485A08 /* SceneDelegate.swift in Sources */,
 			);

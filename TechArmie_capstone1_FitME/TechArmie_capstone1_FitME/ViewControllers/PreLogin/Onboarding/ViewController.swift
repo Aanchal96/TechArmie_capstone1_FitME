@@ -22,7 +22,13 @@ class ViewController: UIViewController {
         playVideo()
     }
 
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "Step1"{
+            _ = segue.destination as? FirstStepVC
+        }
+    }
     @IBAction func btnCreateAccount (_ sender: UIButton) {
+        performSegue(withIdentifier: "Step1", sender: self)
     }
     
     func playVideo(){
