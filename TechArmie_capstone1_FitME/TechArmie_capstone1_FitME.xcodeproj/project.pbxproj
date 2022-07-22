@@ -8,19 +8,22 @@
 
 /* Begin PBXBuildFile section */
 		369A43555261385AE48E3196 /* Pods_TechArmie_capstone1_FitME.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9B1E93B6AAF5BFADC09ECDE /* Pods_TechArmie_capstone1_FitME.framework */; };
+		7C25508D288A501D00766C04 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 87C4A31328822B1000485A08 /* Main.storyboard */; };
+		7C5C14F5288A404700FDAF8D /* bg_video.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 7C5C14F4288A404700FDAF8D /* bg_video.mp4 */; };
+		7C5C14F7288A4A6D00FDAF8D /* FirstStepVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C5C14F6288A4A6D00FDAF8D /* FirstStepVC.swift */; };
 		87C4A30E28822B1000485A08 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87C4A30D28822B1000485A08 /* AppDelegate.swift */; };
 		87C4A31028822B1000485A08 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87C4A30F28822B1000485A08 /* SceneDelegate.swift */; };
 		87C4A31228822B1000485A08 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87C4A31128822B1000485A08 /* ViewController.swift */; };
-		87C4A31528822B1000485A08 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 87C4A31328822B1000485A08 /* Main.storyboard */; };
 		87C4A31728822B1200485A08 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 87C4A31628822B1200485A08 /* Assets.xcassets */; };
 		87C4A31A28822B1200485A08 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 87C4A31828822B1200485A08 /* LaunchScreen.storyboard */; };
 		ED7036E02888BAD4002A312F /* welcome_fitme.png in Resources */ = {isa = PBXBuildFile; fileRef = ED7036DD2888BAD4002A312F /* welcome_fitme.png */; };
 		ED7036E32888BAE9002A312F /* logo_FitME.png in Resources */ = {isa = PBXBuildFile; fileRef = ED7036E22888BAE9002A312F /* logo_FitME.png */; };
-		EDA49040288A03E4008BB686 /* bg_video.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = EDA4903F288A03E4008BB686 /* bg_video.mp4 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		44F9DA4C26DB4FB650F74678 /* Pods-TechArmie_capstone1_FitME.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TechArmie_capstone1_FitME.release.xcconfig"; path = "Target Support Files/Pods-TechArmie_capstone1_FitME/Pods-TechArmie_capstone1_FitME.release.xcconfig"; sourceTree = "<group>"; };
+		7C5C14F4288A404700FDAF8D /* bg_video.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; name = bg_video.mp4; path = ../../../../../../Users/virdavindersingh/Downloads/bg_video.mp4; sourceTree = "<group>"; };
+		7C5C14F6288A4A6D00FDAF8D /* FirstStepVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstStepVC.swift; sourceTree = "<group>"; };
 		87C4A30A28822B1000485A08 /* TechArmie_capstone1_FitME.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TechArmie_capstone1_FitME.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		87C4A30D28822B1000485A08 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		87C4A30F28822B1000485A08 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -33,7 +36,6 @@
 		E6CB01F1DE75F6DB4537983D /* Pods-TechArmie_capstone1_FitME.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TechArmie_capstone1_FitME.debug.xcconfig"; path = "Target Support Files/Pods-TechArmie_capstone1_FitME/Pods-TechArmie_capstone1_FitME.debug.xcconfig"; sourceTree = "<group>"; };
 		ED7036DD2888BAD4002A312F /* welcome_fitme.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = welcome_fitme.png; sourceTree = "<group>"; };
 		ED7036E22888BAE9002A312F /* logo_FitME.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo_FitME.png; sourceTree = "<group>"; };
-		EDA4903F288A03E4008BB686 /* bg_video.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = bg_video.mp4; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,13 +79,13 @@
 		87C4A30C28822B1000485A08 /* TechArmie_capstone1_FitME */ = {
 			isa = PBXGroup;
 			children = (
+				87C4A31B28822B1200485A08 /* Info.plist */,
 				ED7036EE2888BFD1002A312F /* ViewControllers */,
 				ED7036ED2888BFBD002A312F /* CommonControllers */,
 				ED7036EC2888BFB1002A312F /* Helpers */,
 				ED7036EB2888BFA7002A312F /* Services */,
 				ED7036EA2888BF96002A312F /* DataSource */,
 				ED7036E92888BF8C002A312F /* Models */,
-				87C4A31B28822B1200485A08 /* Info.plist */,
 				ED7036DC2888BAA7002A312F /* Assets */,
 				87C4A30D28822B1000485A08 /* AppDelegate.swift */,
 				87C4A30F28822B1000485A08 /* SceneDelegate.swift */,
@@ -113,7 +115,7 @@
 		ED7036E52888BB7E002A312F /* Video */ = {
 			isa = PBXGroup;
 			children = (
-				EDA4903F288A03E4008BB686 /* bg_video.mp4 */,
+				7C5C14F4288A404700FDAF8D /* bg_video.mp4 */,
 			);
 			name = Video;
 			path = "../../../../../../../Downloads/TechArmie_capstone1_FitME-Splash_Screen/TechArmie_capstone1_FitME/TechArmie_capstone1_FitME/Assets/Video";
@@ -192,6 +194,7 @@
 			isa = PBXGroup;
 			children = (
 				87C4A31128822B1000485A08 /* ViewController.swift */,
+				7C5C14F6288A4A6D00FDAF8D /* FirstStepVC.swift */,
 			);
 			path = Onboarding;
 			sourceTree = "<group>";
@@ -266,10 +269,10 @@
 			files = (
 				ED7036E32888BAE9002A312F /* logo_FitME.png in Resources */,
 				ED7036E02888BAD4002A312F /* welcome_fitme.png in Resources */,
-				EDA49040288A03E4008BB686 /* bg_video.mp4 in Resources */,
+				7C5C14F5288A404700FDAF8D /* bg_video.mp4 in Resources */,
+				7C25508D288A501D00766C04 /* Main.storyboard in Resources */,
 				87C4A31A28822B1200485A08 /* LaunchScreen.storyboard in Resources */,
 				87C4A31728822B1200485A08 /* Assets.xcassets in Resources */,
-				87C4A31528822B1000485A08 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -306,6 +309,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				87C4A31228822B1000485A08 /* ViewController.swift in Sources */,
+				7C5C14F7288A4A6D00FDAF8D /* FirstStepVC.swift in Sources */,
 				87C4A30E28822B1000485A08 /* AppDelegate.swift in Sources */,
 				87C4A31028822B1000485A08 /* SceneDelegate.swift in Sources */,
 			);

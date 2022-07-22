@@ -22,6 +22,9 @@ class ViewController: UIViewController {
         playVideo()
     }
 
+    @IBAction func btnCreateAccount (_ sender: UIButton) {
+    }
+    
     func playVideo(){
         guard let path = Bundle.main.path(forResource: "bg_video", ofType: "mp4") else{
             return

@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -106,8 +106,84 @@
             </objects>
             <point key="canvasLocation" x="90" y="75"/>
         </scene>
+        <!--First StepVC-->
+        <scene sceneID="qJc-Jl-caH">
+            <objects>
+                <viewController storyboardIdentifier="FirstStepVC" id="WOt-jB-GdP" customClass="FirstStepVC" customModule="TechArmie_capstone1_FitME" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="hBU-LO-h6r">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="destination-" translatesAutoresizingMaskIntoConstraints="NO" id="fZK-cb-nh2">
+                                <rect key="frame" x="155" y="103" width="105" height="98"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What's your goal ?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UTf-su-Vto">
+                                <rect key="frame" x="113" y="229" width="191" height="25"/>
+                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="18"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ubs-g1-lf4">
+                                <rect key="frame" x="66" y="305" width="282" height="85"/>
+                                <color key="backgroundColor" red="0.14901960780000001" green="0.25882352939999997" blue="0.29803921570000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Lose Weight                                                                                           Burn fat &amp; Get Leaner" cornerStyle="dynamic">
+                                    <backgroundConfiguration key="background" cornerRadius="10">
+                                        <color key="backgroundColor" red="0.14901960780000001" green="0.25882352939999997" blue="0.29803921570000003" alpha="1" colorSpace="calibratedRGB"/>
+                                    </backgroundConfiguration>
+                                    <fontDescription key="titleFontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="18"/>
+                                </buttonConfiguration>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yax-Ko-wMd">
+                                <rect key="frame" x="66" y="422" width="282" height="85"/>
+                                <color key="backgroundColor" red="0.14901960780000001" green="0.25882352939999997" blue="0.29803921570000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Gain Weight                                                 Burn fat &amp; Get Leaner" cornerStyle="dynamic">
+                                    <backgroundConfiguration key="background" cornerRadius="10"/>
+                                    <fontDescription key="titleFontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="18"/>
+                                </buttonConfiguration>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xiy-4k-bhX">
+                                <rect key="frame" x="67" y="552" width="282" height="83"/>
+                                <color key="backgroundColor" red="0.14901960780000001" green="0.25882352939999997" blue="0.29803921570000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Be Active                                                 feel Healthy &amp; Get Fitter" cornerStyle="dynamic">
+                                    <backgroundConfiguration key="background" cornerRadius="10" strokeWidth="7"/>
+                                    <fontDescription key="titleFontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="18"/>
+                                </buttonConfiguration>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="xOf-ko-ACx"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="xOf-ko-ACx" firstAttribute="trailing" secondItem="Ubs-g1-lf4" secondAttribute="trailing" constant="66" id="1jP-5a-P98"/>
+                            <constraint firstItem="fZK-cb-nh2" firstAttribute="leading" secondItem="xOf-ko-ACx" secondAttribute="leading" constant="155" id="4jI-mw-FkC"/>
+                            <constraint firstItem="Ubs-g1-lf4" firstAttribute="top" secondItem="UTf-su-Vto" secondAttribute="bottom" constant="59" id="7kZ-ba-VtS"/>
+                            <constraint firstItem="xOf-ko-ACx" firstAttribute="trailing" secondItem="Xiy-4k-bhX" secondAttribute="trailing" constant="66" id="A4T-7o-FMU"/>
+                            <constraint firstItem="UTf-su-Vto" firstAttribute="top" secondItem="fZK-cb-nh2" secondAttribute="bottom" constant="28" id="CD8-u1-jsG"/>
+                            <constraint firstItem="Ubs-g1-lf4" firstAttribute="leading" secondItem="xOf-ko-ACx" secondAttribute="leading" constant="66" id="I6h-Ex-Om5"/>
+                            <constraint firstItem="xOf-ko-ACx" firstAttribute="trailing" secondItem="Yax-Ko-wMd" secondAttribute="trailing" constant="66" id="O8D-91-KZ1"/>
+                            <constraint firstItem="Xiy-4k-bhX" firstAttribute="leading" secondItem="xOf-ko-ACx" secondAttribute="leading" constant="66" id="Q7C-eU-eqW"/>
+                            <constraint firstItem="Yax-Ko-wMd" firstAttribute="top" secondItem="Ubs-g1-lf4" secondAttribute="bottom" constant="40" id="a3s-ox-KH4"/>
+                            <constraint firstItem="xOf-ko-ACx" firstAttribute="trailing" secondItem="UTf-su-Vto" secondAttribute="trailing" constant="110" id="ePm-Cz-f8T"/>
+                            <constraint firstItem="Xiy-4k-bhX" firstAttribute="top" secondItem="Yax-Ko-wMd" secondAttribute="bottom" constant="40" id="iST-Ik-UfS"/>
+                            <constraint firstItem="UTf-su-Vto" firstAttribute="leading" secondItem="xOf-ko-ACx" secondAttribute="leading" constant="113" id="lRh-8t-uTU"/>
+                            <constraint firstItem="xOf-ko-ACx" firstAttribute="trailing" secondItem="fZK-cb-nh2" secondAttribute="trailing" constant="154" id="qel-Mj-YFN"/>
+                            <constraint firstItem="fZK-cb-nh2" firstAttribute="top" secondItem="xOf-ko-ACx" secondAttribute="top" constant="59" id="uqI-kD-0x3"/>
+                            <constraint firstItem="Yax-Ko-wMd" firstAttribute="leading" secondItem="xOf-ko-ACx" secondAttribute="leading" constant="66" id="vmB-gQ-LXm"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kla-XM-iI7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="811.59420289855075" y="75"/>
+        </scene>
     </scenes>
     <resources>
+        <image name="destination-" width="105" height="98"/>
         <image name="welcome_fitme.png" width="360" height="360"/>
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
