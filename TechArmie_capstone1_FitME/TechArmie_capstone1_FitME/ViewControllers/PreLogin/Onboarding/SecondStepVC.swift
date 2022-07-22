@@ -12,8 +12,12 @@ class SecondStepVC : UIViewController
 {
     
     
-    
-    
+//    let vc = self.storyboard?.instantiateViewController(withIdentifier: "VC2ViewController") as! VC2ViewController
+//
+//    self.navigationController?.pushViewController(vc, animated: true)
+//
+//    self.present(vc, animated: true, completion: nil)
+
     override func viewDidLoad() {
         super.viewDidLoad()
         
