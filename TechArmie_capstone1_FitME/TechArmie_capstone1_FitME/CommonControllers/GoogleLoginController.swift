@@ -45,12 +45,12 @@ class GoogleLoginController : NSObject {
             GIDSignIn.sharedInstance.signIn(with: config, presenting: viewController)
             
             // Start the sign in flow!
-            GIDSignIn.sharedInstance.signIn(with: config, presenting: viewController) { [unowned self] user, error in
+            GIDSignIn.sharedInstance.signIn(with: config, presenting: viewController) { user, error in
 
               if let error = error {
                   
                 // ...
-                  
+                failure(error)
                 return
               }
 
@@ -76,7 +76,7 @@ class GoogleLoginController : NSObject {
                           displayNameString += tmpFactorInfo.displayName ?? ""
                           displayNameString += " "
                         }
-                        self.showTextInputPrompt(
+                        viewController.showTextInputPrompt(
                           withMessage: "Select factor to sign in\n\(displayNameString)",
                           completionBlock: { userPressedOK, displayName in
                             var selectedHint: PhoneMultiFactorInfo?
@@ -94,7 +94,7 @@ class GoogleLoginController : NSObject {
                                     "Multi factor start sign in failed. Error: \(error.debugDescription)"
                                   )
                                 } else {
-                                  self.showTextInputPrompt(
+                                  viewController.showTextInputPrompt(
                                     withMessage: "Verification code for \(selectedHint?.displayName ?? "")",
                                     completionBlock: { userPressedOK, verificationCode in
                                       let credential: PhoneAuthCredential? = PhoneAuthProvider.provider()
@@ -108,7 +108,7 @@ class GoogleLoginController : NSObject {
                                             "Multi factor finanlize sign in failed. Error: \(error.debugDescription)"
                                           )
                                         } else {
-                                          self.navigationController?.popViewController(animated: true)
+                                          viewController.navigationController?.popViewController(animated: true)
                                         }
                                       }
                                     }
@@ -118,7 +118,7 @@ class GoogleLoginController : NSObject {
                           }
                         )
                       } else {
-                        self.showMessagePrompt(error.localizedDescription)
+                        viewController.showMessagePrompt(error.localizedDescription)
                         return
                       }
                       // ...
@@ -126,6 +126,10 @@ class GoogleLoginController : NSObject {
                     }
                     // User is signed in
                     // ...
+                    
+                    let googleUser = GoogleUser(authResult?.user)
+                    self.currentGoogleUser = googleUser
+                    success(googleUser)
                 }
               // ...
             }
@@ -157,21 +161,18 @@ class GoogleUser {
     let id: String?
     let name: String?
     let email: String?
-    let image: URL?
     
-    required init(_ googleUser: GIDGoogleUser) {
+    required init(_ googleUser: User?) {
         
-        id = googleUser.userID
-        name = googleUser.profile?.name
-        email = googleUser.profile?.email
-        image = googleUser.profile?.imageURL(withDimension: 200)
+        id = googleUser?.uid
+        name = googleUser?.displayName
+        email = googleUser?.email
     }
     
     var dictionaryObject: [String:Any] {
         var dictionary          = [String:Any]()
         dictionary["_id"]       = id
         dictionary["email"]     = email
-        dictionary["image"]     = image?.absoluteString ?? ""
         dictionary["name"]      = name
         return dictionary
     }

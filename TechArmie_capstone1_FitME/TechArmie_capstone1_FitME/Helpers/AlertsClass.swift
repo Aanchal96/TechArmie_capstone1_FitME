@@ -18,21 +18,21 @@ class AlertsClass: NSObject{
         super.init()
     }
     
-    //MARK: Alert Controller
-    func showAlertController(withTitle title : String?, message : String, buttonTitles : [String], responseBlock : @escaping AlertBlock){
-        let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
-        alert.addAction(UIAlertAction(title: buttonTitles.count > 0 ? buttonTitles.first : nil, style: .default, handler: { action in
-            alert.dismiss(animated: true, completion: nil)
-            self.responseBack?(.yes)
-        }))
-        if buttonTitles.count > 1{
-        alert.addAction(UIAlertAction(title: buttonTitles.count > 1 ? buttonTitles.last : nil, style: .destructive, handler: { action in
-            alert.dismissVC(completion: nil)
-            self.responseBack?(.noo)
-        }))
-        }
-        responseBack = responseBlock
-        ez.topMostVC?.presentVC(alert)
-    }
+//    //MARK: Alert Controller
+//    func showAlertController(vc: UIViewController, withMessage title : String?, completionBlock : @escaping AlertBlock){
+//        let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
+//        alert.addAction(UIAlertAction(title: buttonTitles.count > 0 ? buttonTitles.first : nil, style: .default, handler: { action in
+//            alert.dismiss(animated: true, completion: nil)
+//            self.responseBack?(.yes)
+//        }))
+//        if buttonTitles.count > 1{
+//        alert.addAction(UIAlertAction(title: buttonTitles.count > 1 ? buttonTitles.last : nil, style: .destructive, handler: { action in
+//            alert.dismissVC(completion: nil)
+//            self.responseBack?(.noo)
+//        }))
+//        }
+//        responseBack = responseBlock
+//        vc.presentVC(alert)
+//    }
 }
 
