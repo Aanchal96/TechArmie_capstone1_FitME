@@ -12,19 +12,25 @@
 		557D6E24288A134A00906AAA /* SignUpController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 557D6E23288A134A00906AAA /* SignUpController.swift */; };
 		55EB744E288A07AA00DFD58D /* Authentication.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 55EB744D288A07AA00DFD58D /* Authentication.storyboard */; };
 		55EB7450288A07D300DFD58D /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55EB744F288A07D300DFD58D /* LoginController.swift */; };
+		7C25508D288A501D00766C04 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 87C4A31328822B1000485A08 /* Main.storyboard */; };
+		7CDA8CD0288A7CB90029ECB1 /* SecondStepVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CDA8CCF288A7CB90029ECB1 /* SecondStepVC.swift */; };
+		7CDA8CD4288A85730029ECB1 /* ThirdStepVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CDA8CD3288A85730029ECB1 /* ThirdStepVC.swift */; };
+		7CDA8CDA288A9E090029ECB1 /* FourthStepVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CDA8CD9288A9E090029ECB1 /* FourthStepVC.swift */; };
+		7CDA8CDC288A9E3B0029ECB1 /* FifthStepVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CDA8CDB288A9E3B0029ECB1 /* FifthStepVC.swift */; };
 		87C4A30E28822B1000485A08 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87C4A30D28822B1000485A08 /* AppDelegate.swift */; };
 		87C4A31028822B1000485A08 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87C4A30F28822B1000485A08 /* SceneDelegate.swift */; };
 		87C4A31228822B1000485A08 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87C4A31128822B1000485A08 /* ViewController.swift */; };
-		87C4A31528822B1000485A08 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 87C4A31328822B1000485A08 /* Main.storyboard */; };
 		87C4A31728822B1200485A08 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 87C4A31628822B1200485A08 /* Assets.xcassets */; };
 		87C4A31A28822B1200485A08 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 87C4A31828822B1200485A08 /* LaunchScreen.storyboard */; };
 		87E58207288D7CA0003AFEA7 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 87E58206288D7CA0003AFEA7 /* GoogleService-Info.plist */; };
 		87E58209288D7FDF003AFEA7 /* GoogleLoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87E58208288D7FDF003AFEA7 /* GoogleLoginController.swift */; };
-		87E5820B288D8982003AFEA7 /* AlertsClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87E5820A288D8982003AFEA7 /* AlertsClass.swift */; };
-		87E5820D288D8A93003AFEA7 /* UIViewControllerExtention.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87E5820C288D8A93003AFEA7 /* UIViewControllerExtention.swift */; };
+		87E58211288DACE8003AFEA7 /* UIViewControllerExtention.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87E58210288DACE8003AFEA7 /* UIViewControllerExtention.swift */; };
 		87FF9560288B5DA300A05A07 /* bg_video.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 87FF955F288B5DA300A05A07 /* bg_video.mp4 */; };
+		ED27FF32288B0A2900F5C657 /* ColorTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED27FF31288B0A2900F5C657 /* ColorTheme.swift */; };
 		ED7036E02888BAD4002A312F /* welcome_fitme.png in Resources */ = {isa = PBXBuildFile; fileRef = ED7036DD2888BAD4002A312F /* welcome_fitme.png */; };
 		ED7036E32888BAE9002A312F /* logo_FitME.png in Resources */ = {isa = PBXBuildFile; fileRef = ED7036E22888BAE9002A312F /* logo_FitME.png */; };
+		ED986BF2288AE45A005BCA62 /* FirstStepVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED986BF1288AE45A005BCA62 /* FirstStepVC.swift */; };
+		EDFD6210288B4EC70026F779 /* UITextFieldExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDFD620F288B4EC70026F779 /* UITextFieldExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +39,10 @@
 		557D6E23288A134A00906AAA /* SignUpController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpController.swift; sourceTree = "<group>"; };
 		55EB744D288A07AA00DFD58D /* Authentication.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Authentication.storyboard; sourceTree = "<group>"; };
 		55EB744F288A07D300DFD58D /* LoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
+		7CDA8CCF288A7CB90029ECB1 /* SecondStepVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondStepVC.swift; sourceTree = "<group>"; };
+		7CDA8CD3288A85730029ECB1 /* ThirdStepVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdStepVC.swift; sourceTree = "<group>"; };
+		7CDA8CD9288A9E090029ECB1 /* FourthStepVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FourthStepVC.swift; sourceTree = "<group>"; };
+		7CDA8CDB288A9E3B0029ECB1 /* FifthStepVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FifthStepVC.swift; sourceTree = "<group>"; };
 		87C4A30A28822B1000485A08 /* TechArmie_capstone1_FitME.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TechArmie_capstone1_FitME.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		87C4A30D28822B1000485A08 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		87C4A30F28822B1000485A08 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -43,13 +53,15 @@
 		87C4A31B28822B1200485A08 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		87E58206288D7CA0003AFEA7 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		87E58208288D7FDF003AFEA7 /* GoogleLoginController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GoogleLoginController.swift; sourceTree = "<group>"; };
-		87E5820A288D8982003AFEA7 /* AlertsClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertsClass.swift; sourceTree = "<group>"; };
-		87E5820C288D8A93003AFEA7 /* UIViewControllerExtention.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtention.swift; sourceTree = "<group>"; };
+		87E58210288DACE8003AFEA7 /* UIViewControllerExtention.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtention.swift; sourceTree = "<group>"; };
 		87FF955F288B5DA300A05A07 /* bg_video.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = bg_video.mp4; sourceTree = "<group>"; };
 		D9B1E93B6AAF5BFADC09ECDE /* Pods_TechArmie_capstone1_FitME.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TechArmie_capstone1_FitME.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E6CB01F1DE75F6DB4537983D /* Pods-TechArmie_capstone1_FitME.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TechArmie_capstone1_FitME.debug.xcconfig"; path = "Target Support Files/Pods-TechArmie_capstone1_FitME/Pods-TechArmie_capstone1_FitME.debug.xcconfig"; sourceTree = "<group>"; };
+		ED27FF31288B0A2900F5C657 /* ColorTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorTheme.swift; sourceTree = "<group>"; };
 		ED7036DD2888BAD4002A312F /* welcome_fitme.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = welcome_fitme.png; sourceTree = "<group>"; };
 		ED7036E22888BAE9002A312F /* logo_FitME.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo_FitME.png; sourceTree = "<group>"; };
+		ED986BF1288AE45A005BCA62 /* FirstStepVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstStepVC.swift; sourceTree = "<group>"; };
+		EDFD620F288B4EC70026F779 /* UITextFieldExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITextFieldExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +91,7 @@
 				87C4A30B28822B1000485A08 /* Products */,
 				ACF1B1F9B81EE7807C536B6B /* Pods */,
 				535BEE47880AAEDE177C94F7 /* Frameworks */,
+				87E5820F288DA865003AFEA7 /* Recovered References */,
 			);
 			sourceTree = "<group>";
 		};
@@ -97,7 +110,7 @@
 				87C4A31B28822B1200485A08 /* Info.plist */,
 				ED7036EE2888BFD1002A312F /* ViewControllers */,
 				ED7036ED2888BFBD002A312F /* CommonControllers */,
-				ED7036EC2888BFB1002A312F /* Helpers */,
+				ED27FF30288B0A0800F5C657 /* Helpers */,
 				ED7036EB2888BFA7002A312F /* Services */,
 				ED7036EA2888BF96002A312F /* DataSource */,
 				ED7036E92888BF8C002A312F /* Models */,
@@ -106,6 +119,14 @@
 				87C4A30F28822B1000485A08 /* SceneDelegate.swift */,
 			);
 			path = TechArmie_capstone1_FitME;
+			sourceTree = "<group>";
+		};
+		87E5820F288DA865003AFEA7 /* Recovered References */ = {
+			isa = PBXGroup;
+			children = (
+				557D6E21288A0ED700906AAA /* AppStoryboard.swift */,
+			);
+			name = "Recovered References";
 			sourceTree = "<group>";
 		};
 		ACF1B1F9B81EE7807C536B6B /* Pods */ = {
@@ -117,9 +138,18 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		ED27FF30288B0A0800F5C657 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				EDFD620E288B4EAF0026F779 /* Extensions */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
 		ED7036DC2888BAA7002A312F /* Assets */ = {
 			isa = PBXGroup;
 			children = (
+				ED27FF31288B0A2900F5C657 /* ColorTheme.swift */,
 				ED7036F32888C179002A312F /* Images */,
 				ED7036E52888BB7E002A312F /* Video */,
 				87C4A31628822B1200485A08 /* Assets.xcassets */,
@@ -154,16 +184,6 @@
 			children = (
 			);
 			path = Services;
-			sourceTree = "<group>";
-		};
-		ED7036EC2888BFB1002A312F /* Helpers */ = {
-			isa = PBXGroup;
-			children = (
-				87E5820A288D8982003AFEA7 /* AlertsClass.swift */,
-				557D6E21288A0ED700906AAA /* AppStoryboard.swift */,
-				87E5820C288D8A93003AFEA7 /* UIViewControllerExtention.swift */,
-			);
-			path = Helpers;
 			sourceTree = "<group>";
 		};
 		ED7036ED2888BFBD002A312F /* CommonControllers */ = {
@@ -215,6 +235,11 @@
 				87C4A31128822B1000485A08 /* ViewController.swift */,
 				55EB744F288A07D300DFD58D /* LoginController.swift */,
 				557D6E23288A134A00906AAA /* SignUpController.swift */,
+				ED986BF1288AE45A005BCA62 /* FirstStepVC.swift */,
+				7CDA8CCF288A7CB90029ECB1 /* SecondStepVC.swift */,
+				7CDA8CD3288A85730029ECB1 /* ThirdStepVC.swift */,
+				7CDA8CD9288A9E090029ECB1 /* FourthStepVC.swift */,
+				7CDA8CDB288A9E3B0029ECB1 /* FifthStepVC.swift */,
 			);
 			path = Onboarding;
 			sourceTree = "<group>";
@@ -227,6 +252,15 @@
 				ED7036E22888BAE9002A312F /* logo_FitME.png */,
 			);
 			path = Images;
+			sourceTree = "<group>";
+		};
+		EDFD620E288B4EAF0026F779 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				87E58210288DACE8003AFEA7 /* UIViewControllerExtention.swift */,
+				EDFD620F288B4EC70026F779 /* UITextFieldExtension.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -294,9 +328,9 @@
 				55EB744E288A07AA00DFD58D /* Authentication.storyboard in Resources */,
 				87FF9560288B5DA300A05A07 /* bg_video.mp4 in Resources */,
 				ED7036E02888BAD4002A312F /* welcome_fitme.png in Resources */,
+				7C25508D288A501D00766C04 /* Main.storyboard in Resources */,
 				87C4A31A28822B1200485A08 /* LaunchScreen.storyboard in Resources */,
 				87C4A31728822B1200485A08 /* Assets.xcassets in Resources */,
-				87C4A31528822B1000485A08 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -353,11 +387,18 @@
 				87C4A31228822B1000485A08 /* ViewController.swift in Sources */,
 				87E58209288D7FDF003AFEA7 /* GoogleLoginController.swift in Sources */,
 				55EB7450288A07D300DFD58D /* LoginController.swift in Sources */,
+				ED27FF32288B0A2900F5C657 /* ColorTheme.swift in Sources */,
+				7CDA8CD0288A7CB90029ECB1 /* SecondStepVC.swift in Sources */,
+				ED986BF2288AE45A005BCA62 /* FirstStepVC.swift in Sources */,
+				87C4A31228822B1000485A08 /* ViewController.swift in Sources */,
+				7CDA8CDC288A9E3B0029ECB1 /* FifthStepVC.swift in Sources */,
+				EDFD6210288B4EC70026F779 /* UITextFieldExtension.swift in Sources */,
+				87E58211288DACE8003AFEA7 /* UIViewControllerExtention.swift in Sources */,
+				7CDA8CD4288A85730029ECB1 /* ThirdStepVC.swift in Sources */,
+				7CDA8CDA288A9E090029ECB1 /* FourthStepVC.swift in Sources */,
 				87C4A30E28822B1000485A08 /* AppDelegate.swift in Sources */,
-				87E5820B288D8982003AFEA7 /* AlertsClass.swift in Sources */,
 				87C4A31028822B1000485A08 /* SceneDelegate.swift in Sources */,
 				557D6E24288A134A00906AAA /* SignUpController.swift in Sources */,
-				87E5820D288D8A93003AFEA7 /* UIViewControllerExtention.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -503,9 +544,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 6L5NS6Q3RH;
+				DEVELOPMENT_TEAM = "";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = TechArmie_capstone1_FitME/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = FitME;
@@ -523,6 +565,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.techArmie.fitME;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
@@ -535,9 +578,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 6L5NS6Q3RH;
+				DEVELOPMENT_TEAM = "";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = TechArmie_capstone1_FitME/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = FitME;
@@ -555,6 +599,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.techArmie.fitME;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;

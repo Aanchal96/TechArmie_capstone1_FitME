@@ -22,6 +22,18 @@ class ViewController: UIViewController {
         playVideo()
     }
 
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+                if segue.identifier == "Step1"{
+                    if let destination = segue.destination as? FirstStepVC{
+                    _ = destination
+                    }
+                }
+            }
+    
+    @IBAction func btnCreateAccount (_ sender: UIButton) {
+        performSegue(withIdentifier: "Step1", sender: self)
+    }
+    
     func playVideo(){
         guard let path = Bundle.main.path(forResource: "bg_video", ofType: "mp4") else{
             return
