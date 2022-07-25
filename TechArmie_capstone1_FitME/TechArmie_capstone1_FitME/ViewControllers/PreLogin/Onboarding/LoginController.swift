@@ -24,10 +24,13 @@ class LoginController: UIViewController {
             
             print("\(googleUser.email ?? "")")
             
+            let vc = SignUpController.instantiate(fromAppStoryboard: .Authentication)
+            self.navigationController?.pushViewController(vc, animated: true)
+            
         } failure: { error in
             
             print("Failure")
         }
-
+        
     }
 }

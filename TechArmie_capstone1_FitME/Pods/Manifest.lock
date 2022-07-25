@@ -5,6 +5,9 @@ PODS:
   - AppAuth/Core (1.5.0)
   - AppAuth/ExternalUserAgent (1.5.0):
     - AppAuth/Core
+  - AWSCore (2.27.10)
+  - AWSS3 (2.27.10):
+    - AWSCore (= 2.27.10)
   - FirebaseAuth (8.15.0):
     - FirebaseCore (~> 8.0)
     - GoogleUtilities/AppDelegateSwizzler (~> 7.7)
@@ -46,20 +49,34 @@ PODS:
     - AppAuth/Core (~> 1.4)
     - GTMSessionFetcher/Core (~> 1.5)
   - GTMSessionFetcher/Core (1.7.2)
+  - IQKeyboardManagerSwift (6.5.9)
   - nanopb (2.30908.0):
     - nanopb/decode (= 2.30908.0)
     - nanopb/encode (= 2.30908.0)
   - nanopb/decode (2.30908.0)
   - nanopb/encode (2.30908.0)
   - PromisesObjC (2.0.0)
+  - SDWebImage (4.4.8):
+    - SDWebImage/Core (= 4.4.8)
+  - SDWebImage/Core (4.4.8)
+  - SwiftyJSON (5.0.1)
+  - Toast-Swift (5.0.1)
 
 DEPENDENCIES:
+  - AWSCore
+  - AWSS3
   - FirebaseAuth
   - GoogleSignIn
+  - IQKeyboardManagerSwift
+  - SDWebImage (~> 4.0)
+  - SwiftyJSON
+  - Toast-Swift
 
 SPEC REPOS:
   trunk:
     - AppAuth
+    - AWSCore
+    - AWSS3
     - FirebaseAuth
     - FirebaseCore
     - FirebaseCoreDiagnostics
@@ -68,11 +85,17 @@ SPEC REPOS:
     - GoogleUtilities
     - GTMAppAuth
     - GTMSessionFetcher
+    - IQKeyboardManagerSwift
     - nanopb
     - PromisesObjC
+    - SDWebImage
+    - SwiftyJSON
+    - Toast-Swift
 
 SPEC CHECKSUMS:
   AppAuth: 80317d99ac7ff2801a2f18ff86b48cd315ed465d
+  AWSCore: dbad318b7ff0fd86fb8387d3ad1f30049c05bc58
+  AWSS3: 0cf2cedb263368f624ca721e5c56a8cb59fc44bc
   FirebaseAuth: 3e73bf8abf4fbb40f8b421f361f4cc48ee57388c
   FirebaseCore: 8138de860a90ca7eec5e324da5788fb0ebf1d93c
   FirebaseCoreDiagnostics: 3b40dfadef5b90433a60ae01f01e90fe87aa76aa
@@ -81,9 +104,13 @@ SPEC CHECKSUMS:
   GoogleUtilities: e0913149f6b0625b553d70dae12b49fc62914fd1
   GTMAppAuth: 4d8f864896f3646f0c33baf38a28362f4c601e15
   GTMSessionFetcher: 5595ec75acf5be50814f81e9189490412bad82ba
+  IQKeyboardManagerSwift: 6e839c575c4aa1078d58a596e41244e77abe918f
   nanopb: a0ba3315591a9ae0a16a309ee504766e90db0c96
   PromisesObjC: 68159ce6952d93e17b2dfe273b8c40907db5ba58
+  SDWebImage: 783af2c3fa36291a250030c4752ee370a9a51d13
+  SwiftyJSON: 2f33a42c6fbc52764d96f13368585094bfd8aa5e
+  Toast-Swift: 9b6a70f28b3bf0b96c40d46c0c4b9d6639846711
 
-PODFILE CHECKSUM: a7c91b3c2f864f3d537773b418ea07f9176d9cfd
+PODFILE CHECKSUM: fa0e4ba501fa98049ffc404ab57146d2f760a268
 
 COCOAPODS: 1.11.3
