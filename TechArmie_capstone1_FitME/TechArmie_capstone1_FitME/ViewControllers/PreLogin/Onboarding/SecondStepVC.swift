@@ -56,7 +56,7 @@ class SecondStepVC : UIViewController
     }
     
     @IBAction func goToNext(_ sender: Any) {
-        performSegue(withIdentifier: "Step2TO3", sender: nil)
+        performSegue(withIdentifier: "Step2TO3", sender: self)
     }
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
                 if segue.identifier == "Step2TO3"{
