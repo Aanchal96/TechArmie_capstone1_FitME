@@ -26,16 +26,9 @@ class ThirdStepVC : UIViewController
         self.dismiss(animated: true, completion: nil)
     }
     @IBAction func goToNext(_ sender: Any) {
-        performSegue(withIdentifier: "Step3TO4", sender: self)
+        let vc = FourthStepVC.instantiate(fromAppStoryboard: .Main)
+        self.navigationController?.pushViewController(vc, animated: true)
     }
-    
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-                if segue.identifier == "Step3TO4"{
-                    if let destination = segue.destination as? FourthStepVC{
-                    _ = destination
-                    }
-                }
-            }
     
     @IBAction func activityLevelsPressed(_ sender: UIButton)
     {

@@ -10,8 +10,12 @@ import SwiftUI
 struct SignUp: View {
     
     @State private var email: String = ""
+    @State private var name: String = ""
+    @State private var cPassword: String = ""
     @State private var password: String = ""
     @State private var isEmailValid: Bool = true
+    @State private var isNameValid: Bool = true
+    @State private var isCPasswordValid: Bool = true
     @State private var isPasswordValid: Bool = true
     
     private var controller: SignUpController;
@@ -44,17 +48,17 @@ struct SignUp: View {
                 EmptySpace()
                 Group {
                     Group {
-                        TextField("Name", text: $email, onEditingChanged: { (isChanged) in
+                        TextField("Name", text: $name, onEditingChanged: { (isChanged) in
                             if !isChanged {
-                                if textFieldValidatorEmail(value: self.email) {
-                                    self.isEmailValid = true
+                                if textFieldValidatorEmail(value: self.name) {
+                                    self.isNameValid = true
                                 } else {
-                                    self.isEmailValid = false
+                                    self.isNameValid = false
                                 }
                             }
-                        }).padding(.bottom, isEmailValid ? 20 : 10).overlay(VStack{Divider().offset(x: 0, y: 10)})
+                        }).padding(.bottom, isNameValid ? 20 : 10).overlay(VStack{Divider().offset(x: 0, y: 10)})
                             
-                        if !self.isEmailValid {
+                        if !self.isNameValid {
                             HStack {
                                 Text("Invalid name").font(.caption).foregroundColor(Color(red: 1, green: 0, blue: 0))
                                 Spacer()
@@ -80,7 +84,9 @@ struct SignUp: View {
                         }
                     }
                     Group {
-                        SecureField("Password", text: $password)
+                        SecureField("Password", text: $password) {
+                            print(self.password)
+                        }
                             .padding(.bottom, isEmailValid ? 20 : 10)
                             .overlay(VStack{Divider().offset(x: 0, y: 10)})
                         if !self.isPasswordValid {
@@ -91,10 +97,10 @@ struct SignUp: View {
                         }
                     }
                     Group {
-                        SecureField("Confirm Password", text: $password)
-                            .padding(.bottom, isEmailValid ? 20 : 10)
+                        SecureField("Confirm Password", text: $cPassword)
+                            .padding(.bottom, isCPasswordValid ? 20 : 10)
                             .overlay(VStack{Divider().offset(x: 0, y: 10)})
-                        if !self.isPasswordValid {
+                        if !self.isCPasswordValid {
                             HStack {
                                 Text("Password didn't match").font(.caption).foregroundColor(Color(red: 1, green: 0, blue: 0))
                                 Spacer()
@@ -134,7 +140,11 @@ struct SignUp: View {
             .navigationTitle("")
             .toolbar {
                 ToolbarItem(placement: .navigationBarLeading) {
-                    Image("icBack")
+                    Button {
+                        self.controller.navigationController?.popViewController(animated: true)
+                    } label: {
+                        Image("icBack")
+                    }
                 }
             }
         }

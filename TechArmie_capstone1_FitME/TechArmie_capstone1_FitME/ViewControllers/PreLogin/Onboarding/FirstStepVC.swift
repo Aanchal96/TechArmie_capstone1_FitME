@@ -20,16 +20,9 @@ class FirstStepVC: UIViewController {
     }
     
     @IBAction func goToNext(_ sender: Any) {
-        performSegue(withIdentifier: "Step1TO2", sender: self)
+        let vc = SecondStepVC.instantiate(fromAppStoryboard: .Main)
+        self.navigationController?.pushViewController(vc, animated: true)
     }
-    
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-                if segue.identifier == "Step1TO2"{
-                    if let destination = segue.destination as? SecondStepVC{
-                    _ = destination
-                    }
-                }
-            }
     
     @IBAction func goalOptionChanged(_ sender: UIButton) {
         
@@ -45,7 +38,6 @@ class FirstStepVC: UIViewController {
         sender.tintColor = CustomColors.white
         switch(sender){
         case btnLoseWeight:
-            
             break
         case btnGainWeight:
             break
@@ -57,6 +49,6 @@ class FirstStepVC: UIViewController {
     }
     
     @IBAction func back(_ sender: Any) {
-        self.dismiss(animated: true, completion: nil)
+        self.navigationController?.popViewController(animated: true)
     }
 }

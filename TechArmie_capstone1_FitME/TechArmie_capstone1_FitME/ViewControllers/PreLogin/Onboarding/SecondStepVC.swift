@@ -56,13 +56,7 @@ class SecondStepVC : UIViewController
     }
     
     @IBAction func goToNext(_ sender: Any) {
-        performSegue(withIdentifier: "Step2TO3", sender: self)
+        let vc = ThirdStepVC.instantiate(fromAppStoryboard: .Main)
+        self.navigationController?.pushViewController(vc, animated: true)
     }
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-                if segue.identifier == "Step2TO3"{
-                    if let destination = segue.destination as? SecondStepVC{
-                    _ = destination
-                    }
-                }
-            }
 }
