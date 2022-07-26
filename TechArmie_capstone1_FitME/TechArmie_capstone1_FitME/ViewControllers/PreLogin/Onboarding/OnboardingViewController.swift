@@ -15,6 +15,7 @@ class OnboardingViewController: UIViewController {
     @IBOutlet weak var lblAlreadyHaveAccount: UILabel!
     @IBOutlet weak var btnNewAccount: UIButton!
     @IBOutlet weak var btnLogin: UIButton!
+    @IBOutlet weak var stackView: UIStackView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -49,8 +50,9 @@ class OnboardingViewController: UIViewController {
         
         videoLayer.bringSubviewToFront(welcomeImg)
         videoLayer.bringSubviewToFront(btnNewAccount)
-        videoLayer.bringSubviewToFront(btnLogin)
-        videoLayer.bringSubviewToFront(lblAlreadyHaveAccount)
+//        videoLayer.bringSubviewToFront(btnLogin)
+//        videoLayer.bringSubviewToFront(lblAlreadyHaveAccount)
+        videoLayer.bringSubviewToFront(stackView)
     }
     
     @IBAction func logInBtnAction(_ sender: UIButton) {

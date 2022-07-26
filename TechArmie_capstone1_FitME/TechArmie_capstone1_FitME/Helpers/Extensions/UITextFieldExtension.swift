@@ -11,8 +11,8 @@ import UIKit
 extension UITextField {
     func addBottomBorder(){
         let bottomLine = CALayer()
-        bottomLine.frame = CGRect(x: 0, y: self.frame.size.height - 1, width: self.frame.size.width-39, height: 0.3)
-        bottomLine.backgroundColor = UIColor.black.cgColor
+        bottomLine.frame = CGRect(x: 0, y: self.frame.size.height - 1, width: self.frame.size.width-39, height: 1)
+        bottomLine.backgroundColor = CustomColors.secondaryColor.cgColor
         borderStyle = .none
         layer.addSublayer(bottomLine)
     }
