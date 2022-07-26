@@ -4,6 +4,8 @@ import UIKit
 import AVFoundation
 import SwiftyJSON
 import IQKeyboardManagerSwift
+import Toast_Swift
+import NVActivityIndicatorView
 
 enum AudioName{
     static var rest : String{
@@ -139,7 +141,7 @@ class CommonFunctions {
     static func showToast(_ msg : String){
         DispatchQueue.main.async {
             UIApplication.topMostVC?.view.endEditing(true)
-            if let vc = AppDelegate.shared.windows.first.rootViewController{
+            if let vc = UIApplication.topMostVC{//AppDelegate.shared.window.rootViewController{
                 if let controller = vc.presentedViewController{
                     controller.view.makeToast(msg)
 
@@ -175,8 +177,8 @@ class CommonFunctions {
     /// Show Activity Loader
     class func showActivityLoader() {
         DispatchQueue.main.async {
-            if let vc = AppDelegate.shared.windows.first.rootViewController {
-                vc.startNYLoader()
+            if let vc = UIApplication.topMostVC{//AppDelegate.shared.windows.first.rootViewController {
+//                vc.startNYLoader()
             }
         }
     }
@@ -184,8 +186,8 @@ class CommonFunctions {
     /// Hide Activity Loader
     class func hideActivityLoader() {
         DispatchQueue.main.async {
-            if let vc = AppDelegate.shared.windows.first.rootViewController {
-                vc.stopAnimating()
+            if let vc = UIApplication.topMostVC{//AppDelegate.shared.windows.first.rootViewController {
+//                vc.stopAnimating()
             }
         }
     }

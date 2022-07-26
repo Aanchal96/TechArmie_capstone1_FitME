@@ -45,14 +45,15 @@ class AppleLoginController: NSObject{
         }
     }
 }
+
 extension AppleLoginController : ASAuthorizationControllerPresentationContextProviding {
     @available(iOS 13.0, *)
     func presentationAnchor(for controller: ASAuthorizationController) -> ASPresentationAnchor {
-        if let window = AppDelegate.shared.windows{
-            return window
-        }else{
+//        if let window = AppDelegate.shared.windows{
+//            return window
+//        }else{
             return UIWindow()
-        }
+//        }
     }
 }
 

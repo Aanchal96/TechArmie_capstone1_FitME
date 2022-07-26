@@ -83,7 +83,8 @@ class HealthKitController {
                     for samples in (arrResult as? [HKQuantitySample] ?? [])  {
                         printDebug(samples)
                         let dateStr = samples.startDate.toString(dateFormat: "hh:mm a") + " - " + samples.endDate.toString(dateFormat: "hh:mm a")
-                        dailyValue += dateStr + " (" + ((samples.quantity.doubleValue(for: HKUnit.count()) ).toIntValue()?.description ?? 0)  + ") steps" + "\n"
+                        //TODO: Enable - Aanchal
+//                        dailyValue += dateStr + " (" + ((samples.quantity.doubleValue(for: HKUnit.count()) ).toIntValue()?.description ?? 0)  + ") steps" + "\n"
                         total += (samples.quantity.doubleValue(for: HKUnit.count())).toIntValue() ?? 0
                     }
                     printDebug(total)

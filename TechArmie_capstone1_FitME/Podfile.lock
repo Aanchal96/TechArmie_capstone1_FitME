@@ -55,6 +55,9 @@ PODS:
     - nanopb/encode (= 2.30908.0)
   - nanopb/decode (2.30908.0)
   - nanopb/encode (2.30908.0)
+  - NVActivityIndicatorView (5.1.1):
+    - NVActivityIndicatorView/Base (= 5.1.1)
+  - NVActivityIndicatorView/Base (5.1.1)
   - PromisesObjC (2.0.0)
   - SDWebImage (4.4.8):
     - SDWebImage/Core (= 4.4.8)
@@ -68,6 +71,7 @@ DEPENDENCIES:
   - FirebaseAuth
   - GoogleSignIn
   - IQKeyboardManagerSwift
+  - NVActivityIndicatorView
   - SDWebImage (~> 4.0)
   - SwiftyJSON
   - Toast-Swift
@@ -87,6 +91,7 @@ SPEC REPOS:
     - GTMSessionFetcher
     - IQKeyboardManagerSwift
     - nanopb
+    - NVActivityIndicatorView
     - PromisesObjC
     - SDWebImage
     - SwiftyJSON
@@ -106,11 +111,12 @@ SPEC CHECKSUMS:
   GTMSessionFetcher: 5595ec75acf5be50814f81e9189490412bad82ba
   IQKeyboardManagerSwift: 6e839c575c4aa1078d58a596e41244e77abe918f
   nanopb: a0ba3315591a9ae0a16a309ee504766e90db0c96
+  NVActivityIndicatorView: 1f6c5687f1171810aa27a3296814dc2d7dec3667
   PromisesObjC: 68159ce6952d93e17b2dfe273b8c40907db5ba58
   SDWebImage: 783af2c3fa36291a250030c4752ee370a9a51d13
   SwiftyJSON: 2f33a42c6fbc52764d96f13368585094bfd8aa5e
   Toast-Swift: 9b6a70f28b3bf0b96c40d46c0c4b9d6639846711
 
-PODFILE CHECKSUM: fa0e4ba501fa98049ffc404ab57146d2f760a268
+PODFILE CHECKSUM: 36cee830750969743fe940900822db6358b1760b
 
 COCOAPODS: 1.11.3
