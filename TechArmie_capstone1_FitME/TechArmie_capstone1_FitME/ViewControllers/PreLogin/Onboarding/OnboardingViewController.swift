@@ -35,6 +35,12 @@ class OnboardingViewController: UIViewController {
         performSegue(withIdentifier: "Step1", sender: self)
     }
     
+    @IBAction func goToLogin(_ sender:UIButton) {
+        let vc = LoginController.instantiate(fromAppStoryboard: .Authentication)
+        self.navigationController?.setNavigationBarHidden(true, animated: false)
+        self.navigationController?.pushViewController(vc, animated: true)
+    }
+    
     func playVideo(){
         guard let path = Bundle.main.path(forResource: "bg_video", ofType: "mp4") else{
             return
@@ -53,11 +59,6 @@ class OnboardingViewController: UIViewController {
 //        videoLayer.bringSubviewToFront(btnLogin)
 //        videoLayer.bringSubviewToFront(lblAlreadyHaveAccount)
         videoLayer.bringSubviewToFront(stackView)
-    }
-    
-    @IBAction func logInBtnAction(_ sender: UIButton) {
-        let vc = LoginController.instantiate(fromAppStoryboard: .Authentication)
-        self.navigationController?.pushViewController(vc, animated: true)
     }
 }
 

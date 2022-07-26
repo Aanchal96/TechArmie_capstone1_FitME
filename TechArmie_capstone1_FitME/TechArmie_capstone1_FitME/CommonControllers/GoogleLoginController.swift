@@ -8,14 +8,14 @@ class GoogleLoginController : NSObject {
     
     // MARK: Variables and properties...
     static let shared = GoogleLoginController()
-    fileprivate(set) var currentGoogleUser: GoogleUser?
+    fileprivate(set) var currentGoogleUser: AuthUser?
     fileprivate weak var contentViewController:UIViewController!
     fileprivate var hasAuthInKeychain: Bool {
         let hasAuth = GIDSignIn.sharedInstance.hasPreviousSignIn()
         return hasAuth
     }
     
-    var success : ((_ googleUser : GoogleUser) -> ())?
+    var success : ((_ googleUser : AuthUser) -> ())?
     var failure : ((_ error : Error) -> ())?
     
     private override init() {}
@@ -29,7 +29,7 @@ class GoogleLoginController : NSObject {
     // MARK: ============================
     
     func login(fromViewController viewController : UIViewController,
-               success : @escaping(_ googleUser : GoogleUser) -> (),
+               success : @escaping(_ googleUser : AuthUser) -> (),
                failure : @escaping(_ error : Error) -> ()) {
         
         GIDSignIn.sharedInstance.signOut()
@@ -127,7 +127,7 @@ class GoogleLoginController : NSObject {
                     // User is signed in
                     // ...
                     
-                    let googleUser = GoogleUser(authResult?.user)
+                    let googleUser = AuthUser(authResult?.user)
                     self.currentGoogleUser = googleUser
                     success(googleUser)
                 }
@@ -138,6 +138,30 @@ class GoogleLoginController : NSObject {
         self.success = success
         self.failure = failure
         
+    }
+    
+    func loginWithEmail(
+        email: String,
+        password: String,
+        success : @escaping(_ user : FirebaseAuth.User) -> (),
+        failure : @escaping(_ error : Error) -> ()) {
+        Auth.auth().signIn(withEmail: email, password: password) { authResult, error in
+            guard let user = authResult?.user else { failure(error!); return }
+            let currentUser = AuthUser(authResult?.user)
+            self.currentGoogleUser = currentUser
+            success(user)
+        }
+    }
+    
+    func signUpWithEmail(
+        email: String,
+        password: String,
+        success : @escaping(_ user : FirebaseAuth.User) -> (),
+        failure : @escaping(_ error : Error) -> ()) {
+        Auth.auth().createUser(withEmail: email, password: password) {authResult,error in
+            guard let user = authResult?.user else { failure(error!); return }
+            success(user)
+        }
     }
     
     func logout(){
@@ -156,7 +180,7 @@ class GoogleLoginController : NSObject {
 
 // MARK: - Model class to store the user information...
 // MARK: ==============================================
-class GoogleUser {
+class AuthUser {
     
     let id: String?
     let name: String?
