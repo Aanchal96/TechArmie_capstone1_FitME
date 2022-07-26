@@ -8,29 +8,36 @@
 import Foundation
 import UIKit
 import GoogleSignIn
+import SwiftUI
 
 class LoginController: UIViewController {
     
     @IBOutlet weak var signInButton: GIDSignInButton!
+    @IBOutlet weak var theContainer: UIView!;
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        let childView = UIHostingController(rootView: Login(controller: self));
+        addChild(childView);
+        childView.view.frame = theContainer.bounds;
+        theContainer.addSubview(childView.view);
     }
-    @IBAction func goofleSignInButton(_ sender: GIDSignInButton) {
+    
+    func googleSignInButton() {
         
         GoogleLoginController.shared.login(fromViewController: self) { googleUser in
-            
-            
             print("\(googleUser.email ?? "")")
-            
-            let vc = SignUpController.instantiate(fromAppStoryboard: .Authentication)
-            self.navigationController?.pushViewController(vc, animated: true)
-            
         } failure: { error in
-            
             print("Failure")
         }
         
+    }
+    
+    func emailPasswordFirebaseLogin(email: String, password: String) {
+        GoogleLoginController.shared.loginWithEmail(email: email, password: password) { user in
+            print(user.displayName!);
+        } failure: { error in
+            print(error)
+        }
     }
 }

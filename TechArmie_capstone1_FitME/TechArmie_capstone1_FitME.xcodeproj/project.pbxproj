@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		369A43555261385AE48E3196 /* Pods_TechArmie_capstone1_FitME.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9B1E93B6AAF5BFADC09ECDE /* Pods_TechArmie_capstone1_FitME.framework */; };
 		557D6E24288A134A00906AAA /* SignUpController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 557D6E23288A134A00906AAA /* SignUpController.swift */; };
+		55A6A623288F924D004A7C0C /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55A6A622288F924D004A7C0C /* Login.swift */; };
 		55EB744E288A07AA00DFD58D /* Authentication.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 55EB744D288A07AA00DFD58D /* Authentication.storyboard */; };
 		55EB7450288A07D300DFD58D /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55EB744F288A07D300DFD58D /* LoginController.swift */; };
 		7C25508D288A501D00766C04 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 87C4A31328822B1000485A08 /* Main.storyboard */; };
@@ -79,6 +80,7 @@
 /* Begin PBXFileReference section */
 		44F9DA4C26DB4FB650F74678 /* Pods-TechArmie_capstone1_FitME.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TechArmie_capstone1_FitME.release.xcconfig"; path = "Target Support Files/Pods-TechArmie_capstone1_FitME/Pods-TechArmie_capstone1_FitME.release.xcconfig"; sourceTree = "<group>"; };
 		557D6E23288A134A00906AAA /* SignUpController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpController.swift; sourceTree = "<group>"; };
+		55A6A622288F924D004A7C0C /* Login.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Login.swift; sourceTree = "<group>"; };
 		55EB744D288A07AA00DFD58D /* Authentication.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Authentication.storyboard; sourceTree = "<group>"; };
 		55EB744F288A07D300DFD58D /* LoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
 		7CDA8CCF288A7CB90029ECB1 /* SecondStepVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondStepVC.swift; sourceTree = "<group>"; };
@@ -168,6 +170,14 @@
 				D9B1E93B6AAF5BFADC09ECDE /* Pods_TechArmie_capstone1_FitME.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		55A6A61F288F920A004A7C0C /* SwiftUIViews */ = {
+			isa = PBXGroup;
+			children = (
+				55A6A622288F924D004A7C0C /* Login.swift */,
+			);
+			path = SwiftUIViews;
 			sourceTree = "<group>";
 		};
 		87236F21288DB0D100CC2BDD /* Views */ = {
@@ -375,6 +385,7 @@
 		ED7036EE2888BFD1002A312F /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				55A6A61F288F920A004A7C0C /* SwiftUIViews */,
 				ED7036F12888C029002A312F /* PostLogin */,
 				ED7036F02888C020002A312F /* PreLogin */,
 				ED7036EF2888C011002A312F /* Base */,
@@ -603,6 +614,7 @@
 				ED986BF2288AE45A005BCA62 /* FirstStepVC.swift in Sources */,
 				87236F32288DB16000CC2BDD /* AppUserDefaults.swift in Sources */,
 				87236F9A288DC88500CC2BDD /* DoubleExtension.swift in Sources */,
+				55A6A623288F924D004A7C0C /* Login.swift in Sources */,
 				87236F94288DC34700CC2BDD /* UIApplicationExtension.swift in Sources */,
 				87C4A31228822B1000485A08 /* OnboardingViewController.swift in Sources */,
 				7CDA8CDC288A9E3B0029ECB1 /* FifthStepVC.swift in Sources */,
