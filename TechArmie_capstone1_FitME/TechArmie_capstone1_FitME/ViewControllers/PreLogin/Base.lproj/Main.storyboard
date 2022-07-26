@@ -9,10 +9,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Onboarding View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="TechArmie_capstone1_FitME" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="OnboardingViewController" customModule="TechArmie_capstone1_FitME" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5q2-Zb-nTk">
                         <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -111,13 +111,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="destination-" translatesAutoresizingMaskIntoConstraints="NO" id="fZK-cb-nh2">
-                                <rect key="frame" x="148" y="118.00000000000001" width="132" height="134.33333333333337"/>
+                                <rect key="frame" x="148" y="118" width="118" height="120"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="fZK-cb-nh2" secondAttribute="height" multiplier="59:60" id="J6g-Qe-OeQ"/>
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What's your goal ?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UTf-su-Vto">
-                                <rect key="frame" x="0.0" y="268.33333333333331" width="428" height="56"/>
+                                <rect key="frame" x="0.0" y="254.00000000000003" width="414" height="54.333333333333343"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="UTf-su-Vto" secondAttribute="height" multiplier="191:25" id="fgY-rG-gtg"/>
                                 </constraints>
@@ -126,7 +126,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ubs-g1-lf4">
-                                <rect key="frame" x="30" y="344.33333333333331" width="368" height="74.666666666666686"/>
+                                <rect key="frame" x="30" y="328.33333333333331" width="354" height="72"/>
                                 <color key="backgroundColor" red="0.2235293984" green="0.32156863810000003" blue="0.3686274886" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="Ubs-g1-lf4" secondAttribute="height" multiplier="59:12" id="I1c-yv-IXZ"/>
@@ -148,7 +148,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yax-Ko-wMd">
-                                <rect key="frame" x="30" y="439" width="368" height="75"/>
+                                <rect key="frame" x="30" y="420.33333333333331" width="354" height="72"/>
                                 <color key="backgroundColor" red="0.92941176469999998" green="0.92941176469999998" blue="0.92941176469999998" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="Yax-Ko-wMd" secondAttribute="height" multiplier="59:12" id="5XY-J2-g9B"/>
@@ -170,7 +170,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xiy-4k-bhX">
-                                <rect key="frame" x="30" y="534" width="368" height="74.666666666666629"/>
+                                <rect key="frame" x="30" y="512.33333333333337" width="354" height="72"/>
                                 <color key="backgroundColor" red="0.92941176469999998" green="0.92941176469999998" blue="0.92941176469999998" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="Xiy-4k-bhX" secondAttribute="height" multiplier="59:12" id="aqu-wJ-I4h"/>
@@ -192,7 +192,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="38c-kh-b6F">
-                                <rect key="frame" x="18" y="46" width="51" height="31"/>
+                                <rect key="frame" x="18" y="46" width="37" height="31"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="38c-kh-b6F" secondAttribute="height" multiplier="37:31" id="CyI-a4-gv7"/>
                                     <constraint firstAttribute="width" constant="37" id="nrb-l3-5Gm"/>
@@ -209,7 +209,7 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Step 1 of 5" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mj2-GJ-Aog">
-                                <rect key="frame" x="122" y="48" width="196" height="26"/>
+                                <rect key="frame" x="108" y="48" width="196" height="26"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="Mj2-GJ-Aog" secondAttribute="height" multiplier="98:13" id="ODe-fB-EpI"/>
                                 </constraints>
@@ -218,7 +218,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <progressView opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="fQc-FE-edE">
-                                <rect key="frame" x="0.0" y="85" width="428" height="4"/>
+                                <rect key="frame" x="0.0" y="85" width="414" height="4"/>
                                 <color key="progressTintColor" red="0.14901961389999999" green="0.2588235438" blue="0.29803922770000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <color key="trackTintColor" red="0.94509803920000002" green="0.94901960780000005" blue="0.95294117649999999" alpha="1" colorSpace="calibratedRGB"/>
                                 <userDefinedRuntimeAttributes>
@@ -228,7 +228,7 @@
                                 </userDefinedRuntimeAttributes>
                             </progressView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kfS-Ac-HsW">
-                                <rect key="frame" x="30" y="628.66666666666663" width="368" height="49"/>
+                                <rect key="frame" x="30" y="604.33333333333337" width="354" height="47"/>
                                 <color key="backgroundColor" red="0.14901960780000001" green="0.25882352939999997" blue="0.29803921570000003" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="kfS-Ac-HsW" secondAttribute="height" multiplier="354:47" id="iIr-iA-eGD"/>
