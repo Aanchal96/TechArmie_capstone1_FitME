@@ -23,21 +23,13 @@ class OnboardingViewController: UIViewController {
         playVideo()
     }
     
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.identifier == "Step1"{
-            if let destination = segue.destination as? FirstStepVC{
-                _ = destination
-            }
-        }
-    }
-    
     @IBAction func btnCreateAccount (_ sender: UIButton) {
-        performSegue(withIdentifier: "Step1", sender: self)
+        let vc = FirstStepVC.instantiate(fromAppStoryboard: .Main)
+        self.navigationController?.pushViewController(vc, animated: true)
     }
     
     @IBAction func goToLogin(_ sender:UIButton) {
         let vc = LoginController.instantiate(fromAppStoryboard: .Authentication)
-        self.navigationController?.setNavigationBarHidden(true, animated: false)
         self.navigationController?.pushViewController(vc, animated: true)
     }
     

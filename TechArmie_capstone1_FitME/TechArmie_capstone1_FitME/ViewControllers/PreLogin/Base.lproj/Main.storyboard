@@ -39,7 +39,6 @@
                                         </buttonConfiguration>
                                         <connections>
                                             <action selector="btnCreateAccount:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Tg5-al-Jfh"/>
-                                            <segue destination="WOt-jB-GdP" kind="presentation" identifier="Step1" modalPresentationStyle="fullScreen" modalTransitionStyle="crossDissolve" id="biV-WR-GBo"/>
                                         </connections>
                                     </button>
                                     <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Omh-Ye-8GC">
@@ -248,7 +247,6 @@
                                 </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="goToNext:" destination="WOt-jB-GdP" eventType="touchUpInside" id="lTY-nx-XKZ"/>
-                                    <segue destination="2FF-MP-frl" kind="presentation" identifier="Step1TO2" modalPresentationStyle="fullScreen" modalTransitionStyle="flipHorizontal" id="fl3-Vw-KhG"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -456,7 +454,6 @@
                                 </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="goToNext:" destination="2FF-MP-frl" eventType="touchUpInside" id="zZr-wa-VJt"/>
-                                    <segue destination="Xxb-J2-ZqM" kind="presentation" identifier="Step2TO3" modalPresentationStyle="fullScreen" modalTransitionStyle="flipHorizontal" id="9sd-Z7-F52"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -674,7 +671,6 @@
                                                 </userDefinedRuntimeAttributes>
                                                 <connections>
                                                     <action selector="goToNext:" destination="Xxb-J2-ZqM" eventType="touchUpInside" id="fhO-fT-jnY"/>
-                                                    <segue destination="yTD-fV-NiV" kind="presentation" identifier="Step3TO4" modalPresentationStyle="fullScreen" modalTransitionStyle="flipHorizontal" id="HL7-5h-6Oq"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -748,7 +744,7 @@
         <!--Fourth StepVC-->
         <scene sceneID="2tH-nt-5Xf">
             <objects>
-                <viewController id="yTD-fV-NiV" customClass="FourthStepVC" customModule="TechArmie_capstone1_FitME" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="FourthStepVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="yTD-fV-NiV" customClass="FourthStepVC" customModule="TechArmie_capstone1_FitME" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="OSD-VL-FGL">
                         <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -870,7 +866,6 @@
                                 </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="goToNext:" destination="yTD-fV-NiV" eventType="touchUpInside" id="wmU-Do-ZMk"/>
-                                    <segue destination="0TC-cE-CCs" kind="presentation" identifier="Step4TO5" modalPresentationStyle="fullScreen" modalTransitionStyle="flipHorizontal" id="1Rn-B7-Mqo"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QVU-CL-i1x">
@@ -942,19 +937,19 @@
         <!--Fifth StepVC-->
         <scene sceneID="EMh-rR-8Ao">
             <objects>
-                <viewController id="0TC-cE-CCs" customClass="FifthStepVC" customModule="TechArmie_capstone1_FitME" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="FifthStepVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="0TC-cE-CCs" customClass="FifthStepVC" customModule="TechArmie_capstone1_FitME" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="RPO-Dh-Xoz">
                         <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Thumbs-up 1" translatesAutoresizingMaskIntoConstraints="NO" id="GYp-pC-x3k">
-                                <rect key="frame" x="125" y="148" width="178" height="73"/>
+                                <rect key="frame" x="125" y="153.33333333333334" width="224" height="91.666666666666657"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="GYp-pC-x3k" secondAttribute="height" multiplier="178:73" id="BfT-ve-43o"/>
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You're All Set" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HY5-61-DEe">
-                                <rect key="frame" x="0.0" y="241" width="428" height="24"/>
+                                <rect key="frame" x="0.0" y="265" width="474" height="26.666666666666686"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="HY5-61-DEe" secondAttribute="height" multiplier="107:6" id="xbM-Wi-lLU"/>
                                 </constraints>
@@ -963,7 +958,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5wv-yn-MXs">
-                                <rect key="frame" x="30" y="315" width="368" height="48"/>
+                                <rect key="frame" x="30" y="341.66666666666669" width="414" height="54"/>
                                 <color key="backgroundColor" red="0.92941176469999998" green="0.92941176469999998" blue="0.92941176469999998" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="5wv-yn-MXs" secondAttribute="height" multiplier="23:3" id="cg2-Kw-80C"/>
@@ -978,9 +973,12 @@
                                         <real key="value" value="6"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="goToSignUp:" destination="0TC-cE-CCs" eventType="touchUpInside" id="raI-JQ-A59"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Slo-i7-6Mv">
-                                <rect key="frame" x="30" y="424" width="368" height="48"/>
+                                <rect key="frame" x="30" y="456.66666666666669" width="414" height="54"/>
                                 <color key="backgroundColor" red="0.88627450980392153" green="0.49803921568627452" blue="0.47450980392156861" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="Slo-i7-6Mv" secondAttribute="height" multiplier="23:3" id="nMv-on-4eP"/>
@@ -997,7 +995,7 @@
                                 </userDefinedRuntimeAttributes>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dsd-P8-60h">
-                                <rect key="frame" x="30" y="492" width="368" height="48"/>
+                                <rect key="frame" x="30" y="530.66666666666663" width="414" height="54"/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="Dsd-P8-60h" secondAttribute="height" multiplier="23:3" id="fAF-R4-Mi0"/>
@@ -1014,13 +1012,13 @@
                                 </userDefinedRuntimeAttributes>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="OR" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LGh-CK-QRK">
-                                <rect key="frame" x="0.0" y="383" width="428" height="21"/>
+                                <rect key="frame" x="0.0" y="415.66666666666669" width="474" height="21"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="18"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q7z-Db-c2F">
-                                <rect key="frame" x="17.999999999999996" y="46" width="36.666666666666657" height="30"/>
+                                <rect key="frame" x="18" y="46" width="43" height="35.333333333333343"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="36.670000000000002" id="12t-hR-etn"/>
                                     <constraint firstAttribute="width" secondItem="Q7z-Db-c2F" secondAttribute="height" multiplier="39:32" id="HVc-AY-N1g"/>
@@ -1036,7 +1034,7 @@
                                 </connections>
                             </button>
                             <progressView opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="1" translatesAutoresizingMaskIntoConstraints="NO" id="AUU-Wc-5R4">
-                                <rect key="frame" x="0.0" y="84" width="428" height="4"/>
+                                <rect key="frame" x="0.0" y="89.333333333333329" width="474" height="4"/>
                                 <color key="progressTintColor" red="0.14901961389999999" green="0.2588235438" blue="0.29803922770000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <color key="trackTintColor" red="0.94509803920000002" green="0.94901960780000005" blue="0.95294117649999999" alpha="1" colorSpace="calibratedRGB"/>
                                 <userDefinedRuntimeAttributes>
@@ -1046,7 +1044,7 @@
                                 </userDefinedRuntimeAttributes>
                             </progressView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Step 5 of 5" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hHX-vQ-K0V">
-                                <rect key="frame" x="109.33333333333333" y="47" width="209.66666666666669" height="27"/>
+                                <rect key="frame" x="115.66666666666667" y="47" width="249.33333333333331" height="32.333333333333343"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="hHX-vQ-K0V" secondAttribute="height" multiplier="209:27" id="evU-m7-ndH"/>
                                 </constraints>
@@ -1096,10 +1094,10 @@
         <!--Navigation Controller-->
         <scene sceneID="Abg-L4-EV1">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="6hE-sf-2Zf" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="6hE-sf-2Zf" sceneMemberID="viewController">
                     <toolbarItems/>
+                    <nil key="simulatedTopBarMetrics"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="gLh-0Q-umw">
-                        <rect key="frame" x="0.0" y="44" width="428" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>

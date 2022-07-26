@@ -99,21 +99,21 @@ struct Login: View {
                     .frame(width: 300)
                     .clipShape(RoundedRectangle(cornerRadius: 10, style: .continuous))
                     
-                    EmptySpace(spacing: 5)
-                    Button {
-                        
-                    } label: {
-                        Spacer()
-                        Image("Apple")
-                        Text("Sign Up with Apple")
-                            .foregroundColor(.white)
-                            .padding()
-                            .padding(.trailing, 12)
-                        Spacer()
-                    }
-                    .background(Color(red: 0, green: 0, blue: 0))
-                    .frame(width: 300)
-                    .clipShape(RoundedRectangle(cornerRadius: 10, style: .continuous))
+//                    EmptySpace(spacing: 5)
+//                    Button {
+//
+//                    } label: {
+//                        Spacer()
+//                        Image("Apple")
+//                        Text("Sign Up with Apple")
+//                            .foregroundColor(.white)
+//                            .padding()
+//                            .padding(.trailing, 12)
+//                        Spacer()
+//                    }
+//                    .background(Color(red: 0, green: 0, blue: 0))
+//                    .frame(width: 300)
+//                    .clipShape(RoundedRectangle(cornerRadius: 10, style: .continuous))
                 }
                 
                 Spacer()
