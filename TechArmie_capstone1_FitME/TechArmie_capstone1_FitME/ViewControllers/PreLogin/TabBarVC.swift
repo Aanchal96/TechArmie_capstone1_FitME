@@ -7,6 +7,6 @@
 
 import UIKit
 
-class TabBarVC: ViewController {
+class TabBarVC: UITabBarController {
 
 }

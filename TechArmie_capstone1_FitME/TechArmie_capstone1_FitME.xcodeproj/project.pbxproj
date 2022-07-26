@@ -69,8 +69,11 @@
 		87E58209288D7FDF003AFEA7 /* GoogleLoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87E58208288D7FDF003AFEA7 /* GoogleLoginController.swift */; };
 		87E58211288DACE8003AFEA7 /* UIViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87E58210288DACE8003AFEA7 /* UIViewControllerExtension.swift */; };
 		87FF9560288B5DA300A05A07 /* bg_video.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 87FF955F288B5DA300A05A07 /* bg_video.mp4 */; };
+		A2192F07288F95DE00FEFC92 /* Settingss.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A2192F06288F95DE00FEFC92 /* Settingss.storyboard */; };
 		A2280A1B288F799A00EF66CC /* TabBar.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A2280A1A288F799A00EF66CC /* TabBar.storyboard */; };
 		A2280A1D288F79B100EF66CC /* TabBarVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2280A1C288F79B100EF66CC /* TabBarVC.swift */; };
+		A2280A1F288F7C4A00EF66CC /* AccSettingsVC in Resources */ = {isa = PBXBuildFile; fileRef = A2280A1E288F7C4A00EF66CC /* AccSettingsVC */; };
+		A2280A21288F7C6700EF66CC /* Settingss.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2280A20288F7C6700EF66CC /* Settingss.swift */; };
 		ED27FF32288B0A2900F5C657 /* ColorTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED27FF31288B0A2900F5C657 /* ColorTheme.swift */; };
 		ED7036E02888BAD4002A312F /* welcome_fitme.png in Resources */ = {isa = PBXBuildFile; fileRef = ED7036DD2888BAD4002A312F /* welcome_fitme.png */; };
 		ED7036E32888BAE9002A312F /* logo_FitME.png in Resources */ = {isa = PBXBuildFile; fileRef = ED7036E22888BAE9002A312F /* logo_FitME.png */; };
@@ -143,8 +146,11 @@
 		87E58208288D7FDF003AFEA7 /* GoogleLoginController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GoogleLoginController.swift; sourceTree = "<group>"; };
 		87E58210288DACE8003AFEA7 /* UIViewControllerExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtension.swift; sourceTree = "<group>"; };
 		87FF955F288B5DA300A05A07 /* bg_video.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = bg_video.mp4; sourceTree = "<group>"; };
+		A2192F06288F95DE00FEFC92 /* Settingss.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Settingss.storyboard; path = TechArmie_capstone1_FitME/ViewControllers/PreLogin/Settingss.storyboard; sourceTree = SOURCE_ROOT; };
 		A2280A1A288F799A00EF66CC /* TabBar.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = TabBar.storyboard; path = TechArmie_capstone1_FitME/ViewControllers/PreLogin/TabBar.storyboard; sourceTree = SOURCE_ROOT; };
 		A2280A1C288F79B100EF66CC /* TabBarVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = TabBarVC.swift; path = TechArmie_capstone1_FitME/ViewControllers/PreLogin/TabBarVC.swift; sourceTree = SOURCE_ROOT; };
+		A2280A1E288F7C4A00EF66CC /* AccSettingsVC */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = AccSettingsVC; path = TechArmie_capstone1_FitME/ViewControllers/PreLogin/AccSettingsVC; sourceTree = SOURCE_ROOT; };
+		A2280A20288F7C6700EF66CC /* Settingss.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Settingss.swift; path = TechArmie_capstone1_FitME/ViewControllers/PreLogin/Settingss.swift; sourceTree = SOURCE_ROOT; };
 		D9B1E93B6AAF5BFADC09ECDE /* Pods_TechArmie_capstone1_FitME.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TechArmie_capstone1_FitME.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E6CB01F1DE75F6DB4537983D /* Pods-TechArmie_capstone1_FitME.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TechArmie_capstone1_FitME.debug.xcconfig"; path = "Target Support Files/Pods-TechArmie_capstone1_FitME/Pods-TechArmie_capstone1_FitME.debug.xcconfig"; sourceTree = "<group>"; };
 		ED27FF31288B0A2900F5C657 /* ColorTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorTheme.swift; sourceTree = "<group>"; };
@@ -409,6 +415,9 @@
 			children = (
 				A2280A1A288F799A00EF66CC /* TabBar.storyboard */,
 				A2280A1C288F79B100EF66CC /* TabBarVC.swift */,
+				A2280A1E288F7C4A00EF66CC /* AccSettingsVC */,
+				A2280A20288F7C6700EF66CC /* Settingss.swift */,
+				A2192F06288F95DE00FEFC92 /* Settingss.storyboard */,
 			);
 			path = PostLogin;
 			sourceTree = "<group>";
@@ -532,6 +541,7 @@
 				87236F71288DB86D00CC2BDD /* WorkoutCompleteden.mp3 in Resources */,
 				87236F72288DB86D00CC2BDD /* ExerciseCompletedar.mp3 in Resources */,
 				ED7036E02888BAD4002A312F /* welcome_fitme.png in Resources */,
+				A2192F07288F95DE00FEFC92 /* Settingss.storyboard in Resources */,
 				7C25508D288A501D00766C04 /* Main.storyboard in Resources */,
 				87C4A31A28822B1200485A08 /* LaunchScreen.storyboard in Resources */,
 				87236F86288DB86D00CC2BDD /* en5.mp3 in Resources */,
@@ -541,6 +551,7 @@
 				87236F8E288DB86D00CC2BDD /* en35.mp3 in Resources */,
 				87236F8B288DB86D00CC2BDD /* en25.mp3 in Resources */,
 				87236F8C288DB86D00CC2BDD /* en30.mp3 in Resources */,
+				A2280A1F288F7C4A00EF66CC /* AccSettingsVC in Resources */,
 				87236F76288DB86D00CC2BDD /* Restar.mp3 in Resources */,
 				A2280A1B288F799A00EF66CC /* TabBar.storyboard in Resources */,
 				87236F8D288DB86D00CC2BDD /* en20.mp3 in Resources */,
@@ -620,6 +631,7 @@
 				87236F37288DB16000CC2BDD /* AppGlobals.swift in Sources */,
 				87236F35288DB16000CC2BDD /* AppStoryboards.swift in Sources */,
 				87E58211288DACE8003AFEA7 /* UIViewControllerExtension.swift in Sources */,
+				A2280A21288F7C6700EF66CC /* Settingss.swift in Sources */,
 				7CDA8CD4288A85730029ECB1 /* ThirdStepVC.swift in Sources */,
 				87236F9C288DCC8700CC2BDD /* NSErrorExtension.swift in Sources */,
 				87236F40288DB77000CC2BDD /* InAppReceipt.swift in Sources */,
