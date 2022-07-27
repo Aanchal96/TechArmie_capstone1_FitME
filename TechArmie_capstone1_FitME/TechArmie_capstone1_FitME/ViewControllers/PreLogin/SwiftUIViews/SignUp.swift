@@ -119,7 +119,7 @@ struct SignUp: View {
                     if password.count < 6 {
                         if password.isBlank {isPasswordValid = false}; return;
                     }
-                    self.controller.emailPasswordFirebaseLogin(email: email, password: password);
+                    self.controller.emailPasswordFirebaseLogin(email: email, password: password, name: name);
                 } label: {
                     Text("SIGN UP")
                         .foregroundColor(.white)
