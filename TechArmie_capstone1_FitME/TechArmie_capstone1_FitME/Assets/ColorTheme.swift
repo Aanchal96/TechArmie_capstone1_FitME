@@ -10,4 +10,8 @@ class CustomColors{
     static var white: UIColor = UIColor(red: 1.000, green: 1.000, blue: 1.000, alpha: 1.00)
     
     static var black: UIColor = UIColor(red: 0.000, green: 0.000, blue: 0.000, alpha: 1.00)
+    
+    static var lightGray: UIColor = UIColor(red: 0.855, green: 0.855, blue: 0.855, alpha: 1)
+    
+    static var gray: UIColor = UIColor(red: 0.961, green: 0.961, blue: 0.961, alpha: 1)
 }
