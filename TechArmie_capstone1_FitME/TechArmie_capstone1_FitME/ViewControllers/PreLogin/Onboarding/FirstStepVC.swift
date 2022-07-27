@@ -15,6 +15,8 @@ class FirstStepVC: UIViewController {
     @IBOutlet weak var btnBeActive: UIButton!
     @IBOutlet weak var btnNext: UIButton!
     
+    var profileModel = ProfileModel()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
     }
@@ -49,6 +51,7 @@ class FirstStepVC: UIViewController {
     }
     
     @IBAction func back(_ sender: Any) {
-        self.navigationController?.popViewController(animated: true)
+        //self.navigationController?.popViewController(animated: true)
+        
     }
 }

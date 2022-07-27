@@ -8,6 +8,9 @@
 
 import Foundation
 import UIKit
+
+
+
 class SecondStepVC : UIViewController
 {
     @IBOutlet weak var txtWeightGoal: UITextField!
