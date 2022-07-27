@@ -18,8 +18,7 @@ struct WorkoutView: View {
     
     var body: some View {
         NavigationView {
-            ScrollView {
-                VStack {
+                VStack(alignment: .center) {
                     ZStack(alignment: .center) {
                         Image("workout_bg").resizable(resizingMode: .stretch)
                         VStack {
@@ -28,26 +27,46 @@ struct WorkoutView: View {
                         }
                     }.frame(height: 250)
                     CustomTopTabBar(tabIndex: $tabIndex)
-                    VStack(alignment: .leading) {
-                        Text("Workouts for Week 1")
-                        GeometryReader { geometry in
-                                    ZStack {
-                                        Rectangle().frame(width: geometry.size.width , height: 5)
-                                            .foregroundColor(Color(CustomColors.lightGray))
-                                    }.cornerRadius(45.0)
-                        }
-                    }.padding().cornerRadius(45.0).background(Color(CustomColors.gray)).padding()
-                    LazyVGrid(columns: [GridItem(), GridItem()]) {
-                        ForEach(0...10, id: \.self) { i in
-                            Text("\(i)").padding()
-                        }
+                    ScrollView {
+                        VStack(alignment: .leading) {
+                            Text("Workouts for Week 1")
+                            GeometryReader { geometry in
+                                        ZStack {
+                                            Rectangle().frame(width: geometry.size.width , height: 5)
+                                                .foregroundColor(Color(CustomColors.lightGray))
+                                        }.cornerRadius(45.0)
+                            }
+                            EmptySpace(spacing: -2)
+                        }.padding().background(Color(CustomColors.gray)).cornerRadius(15.0).padding().frame(height: 80)
+                        LazyVGrid(columns: [GridItem(), GridItem()]) {
+                            ForEach(0...10, id: \.self) { i in
+                                ZStack (alignment: .leading) {
+                                    GeometryReader { geometry in
+                                        Image("dummy_workout").resizable().scaledToFill().frame(width: geometry.size.width)
+                                    }
+                                    VStack (alignment: .leading) {
+                                        Text("Day 1").font(.title).bold()
+                                        Text("Core Routine").font(.subheadline).bold()
+                                        Spacer()
+                                        HStack  (alignment: .top) {
+                                            Text("⏱ 16 min").font(.title3)
+                                        }
+                                        HStack  (alignment: .top) {
+                                            Image("Calories")
+                                            Text("82 Kcal").font(.title3)
+                                        }
+                                    }.padding()
+                                }.cornerRadius(15.0).frame(height: 300).foregroundColor(Color(CustomColors.white))
+                                
+                            }
+                        }.padding(.horizontal)
                     }
+                    Spacer()
                 }
+                .navigationBarHidden(true)
+                .edgesIgnoringSafeArea([.top])
             }
-            .navigationBarHidden(true)
-            .edgesIgnoringSafeArea([.top, .bottom])
         }
-    }
 }
 
 struct CustomTopTabBar: View {
