@@ -26,7 +26,8 @@ class LoginController: UIViewController {
     func googleSignInButton() {
         
         GoogleLoginController.shared.login(fromViewController: self) { googleUser in
-            print("\(googleUser.email ?? "")")
+            let vc = HomeController.instantiate(fromAppStoryboard: .Home)
+            self.navigationController?.pushViewController(vc, animated: true)
         } failure: { error in
             print("Failure")
         }
@@ -35,7 +36,8 @@ class LoginController: UIViewController {
     
     func emailPasswordFirebaseLogin(email: String, password: String) {
         GoogleLoginController.shared.loginWithEmail(email: email, password: password) { user in
-            print(user.displayName!);
+            let vc = HomeController.instantiate(fromAppStoryboard: .Home)
+            self.navigationController?.pushViewController(vc, animated: true)
         } failure: { error in
             print(error)
         }

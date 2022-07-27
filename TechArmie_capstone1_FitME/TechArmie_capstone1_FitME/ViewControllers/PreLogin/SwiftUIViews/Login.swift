@@ -8,8 +8,8 @@
 import SwiftUI
 
 struct Login: View {
-    @State private var email: String = ""
-    @State private var password: String = ""
+    @State private var email: String = "swapkumbhar96@gmail.com"
+    @State private var password: String = "123qwe"
     @State private var isEmailValid: Bool = true
     @State private var isPasswordValid: Bool = true
     

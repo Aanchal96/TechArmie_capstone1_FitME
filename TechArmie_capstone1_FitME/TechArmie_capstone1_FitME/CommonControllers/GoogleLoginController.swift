@@ -156,11 +156,22 @@ class GoogleLoginController : NSObject {
     func signUpWithEmail(
         email: String,
         password: String,
+        name: String,
         success : @escaping(_ user : FirebaseAuth.User) -> (),
         failure : @escaping(_ error : Error) -> ()) {
         Auth.auth().createUser(withEmail: email, password: password) {authResult,error in
             guard let user = authResult?.user else { failure(error!); return }
-            success(user)
+            let changeRequest = user.createProfileChangeRequest();
+            changeRequest.displayName = name
+            changeRequest.photoURL = NSURL(string: "https://via.placeholder.com/150.png/26424C/FFFFFF?text=" + name.prefix(1)) as URL?
+            changeRequest.commitChanges { error1 in
+                if let error1 = error1 {
+                    failure(error1);
+                } else {
+                    success(user)
+                }
+            }
+            
         }
     }
     

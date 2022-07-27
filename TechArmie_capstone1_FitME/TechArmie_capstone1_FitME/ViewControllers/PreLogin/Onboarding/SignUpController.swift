@@ -22,20 +22,11 @@ class SignUpController: UIViewController {
         theContainer.addSubview(childView.view);
     }
     
-    
-    func googleSignInButton() {
-        
-        GoogleLoginController.shared.login(fromViewController: self) { googleUser in
-            print("\(googleUser.email ?? "")")
-        } failure: { error in
-            print("Failure")
-        }
-        
-    }
-    
-    func emailPasswordFirebaseLogin(email: String, password: String) {
-        GoogleLoginController.shared.loginWithEmail(email: email, password: password) { user in
+    func emailPasswordFirebaseLogin(email: String, password: String, name: String) {
+        GoogleLoginController.shared.signUpWithEmail(email: email, password: password, name: name) { user in
             print(user.displayName!);
+            let vc = HomeController.instantiate(fromAppStoryboard: .Home)
+            self.navigationController?.pushViewController(vc, animated: true)
         } failure: { error in
             print(error)
         }
