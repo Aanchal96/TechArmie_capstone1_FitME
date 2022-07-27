@@ -21,8 +21,12 @@ class SecondStepVC : UIViewController
     @IBOutlet weak var txtAge: UITextField!
     @IBOutlet weak var imgMale: UIImageView!
     
+    var profileModel = ProfileModel()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        debugPrint(profileModel.goal)
         
         txtWeightGoal.addBottomBorder()
         txtWeight.addBottomBorder()
@@ -55,7 +59,7 @@ class SecondStepVC : UIViewController
     
     
     @IBAction func back(_ sender: Any) {
-        self.dismiss(animated: true, completion: nil)
+        self.navigationController?.popViewController(animated: true)
     }
     
     @IBAction func goToNext(_ sender: Any) {
