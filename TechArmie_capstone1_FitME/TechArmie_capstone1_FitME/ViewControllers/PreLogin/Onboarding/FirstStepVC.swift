@@ -46,7 +46,8 @@ class FirstStepVC: UIViewController {
     }
     
     @IBAction func back(_ sender: Any) {
-        self.navigationController?.popViewController(animated: true)
+        //self.navigationController?.popViewController(animated: true)
+        
     }
 }
 extension FirstStepVC{
