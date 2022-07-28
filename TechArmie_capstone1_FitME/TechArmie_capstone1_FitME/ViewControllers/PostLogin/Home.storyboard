@@ -15,6 +15,7 @@
                 <tabBarController storyboardIdentifier="HomeController" automaticallyAdjustsScrollViewInsets="NO" useStoryboardIdentifierAsRestorationIdentifier="YES" id="b4Y-JY-2b4" customClass="HomeController" customModule="TechArmie_capstone1_FitME" customModuleProvider="target" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="N1b-ca-9d3">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
@@ -62,10 +63,10 @@
             </objects>
             <point key="canvasLocation" x="-755" y="1676"/>
         </scene>
-        <!--View Controller-->
+        <!--Challenges View Controller-->
         <scene sceneID="FAg-HY-NGr">
             <objects>
-                <viewController id="2Mp-oB-BCa" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ChallengesViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="2Mp-oB-BCa" customClass="ChallengesViewController" customModule="TechArmie_capstone1_FitME" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="MW1-BN-xTo">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

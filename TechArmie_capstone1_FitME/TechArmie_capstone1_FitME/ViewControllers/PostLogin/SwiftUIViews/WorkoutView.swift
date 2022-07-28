@@ -98,7 +98,7 @@ struct TabBarButton: View {
     var body: some View {
         Text(text)
             .fontWeight(isSelected ? .heavy : .regular)
-            .font(.custom("Avenir", size: 16))
+            .font(.subheadline)
             .padding(.vertical, 15)
             .border(width: isSelected ? 3 : 1, edges: [.bottom], color: .black)
     }
@@ -155,5 +155,6 @@ struct EdgeBorder: Shape {
 struct WorkoutView_Previews: PreviewProvider {
     static var previews: some View {
         WorkoutView(controller: WorkoutController())
+            .previewDevice("iPhone 8")
     }
 }
