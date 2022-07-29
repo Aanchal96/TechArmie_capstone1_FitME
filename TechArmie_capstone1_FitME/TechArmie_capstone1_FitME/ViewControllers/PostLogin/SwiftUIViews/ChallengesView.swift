@@ -27,12 +27,17 @@ struct ChallengesView: View {
                         ScrollView(.horizontal, showsIndicators: false)  {
                             HStack (spacing: 15) {
                                 ForEach(0...10, id: \.self) { i in
-                                    ZStack (alignment: .center) {
-                                        GeometryReader { geometry in
-                                            Image("dummy_workout").resizable().scaledToFill().frame(width: geometry.size.width)
-                                        }
-                                        Text("LOW IMPACT CARDIO").font(.title2).bold().multilineTextAlignment(.center)
-                                    }.cornerRadius(15.0).frame(width: 150, height: 300).foregroundColor(Color(CustomColors.white))
+                                    Button {
+                                        self.controller.goToDetailView();
+                                    } label: {
+                                        ZStack (alignment: .center) {
+                                            GeometryReader { geometry in
+                                                Image("dummy_workout").resizable().scaledToFill().frame(width: geometry.size.width)
+                                            }
+                                            Text("LOW IMPACT CARDIO").font(.title2).bold().multilineTextAlignment(.center)
+                                        }.cornerRadius(15.0).frame(width: 150, height: 300).foregroundColor(Color(CustomColors.white))
+                                    }
+                                    
                                 }
                             }
                         }

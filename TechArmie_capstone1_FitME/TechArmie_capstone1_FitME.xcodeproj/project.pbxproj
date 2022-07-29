@@ -16,6 +16,8 @@
 		553D67D328933B4D00CE57E3 /* InAppPurchaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 553D67D228933B4D00CE57E3 /* InAppPurchaseView.swift */; };
 		553D67D528933BAC00CE57E3 /* ChallengesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 553D67D428933BAC00CE57E3 /* ChallengesViewController.swift */; };
 		553D67D728933CD600CE57E3 /* ChallengesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 553D67D628933CD600CE57E3 /* ChallengesView.swift */; };
+		553D67D928935ADE00CE57E3 /* ChallengeDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 553D67D828935ADE00CE57E3 /* ChallengeDetailView.swift */; };
+		553D67DB28935AEF00CE57E3 /* ChallengeDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 553D67DA28935AEF00CE57E3 /* ChallengeDetailViewController.swift */; };
 		557D6E24288A134A00906AAA /* SignUpController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 557D6E23288A134A00906AAA /* SignUpController.swift */; };
 		55A6A623288F924D004A7C0C /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55A6A622288F924D004A7C0C /* Login.swift */; };
 		55EB744E288A07AA00DFD58D /* Authentication.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 55EB744D288A07AA00DFD58D /* Authentication.storyboard */; };
@@ -98,6 +100,8 @@
 		553D67D228933B4D00CE57E3 /* InAppPurchaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InAppPurchaseView.swift; sourceTree = "<group>"; };
 		553D67D428933BAC00CE57E3 /* ChallengesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChallengesViewController.swift; sourceTree = "<group>"; };
 		553D67D628933CD600CE57E3 /* ChallengesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChallengesView.swift; sourceTree = "<group>"; };
+		553D67D828935ADE00CE57E3 /* ChallengeDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChallengeDetailView.swift; sourceTree = "<group>"; };
+		553D67DA28935AEF00CE57E3 /* ChallengeDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChallengeDetailViewController.swift; sourceTree = "<group>"; };
 		557D6E23288A134A00906AAA /* SignUpController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpController.swift; sourceTree = "<group>"; };
 		55A6A622288F924D004A7C0C /* Login.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Login.swift; sourceTree = "<group>"; };
 		55EB744D288A07AA00DFD58D /* Authentication.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Authentication.storyboard; sourceTree = "<group>"; };
@@ -210,6 +214,7 @@
 				553D67CE2890BC4900CE57E3 /* WorkoutView.swift */,
 				553D67D228933B4D00CE57E3 /* InAppPurchaseView.swift */,
 				553D67D628933CD600CE57E3 /* ChallengesView.swift */,
+				553D67D828935ADE00CE57E3 /* ChallengeDetailView.swift */,
 			);
 			path = SwiftUIViews;
 			sourceTree = "<group>";
@@ -220,6 +225,7 @@
 				553D67CC2890BC3700CE57E3 /* WorkoutController.swift */,
 				553D67D02890C03D00CE57E3 /* HomeController.swift */,
 				553D67D428933BAC00CE57E3 /* ChallengesViewController.swift */,
+				553D67DA28935AEF00CE57E3 /* ChallengeDetailViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -673,7 +679,9 @@
 				87236F43288DB79100CC2BDD /* AppleLoginController.swift in Sources */,
 				ED0A21AA2891E74F0006C3DD /* Enums.swift in Sources */,
 				553D67CD2890BC3700CE57E3 /* WorkoutController.swift in Sources */,
+				553D67DB28935AEF00CE57E3 /* ChallengeDetailViewController.swift in Sources */,
 				7CDA8CD0288A7CB90029ECB1 /* SecondStepVC.swift in Sources */,
+				553D67D928935ADE00CE57E3 /* ChallengeDetailView.swift in Sources */,
 				ED986BF2288AE45A005BCA62 /* FirstStepVC.swift in Sources */,
 				553D67D328933B4D00CE57E3 /* InAppPurchaseView.swift in Sources */,
 				87236F32288DB16000CC2BDD /* AppUserDefaults.swift in Sources */,

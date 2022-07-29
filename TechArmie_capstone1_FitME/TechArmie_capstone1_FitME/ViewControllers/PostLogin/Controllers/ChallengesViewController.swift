@@ -18,4 +18,8 @@ class ChallengesViewController: UIViewController {
         view.addSubview(childView.view);
     }
     
+    func goToDetailView() {
+        let vc = ChallengeDetailViewController.instantiate(fromAppStoryboard: .Home)
+        self.navigationController?.pushViewController(vc, animated: true)
+    }
 }
