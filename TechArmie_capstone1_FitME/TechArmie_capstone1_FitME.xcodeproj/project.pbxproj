@@ -80,6 +80,8 @@
 		87E58209288D7FDF003AFEA7 /* GoogleLoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87E58208288D7FDF003AFEA7 /* GoogleLoginController.swift */; };
 		87E58211288DACE8003AFEA7 /* UIViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87E58210288DACE8003AFEA7 /* UIViewControllerExtension.swift */; };
 		87FF9560288B5DA300A05A07 /* bg_video.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 87FF955F288B5DA300A05A07 /* bg_video.mp4 */; };
+		A2192F0D289498D400FEFC92 /* AppSettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2192F0C289498D400FEFC92 /* AppSettingsView.swift */; };
+		A2192F0F289498E700FEFC92 /* AppSettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2192F0E289498E700FEFC92 /* AppSettingsViewController.swift */; };
 		ED27FF32288B0A2900F5C657 /* ColorTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED27FF31288B0A2900F5C657 /* ColorTheme.swift */; };
 		ED7036E02888BAD4002A312F /* welcome_fitme.png in Resources */ = {isa = PBXBuildFile; fileRef = ED7036DD2888BAD4002A312F /* welcome_fitme.png */; };
 		ED7036E32888BAE9002A312F /* logo_FitME.png in Resources */ = {isa = PBXBuildFile; fileRef = ED7036E22888BAE9002A312F /* logo_FitME.png */; };
@@ -163,6 +165,8 @@
 		87E58208288D7FDF003AFEA7 /* GoogleLoginController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GoogleLoginController.swift; sourceTree = "<group>"; };
 		87E58210288DACE8003AFEA7 /* UIViewControllerExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtension.swift; sourceTree = "<group>"; };
 		87FF955F288B5DA300A05A07 /* bg_video.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = bg_video.mp4; sourceTree = "<group>"; };
+		A2192F0C289498D400FEFC92 /* AppSettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppSettingsView.swift; sourceTree = "<group>"; };
+		A2192F0E289498E700FEFC92 /* AppSettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppSettingsViewController.swift; sourceTree = "<group>"; };
 		D9B1E93B6AAF5BFADC09ECDE /* Pods_TechArmie_capstone1_FitME.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TechArmie_capstone1_FitME.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E6CB01F1DE75F6DB4537983D /* Pods-TechArmie_capstone1_FitME.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TechArmie_capstone1_FitME.debug.xcconfig"; path = "Target Support Files/Pods-TechArmie_capstone1_FitME/Pods-TechArmie_capstone1_FitME.debug.xcconfig"; sourceTree = "<group>"; };
 		ED27FF31288B0A2900F5C657 /* ColorTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorTheme.swift; sourceTree = "<group>"; };
@@ -209,6 +213,7 @@
 				553D67D228933B4D00CE57E3 /* InAppPurchaseView.swift */,
 				553D67D628933CD600CE57E3 /* ChallengesView.swift */,
 				553D67D828935ADE00CE57E3 /* ChallengeDetailView.swift */,
+				A2192F0C289498D400FEFC92 /* AppSettingsView.swift */,
 			);
 			path = SwiftUIViews;
 			sourceTree = "<group>";
@@ -220,6 +225,7 @@
 				553D67D02890C03D00CE57E3 /* HomeController.swift */,
 				553D67D428933BAC00CE57E3 /* ChallengesViewController.swift */,
 				553D67DA28935AEF00CE57E3 /* ChallengeDetailViewController.swift */,
+				A2192F0E289498E700FEFC92 /* AppSettingsViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -662,9 +668,11 @@
 				553D67CD2890BC3700CE57E3 /* WorkoutController.swift in Sources */,
 				553D67DB28935AEF00CE57E3 /* ChallengeDetailViewController.swift in Sources */,
 				7CDA8CD0288A7CB90029ECB1 /* SecondStepVC.swift in Sources */,
+				A2192F0D289498D400FEFC92 /* AppSettingsView.swift in Sources */,
 				553D67D928935ADE00CE57E3 /* ChallengeDetailView.swift in Sources */,
 				ED986BF2288AE45A005BCA62 /* FirstStepVC.swift in Sources */,
 				553D67D328933B4D00CE57E3 /* InAppPurchaseView.swift in Sources */,
+				A2192F0F289498E700FEFC92 /* AppSettingsViewController.swift in Sources */,
 				87236F32288DB16000CC2BDD /* AppUserDefaults.swift in Sources */,
 				87236F9A288DC88500CC2BDD /* DoubleExtension.swift in Sources */,
 				55A6A623288F924D004A7C0C /* Login.swift in Sources */,
