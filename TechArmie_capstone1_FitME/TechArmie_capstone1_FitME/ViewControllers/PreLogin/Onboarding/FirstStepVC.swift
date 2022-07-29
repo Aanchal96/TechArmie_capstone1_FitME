@@ -20,45 +20,28 @@ class FirstStepVC: UIViewController {
     }
     
     @IBAction func goToNext(_ sender: Any) {
-        performSegue(withIdentifier: "Step1TO2", sender: self)
+        let vc = SecondStepVC.instantiate(fromAppStoryboard: .Main)
+        self.navigationController?.pushViewController(vc, animated: true)
     }
     
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-                if segue.identifier == "Step1TO2"{
-                    if let destination = segue.destination as? SecondStepVC{
-                    _ = destination
-                    }
-                }
-            }
-    
     @IBAction func goalOptionChanged(_ sender: UIButton) {
+        
+        btnLoseWeight.backgroundColor = CustomColors.secondaryColor
+        btnGainWeight.backgroundColor = CustomColors.secondaryColor
+        btnBeActive.backgroundColor = CustomColors.secondaryColor
+    
+        btnLoseWeight.tintColor = CustomColors.black
+        btnGainWeight.tintColor = CustomColors.black
+        btnBeActive.tintColor = CustomColors.black
+    
+        sender.backgroundColor = CustomColors.primaryColor
+        sender.tintColor = CustomColors.white
         switch(sender){
         case btnLoseWeight:
-            btnLoseWeight.backgroundColor = CustomColors.primaryColor
-            btnGainWeight.backgroundColor = CustomColors.secondaryColor
-            btnBeActive.backgroundColor = CustomColors.secondaryColor
-            
-            btnLoseWeight.tintColor = CustomColors.white
-            btnGainWeight.tintColor = CustomColors.black
-            btnBeActive.tintColor = CustomColors.black
             break
         case btnGainWeight:
-            btnGainWeight.backgroundColor = CustomColors.primaryColor
-            btnLoseWeight.backgroundColor = CustomColors.secondaryColor
-            btnBeActive.backgroundColor = CustomColors.secondaryColor
-            
-            btnLoseWeight.tintColor = CustomColors.black
-            btnGainWeight.tintColor = CustomColors.white
-            btnBeActive.tintColor = CustomColors.black
             break
         case btnBeActive:
-            btnBeActive.backgroundColor = CustomColors.primaryColor
-            btnGainWeight.backgroundColor = CustomColors.secondaryColor
-            btnLoseWeight.backgroundColor = CustomColors.secondaryColor
-            
-            btnLoseWeight.tintColor = CustomColors.black
-            btnGainWeight.tintColor = CustomColors.black
-            btnBeActive.tintColor = CustomColors.white
             break
         default:
             break
@@ -66,6 +49,6 @@ class FirstStepVC: UIViewController {
     }
     
     @IBAction func back(_ sender: Any) {
-        self.dismiss(animated: true, completion: nil)
+        self.navigationController?.popViewController(animated: true)
     }
 }

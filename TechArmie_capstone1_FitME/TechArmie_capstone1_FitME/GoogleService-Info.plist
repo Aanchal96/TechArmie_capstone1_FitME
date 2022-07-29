@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>263999661827-6c4c50qasrsngd6438u7jd6j3i7akl3c.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.263999661827-6c4c50qasrsngd6438u7jd6j3i7akl3c</string>
+	<key>API_KEY</key>
+	<string>AIzaSyBRMxPU7zFmBZ92wzkFnWa3qOLmNy96L5c</string>
+	<key>GCM_SENDER_ID</key>
+	<string>263999661827</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.techArmie.fitME</string>
+	<key>PROJECT_ID</key>
+	<string>fitme-12385</string>
+	<key>STORAGE_BUCKET</key>
+	<string>fitme-12385.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:263999661827:ios:64241f0b346cb5ef076b36</string>
+</dict>
+</plist>

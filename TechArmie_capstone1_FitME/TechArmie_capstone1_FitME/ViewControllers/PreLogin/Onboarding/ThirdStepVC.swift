@@ -10,7 +10,11 @@ import UIKit
 class ThirdStepVC : UIViewController
 {
     
-    
+    @IBOutlet weak var btnBack: UIButton!
+    @IBOutlet weak var btnSedentery: UIButton!
+    @IBOutlet weak var btnLightActive: UIButton!
+    @IBOutlet weak var btnModeratlyActive: UIButton!
+    @IBOutlet weak var btnVeryActive: UIButton!
     
     
     override func viewDidLoad() {
@@ -18,4 +22,45 @@ class ThirdStepVC : UIViewController
         
         
     }
+    @IBAction func back(_ sender: Any) {
+        self.dismiss(animated: true, completion: nil)
+    }
+    @IBAction func goToNext(_ sender: Any) {
+        let vc = FourthStepVC.instantiate(fromAppStoryboard: .Main)
+        self.navigationController?.pushViewController(vc, animated: true)
+    }
+    
+    @IBAction func activityLevelsPressed(_ sender: UIButton)
+    {
+        btnSedentery.backgroundColor = CustomColors.secondaryColor
+        btnSedentery.tintColor = CustomColors.black
+        
+        btnLightActive.backgroundColor = CustomColors.secondaryColor
+        btnLightActive.tintColor = CustomColors.black
+        
+        btnModeratlyActive.backgroundColor = CustomColors.secondaryColor
+        btnModeratlyActive.tintColor = CustomColors.black
+        
+        btnVeryActive.backgroundColor = CustomColors.secondaryColor
+        btnVeryActive.tintColor = CustomColors.black
+        
+        sender.backgroundColor = CustomColors.primaryColor
+        sender.tintColor = CustomColors.white
+        
+//        switch(sender){
+//        case btnSedentery:
+//
+//            break
+//        case btnLightActive:
+//
+//            break
+//        case btnModeratlyActive:
+//            break
+//        case btnVeryActive:
+//            break
+//        default:
+//            break
+//        }
+    }
+    
 }
