@@ -119,13 +119,7 @@ struct Login: View {
                 Spacer()
             }
             .padding()
-            .navigationBarTitleDisplayMode(.inline)
-            .navigationTitle("")
-            .toolbar {
-                ToolbarItem(placement: .navigationBarLeading) {
-                    Image("icBack")
-                }
-            }
+            .navigationBarHidden(true)
         }
             
     }
