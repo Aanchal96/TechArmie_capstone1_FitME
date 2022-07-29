@@ -9,17 +9,14 @@ import Foundation
 import UIKit
 class FourthStepVC : UIViewController
 {
+    
+    
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-    }
-    
-    @IBAction func back(_ sender: Any) {
-        self.dismiss(animated: true, completion: nil)
-    }
-    
-    @IBAction func goToNext(_ sender: Any) {
-        let vc = FifthStepVC.instantiate(fromAppStoryboard: .Main)
-        self.navigationController?.pushViewController(vc, animated: true)
+        
+        
     }
 }
 
