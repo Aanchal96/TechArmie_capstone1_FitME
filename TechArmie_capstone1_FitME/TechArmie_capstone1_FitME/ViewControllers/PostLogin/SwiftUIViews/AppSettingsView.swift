@@ -16,7 +16,26 @@ struct AppSettingsView: View {
     }
     
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        
+     
+        VStack(){
+        
+            Text("Settings")
+            Image("user_profile")
+            HStack{
+               
+            }
+            HStack{
+                
+            }
+            HStack{}
+            Form{
+                
+            }
+            Spacer()
+        }
+        
+        
     }
 }
 
