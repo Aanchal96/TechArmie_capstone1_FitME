@@ -22,10 +22,14 @@ struct AppSettingsView: View {
         
             Text("Settings")
             Image("user_profile")
-            HStack{
+            HStack
+            
+{
                 Spacer()
                 VStack{
                     Text("90.0kg")
+                
+                    
                     Text("Target")
                 }
                 
@@ -40,7 +44,7 @@ struct AppSettingsView: View {
                     Text("90.0kg")
                     Text("Current")
                     Button("Change"){
-                        
+                      
                         
                     }
                     }
@@ -54,24 +58,30 @@ struct AppSettingsView: View {
                     Text("0.0kg")
                     Text("Change")
                     }
-               }
+    }
+            
+            
+            
            
             Form{
                 Section(header: Text ("Account")){
                 Text ("Account Settings")
                 Text("Go For Premium")
                 }
-                
             
         
             }
-            
-            
+        
             Form{
-                Section(header: Text ("Account")){
-                Text ("Account Settings")
-                Text("Go For Premium")
+                Section(header: Text ("Social Media")){
+                Text ("Rate us on App Store")
+                Text("Share Fitme with your friends")
+                Text("Follow us on Instagram")
                 }
+            }
+            Spacer()
+        
+            
         
        
         
@@ -85,4 +95,5 @@ struct AppSettings_Previews: PreviewProvider {
     static var previews: some View {
         AppSettingsView(controller: AppSettingsViewController())
     }
+}
 }
