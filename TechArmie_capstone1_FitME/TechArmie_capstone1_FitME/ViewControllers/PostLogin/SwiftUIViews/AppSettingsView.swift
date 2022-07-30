@@ -23,21 +23,63 @@ struct AppSettingsView: View {
             Text("Settings")
             Image("user_profile")
             HStack{
-               
-            }
-            HStack{
+                Spacer()
+                VStack{
+                    Text("90.0kg")
+                    Text("Target")
+                }
                 
-            }
-            HStack{}
+                Spacer()
+                
+                
+                
+                Divider().frame(height: 80)
+                
+                Spacer()
+                VStack{
+                    Text("90.0kg")
+                    Text("Current")
+                    Button("Change"){
+                        
+                        
+                    }
+                    }
+                Spacer()
+                
+                
+                
+                Divider().frame(height: 80)
+                Spacer()
+                VStack{
+                    Text("0.0kg")
+                    Text("Change")
+                    }
+               }
+           
             Form{
+                Section(header: Text ("Account")){
+                Text ("Account Settings")
+                Text("Go For Premium")
+                }
                 
+            
+        
             }
-            Spacer()
+            
+            
+            Form{
+                Section(header: Text ("Account")){
+                Text ("Account Settings")
+                Text("Go For Premium")
+                }
+        
+       
+        
         }
         
         
     }
-}
+
 
 struct AppSettings_Previews: PreviewProvider {
     static var previews: some View {
