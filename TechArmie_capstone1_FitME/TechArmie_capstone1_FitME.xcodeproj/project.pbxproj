@@ -87,6 +87,7 @@
 		ED7036E02888BAD4002A312F /* welcome_fitme.png in Resources */ = {isa = PBXBuildFile; fileRef = ED7036DD2888BAD4002A312F /* welcome_fitme.png */; };
 		ED7036E32888BAE9002A312F /* logo_FitME.png in Resources */ = {isa = PBXBuildFile; fileRef = ED7036E22888BAE9002A312F /* logo_FitME.png */; };
 		ED986BF2288AE45A005BCA62 /* FirstStepVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED986BF1288AE45A005BCA62 /* FirstStepVC.swift */; };
+		EDAA77FA2894A43A00FCA3D0 /* LocalizedString.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDAA77F92894A43A00FCA3D0 /* LocalizedString.swift */; };
 		EDFD6210288B4EC70026F779 /* UITextFieldExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDFD620F288B4EC70026F779 /* UITextFieldExtension.swift */; };
 /* End PBXBuildFile section */
 
@@ -175,6 +176,7 @@
 		ED7036DD2888BAD4002A312F /* welcome_fitme.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = welcome_fitme.png; sourceTree = "<group>"; };
 		ED7036E22888BAE9002A312F /* logo_FitME.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo_FitME.png; sourceTree = "<group>"; };
 		ED986BF1288AE45A005BCA62 /* FirstStepVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstStepVC.swift; sourceTree = "<group>"; };
+		EDAA77F92894A43A00FCA3D0 /* LocalizedString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalizedString.swift; sourceTree = "<group>"; };
 		EDFD620F288B4EC70026F779 /* UITextFieldExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITextFieldExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -404,6 +406,7 @@
 		ED27FF30288B0A0800F5C657 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				EDAA77F82894A41F00FCA3D0 /* LocalizeString */,
 				87236F3A288DB3DF00CC2BDD /* CustomClasses */,
 				87236F23288DB16000CC2BDD /* AppUtilities */,
 				EDFD620E288B4EAF0026F779 /* Extensions */,
@@ -505,6 +508,14 @@
 				ED7036E22888BAE9002A312F /* logo_FitME.png */,
 			);
 			path = Images;
+			sourceTree = "<group>";
+		};
+		EDAA77F82894A41F00FCA3D0 /* LocalizeString */ = {
+			isa = PBXGroup;
+			children = (
+				EDAA77F92894A43A00FCA3D0 /* LocalizedString.swift */,
+			);
+			path = LocalizeString;
 			sourceTree = "<group>";
 		};
 		EDFD620E288B4EAF0026F779 /* Extensions */ = {
@@ -716,6 +727,7 @@
 				557D6E24288A134A00906AAA /* SignUpController.swift in Sources */,
 				553D67C4289078FD00CE57E3 /* SignUp.swift in Sources */,
 				87236F38288DB16000CC2BDD /* AppIds.swift in Sources */,
+				EDAA77FA2894A43A00FCA3D0 /* LocalizedString.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
