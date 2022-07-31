@@ -162,6 +162,7 @@ struct ProfileModel{
     var targetCalories = 0
 }
 
+// TODO: Remove if extra
 struct FitnessModel {
     
     let totalNo : Int
