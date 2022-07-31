@@ -12,6 +12,7 @@ import GoogleSignIn
 class FifthStepVC : BaseVC{
     
     var profileModel = ProfileModel()
+    var authUser = AuthUser()
     
     @IBOutlet weak var signInButton: GIDSignInButton!
     
@@ -25,6 +26,17 @@ class FifthStepVC : BaseVC{
     }
     
     @IBAction func goToSignUp(_ sender: UIButton) {
+        authUser.goalToJoin = profileModel.goal.rawValue
+        authUser.gender = profileModel.gender
+        authUser.age = profileModel.age
+        authUser.userWeight = UserWeight([ApiKey.unitSetting: profileModel.weightDict![ApiKey.unitSetting], ApiKey.weight: profileModel.weightDict![ApiKey.weight]])
+        authUser.userHeight = UserHeight([ApiKey.unitSetting: profileModel.heightDict![ApiKey.unitSetting], ApiKey.weight: profileModel.heightDict![ApiKey.height]])
+        authUser.usergoal = UserWeight([ApiKey.unitSetting: profileModel.weightGoalDict![ApiKey.unitSetting], ApiKey.weight: profileModel.weightGoalDict![ApiKey.weight]])
+        
+        authUser.priorityLevel = profileModel.level.rawValue
+        
+        authUser.saveToUserDefaults()
+        
         let vc = SignUpController.instantiate(fromAppStoryboard: .Authentication)
         vc.profileModel = profileModel
         self.navigationController?.pushViewController(vc, animated: true)

@@ -539,7 +539,6 @@
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="exclusiveTouchEnabled" value="YES"/>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <action selector="back:" destination="2FF-MP-frl" eventType="touchUpInside" id="aWR-hZ-eeX"/>
                                     <action selector="back:" destination="Xxb-J2-ZqM" eventType="touchUpInside" id="fmy-JH-wDy"/>
                                 </connections>
                             </button>
@@ -1013,7 +1012,6 @@
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="exclusiveTouchEnabled" value="YES"/>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <action selector="back:" destination="2FF-MP-frl" eventType="touchUpInside" id="CPH-vB-5Oy"/>
                                     <action selector="back:" destination="0TC-cE-CCs" eventType="touchUpInside" id="O6o-9r-h7E"/>
                                 </connections>
                             </button>

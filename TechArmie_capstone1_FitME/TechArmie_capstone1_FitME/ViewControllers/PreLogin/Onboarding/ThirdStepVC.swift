@@ -21,11 +21,10 @@ class ThirdStepVC : BaseVC{
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        debugPrint(profileModel.heightDict ?? "Height NULL")
-        debugPrint(profileModel.weightDict ?? "Weight Null")
-        debugPrint(profileModel.weightGoalDict ?? "Weight Goal Null")
-        debugPrint(profileModel.age)
-        
+//        debugPrint(profileModel.heightDict ?? "Height NULL")
+//        debugPrint(profileModel.weightDict ?? "Weight Null")
+//        debugPrint(profileModel.weightGoalDict ?? "Weight Goal Null")
+//        debugPrint(profileModel.age)
         
     }
     @IBAction func back(_ sender: Any) {
@@ -54,20 +53,22 @@ class ThirdStepVC : BaseVC{
         sender.backgroundColor = CustomColors.primaryColor
         sender.tintColor = CustomColors.white
         
-        //        switch(sender){
-        //        case btnSedentery:
-        //
-        //            break
-        //        case btnLightActive:
-        //
-        //            break
-        //        case btnModeratlyActive:
-        //            break
-        //        case btnVeryActive:
-        //            break
-        //        default:
-        //            break
-        //        }
+        switch(sender){
+        case btnSedentery:
+            profileModel.level = .beginner
+            break
+        case btnLightActive:
+            profileModel.level = .novice
+            break
+        case btnModeratlyActive:
+            profileModel.level = .intermediate
+            break
+        case btnVeryActive:
+            profileModel.level = .advance
+            break
+        default:
+            break
+        }
     }
     
 }

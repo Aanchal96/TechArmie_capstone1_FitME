@@ -20,6 +20,9 @@ class FirstStepVC: BaseVC {
     override func viewDidLoad() {
         super.viewDidLoad()
         onViewDidLoad()
+        
+        printDebug(AppUserDefaults.value(forKey: .fullUserProfile))
+        
     }
     
     @IBAction func goToNext(_ sender: Any) {
