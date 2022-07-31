@@ -8,7 +8,7 @@
 import UIKit
 import AVFoundation
 
-class OnboardingViewController: UIViewController {
+class OnboardingViewController: BaseVC {
     
     @IBOutlet weak var videoLayer: UIView!
     @IBOutlet weak var welcomeImg: UIImageView!

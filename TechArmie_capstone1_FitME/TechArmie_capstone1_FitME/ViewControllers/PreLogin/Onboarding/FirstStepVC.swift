@@ -7,7 +7,7 @@
 
 import UIKit
 
-class FirstStepVC: UIViewController {
+class FirstStepVC: BaseVC {
 
     @IBOutlet weak var btnBack: UIButton!
     @IBOutlet weak var btnLoseWeight: UIButton!
@@ -49,25 +49,6 @@ class FirstStepVC: UIViewController {
         //self.navigationController?.popViewController(animated: true)
         
         self.navigationController?.popViewController(animated: true)
-    }
-}
-extension FirstStepVC{
-    
-    func onViewDidLoad(){
-        self.profileModel.goal = .loseWeight
-    }
-    
-    func setupButtonSelection(btn: UIButton){
-        btnLoseWeight.backgroundColor = CustomColors.secondaryColor
-        btnGainWeight.backgroundColor = CustomColors.secondaryColor
-        btnBeActive.backgroundColor = CustomColors.secondaryColor
-    
-        btnLoseWeight.tintColor = CustomColors.black
-        btnGainWeight.tintColor = CustomColors.black
-        btnBeActive.tintColor = CustomColors.black
-    
-        btn.backgroundColor = CustomColors.primaryColor
-        btn.tintColor = CustomColors.white
     }
 }
 extension FirstStepVC{

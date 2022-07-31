@@ -7,8 +7,8 @@
 
 import Foundation
 import UIKit
-class ThirdStepVC : UIViewController
-{
+
+class ThirdStepVC : BaseVC{
     
     @IBOutlet weak var btnBack: UIButton!
     @IBOutlet weak var btnSedentery: UIButton!
@@ -28,6 +28,7 @@ class ThirdStepVC : UIViewController
     }
     @IBAction func goToNext(_ sender: Any) {
         let vc = FourthStepVC.instantiate(fromAppStoryboard: .Main)
+        vc.profileModel = profileModel
         self.navigationController?.pushViewController(vc, animated: true)
     }
     
@@ -48,20 +49,20 @@ class ThirdStepVC : UIViewController
         sender.backgroundColor = CustomColors.primaryColor
         sender.tintColor = CustomColors.white
         
-//        switch(sender){
-//        case btnSedentery:
-//
-//            break
-//        case btnLightActive:
-//
-//            break
-//        case btnModeratlyActive:
-//            break
-//        case btnVeryActive:
-//            break
-//        default:
-//            break
-//        }
+        //        switch(sender){
+        //        case btnSedentery:
+        //
+        //            break
+        //        case btnLightActive:
+        //
+        //            break
+        //        case btnModeratlyActive:
+        //            break
+        //        case btnVeryActive:
+        //            break
+        //        default:
+        //            break
+        //        }
     }
     
 }

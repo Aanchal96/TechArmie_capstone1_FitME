@@ -73,6 +73,11 @@
 		87236F9C288DCC8700CC2BDD /* NSErrorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87236F9B288DCC8700CC2BDD /* NSErrorExtension.swift */; };
 		8795414828960A1C0063E2BB /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8795414728960A1C0063E2BB /* UserModel.swift */; };
 		8795414A28960B850063E2BB /* AppEnums.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8795414928960B850063E2BB /* AppEnums.swift */; };
+		8795414C28961F370063E2BB /* BaseVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8795414B28961F370063E2BB /* BaseVC.swift */; };
+		8795415A289620600063E2BB /* NetworkErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8795414E2896205F0063E2BB /* NetworkErrorView.swift */; };
+		87954165289620600063E2BB /* NetworkErrorView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 879541592896205F0063E2BB /* NetworkErrorView.xib */; };
+		8795416728962C8A0063E2BB /* AppNetworking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8795416628962C8A0063E2BB /* AppNetworking.swift */; };
+		8795416928962E450063E2BB /* NSObjectExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8795416828962E450063E2BB /* NSObjectExtension.swift */; };
 		87C4A30E28822B1000485A08 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87C4A30D28822B1000485A08 /* AppDelegate.swift */; };
 		87C4A31028822B1000485A08 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87C4A30F28822B1000485A08 /* SceneDelegate.swift */; };
 		87C4A31228822B1000485A08 /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87C4A31128822B1000485A08 /* OnboardingViewController.swift */; };
@@ -82,9 +87,6 @@
 		87E58209288D7FDF003AFEA7 /* GoogleLoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87E58208288D7FDF003AFEA7 /* GoogleLoginController.swift */; };
 		87E58211288DACE8003AFEA7 /* UIViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87E58210288DACE8003AFEA7 /* UIViewControllerExtension.swift */; };
 		87FF9560288B5DA300A05A07 /* bg_video.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 87FF955F288B5DA300A05A07 /* bg_video.mp4 */; };
-		ED0A21A82891E2F30006C3DD /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED0A21A72891E2F30006C3DD /* UserModel.swift */; };
-		ED0A21AA2891E74F0006C3DD /* Enums.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED0A21A92891E74F0006C3DD /* Enums.swift */; };
-		ED0A21AC2891E7810006C3DD /* Structs.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED0A21AB2891E7810006C3DD /* Structs.swift */; };
 		ED27FF32288B0A2900F5C657 /* ColorTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED27FF31288B0A2900F5C657 /* ColorTheme.swift */; };
 		ED7036E02888BAD4002A312F /* welcome_fitme.png in Resources */ = {isa = PBXBuildFile; fileRef = ED7036DD2888BAD4002A312F /* welcome_fitme.png */; };
 		ED7036E32888BAE9002A312F /* logo_FitME.png in Resources */ = {isa = PBXBuildFile; fileRef = ED7036E22888BAE9002A312F /* logo_FitME.png */; };
@@ -159,6 +161,11 @@
 		87236F9B288DCC8700CC2BDD /* NSErrorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSErrorExtension.swift; sourceTree = "<group>"; };
 		8795414728960A1C0063E2BB /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
 		8795414928960B850063E2BB /* AppEnums.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppEnums.swift; sourceTree = "<group>"; };
+		8795414B28961F370063E2BB /* BaseVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseVC.swift; sourceTree = "<group>"; };
+		8795414E2896205F0063E2BB /* NetworkErrorView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkErrorView.swift; sourceTree = "<group>"; };
+		879541592896205F0063E2BB /* NetworkErrorView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NetworkErrorView.xib; sourceTree = "<group>"; };
+		8795416628962C8A0063E2BB /* AppNetworking.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppNetworking.swift; sourceTree = "<group>"; };
+		8795416828962E450063E2BB /* NSObjectExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSObjectExtension.swift; sourceTree = "<group>"; };
 		87C4A30A28822B1000485A08 /* TechArmie_capstone1_FitME.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TechArmie_capstone1_FitME.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		87C4A30D28822B1000485A08 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		87C4A30F28822B1000485A08 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -173,9 +180,6 @@
 		87FF955F288B5DA300A05A07 /* bg_video.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = bg_video.mp4; sourceTree = "<group>"; };
 		D9B1E93B6AAF5BFADC09ECDE /* Pods_TechArmie_capstone1_FitME.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TechArmie_capstone1_FitME.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E6CB01F1DE75F6DB4537983D /* Pods-TechArmie_capstone1_FitME.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TechArmie_capstone1_FitME.debug.xcconfig"; path = "Target Support Files/Pods-TechArmie_capstone1_FitME/Pods-TechArmie_capstone1_FitME.debug.xcconfig"; sourceTree = "<group>"; };
-		ED0A21A72891E2F30006C3DD /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = UserModel.swift; path = TechArmie_capstone1_FitME/Assets/Images/UserModel.swift; sourceTree = SOURCE_ROOT; };
-		ED0A21A92891E74F0006C3DD /* Enums.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Enums.swift; sourceTree = "<group>"; };
-		ED0A21AB2891E7810006C3DD /* Structs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Structs.swift; sourceTree = "<group>"; };
 		ED27FF31288B0A2900F5C657 /* ColorTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorTheme.swift; sourceTree = "<group>"; };
 		ED7036DD2888BAD4002A312F /* welcome_fitme.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = welcome_fitme.png; sourceTree = "<group>"; };
 		ED7036E22888BAE9002A312F /* logo_FitME.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo_FitME.png; sourceTree = "<group>"; };
@@ -248,6 +252,7 @@
 		87236F21288DB0D100CC2BDD /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				8795414D2896205F0063E2BB /* Xibs */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -346,6 +351,15 @@
 			path = EN;
 			sourceTree = "<group>";
 		};
+		8795414D2896205F0063E2BB /* Xibs */ = {
+			isa = PBXGroup;
+			children = (
+				8795414E2896205F0063E2BB /* NetworkErrorView.swift */,
+				879541592896205F0063E2BB /* NetworkErrorView.xib */,
+			);
+			path = Xibs;
+			sourceTree = "<group>";
+		};
 		87C4A30128822B1000485A08 = {
 			isa = PBXGroup;
 			children = (
@@ -398,15 +412,6 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
-		ED0A21A62891E2DE0006C3DD /* UserModel */ = {
-			isa = PBXGroup;
-			children = (
-				ED0A21A72891E2F30006C3DD /* UserModel.swift */,
-			);
-			name = UserModel;
-			path = TechArmie_capstone1_FitME/Models/UserModel;
-			sourceTree = "<group>";
-		};
 		ED27FF30288B0A0800F5C657 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
@@ -441,12 +446,9 @@
 		ED7036E92888BF8C002A312F /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				ED0A21A62891E2DE0006C3DD /* UserModel */,
 				87236F22288DB0F000CC2BDD /* JSON */,
 				8795414728960A1C0063E2BB /* UserModel.swift */,
 				8795414928960B850063E2BB /* AppEnums.swift */,
-				ED0A21A92891E74F0006C3DD /* Enums.swift */,
-				ED0A21AB2891E7810006C3DD /* Structs.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -454,10 +456,12 @@
 		ED7036ED2888BFBD002A312F /* CommonControllers */ = {
 			isa = PBXGroup;
 			children = (
+				8795416628962C8A0063E2BB /* AppNetworking.swift */,
 				87E58208288D7FDF003AFEA7 /* GoogleLoginController.swift */,
 				87236F42288DB79100CC2BDD /* AppleLoginController.swift */,
 				87236F44288DB7D500CC2BDD /* HealthKitController.swift */,
 				87236F3D288DB77000CC2BDD /* IAP */,
+				8795414B28961F370063E2BB /* BaseVC.swift */,
 			);
 			path = CommonControllers;
 			sourceTree = "<group>";
@@ -527,6 +531,7 @@
 		EDFD620E288B4EAF0026F779 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				8795416828962E450063E2BB /* NSObjectExtension.swift */,
 				87E58210288DACE8003AFEA7 /* UIViewControllerExtension.swift */,
 				EDFD620F288B4EC70026F779 /* UITextFieldExtension.swift */,
 				87236F8F288DBC0000CC2BDD /* UIDateExtension.swift */,
@@ -630,6 +635,7 @@
 				87236F8C288DB86D00CC2BDD /* en30.mp3 in Resources */,
 				87236F76288DB86D00CC2BDD /* Restar.mp3 in Resources */,
 				87236F8D288DB86D00CC2BDD /* en20.mp3 in Resources */,
+				87954165289620600063E2BB /* NetworkErrorView.xib in Resources */,
 				87236F84288DB86D00CC2BDD /* en15.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -684,6 +690,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				553D67D728933CD600CE57E3 /* ChallengesView.swift in Sources */,
+				8795414C28961F370063E2BB /* BaseVC.swift in Sources */,
 				87C4A31228822B1000485A08 /* OnboardingViewController.swift in Sources */,
 				87236F3C288DB3F400CC2BDD /* CommonFunctions.swift in Sources */,
 				553D67D12890C03D00CE57E3 /* HomeController.swift in Sources */,
@@ -696,7 +703,6 @@
 				8795414A28960B850063E2BB /* AppEnums.swift in Sources */,
 				8795414828960A1C0063E2BB /* UserModel.swift in Sources */,
 				87236F43288DB79100CC2BDD /* AppleLoginController.swift in Sources */,
-				ED0A21AA2891E74F0006C3DD /* Enums.swift in Sources */,
 				553D67CD2890BC3700CE57E3 /* WorkoutController.swift in Sources */,
 				553D67DB28935AEF00CE57E3 /* ChallengeDetailViewController.swift in Sources */,
 				7CDA8CD0288A7CB90029ECB1 /* SecondStepVC.swift in Sources */,
@@ -707,6 +713,7 @@
 				87236F9A288DC88500CC2BDD /* DoubleExtension.swift in Sources */,
 				55A6A623288F924D004A7C0C /* Login.swift in Sources */,
 				553D67CF2890BC4900CE57E3 /* WorkoutView.swift in Sources */,
+				8795415A289620600063E2BB /* NetworkErrorView.swift in Sources */,
 				87236F94288DC34700CC2BDD /* UIApplicationExtension.swift in Sources */,
 				87C4A31228822B1000485A08 /* OnboardingViewController.swift in Sources */,
 				7CDA8CDC288A9E3B0029ECB1 /* FifthStepVC.swift in Sources */,
@@ -717,7 +724,6 @@
 				EDFD6210288B4EC70026F779 /* UITextFieldExtension.swift in Sources */,
 				87236F37288DB16000CC2BDD /* AppGlobals.swift in Sources */,
 				87236F35288DB16000CC2BDD /* AppStoryboards.swift in Sources */,
-				ED0A21AC2891E7810006C3DD /* Structs.swift in Sources */,
 				87E58211288DACE8003AFEA7 /* UIViewControllerExtension.swift in Sources */,
 				7CDA8CD4288A85730029ECB1 /* ThirdStepVC.swift in Sources */,
 				87236F9C288DCC8700CC2BDD /* NSErrorExtension.swift in Sources */,
@@ -726,9 +732,10 @@
 				87236F98288DC83300CC2BDD /* UIDeviceExtension.swift in Sources */,
 				87236F34288DB16000CC2BDD /* AppColors.swift in Sources */,
 				7CDA8CDA288A9E090029ECB1 /* FourthStepVC.swift in Sources */,
+				8795416928962E450063E2BB /* NSObjectExtension.swift in Sources */,
 				87236F2F288DB16000CC2BDD /* DeviceDetail.swift in Sources */,
+				8795416728962C8A0063E2BB /* AppNetworking.swift in Sources */,
 				87236F36288DB16000CC2BDD /* AppConstants.swift in Sources */,
-				ED0A21A82891E2F30006C3DD /* UserModel.swift in Sources */,
 				87C4A30E28822B1000485A08 /* AppDelegate.swift in Sources */,
 				87236F45288DB7D500CC2BDD /* HealthKitController.swift in Sources */,
 				87C4A31028822B1000485A08 /* SceneDelegate.swift in Sources */,

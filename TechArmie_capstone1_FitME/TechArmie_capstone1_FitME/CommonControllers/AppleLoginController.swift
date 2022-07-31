@@ -1,9 +1,8 @@
 //
 //  AppleLoginController.swift
-//  Paradise
+//  TechArmie_capstone1_FitME
 //
-//  Created by Apple on 17/01/20.
-//  Copyright © 2020 admin. All rights reserved.
+//  Created by Aanchal Bansal on 2022-07-15.
 //
 
 import Foundation

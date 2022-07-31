@@ -52,15 +52,16 @@ PODS:
     - AppAuth/Core (~> 1.4)
     - GTMSessionFetcher/Core (~> 1.5)
   - GTMSessionFetcher/Core (1.7.2)
+  - IBAnimatable (6.1.0)
   - IQKeyboardManagerSwift (6.5.10)
   - nanopb (2.30909.0):
     - nanopb/decode (= 2.30909.0)
     - nanopb/encode (= 2.30909.0)
   - nanopb/decode (2.30909.0)
   - nanopb/encode (2.30909.0)
-  - NVActivityIndicatorView (5.1.1):
-    - NVActivityIndicatorView/Base (= 5.1.1)
   - NVActivityIndicatorView/Base (5.1.1)
+  - NVActivityIndicatorView/Extended (5.1.1):
+    - NVActivityIndicatorView/Base
   - PromisesObjC (2.1.1)
   - SDWebImage (4.4.8):
     - SDWebImage/Core (= 4.4.8)
@@ -73,8 +74,9 @@ DEPENDENCIES:
   - AWSS3
   - FirebaseAuth
   - GoogleSignIn
+  - IBAnimatable
   - IQKeyboardManagerSwift
-  - NVActivityIndicatorView
+  - NVActivityIndicatorView/Extended
   - SDWebImage (~> 4.0)
   - SwiftyJSON
   - Toast-Swift
@@ -93,6 +95,7 @@ SPEC REPOS:
     - GoogleUtilities
     - GTMAppAuth
     - GTMSessionFetcher
+    - IBAnimatable
     - IQKeyboardManagerSwift
     - nanopb
     - NVActivityIndicatorView
@@ -114,6 +117,7 @@ SPEC CHECKSUMS:
   GoogleUtilities: e0913149f6b0625b553d70dae12b49fc62914fd1
   GTMAppAuth: 4d8f864896f3646f0c33baf38a28362f4c601e15
   GTMSessionFetcher: 5595ec75acf5be50814f81e9189490412bad82ba
+  IBAnimatable: 99dddd4c0625884a301ba3ecbc1615f8a390368e
   IQKeyboardManagerSwift: 52962c76ab33532f15ad9f3ff4e5715eda5335bb
   nanopb: b552cce312b6c8484180ef47159bc0f65a1f0431
   NVActivityIndicatorView: 1f6c5687f1171810aa27a3296814dc2d7dec3667
@@ -122,6 +126,6 @@ SPEC CHECKSUMS:
   SwiftyJSON: 2f33a42c6fbc52764d96f13368585094bfd8aa5e
   Toast-Swift: 9b6a70f28b3bf0b96c40d46c0c4b9d6639846711
 
-PODFILE CHECKSUM: 36cee830750969743fe940900822db6358b1760b
+PODFILE CHECKSUM: 9fd5ff88e429c21bd4359b3983cd9c5b418c3df5
 
-COCOAPODS: 1.11.2
+COCOAPODS: 1.11.3

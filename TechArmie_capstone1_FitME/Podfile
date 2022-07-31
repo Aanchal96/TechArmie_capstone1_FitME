@@ -19,6 +19,7 @@ target 'TechArmie_capstone1_FitME' do
   pod 'AWSS3'
   pod 'SDWebImage', '~> 4.0'
   
-  pod 'NVActivityIndicatorView'
+  pod 'NVActivityIndicatorView/Extended'
+  pod 'IBAnimatable'
   
 end

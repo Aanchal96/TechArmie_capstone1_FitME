@@ -10,7 +10,7 @@ import UIKit
 import GoogleSignIn
 import SwiftUI
 
-class LoginController: UIViewController {
+class LoginController: BaseVC {
     
     @IBOutlet weak var signInButton: GIDSignInButton!
     @IBOutlet weak var theContainer: UIView!;

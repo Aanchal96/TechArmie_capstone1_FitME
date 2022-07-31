@@ -9,7 +9,7 @@ import Foundation
 import UIKit
 import SwiftUI
 
-class WorkoutController: UIViewController {
+class WorkoutController: BaseVC {
     
     override func viewDidLoad() {
         super.viewDidLoad()

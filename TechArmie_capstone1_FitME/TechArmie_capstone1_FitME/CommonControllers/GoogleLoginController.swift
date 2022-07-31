@@ -1,3 +1,9 @@
+//
+//  GoogleLoginController.swift
+//  TechArmie_capstone1_FitME
+//
+//  Created by Aanchal Bansal on 2022-07-15.
+//
 
 import GoogleSignIn
 import UIKit
@@ -8,14 +14,14 @@ class GoogleLoginController : NSObject {
     
     // MARK: Variables and properties...
     static let shared = GoogleLoginController()
-    fileprivate(set) var currentGoogleUser: AuthUser?
+//    fileprivate(set) var currentGoogleUser: AuthUser?
     fileprivate weak var contentViewController:UIViewController!
     fileprivate var hasAuthInKeychain: Bool {
         let hasAuth = GIDSignIn.sharedInstance.hasPreviousSignIn()
         return hasAuth
     }
     
-    var success : ((_ googleUser : AuthUser) -> ())?
+    var success : ((_ googleUser : GoogleUser) -> ())?
     var failure : ((_ error : Error) -> ())?
     
     private override init() {}
@@ -29,7 +35,7 @@ class GoogleLoginController : NSObject {
     // MARK: ============================
     
     func login(fromViewController viewController : UIViewController,
-               success : @escaping(_ googleUser : AuthUser) -> (),
+               success : @escaping(_ googleUser : GoogleUser) -> (),
                failure : @escaping(_ error : Error) -> ()) {
         
         GIDSignIn.sharedInstance.signOut()
@@ -127,8 +133,8 @@ class GoogleLoginController : NSObject {
                     // User is signed in
                     // ...
                     
-                    let googleUser = AuthUser(authResult?.user)
-                    self.currentGoogleUser = googleUser
+                    let googleUser = GoogleUser(user)
+//                    self.currentGoogleUser = googleUser
                     success(googleUser)
                 }
               // ...
@@ -147,8 +153,8 @@ class GoogleLoginController : NSObject {
         failure : @escaping(_ error : Error) -> ()) {
         Auth.auth().signIn(withEmail: email, password: password) { authResult, error in
             guard let user = authResult?.user else { failure(error!); return }
-            let currentUser = AuthUser(authResult?.user)
-            self.currentGoogleUser = currentUser
+            let currentUser = GoogleUser(user)
+//            self.currentGoogleUser = currentUser
             success(user)
         }
     }
@@ -190,4 +196,40 @@ class GoogleLoginController : NSObject {
     GIDSignIn.sharedInstance.signOut()
         
     }
+    
 }
+
+class GoogleUser {
+    
+    let id: String
+    let name: String
+    let email: String
+    let image: URL?
+    
+    init(_ googleUser: GIDGoogleUser?) {
+        
+        id = googleUser?.userID ?? ""
+        name = googleUser?.profile?.name ?? ""
+        email = googleUser?.profile?.email ?? ""
+        image = googleUser?.profile?.imageURL(withDimension: 200)
+    }
+    
+    init(_ googleUser: User?) {
+            
+            id = googleUser?.uid ?? ""
+            name = googleUser?.displayName ?? ""
+            email = googleUser?.email ?? ""
+            image = googleUser?.photoURL
+        }
+        
+    var dictionaryObject: [String:Any] {
+        var dictionary          = [String:Any]()
+        dictionary["_id"]       = id
+        dictionary["email"]     = email
+        dictionary["image"]     = image?.absoluteString ?? ""
+        dictionary["name"]      = name
+        return dictionary
+    }
+}
+
+

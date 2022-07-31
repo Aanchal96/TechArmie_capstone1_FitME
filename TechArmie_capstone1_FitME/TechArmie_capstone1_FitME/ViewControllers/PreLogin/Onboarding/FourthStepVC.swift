@@ -7,8 +7,11 @@
 
 import Foundation
 import UIKit
-class FourthStepVC : UIViewController
-{
+
+class FourthStepVC : BaseVC{
+    
+    var profileModel = ProfileModel()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
     }
@@ -19,6 +22,7 @@ class FourthStepVC : UIViewController
     
     @IBAction func goToNext(_ sender: Any) {
         let vc = FifthStepVC.instantiate(fromAppStoryboard: .Main)
+        vc.profileModel = profileModel
         self.navigationController?.pushViewController(vc, animated: true)
     }
 }

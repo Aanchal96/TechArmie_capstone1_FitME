@@ -8,7 +8,7 @@
 import UIKit
 import SwiftUI
 
-class ChallengeDetailViewController: UIViewController {
+class ChallengeDetailViewController: BaseVC {
 
     override func viewDidLoad() {
         super.viewDidLoad()

@@ -76,12 +76,12 @@ class AuthUser {
         self.subscription = SubscriptionModel(JSON(sub))
     }
     
-    required init(_ googleUser: User?) {
-        
-        id = googleUser?.uid ?? ""
-        name = googleUser?.displayName ?? ""
-        email = googleUser?.email ?? ""
-    }
+//    required init(_ googleUser: User?) {
+//        
+//        id = googleUser?.uid ?? ""
+//        name = googleUser?.displayName ?? ""
+//        email = googleUser?.email ?? ""
+//    }
     
     func saveToUserDefaults() {
         

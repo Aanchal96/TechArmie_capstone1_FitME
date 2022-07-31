@@ -991,23 +991,6 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dsd-P8-60h">
-                                <rect key="frame" x="30" y="492" width="368" height="48"/>
-                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" secondItem="Dsd-P8-60h" secondAttribute="height" multiplier="23:3" id="fAF-R4-Mi0"/>
-                                </constraints>
-                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" image="Apple 1" title="Sign Up With Apple" imagePadding="20" titleAlignment="leading">
-                                    <fontDescription key="titleFontDescription" name="Avenir-Medium" family="Avenir" pointSize="18"/>
-                                </buttonConfiguration>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                        <real key="value" value="6"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="OR" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LGh-CK-QRK">
                                 <rect key="frame" x="0.0" y="383" width="428" height="21"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="18"/>
@@ -1051,9 +1034,7 @@
                         <viewLayoutGuide key="safeArea" id="Gj6-ux-Rpr"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="Dsd-P8-60h" firstAttribute="top" secondItem="Slo-i7-6Mv" secondAttribute="bottom" constant="20" id="1bS-8i-aO5"/>
                             <constraint firstItem="Gj6-ux-Rpr" firstAttribute="trailing" secondItem="5wv-yn-MXs" secondAttribute="trailing" constant="30" id="1vu-tw-U4C"/>
-                            <constraint firstItem="Gj6-ux-Rpr" firstAttribute="trailing" secondItem="Dsd-P8-60h" secondAttribute="trailing" constant="30" id="356-zM-3se"/>
                             <constraint firstItem="Q7z-Db-c2F" firstAttribute="top" secondItem="Gj6-ux-Rpr" secondAttribute="top" constant="2" id="3Z7-uS-fvv"/>
                             <constraint firstItem="Q7z-Db-c2F" firstAttribute="leading" secondItem="Gj6-ux-Rpr" secondAttribute="leading" constant="18" id="9Wx-tq-XAu"/>
                             <constraint firstItem="Gj6-ux-Rpr" firstAttribute="trailing" secondItem="HY5-61-DEe" secondAttribute="trailing" id="FOH-4F-JqJ"/>
@@ -1067,7 +1048,6 @@
                             <constraint firstItem="Gj6-ux-Rpr" firstAttribute="trailing" secondItem="LGh-CK-QRK" secondAttribute="trailing" id="W9l-1K-m69"/>
                             <constraint firstItem="AUU-Wc-5R4" firstAttribute="top" secondItem="Q7z-Db-c2F" secondAttribute="bottom" constant="8" id="Wkr-dr-4tf"/>
                             <constraint firstItem="5wv-yn-MXs" firstAttribute="top" secondItem="HY5-61-DEe" secondAttribute="bottom" constant="50" id="XFO-Yn-SRE"/>
-                            <constraint firstItem="Dsd-P8-60h" firstAttribute="leading" secondItem="Gj6-ux-Rpr" secondAttribute="leading" constant="30" id="Y7m-Le-6gb"/>
                             <constraint firstItem="GYp-pC-x3k" firstAttribute="leading" secondItem="Gj6-ux-Rpr" secondAttribute="leading" constant="125" id="aTp-f4-GmI"/>
                             <constraint firstItem="Gj6-ux-Rpr" firstAttribute="trailing" secondItem="GYp-pC-x3k" secondAttribute="trailing" constant="125" id="f86-Lj-dDb"/>
                             <constraint firstItem="hHX-vQ-K0V" firstAttribute="leading" secondItem="Q7z-Db-c2F" secondAttribute="trailing" constant="54.670000000000002" id="hvG-d8-Ceq"/>
@@ -1106,7 +1086,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="Apple 1" width="40" height="40"/>
         <image name="Email 1" width="40" height="40"/>
         <image name="Female 1" width="117.33333587646484" height="129"/>
         <image name="Google 1" width="40" height="40"/>

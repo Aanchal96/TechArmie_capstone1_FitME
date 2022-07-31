@@ -10,9 +10,10 @@ import UIKit
 import SwiftUI
 
 
-class SignUpController: UIViewController {
+class SignUpController: BaseVC {
     
     @IBOutlet weak var theContainer: UIView!;
+    var profileModel = ProfileModel()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -24,9 +25,10 @@ class SignUpController: UIViewController {
     
     func emailPasswordFirebaseLogin(email: String, password: String, name: String) {
         GoogleLoginController.shared.signUpWithEmail(email: email, password: password, name: name) { user in
-            print(user.displayName!);
+            
             let vc = HomeController.instantiate(fromAppStoryboard: .Home)
             self.navigationController?.pushViewController(vc, animated: true)
+            
         } failure: { error in
             print(error)
         }

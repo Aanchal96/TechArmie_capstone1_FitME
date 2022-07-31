@@ -9,9 +9,7 @@
 import Foundation
 import UIKit
 
-
-
-class SecondStepVC : UIViewController
+class SecondStepVC : BaseVC
 {
     @IBOutlet weak var txtWeightGoal: UITextField!
     @IBOutlet weak var txtWeight: UITextField!
@@ -200,15 +198,15 @@ class SecondStepVC : UIViewController
 }
 extension SecondStepVC{
     func validateInput() -> Bool{
-        if txtAge.text?.trimTrailingWhitespace() == ""{
-            CommonFunctions.showToastWithMessage(LocalizedString.enterAgeEmpty.rawValue)
-            return false
-        }
+//        if txtAge.text?.trimTrailingWhitespace() == ""{
+//            CommonFunctions.showToastWithMessage(LocalizedString.enterAgeEmpty.rawValue)
+//            return false
+//        }
         
-        if profileModel.age == 0{
-            CommonFunctions.showToastWithMessage(LocalizedString.enterAge.rawValue)
-            return false
-        }
+//        if profileModel.age == 0{
+//            CommonFunctions.showToastWithMessage(LocalizedString.enterAge.rawValue)
+//            return false
+//        }
         
         return true
         
