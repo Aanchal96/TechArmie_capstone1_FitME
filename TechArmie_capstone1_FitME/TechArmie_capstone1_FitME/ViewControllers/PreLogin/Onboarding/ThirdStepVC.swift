@@ -21,6 +21,11 @@ class ThirdStepVC : BaseVC{
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        debugPrint(profileModel.heightDict ?? "Height NULL")
+        debugPrint(profileModel.weightDict ?? "Weight Null")
+        debugPrint(profileModel.weightGoalDict ?? "Weight Goal Null")
+        debugPrint(profileModel.age)
+        
         
     }
     @IBAction func back(_ sender: Any) {

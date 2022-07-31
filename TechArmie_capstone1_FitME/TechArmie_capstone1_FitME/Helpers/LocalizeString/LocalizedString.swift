@@ -14,6 +14,12 @@ enum LocalizedString: String{
     case ft = "ft"
     case kg = "kg"
     case lbs = "lbs"
+    case inch = "inch"
+    case yourAge = "Your Age"
+    case yourHeight = "Your Height"
+    case yourWeight = "Your Weight"
+    case yourWeightGoal = "Your Weight Goal"
+    case yearsOld = " years old"
     
     case noInternetConnection = "NoInternetConnection"
     case checkConnectionDesc = "checkConnectionDesc"
