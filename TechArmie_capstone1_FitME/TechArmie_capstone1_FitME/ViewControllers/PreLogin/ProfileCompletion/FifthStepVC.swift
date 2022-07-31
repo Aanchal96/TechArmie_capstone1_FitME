@@ -36,7 +36,7 @@ class FifthStepVC : BaseVC{
         authUser.priorityLevel = profileModel.level.rawValue
         
         authUser.saveToUserDefaults()
-        
+
         let vc = SignUpController.instantiate(fromAppStoryboard: .Authentication)
         vc.profileModel = profileModel
         self.navigationController?.pushViewController(vc, animated: true)

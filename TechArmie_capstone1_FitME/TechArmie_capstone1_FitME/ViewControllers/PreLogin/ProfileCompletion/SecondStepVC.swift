@@ -46,6 +46,7 @@ class SecondStepVC : BaseVC
         onViewDidLoad()
         
         //debugPrint(profileModel.goal)
+
         
         txtWeightGoal.addBottomBorder()
         txtWeight.addBottomBorder()
@@ -179,6 +180,7 @@ class SecondStepVC : BaseVC
             self.selectedHeightInFeet = first + "." + (second.count < 2 ? "0\(second)" : second)
             self.txtHeight.text =  (self.txtHeight.text ?? "") + " " + self.heightUnitKey.localized
         }
+
         
     }
     
@@ -394,5 +396,6 @@ extension SecondStepVC {
             textField.text = self.selectedWeightGoalOriginal
         }
         return true
+
     }
 }

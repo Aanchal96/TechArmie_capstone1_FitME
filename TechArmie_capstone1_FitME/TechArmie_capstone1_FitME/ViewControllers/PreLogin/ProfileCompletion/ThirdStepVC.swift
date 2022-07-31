@@ -20,7 +20,7 @@ class ThirdStepVC : BaseVC{
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+
 //        debugPrint(profileModel.heightDict ?? "Height NULL")
 //        debugPrint(profileModel.weightDict ?? "Weight Null")
 //        debugPrint(profileModel.weightGoalDict ?? "Weight Goal Null")
@@ -52,7 +52,7 @@ class ThirdStepVC : BaseVC{
         
         sender.backgroundColor = CustomColors.primaryColor
         sender.tintColor = CustomColors.white
-        
+
         switch(sender){
         case btnSedentery:
             profileModel.level = .beginner
