@@ -338,7 +338,6 @@ extension SecondStepVC : UITextFieldDelegate{
         
         let newText = oldText.replacingCharacters(in: r, with: string)
         let formatter: NumberFormatter = NumberFormatter()
-        formatter.locale = Locale(identifier: "EN")
         let final = formatter.number(from: newText)?.description ?? "0"
         let isNumeric = newText.isEmpty || (Double(final) != nil)
         let numberOfDots = newText.components(separatedBy: ".").count - 1
