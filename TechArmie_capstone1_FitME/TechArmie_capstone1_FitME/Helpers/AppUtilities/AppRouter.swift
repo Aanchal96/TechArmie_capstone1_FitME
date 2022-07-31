@@ -6,7 +6,6 @@
 //
 //enum AppRouter {
 //
-//    //after changing language
 //    static func refreshApp(){
 //        let storyboard = UIStoryboard(name: "TabBar", bundle: nil)
 //        let initialViewController = storyboard.instantiateViewController(withIdentifier: "NavigationViewController") as? NavigationViewController
@@ -58,11 +57,9 @@
 //        AlarmController.shared.removeWaterAlarm()
 //        UNUserNotificationCenter.current().removeAllPendingNotificationRequests()
 //        UNUserNotificationCenter.current().removeAllDeliveredNotifications()
-//        let lang = CommonFunctions.getLang()
 //        AppUserDefaults.removeAllValues()
 //        AppUserDefaults.removeValue(forKey: .fullUserProfile)
 //        UserModel.main = UserModel()
-//        CommonFunctions.setLanguage(lang: lang)
 //        let nvc = UINavigationController.init()
 //        nvc.isNavigationBarHidden = true
 //        nvc.viewControllers = [OnboardingVC.instantiate(fromAppStoryboard: .PreLogin)]
