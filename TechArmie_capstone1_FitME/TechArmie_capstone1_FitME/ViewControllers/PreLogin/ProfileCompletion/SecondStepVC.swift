@@ -91,6 +91,7 @@ class SecondStepVC : BaseVC
         self.view.endEditing(true)
         self.heightUnitKey = heightUnitArrKeys[sender.selectedSegmentIndex]
         self.heightUnit = self.heightUnitArr[sender.selectedSegmentIndex]
+        
         //conversions between units
         if (self.txtHeight.text?.trimmed() ?? "") != ""{
             if self.heightUnit == HeightUnit.cm.rawValue {
@@ -362,8 +363,10 @@ extension SecondStepVC {
             weightGoalEntered()
         }else if textField == txtWeight{
             self.txtWeight.placeholder = LocalizedString.yourWeight.localized
+            weightEntered()
         }else if textField == txtWeightGoal{
             self.txtWeightGoal.placeholder = LocalizedString.yourWeightGoal.localized
+            weightGoalEntered()
         }
         else if textField == txtAge{
             if textField.text?.trimmed() == "" {
