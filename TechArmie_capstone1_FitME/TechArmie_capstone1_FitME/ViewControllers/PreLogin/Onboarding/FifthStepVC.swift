@@ -14,6 +14,10 @@ class FifthStepVC : UIViewController
         self.navigationController?.setNavigationBarHidden(true, animated: false)
     }
     
+    @IBAction func back(_ sender: Any) {
+        self.navigationController?.popViewController(animated: true)
+    }
+    
     @IBAction func goToSignUp(_ sender: UIButton) {
         let vc = SignUpController.instantiate(fromAppStoryboard: .Authentication)
         self.navigationController?.pushViewController(vc, animated: true)

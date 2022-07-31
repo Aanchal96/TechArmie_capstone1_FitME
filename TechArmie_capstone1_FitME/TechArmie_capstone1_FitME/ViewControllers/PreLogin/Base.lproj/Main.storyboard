@@ -12,7 +12,7 @@
         <!--Onboarding View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="OnboardingViewController" customModule="TechArmie_capstone1_FitME" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="BYZ-38-t0r" customClass="OnboardingViewController" customModule="TechArmie_capstone1_FitME" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5q2-Zb-nTk">
                         <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -431,7 +431,10 @@
                                     <constraint firstAttribute="width" secondItem="k3j-5U-WZk" secondAttribute="height" multiplier="172:17" id="N0c-eh-jYb"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="16"/>
-                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad" textContentType="date-time"/>
+                                <connections>
+                                    <action selector="txtActionDOB:" destination="2FF-MP-frl" eventType="editingDidBegin" id="vcm-vQ-bPl"/>
+                                </connections>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="apU-oq-yTR">
                                 <rect key="frame" x="42" y="602" width="344" height="48"/>
@@ -500,6 +503,8 @@
                         <outlet property="btnBack" destination="1MP-5H-Gqx" id="Tgf-gh-ncL"/>
                         <outlet property="imgFemale" destination="zHP-7i-HUG" id="U2V-B1-aHZ"/>
                         <outlet property="imgMale" destination="j7r-Jv-kaI" id="RMb-Yq-wUB"/>
+                        <outlet property="segmentHeight" destination="8L6-0a-ddh" id="cv3-4e-MTM"/>
+                        <outlet property="segmentWeight" destination="LnJ-Qp-b70" id="OD7-nR-lGO"/>
                         <outlet property="txtAge" destination="k3j-5U-WZk" id="ML5-kA-Vah"/>
                         <outlet property="txtHeight" destination="Lde-By-gad" id="VeF-9n-Tdv"/>
                         <outlet property="txtWeight" destination="RJQ-7U-SWE" id="3pg-Q7-frX"/>
@@ -1023,6 +1028,7 @@
                                 </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="back:" destination="2FF-MP-frl" eventType="touchUpInside" id="CPH-vB-5Oy"/>
+                                    <action selector="back:" destination="0TC-cE-CCs" eventType="touchUpInside" id="O6o-9r-h7E"/>
                                 </connections>
                             </button>
                             <progressView opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="1" translatesAutoresizingMaskIntoConstraints="NO" id="AUU-Wc-5R4">
