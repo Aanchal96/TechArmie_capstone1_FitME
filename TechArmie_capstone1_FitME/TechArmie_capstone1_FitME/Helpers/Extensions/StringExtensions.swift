@@ -86,6 +86,22 @@ extension String{
         
         return !self.checkIfValid(validityExression)
     }
+    
+    public func trimmed() -> String {
+        return self.trimmingCharacters(in: .whitespacesAndNewlines)
+    }
+    
+    public func split(_ separator: String) -> [String] {
+        return self.components(separatedBy: separator).filter {
+            !$0.trimmed().isEmpty
+        }
+    }
+    
+    public func split(_ characters: CharacterSet) -> [String] {
+        return self.components(separatedBy: characters).filter {
+            !$0.trimmed().isEmpty
+        }
+    }
 }
 
 enum ValidityExression : String {

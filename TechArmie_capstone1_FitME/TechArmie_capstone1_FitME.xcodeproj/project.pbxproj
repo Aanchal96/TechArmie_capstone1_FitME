@@ -40,7 +40,6 @@
 		87236F3C288DB3F400CC2BDD /* CommonFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87236F3B288DB3F400CC2BDD /* CommonFunctions.swift */; };
 		87236F40288DB77000CC2BDD /* InAppReceipt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87236F3E288DB77000CC2BDD /* InAppReceipt.swift */; };
 		87236F41288DB77000CC2BDD /* IAPController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87236F3F288DB77000CC2BDD /* IAPController.swift */; };
-		87236F43288DB79100CC2BDD /* AppleLoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87236F42288DB79100CC2BDD /* AppleLoginController.swift */; };
 		87236F45288DB7D500CC2BDD /* HealthKitController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87236F44288DB7D500CC2BDD /* HealthKitController.swift */; };
 		87236F6D288DB86D00CC2BDD /* WarmUpCompletedar.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 87236F49288DB86D00CC2BDD /* WarmUpCompletedar.mp3 */; };
 		87236F6E288DB86D00CC2BDD /* 321Goar.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 87236F4A288DB86D00CC2BDD /* 321Goar.mp3 */; };
@@ -128,7 +127,6 @@
 		87236F3B288DB3F400CC2BDD /* CommonFunctions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommonFunctions.swift; sourceTree = "<group>"; };
 		87236F3E288DB77000CC2BDD /* InAppReceipt.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InAppReceipt.swift; sourceTree = "<group>"; };
 		87236F3F288DB77000CC2BDD /* IAPController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IAPController.swift; sourceTree = "<group>"; };
-		87236F42288DB79100CC2BDD /* AppleLoginController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppleLoginController.swift; sourceTree = "<group>"; };
 		87236F44288DB7D500CC2BDD /* HealthKitController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HealthKitController.swift; sourceTree = "<group>"; };
 		87236F49288DB86D00CC2BDD /* WarmUpCompletedar.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = WarmUpCompletedar.mp3; sourceTree = "<group>"; };
 		87236F4A288DB86D00CC2BDD /* 321Goar.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 321Goar.mp3; sourceTree = "<group>"; };
@@ -458,7 +456,6 @@
 			children = (
 				8795416628962C8A0063E2BB /* AppNetworking.swift */,
 				87E58208288D7FDF003AFEA7 /* GoogleLoginController.swift */,
-				87236F42288DB79100CC2BDD /* AppleLoginController.swift */,
 				87236F44288DB7D500CC2BDD /* HealthKitController.swift */,
 				87236F3D288DB77000CC2BDD /* IAP */,
 				8795414B28961F370063E2BB /* BaseVC.swift */,
@@ -702,7 +699,6 @@
 				87236F92288DBC3600CC2BDD /* UIViewExtension.swift in Sources */,
 				8795414A28960B850063E2BB /* AppEnums.swift in Sources */,
 				8795414828960A1C0063E2BB /* UserModel.swift in Sources */,
-				87236F43288DB79100CC2BDD /* AppleLoginController.swift in Sources */,
 				553D67CD2890BC3700CE57E3 /* WorkoutController.swift in Sources */,
 				553D67DB28935AEF00CE57E3 /* ChallengeDetailViewController.swift in Sources */,
 				7CDA8CD0288A7CB90029ECB1 /* SecondStepVC.swift in Sources */,

@@ -36,7 +36,7 @@ class FifthStepVC : BaseVC{
             let vc = HomeController.instantiate(fromAppStoryboard: .Home)
             self.navigationController?.pushViewController(vc, animated: true)
         } failure: { error in
-            print("Failure")
+            CommonFunctions.showToast(error.localizedDescription)
         }
         
     }

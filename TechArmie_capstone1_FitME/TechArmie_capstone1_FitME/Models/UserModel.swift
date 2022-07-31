@@ -26,6 +26,9 @@ class AuthUser {
     let token, authToken: String
     var isAlreadyLogin : Bool = false
     
+    var profileImage : String
+    let regType: Int // Registeration type: 1- Email sign up, 2- Social sign up
+    
     var goalToJoin: Int
     var gender: Gender
     var age : Int
@@ -34,9 +37,6 @@ class AuthUser {
     var usergoal : UserWeight
     var currentUnitMeasure : String // 2 imperial
     var priorityLevel : Int // Activity Level in Step 3
-    
-    var profileImage : String
-    let regType: Int // Registeration type: 1- Email sign up, 2- Social sign up
     
     var initialUserWeight : UserWeight
     var lastUpdatedWeight : UserWeight
@@ -52,6 +52,9 @@ class AuthUser {
         token = json[ApiKey.token].stringValue
         authToken = json[ApiKey.authtoken].stringValue
         
+        profileImage = json[ApiKey.profileImage].stringValue
+        regType = json[ApiKey.regType].intValue
+        
         goalToJoin = json[ApiKey.goalToJoin].intValue
         gender =   json[ApiKey.gender].stringValue == Gender.male.rawValue ? .male : .female
         age = json[ApiKey.age].intValue
@@ -64,9 +67,6 @@ class AuthUser {
         currentUnitMeasure = json[ApiKey.currentUnitMeasure].stringValue
         priorityLevel = json[ApiKey.priorityLevel].intValue
         
-        profileImage = json[ApiKey.profileImage].stringValue
-        regType = json[ApiKey.regType].intValue
-        
         let initialWeight = json[ApiKey.initialUserWeight].dictionaryValue
         initialUserWeight = UserWeight(JSON(initialWeight))
         let lastWeight = json[ApiKey.lastUpdatedWeight].dictionaryValue
@@ -77,7 +77,7 @@ class AuthUser {
     }
     
 //    required init(_ googleUser: User?) {
-//        
+//
 //        id = googleUser?.uid ?? ""
 //        name = googleUser?.displayName ?? ""
 //        email = googleUser?.email ?? ""
