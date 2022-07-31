@@ -117,6 +117,42 @@ extension UITapGestureRecognizer {
         
         return NSLocationInRange(indexOfCharacter, targetRange)
     }
+    
+    public func addSwipeGesture(direction: UISwipeGestureRecognizer.Direction, numberOfTouches: Int = 1, action: ((UISwipeGestureRecognizer) -> Void)?) {
+            let swipe = BlockSwipe(direction: direction, fingerCount: numberOfTouches, action: action)
+            addGestureRecognizer(swipe)
+            isUserInteractionEnabled = true
+    }
+    
+    open class BlockSwipe: UISwipeGestureRecognizer {
+        private var swipeAction: ((UISwipeGestureRecognizer) -> Void)?
+
+        public override init(target: Any?, action: Selector?) {
+            super.init(target: target, action: action)
+        }
+
+        public convenience init (
+            direction: UISwipeGestureRecognizer.Direction,
+            fingerCount: Int = 1,
+            action: ((UISwipeGestureRecognizer) -> Void)?) {
+                self.init()
+                self.direction = direction
+
+                #if os(iOS)
+
+                numberOfTouchesRequired = fingerCount
+
+                #endif
+
+                swipeAction = action
+                addTarget(self, action: #selector(BlockSwipe.didSwipe(_:)))
+        }
+
+        @objc open func didSwipe (_ swipe: UISwipeGestureRecognizer) {
+            swipeAction? (swipe)
+        }
+    }
+
 }
 
 

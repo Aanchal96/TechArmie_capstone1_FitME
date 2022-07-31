@@ -14,6 +14,7 @@ target 'TechArmie_capstone1_FitME' do
   pod 'GoogleSignIn'
   
   pod 'SwiftyJSON'
+  pod 'Alamofire'
   
   pod 'AWSCore'
   pod 'AWSS3'

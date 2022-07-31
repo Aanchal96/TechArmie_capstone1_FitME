@@ -70,5 +70,8 @@ extension AppUserDefaults {
         
         case fullUserProfile
         case loginType
+        case currentChallengeID
+        case currentChallengeDay
+        
     }
 }

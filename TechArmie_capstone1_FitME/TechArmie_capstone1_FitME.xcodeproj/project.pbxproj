@@ -76,6 +76,10 @@
 		875827342896673900BA3B26 /* ExerciseLibraryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8758272D2896673900BA3B26 /* ExerciseLibraryViewController.swift */; };
 		875827352896673900BA3B26 /* ExerciseLibraryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8758272F2896673900BA3B26 /* ExerciseLibraryModel.swift */; };
 		875827362896673900BA3B26 /* ExerciseLibrary.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 875827312896673900BA3B26 /* ExerciseLibrary.storyboard */; };
+		8758273F2896712400BA3B26 /* TabBar.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8758273E2896712400BA3B26 /* TabBar.storyboard */; };
+		875827422896731E00BA3B26 /* Challenges.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 875827412896731E00BA3B26 /* Challenges.storyboard */; };
+		875827452896733F00BA3B26 /* Workout.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 875827442896733F00BA3B26 /* Workout.storyboard */; };
+		87582748289673E800BA3B26 /* Account.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 87582747289673E800BA3B26 /* Account.storyboard */; };
 		8795414828960A1C0063E2BB /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8795414728960A1C0063E2BB /* UserModel.swift */; };
 		8795414A28960B850063E2BB /* AppEnums.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8795414928960B850063E2BB /* AppEnums.swift */; };
 		8795414C28961F370063E2BB /* BaseVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8795414B28961F370063E2BB /* BaseVC.swift */; };
@@ -168,6 +172,10 @@
 		8758272D2896673900BA3B26 /* ExerciseLibraryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExerciseLibraryViewController.swift; sourceTree = "<group>"; };
 		8758272F2896673900BA3B26 /* ExerciseLibraryModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExerciseLibraryModel.swift; sourceTree = "<group>"; };
 		875827312896673900BA3B26 /* ExerciseLibrary.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ExerciseLibrary.storyboard; sourceTree = "<group>"; };
+		8758273E2896712400BA3B26 /* TabBar.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TabBar.storyboard; sourceTree = "<group>"; };
+		875827412896731E00BA3B26 /* Challenges.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Challenges.storyboard; sourceTree = "<group>"; };
+		875827442896733F00BA3B26 /* Workout.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Workout.storyboard; sourceTree = "<group>"; };
+		87582747289673E800BA3B26 /* Account.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Account.storyboard; sourceTree = "<group>"; };
 		8795414728960A1C0063E2BB /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
 		8795414928960B850063E2BB /* AppEnums.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppEnums.swift; sourceTree = "<group>"; };
 		8795414B28961F370063E2BB /* BaseVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseVC.swift; sourceTree = "<group>"; };
@@ -219,6 +227,7 @@
 		553D67C72890B52500CE57E3 /* PostLogin */ = {
 			isa = PBXGroup;
 			children = (
+				8758273C2896710900BA3B26 /* TabBar */,
 				87582738289667B300BA3B26 /* Workout */,
 				87582737289667A800BA3B26 /* Challenges */,
 				875827262896673900BA3B26 /* ExerciseLibrary */,
@@ -426,6 +435,7 @@
 		87582737289667A800BA3B26 /* Challenges */ = {
 			isa = PBXGroup;
 			children = (
+				875827402896731100BA3B26 /* View */,
 			);
 			path = Challenges;
 			sourceTree = "<group>";
@@ -433,6 +443,7 @@
 		87582738289667B300BA3B26 /* Workout */ = {
 			isa = PBXGroup;
 			children = (
+				875827432896733400BA3B26 /* View */,
 			);
 			path = Workout;
 			sourceTree = "<group>";
@@ -463,8 +474,41 @@
 		8758273B2896688800BA3B26 /* Accounts */ = {
 			isa = PBXGroup;
 			children = (
+				87582746289673DC00BA3B26 /* View */,
 			);
 			path = Accounts;
+			sourceTree = "<group>";
+		};
+		8758273C2896710900BA3B26 /* TabBar */ = {
+			isa = PBXGroup;
+			children = (
+				8758273E2896712400BA3B26 /* TabBar.storyboard */,
+			);
+			path = TabBar;
+			sourceTree = "<group>";
+		};
+		875827402896731100BA3B26 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				875827412896731E00BA3B26 /* Challenges.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		875827432896733400BA3B26 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				875827442896733F00BA3B26 /* Workout.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		87582746289673DC00BA3B26 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				87582747289673E800BA3B26 /* Account.storyboard */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		8795414D2896205F0063E2BB /* Xibs */ = {
@@ -718,6 +762,7 @@
 				87236F88288DB86D00CC2BDD /* en50.mp3 in Resources */,
 				87236F6E288DB86D00CC2BDD /* 321Goar.mp3 in Resources */,
 				553D67C92890B53200CE57E3 /* Home.storyboard in Resources */,
+				8758273F2896712400BA3B26 /* TabBar.storyboard in Resources */,
 				87236F87288DB86D00CC2BDD /* en45.mp3 in Resources */,
 				875827332896673900BA3B26 /* ExerciseLibraryData.json in Resources */,
 				ED7036E32888BAE9002A312F /* logo_FitME.png in Resources */,
@@ -728,16 +773,19 @@
 				87236F8A288DB86D00CC2BDD /* en55.mp3 in Resources */,
 				87236F75288DB86D00CC2BDD /* ExerciseCompleteden.mp3 in Resources */,
 				87236F6D288DB86D00CC2BDD /* WarmUpCompletedar.mp3 in Resources */,
+				87582748289673E800BA3B26 /* Account.storyboard in Resources */,
 				87236F73288DB86D00CC2BDD /* Resten.mp3 in Resources */,
 				87FF9560288B5DA300A05A07 /* bg_video.mp4 in Resources */,
 				87236F71288DB86D00CC2BDD /* WorkoutCompleteden.mp3 in Resources */,
 				87236F72288DB86D00CC2BDD /* ExerciseCompletedar.mp3 in Resources */,
 				ED7036E02888BAD4002A312F /* welcome_fitme.png in Resources */,
+				875827452896733F00BA3B26 /* Workout.storyboard in Resources */,
 				7C25508D288A501D00766C04 /* Main.storyboard in Resources */,
 				87C4A31A28822B1200485A08 /* LaunchScreen.storyboard in Resources */,
 				875827362896673900BA3B26 /* ExerciseLibrary.storyboard in Resources */,
 				87236F86288DB86D00CC2BDD /* en5.mp3 in Resources */,
 				87C4A31728822B1200485A08 /* Assets.xcassets in Resources */,
+				875827422896731E00BA3B26 /* Challenges.storyboard in Resources */,
 				87236F74288DB86D00CC2BDD /* WorkoutCompletedar.mp3 in Resources */,
 				87236F85288DB86D00CC2BDD /* en60.mp3 in Resources */,
 				87236F8E288DB86D00CC2BDD /* en35.mp3 in Resources */,
