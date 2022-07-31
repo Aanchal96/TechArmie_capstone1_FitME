@@ -91,6 +91,7 @@ class SecondStepVC : BaseVC
         self.view.endEditing(true)
         self.heightUnitKey = heightUnitArrKeys[sender.selectedSegmentIndex]
         self.heightUnit = self.heightUnitArr[sender.selectedSegmentIndex]
+        
         //conversions between units
         if (self.txtHeight.text?.trimmed() ?? "") != ""{
             if self.heightUnit == HeightUnit.cm.rawValue {
@@ -126,12 +127,12 @@ class SecondStepVC : BaseVC
 
     @objc func txtActionWeightUnit(_ sender: UISegmentedControl) {
         self.view.endEditing(true)
-
         self.weightUnitKey = self.weightUnitArrKeys[sender.selectedSegmentIndex]
         self.weightUnit = self.weightUnitArr[sender.selectedSegmentIndex]
 
         //conversion between units
         if (self.txtWeight.text?.trimmed() ?? "") != ""{
+            //printDebug(txtWeight.text)
             if self.weightUnit == WeightUnit.kg.rawValue {
                 self.profileModel.weight = Int(((self.profileModel.weight.toDouble() ?? 0.0) * 0.453592).rounded()).description
                 self.selectedWeightOriginal = self.profileModel.weight
@@ -199,6 +200,26 @@ class SecondStepVC : BaseVC
 }
 extension SecondStepVC{
     
+    func setupInitialData(){
+        if self.weightUnit == WeightUnit.kg.rawValue{
+            self.weightUnitKey = self.weightUnitArrKeys[0]
+            self.segmentWeight.selectedSegmentIndex = 0
+        }else{
+            self.weightUnitKey = self.weightUnitArrKeys[1]
+            self.segmentWeight.selectedSegmentIndex = 1
+        }
+        if self.heightUnit == HeightUnit.cm.rawValue{
+            self.heightUnitKey = self.heightUnitArrKeys[0]
+            self.segmentHeight.selectedSegmentIndex = 0
+            
+        }else{
+            self.heightUnitKey = self.heightUnitArrKeys[1]
+            self.segmentHeight.selectedSegmentIndex = 1
+        }
+        
+        self.txtWeightGoal.text = self.selectedWeightGoalOriginal + " " + self.weightUnitKey.localized
+    }
+    
     func onViewDidLoad(){
         profileModel.gender = .male
         txtAge.delegate = self
@@ -210,18 +231,99 @@ extension SecondStepVC{
         segmentWeight.addTarget(self, action: #selector(txtActionWeightUnit(_:)), for: .valueChanged)
     }
     
+    func heightEntered(){
+        if  self.txtHeight.text?.trimmed() != ""{
+            if self.heightUnit == HeightUnit.cm.rawValue {
+                
+                let formatter: NumberFormatter = NumberFormatter()
+                let final = formatter.number(from: txtHeight.text ?? "0")?.description ?? "0"
+                self.selectedHeightInCm = final
+                self.selectedHeightInCmOriginal = (self.txtHeight.text ?? "")
+                
+                self.txtHeight.text =  (self.txtHeight.text ?? "") + " " + self.heightUnitKey.localized
+            }
+        }else{
+            self.selectedHeightInFeet = ""
+            self.selectedHeightInCm = ""
+            self.selectedHeightInCmOriginal = ""
+        }
+    }
+    func weightEntered(){
+        
+        if  self.txtWeight.text?.trimmed() != ""{
+            let formatter: NumberFormatter = NumberFormatter()
+            let final = formatter.number(from: txtWeight.text ?? "0")?.description ?? "0"
+            profileModel.weight = final
+            self.selectedWeightOriginal = (self.txtWeight.text ?? "")
+            self.txtWeight.text = (self.txtWeight.text ?? "") + " " + self.weightUnitKey.localized
+        }else{
+            profileModel.weight =  ""
+            self.selectedWeightOriginal =  ""
+        }
+    }
+    
+    func weightGoalEntered(){
+        
+        if  self.txtWeightGoal.text?.trimmed() != ""{
+            let formatter: NumberFormatter = NumberFormatter()
+            let final = formatter.number(from: txtWeightGoal.text ?? "0")?.description ?? "0"
+            profileModel.weightGoal = final
+            self.selectedWeightGoalOriginal = (self.txtWeightGoal.text ?? "")
+            self.txtWeightGoal.text = (self.txtWeightGoal.text ?? "") + " " + self.weightUnitKey.localized
+        }else{
+            profileModel.weightGoal =  ""
+            self.selectedWeightGoalOriginal =  ""
+        }
+    }
+    
     func validateInput() -> Bool{
-//        if txtAge.text?.trimTrailingWhitespace() == ""{
-//            CommonFunctions.showToastWithMessage(LocalizedString.enterAgeEmpty.rawValue)
-//            return false
-//        }
-        
-//        if profileModel.age == 0{
-//            CommonFunctions.showToastWithMessage(LocalizedString.enterAge.rawValue)
-//            return false
-//        }
-        
-        return true
+    if txtAge.text?.trimmed() == ""{
+        CommonFunctions.showToastWithMessage(LocalizedString.enterAgeEmpty.localized)
+        return false
+    }
+    
+    if profileModel.age == 0{
+        CommonFunctions.showToastWithMessage(LocalizedString.enterAge.localized)
+        return false
+    }
+    if txtHeight.text?.trimmed() == ""{
+        CommonFunctions.showToastWithMessage(LocalizedString.enterHeight.localized)
+        return false
+    }
+    if ((Double(selectedHeightInCm)?.toIntValue() ?? 0) < 122 || (Double(selectedHeightInCm) ?? 0) > 302) && heightUnit == HeightUnit.cm.rawValue {
+        CommonFunctions.showToastWithMessage(LocalizedString.enterValidHeight.localized)
+        return false
+    }
+    if profileModel.weight == ""{
+        CommonFunctions.showToastWithMessage(LocalizedString.enterWeight.localized)
+        return false
+    }
+    if ((Double(profileModel.weight)?.toIntValue() ?? 0) < 20 || (Double(profileModel.weight) ?? 0) > 300.0) && weightUnit == WeightUnit.kg.rawValue {
+        CommonFunctions.showToastWithMessage(LocalizedString.enterValidWeightKg.localized)
+        return false
+    }
+    if ((Double(profileModel.weight)?.toIntValue() ?? 0) < 44 || (Double(profileModel.weight) ?? 0) > 661.0) && weightUnit != WeightUnit.kg.rawValue {
+        CommonFunctions.showToastWithMessage(LocalizedString.enterValidWeightLbs.localized)
+        return false
+    }
+    
+    if profileModel.goal != .beActive{
+        if  profileModel.weightGoal == ""{
+            CommonFunctions.showToastWithMessage(LocalizedString.enterWeightGoal.localized)
+            return false
+            
+        }
+        if ((Double(profileModel.weightGoal)?.toIntValue() ?? 0) < 20 || (Double(profileModel.weightGoal) ?? 0) > 300.0) && weightUnit == WeightUnit.kg.rawValue {
+            CommonFunctions.showToastWithMessage(LocalizedString.enterValidWeightKgGoal.localized)
+            return false
+        }
+        if ((Double(profileModel.weightGoal)?.toIntValue() ?? 0) < 44 || (Double(profileModel.weightGoal) ?? 0) > 661.0) && weightUnit != WeightUnit.kg.rawValue {
+            CommonFunctions.showToastWithMessage(LocalizedString.enterValidWeightLbsGoal.localized)
+            return false
+        }
+    }
+    
+    return true
         
     }
 }
@@ -252,10 +354,13 @@ extension SecondStepVC {
     func textFieldDidEndEditing(_ textField: UITextField) {
         if textField == txtHeight{
             self.txtHeight.placeholder = LocalizedString.yourHeight.localized
+            heightEntered()
         }else if textField == txtWeight{
             self.txtWeight.placeholder = LocalizedString.yourWeight.localized
+            weightEntered()
         }else if textField == txtWeightGoal{
             self.txtWeightGoal.placeholder = LocalizedString.yourWeightGoal.localized
+            weightGoalEntered()
         }
         else if textField == txtAge{
             if textField.text?.trimmed() == "" {
