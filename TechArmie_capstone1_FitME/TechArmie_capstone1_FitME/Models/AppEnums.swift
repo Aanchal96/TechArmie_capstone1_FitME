@@ -28,7 +28,6 @@ public enum ProgramLevel : Int{
     case novice = 2
     case intermediate = 3
     case advance = 4
-    case master = 5
 }
 
 public enum Goal : Int{
@@ -48,7 +47,7 @@ public enum Goal : Int{
     }
 }
 
-
+// TODO: Remove if extra
 //MARK:- Api Code
 //=======================
 enum ApiCode {
