@@ -52,7 +52,7 @@ class SecondStepVC : UIViewController
     
     
     @IBAction func back(_ sender: Any) {
-        self.dismiss(animated: true, completion: nil)
+        self.navigationController?.popViewController(animated: true)
     }
     
     @IBAction func goToNext(_ sender: Any) {

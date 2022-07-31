@@ -169,6 +169,9 @@ class GoogleLoginController : NSObject {
                     failure(error1);
                 } else {
                     success(user)
+                    
+                    //TODO: - save complete user model
+                    AppUserDefaults.save(value: user.uid, forKey: .fullUserProfile)
                 }
             }
             
@@ -188,28 +191,3 @@ class GoogleLoginController : NSObject {
         
     }
 }
-
-// MARK: - Model class to store the user information...
-// MARK: ==============================================
-class AuthUser {
-    
-    let id: String?
-    let name: String?
-    let email: String?
-    
-    required init(_ googleUser: User?) {
-        
-        id = googleUser?.uid
-        name = googleUser?.displayName
-        email = googleUser?.email
-    }
-    
-    var dictionaryObject: [String:Any] {
-        var dictionary          = [String:Any]()
-        dictionary["_id"]       = id
-        dictionary["email"]     = email
-        dictionary["name"]      = name
-        return dictionary
-    }
-}
-

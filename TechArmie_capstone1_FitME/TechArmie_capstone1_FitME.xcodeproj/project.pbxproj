@@ -71,6 +71,8 @@
 		87236F98288DC83300CC2BDD /* UIDeviceExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87236F97288DC83300CC2BDD /* UIDeviceExtension.swift */; };
 		87236F9A288DC88500CC2BDD /* DoubleExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87236F99288DC88500CC2BDD /* DoubleExtension.swift */; };
 		87236F9C288DCC8700CC2BDD /* NSErrorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87236F9B288DCC8700CC2BDD /* NSErrorExtension.swift */; };
+		8795414828960A1C0063E2BB /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8795414728960A1C0063E2BB /* UserModel.swift */; };
+		8795414A28960B850063E2BB /* AppEnums.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8795414928960B850063E2BB /* AppEnums.swift */; };
 		87C4A30E28822B1000485A08 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87C4A30D28822B1000485A08 /* AppDelegate.swift */; };
 		87C4A31028822B1000485A08 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87C4A30F28822B1000485A08 /* SceneDelegate.swift */; };
 		87C4A31228822B1000485A08 /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87C4A31128822B1000485A08 /* OnboardingViewController.swift */; };
@@ -151,6 +153,8 @@
 		87236F97288DC83300CC2BDD /* UIDeviceExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIDeviceExtension.swift; sourceTree = "<group>"; };
 		87236F99288DC88500CC2BDD /* DoubleExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoubleExtension.swift; sourceTree = "<group>"; };
 		87236F9B288DCC8700CC2BDD /* NSErrorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSErrorExtension.swift; sourceTree = "<group>"; };
+		8795414728960A1C0063E2BB /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
+		8795414928960B850063E2BB /* AppEnums.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppEnums.swift; sourceTree = "<group>"; };
 		87C4A30A28822B1000485A08 /* TechArmie_capstone1_FitME.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TechArmie_capstone1_FitME.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		87C4A30D28822B1000485A08 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		87C4A30F28822B1000485A08 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -420,6 +424,8 @@
 			isa = PBXGroup;
 			children = (
 				87236F22288DB0F000CC2BDD /* JSON */,
+				8795414728960A1C0063E2BB /* UserModel.swift */,
+				8795414928960B850063E2BB /* AppEnums.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -658,6 +664,8 @@
 				55EB7450288A07D300DFD58D /* LoginController.swift in Sources */,
 				ED27FF32288B0A2900F5C657 /* ColorTheme.swift in Sources */,
 				87236F92288DBC3600CC2BDD /* UIViewExtension.swift in Sources */,
+				8795414A28960B850063E2BB /* AppEnums.swift in Sources */,
+				8795414828960A1C0063E2BB /* UserModel.swift in Sources */,
 				87236F43288DB79100CC2BDD /* AppleLoginController.swift in Sources */,
 				553D67CD2890BC3700CE57E3 /* WorkoutController.swift in Sources */,
 				553D67DB28935AEF00CE57E3 /* ChallengeDetailViewController.swift in Sources */,
