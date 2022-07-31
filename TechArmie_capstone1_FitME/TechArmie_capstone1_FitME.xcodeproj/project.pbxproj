@@ -40,7 +40,6 @@
 		87236F3C288DB3F400CC2BDD /* CommonFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87236F3B288DB3F400CC2BDD /* CommonFunctions.swift */; };
 		87236F40288DB77000CC2BDD /* InAppReceipt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87236F3E288DB77000CC2BDD /* InAppReceipt.swift */; };
 		87236F41288DB77000CC2BDD /* IAPController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87236F3F288DB77000CC2BDD /* IAPController.swift */; };
-		87236F43288DB79100CC2BDD /* AppleLoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87236F42288DB79100CC2BDD /* AppleLoginController.swift */; };
 		87236F45288DB7D500CC2BDD /* HealthKitController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87236F44288DB7D500CC2BDD /* HealthKitController.swift */; };
 		87236F6D288DB86D00CC2BDD /* WarmUpCompletedar.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 87236F49288DB86D00CC2BDD /* WarmUpCompletedar.mp3 */; };
 		87236F6E288DB86D00CC2BDD /* 321Goar.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 87236F4A288DB86D00CC2BDD /* 321Goar.mp3 */; };
@@ -71,6 +70,14 @@
 		87236F98288DC83300CC2BDD /* UIDeviceExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87236F97288DC83300CC2BDD /* UIDeviceExtension.swift */; };
 		87236F9A288DC88500CC2BDD /* DoubleExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87236F99288DC88500CC2BDD /* DoubleExtension.swift */; };
 		87236F9C288DCC8700CC2BDD /* NSErrorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87236F9B288DCC8700CC2BDD /* NSErrorExtension.swift */; };
+		87582725289652BE00BA3B26 /* IntExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87582724289652BE00BA3B26 /* IntExtension.swift */; };
+		8795414828960A1C0063E2BB /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8795414728960A1C0063E2BB /* UserModel.swift */; };
+		8795414A28960B850063E2BB /* AppEnums.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8795414928960B850063E2BB /* AppEnums.swift */; };
+		8795414C28961F370063E2BB /* BaseVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8795414B28961F370063E2BB /* BaseVC.swift */; };
+		8795415A289620600063E2BB /* NetworkErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8795414E2896205F0063E2BB /* NetworkErrorView.swift */; };
+		87954165289620600063E2BB /* NetworkErrorView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 879541592896205F0063E2BB /* NetworkErrorView.xib */; };
+		8795416728962C8A0063E2BB /* AppNetworking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8795416628962C8A0063E2BB /* AppNetworking.swift */; };
+		8795416928962E450063E2BB /* NSObjectExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8795416828962E450063E2BB /* NSObjectExtension.swift */; };
 		87C4A30E28822B1000485A08 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87C4A30D28822B1000485A08 /* AppDelegate.swift */; };
 		87C4A31028822B1000485A08 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87C4A30F28822B1000485A08 /* SceneDelegate.swift */; };
 		87C4A31228822B1000485A08 /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87C4A31128822B1000485A08 /* OnboardingViewController.swift */; };
@@ -86,6 +93,7 @@
 		ED7036E02888BAD4002A312F /* welcome_fitme.png in Resources */ = {isa = PBXBuildFile; fileRef = ED7036DD2888BAD4002A312F /* welcome_fitme.png */; };
 		ED7036E32888BAE9002A312F /* logo_FitME.png in Resources */ = {isa = PBXBuildFile; fileRef = ED7036E22888BAE9002A312F /* logo_FitME.png */; };
 		ED986BF2288AE45A005BCA62 /* FirstStepVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED986BF1288AE45A005BCA62 /* FirstStepVC.swift */; };
+		EDAA77FA2894A43A00FCA3D0 /* LocalizedString.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDAA77F92894A43A00FCA3D0 /* LocalizedString.swift */; };
 		EDFD6210288B4EC70026F779 /* UITextFieldExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDFD620F288B4EC70026F779 /* UITextFieldExtension.swift */; };
 /* End PBXBuildFile section */
 
@@ -122,7 +130,6 @@
 		87236F3B288DB3F400CC2BDD /* CommonFunctions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommonFunctions.swift; sourceTree = "<group>"; };
 		87236F3E288DB77000CC2BDD /* InAppReceipt.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InAppReceipt.swift; sourceTree = "<group>"; };
 		87236F3F288DB77000CC2BDD /* IAPController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IAPController.swift; sourceTree = "<group>"; };
-		87236F42288DB79100CC2BDD /* AppleLoginController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppleLoginController.swift; sourceTree = "<group>"; };
 		87236F44288DB7D500CC2BDD /* HealthKitController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HealthKitController.swift; sourceTree = "<group>"; };
 		87236F49288DB86D00CC2BDD /* WarmUpCompletedar.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = WarmUpCompletedar.mp3; sourceTree = "<group>"; };
 		87236F4A288DB86D00CC2BDD /* 321Goar.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 321Goar.mp3; sourceTree = "<group>"; };
@@ -153,6 +160,14 @@
 		87236F97288DC83300CC2BDD /* UIDeviceExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIDeviceExtension.swift; sourceTree = "<group>"; };
 		87236F99288DC88500CC2BDD /* DoubleExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoubleExtension.swift; sourceTree = "<group>"; };
 		87236F9B288DCC8700CC2BDD /* NSErrorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSErrorExtension.swift; sourceTree = "<group>"; };
+		87582724289652BE00BA3B26 /* IntExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntExtension.swift; sourceTree = "<group>"; };
+		8795414728960A1C0063E2BB /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
+		8795414928960B850063E2BB /* AppEnums.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppEnums.swift; sourceTree = "<group>"; };
+		8795414B28961F370063E2BB /* BaseVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseVC.swift; sourceTree = "<group>"; };
+		8795414E2896205F0063E2BB /* NetworkErrorView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkErrorView.swift; sourceTree = "<group>"; };
+		879541592896205F0063E2BB /* NetworkErrorView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NetworkErrorView.xib; sourceTree = "<group>"; };
+		8795416628962C8A0063E2BB /* AppNetworking.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppNetworking.swift; sourceTree = "<group>"; };
+		8795416828962E450063E2BB /* NSObjectExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSObjectExtension.swift; sourceTree = "<group>"; };
 		87C4A30A28822B1000485A08 /* TechArmie_capstone1_FitME.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TechArmie_capstone1_FitME.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		87C4A30D28822B1000485A08 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		87C4A30F28822B1000485A08 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -173,6 +188,7 @@
 		ED7036DD2888BAD4002A312F /* welcome_fitme.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = welcome_fitme.png; sourceTree = "<group>"; };
 		ED7036E22888BAE9002A312F /* logo_FitME.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo_FitME.png; sourceTree = "<group>"; };
 		ED986BF1288AE45A005BCA62 /* FirstStepVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstStepVC.swift; sourceTree = "<group>"; };
+		EDAA77F92894A43A00FCA3D0 /* LocalizedString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalizedString.swift; sourceTree = "<group>"; };
 		EDFD620F288B4EC70026F779 /* UITextFieldExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITextFieldExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -242,6 +258,7 @@
 		87236F21288DB0D100CC2BDD /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				8795414D2896205F0063E2BB /* Xibs */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -340,6 +357,15 @@
 			path = EN;
 			sourceTree = "<group>";
 		};
+		8795414D2896205F0063E2BB /* Xibs */ = {
+			isa = PBXGroup;
+			children = (
+				8795414E2896205F0063E2BB /* NetworkErrorView.swift */,
+				879541592896205F0063E2BB /* NetworkErrorView.xib */,
+			);
+			path = Xibs;
+			sourceTree = "<group>";
+		};
 		87C4A30128822B1000485A08 = {
 			isa = PBXGroup;
 			children = (
@@ -395,6 +421,7 @@
 		ED27FF30288B0A0800F5C657 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				EDAA77F82894A41F00FCA3D0 /* LocalizeString */,
 				87236F3A288DB3DF00CC2BDD /* CustomClasses */,
 				87236F23288DB16000CC2BDD /* AppUtilities */,
 				EDFD620E288B4EAF0026F779 /* Extensions */,
@@ -426,6 +453,8 @@
 			isa = PBXGroup;
 			children = (
 				87236F22288DB0F000CC2BDD /* JSON */,
+				8795414728960A1C0063E2BB /* UserModel.swift */,
+				8795414928960B850063E2BB /* AppEnums.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -433,10 +462,11 @@
 		ED7036ED2888BFBD002A312F /* CommonControllers */ = {
 			isa = PBXGroup;
 			children = (
+				8795416628962C8A0063E2BB /* AppNetworking.swift */,
 				87E58208288D7FDF003AFEA7 /* GoogleLoginController.swift */,
-				87236F42288DB79100CC2BDD /* AppleLoginController.swift */,
 				87236F44288DB7D500CC2BDD /* HealthKitController.swift */,
 				87236F3D288DB77000CC2BDD /* IAP */,
+				8795414B28961F370063E2BB /* BaseVC.swift */,
 			);
 			path = CommonControllers;
 			sourceTree = "<group>";
@@ -495,9 +525,18 @@
 			path = Images;
 			sourceTree = "<group>";
 		};
+		EDAA77F82894A41F00FCA3D0 /* LocalizeString */ = {
+			isa = PBXGroup;
+			children = (
+				EDAA77F92894A43A00FCA3D0 /* LocalizedString.swift */,
+			);
+			path = LocalizeString;
+			sourceTree = "<group>";
+		};
 		EDFD620E288B4EAF0026F779 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				8795416828962E450063E2BB /* NSObjectExtension.swift */,
 				87E58210288DACE8003AFEA7 /* UIViewControllerExtension.swift */,
 				EDFD620F288B4EC70026F779 /* UITextFieldExtension.swift */,
 				87236F8F288DBC0000CC2BDD /* UIDateExtension.swift */,
@@ -507,6 +546,7 @@
 				87236F97288DC83300CC2BDD /* UIDeviceExtension.swift */,
 				87236F99288DC88500CC2BDD /* DoubleExtension.swift */,
 				87236F9B288DCC8700CC2BDD /* NSErrorExtension.swift */,
+				87582724289652BE00BA3B26 /* IntExtension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -601,6 +641,7 @@
 				87236F8C288DB86D00CC2BDD /* en30.mp3 in Resources */,
 				87236F76288DB86D00CC2BDD /* Restar.mp3 in Resources */,
 				87236F8D288DB86D00CC2BDD /* en20.mp3 in Resources */,
+				87954165289620600063E2BB /* NetworkErrorView.xib in Resources */,
 				87236F84288DB86D00CC2BDD /* en15.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -655,16 +696,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				553D67D728933CD600CE57E3 /* ChallengesView.swift in Sources */,
+				8795414C28961F370063E2BB /* BaseVC.swift in Sources */,
 				87C4A31228822B1000485A08 /* OnboardingViewController.swift in Sources */,
 				87236F3C288DB3F400CC2BDD /* CommonFunctions.swift in Sources */,
 				553D67D12890C03D00CE57E3 /* HomeController.swift in Sources */,
+				87582725289652BE00BA3B26 /* IntExtension.swift in Sources */,
 				87236F31288DB16000CC2BDD /* AppRouter.swift in Sources */,
 				87236F39288DB16000CC2BDD /* AppFonts.swift in Sources */,
 				87E58209288D7FDF003AFEA7 /* GoogleLoginController.swift in Sources */,
 				55EB7450288A07D300DFD58D /* LoginController.swift in Sources */,
 				ED27FF32288B0A2900F5C657 /* ColorTheme.swift in Sources */,
 				87236F92288DBC3600CC2BDD /* UIViewExtension.swift in Sources */,
-				87236F43288DB79100CC2BDD /* AppleLoginController.swift in Sources */,
+				8795414A28960B850063E2BB /* AppEnums.swift in Sources */,
+				8795414828960A1C0063E2BB /* UserModel.swift in Sources */,
 				553D67CD2890BC3700CE57E3 /* WorkoutController.swift in Sources */,
 				553D67DB28935AEF00CE57E3 /* ChallengeDetailViewController.swift in Sources */,
 				7CDA8CD0288A7CB90029ECB1 /* SecondStepVC.swift in Sources */,
@@ -677,6 +721,7 @@
 				87236F9A288DC88500CC2BDD /* DoubleExtension.swift in Sources */,
 				55A6A623288F924D004A7C0C /* Login.swift in Sources */,
 				553D67CF2890BC4900CE57E3 /* WorkoutView.swift in Sources */,
+				8795415A289620600063E2BB /* NetworkErrorView.swift in Sources */,
 				87236F94288DC34700CC2BDD /* UIApplicationExtension.swift in Sources */,
 				87C4A31228822B1000485A08 /* OnboardingViewController.swift in Sources */,
 				7CDA8CDC288A9E3B0029ECB1 /* FifthStepVC.swift in Sources */,
@@ -695,7 +740,9 @@
 				87236F98288DC83300CC2BDD /* UIDeviceExtension.swift in Sources */,
 				87236F34288DB16000CC2BDD /* AppColors.swift in Sources */,
 				7CDA8CDA288A9E090029ECB1 /* FourthStepVC.swift in Sources */,
+				8795416928962E450063E2BB /* NSObjectExtension.swift in Sources */,
 				87236F2F288DB16000CC2BDD /* DeviceDetail.swift in Sources */,
+				8795416728962C8A0063E2BB /* AppNetworking.swift in Sources */,
 				87236F36288DB16000CC2BDD /* AppConstants.swift in Sources */,
 				87C4A30E28822B1000485A08 /* AppDelegate.swift in Sources */,
 				87236F45288DB7D500CC2BDD /* HealthKitController.swift in Sources */,
@@ -703,6 +750,7 @@
 				557D6E24288A134A00906AAA /* SignUpController.swift in Sources */,
 				553D67C4289078FD00CE57E3 /* SignUp.swift in Sources */,
 				87236F38288DB16000CC2BDD /* AppIds.swift in Sources */,
+				EDAA77FA2894A43A00FCA3D0 /* LocalizedString.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -1,4 +1,8 @@
-
+//
+//  TechArmie_capstone1_FitME
+//
+//  Created by Aanchal Bansal on 2022-07-15.
+//
 
 import Foundation
 import UIKit
@@ -47,12 +51,6 @@ extension UIViewController {
     static func instantiate(fromAppStoryboard appStoryboard: AppStoryboard) -> Self {
         
         return appStoryboard.viewController(self)
-    }
-    
-    ///Not using static as it won't be possible to override to provide custom storyboardID then
-    class var storyboardID : String {
-        
-        return "\(self)"
     }
 }
 

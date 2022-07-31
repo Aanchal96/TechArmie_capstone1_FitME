@@ -7,8 +7,8 @@
 
 import Foundation
 import UIKit
-class ThirdStepVC : UIViewController
-{
+
+class ThirdStepVC : BaseVC{
     
     @IBOutlet weak var btnBack: UIButton!
     @IBOutlet weak var btnSedentery: UIButton!
@@ -16,6 +16,7 @@ class ThirdStepVC : UIViewController
     @IBOutlet weak var btnModeratlyActive: UIButton!
     @IBOutlet weak var btnVeryActive: UIButton!
     
+    var profileModel = ProfileModel()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -23,10 +24,11 @@ class ThirdStepVC : UIViewController
         
     }
     @IBAction func back(_ sender: Any) {
-        self.dismiss(animated: true, completion: nil)
+        self.navigationController?.popViewController(animated: true)
     }
     @IBAction func goToNext(_ sender: Any) {
         let vc = FourthStepVC.instantiate(fromAppStoryboard: .Main)
+        vc.profileModel = profileModel
         self.navigationController?.pushViewController(vc, animated: true)
     }
     
@@ -47,20 +49,20 @@ class ThirdStepVC : UIViewController
         sender.backgroundColor = CustomColors.primaryColor
         sender.tintColor = CustomColors.white
         
-//        switch(sender){
-//        case btnSedentery:
-//
-//            break
-//        case btnLightActive:
-//
-//            break
-//        case btnModeratlyActive:
-//            break
-//        case btnVeryActive:
-//            break
-//        default:
-//            break
-//        }
+        //        switch(sender){
+        //        case btnSedentery:
+        //
+        //            break
+        //        case btnLightActive:
+        //
+        //            break
+        //        case btnModeratlyActive:
+        //            break
+        //        case btnVeryActive:
+        //            break
+        //        default:
+        //            break
+        //        }
     }
     
 }

@@ -22,7 +22,6 @@
 //
 //        if let nav = AppDelegate.shared.window?.rootViewController as? NavigationViewController, let tabbar = nav.childViewControllers.first as? TabBarViewController, tabbar.selectedIndex == 3{
 //            if UserModel.main.subscription.subscriptionStatus != 0{
-//                tabbar.setMealViewController()
 //            }
 //            DispatchQueue.delay(0.3) {
 //                let vc = NewSubscriptionVC.instantiate(fromAppStoryboard: .Subscription)

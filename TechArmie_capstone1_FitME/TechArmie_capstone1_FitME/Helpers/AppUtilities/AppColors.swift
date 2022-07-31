@@ -1,11 +1,15 @@
-
+//
+//  TechArmie_capstone1_FitME
+//
+//  Created by Aanchal Bansal on 2022-07-15.
+//
 
 import Foundation
 import UIKit
 
 enum AppColors {
 
-    static var themeGrayColor: UIColor { return #colorLiteral(red: 0, green: 0.8156862745, blue: 0.4431372549, alpha: 1) } // rgb 11 211 121
+    static var themePrimaryColor: UIColor { return #colorLiteral(red: 0.1935358346, green: 0.3273826241, blue: 0.3708364666, alpha: 1) } // rgb 11 211 121
     
 }
  
