@@ -61,7 +61,6 @@
 		874C1E6128982C2F00EE4E94 /* ChallengesDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 874C1E4028982C2F00EE4E94 /* ChallengesDetail.swift */; };
 		874C1E6228982C2F00EE4E94 /* WorkoutDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 874C1E4128982C2F00EE4E94 /* WorkoutDetailVC.swift */; };
 		874C1E6328982C2F00EE4E94 /* WorkoutSubmitVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 874C1E4228982C2F00EE4E94 /* WorkoutSubmitVC.swift */; };
-		874C1E6428982C2F00EE4E94 /* WorkoutVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 874C1E4328982C2F00EE4E94 /* WorkoutVC.swift */; };
 		874C1E6528982C2F00EE4E94 /* ChallengesListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 874C1E4428982C2F00EE4E94 /* ChallengesListViewController.swift */; };
 		874C1E6628982C2F00EE4E94 /* ChallengesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 874C1E4628982C2F00EE4E94 /* ChallengesModel.swift */; };
 		874C1E6728982C2F00EE4E94 /* WorkoutDetailTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 874C1E4828982C2F00EE4E94 /* WorkoutDetailTableCell.swift */; };
@@ -109,7 +108,7 @@
 		ED7036E32888BAE9002A312F /* logo_FitME.png in Resources */ = {isa = PBXBuildFile; fileRef = ED7036E22888BAE9002A312F /* logo_FitME.png */; };
 		ED986BF2288AE45A005BCA62 /* FirstStepVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED986BF1288AE45A005BCA62 /* FirstStepVC.swift */; };
 		EDAA77FA2894A43A00FCA3D0 /* LocalizedString.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDAA77F92894A43A00FCA3D0 /* LocalizedString.swift */; };
-		EDAA77FC28965C8A00FCA3D0 /* MultiPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDAA77FB28965C8A00FCA3D0 /* MultiPicker.swift */; };
+		EDF8F41F289880D000D3345F /* UIMultiPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDF8F41E289880D000D3345F /* UIMultiPicker.swift */; };
 		EDFD6210288B4EC70026F779 /* UITextFieldExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDFD620F288B4EC70026F779 /* UITextFieldExtension.swift */; };
 /* End PBXBuildFile section */
 
@@ -220,7 +219,7 @@
 		ED7036E22888BAE9002A312F /* logo_FitME.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo_FitME.png; sourceTree = "<group>"; };
 		ED986BF1288AE45A005BCA62 /* FirstStepVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstStepVC.swift; sourceTree = "<group>"; };
 		EDAA77F92894A43A00FCA3D0 /* LocalizedString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalizedString.swift; sourceTree = "<group>"; };
-		EDAA77FB28965C8A00FCA3D0 /* MultiPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultiPicker.swift; sourceTree = "<group>"; };
+		EDF8F41E289880D000D3345F /* UIMultiPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIMultiPicker.swift; sourceTree = "<group>"; };
 		EDFD620F288B4EC70026F779 /* UITextFieldExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITextFieldExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -282,6 +281,7 @@
 			isa = PBXGroup;
 			children = (
 				87236F3B288DB3F400CC2BDD /* CommonFunctions.swift */,
+				EDF8F41E289880D000D3345F /* UIMultiPicker.swift */,
 			);
 			path = CustomClasses;
 			sourceTree = "<group>";
@@ -320,8 +320,6 @@
 		874C1E1128982A0F00EE4E94 /* Resource */ = {
 			isa = PBXGroup;
 			children = (
-				87236F3B288DB3F400CC2BDD /* CommonFunctions.swift */,
-				EDAA77FB28965C8A00FCA3D0 /* MultiPicker.swift */,
 				874C1E1228982A0F00EE4E94 /* WorkoutJSON */,
 				874C1E1428982A0F00EE4E94 /* Icon */,
 			);
@@ -921,6 +919,7 @@
 				87236F37288DB16000CC2BDD /* AppGlobals.swift in Sources */,
 				874C1E6928982C2F00EE4E94 /* FinishCoolDownCell.swift in Sources */,
 				87236F35288DB16000CC2BDD /* AppStoryboards.swift in Sources */,
+				EDF8F41F289880D000D3345F /* UIMultiPicker.swift in Sources */,
 				87E58211288DACE8003AFEA7 /* UIViewControllerExtension.swift in Sources */,
 				7CDA8CD4288A85730029ECB1 /* ThirdStepVC.swift in Sources */,
 				87236F9C288DCC8700CC2BDD /* NSErrorExtension.swift in Sources */,
@@ -938,8 +937,6 @@
 				557D6E24288A134A00906AAA /* SignUpController.swift in Sources */,
 				874C1E6C28982C2F00EE4E94 /* FinishWarmUpCell.swift in Sources */,
 				553D67C4289078FD00CE57E3 /* SignUp.swift in Sources */,
-				87236F38288DB16000CC2BDD /* AppIds.swift in Sources */,
-				EDAA77FC28965C8A00FCA3D0 /* MultiPicker.swift in Sources */,
 				874C1E6A28982C2F00EE4E94 /* RestCell.swift in Sources */,
 				EDAA77FA2894A43A00FCA3D0 /* LocalizedString.swift in Sources */,
 				874C1E6E28982C2F00EE4E94 /* StartCoolDownCell.swift in Sources */,
