@@ -200,20 +200,6 @@
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Part 1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J9e-DF-L1h">
-                                        <rect key="frame" x="175" y="130.5" width="64.5" height="28"/>
-                                        <fontDescription key="fontDescription" name="SFProText-Bold" family="SF Pro Text" pointSize="24"/>
-                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <nil key="highlightedColor"/>
-                                        <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="lineHeight">
-                                                <real key="value" value="20"/>
-                                            </userDefinedRuntimeAttribute>
-                                        </userDefinedRuntimeAttributes>
-                                        <variation key="heightClass=regular-widthClass=regular">
-                                            <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="20"/>
-                                        </variation>
-                                    </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="45% COMPLETED" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vm5-my-Rt1">
                                         <rect key="frame" x="284.5" y="210" width="101.5" height="14"/>
                                         <fontDescription key="fontDescription" name="SFProText-Regular" family="SF Pro Text" pointSize="12"/>
@@ -342,7 +328,6 @@
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstItem="vm5-my-Rt1" firstAttribute="trailing" secondItem="RSz-2U-QU3" secondAttribute="trailing" id="31T-t4-nAi"/>
-                                    <constraint firstItem="J9e-DF-L1h" firstAttribute="top" secondItem="qmx-M7-snc" secondAttribute="bottom" constant="8" id="3J2-Wd-KtG"/>
                                     <constraint firstItem="nsC-lQ-z1r" firstAttribute="leading" secondItem="RPA-qh-tM4" secondAttribute="leading" id="8Sg-Ku-ZWP"/>
                                     <constraint firstAttribute="trailing" secondItem="nsC-lQ-z1r" secondAttribute="trailing" id="9AA-6v-yVb"/>
                                     <constraint firstItem="RSz-2U-QU3" firstAttribute="centerX" secondItem="yKv-LX-oep" secondAttribute="centerX" id="9ZZ-ho-zI0"/>
@@ -350,8 +335,6 @@
                                     <constraint firstItem="pN2-NK-S0E" firstAttribute="top" secondItem="RPA-qh-tM4" secondAttribute="top" id="ADh-4F-XDb"/>
                                     <constraint firstItem="nsC-lQ-z1r" firstAttribute="top" secondItem="pN2-NK-S0E" secondAttribute="bottom" id="Bze-0Z-dcs"/>
                                     <constraint firstItem="XzH-mE-6YM" firstAttribute="centerY" secondItem="nsC-lQ-z1r" secondAttribute="bottom" constant="-1" id="LHu-pX-oEn"/>
-                                    <constraint firstItem="J9e-DF-L1h" firstAttribute="centerX" secondItem="pN2-NK-S0E" secondAttribute="centerX" id="WO9-zF-cp6"/>
-                                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="J9e-DF-L1h" secondAttribute="trailing" constant="16" id="YN5-hZ-FxB"/>
                                     <constraint firstAttribute="bottom" secondItem="nsC-lQ-z1r" secondAttribute="bottom" id="ZDl-sP-5HQ"/>
                                     <constraint firstItem="qmx-M7-snc" firstAttribute="centerX" secondItem="pN2-NK-S0E" secondAttribute="centerX" id="cX2-2d-W4Y"/>
                                     <constraint firstItem="RSz-2U-QU3" firstAttribute="leading" secondItem="RPA-qh-tM4" secondAttribute="leading" constant="28" id="ctW-MJ-KeB"/>
@@ -383,7 +366,6 @@
                         <outlet property="headerImageView" destination="pN2-NK-S0E" id="37q-td-Y2q"/>
                         <outlet property="headerView" destination="RPA-qh-tM4" id="i3i-Oo-7Jv"/>
                         <outlet property="levelLabel" destination="qmx-M7-snc" id="Bbb-Kc-kIb"/>
-                        <outlet property="partsLabel" destination="J9e-DF-L1h" id="PXe-ft-i7w"/>
                         <outlet property="percentageLabel" destination="vm5-my-Rt1" id="CWD-74-8eG"/>
                         <outlet property="progressView" destination="RSz-2U-QU3" id="2Sy-5X-Lfd"/>
                         <outlet property="weekFourBtn" destination="U7Z-YS-Wab" id="4Hl-Od-EIc"/>
@@ -398,7 +380,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NrP-rp-OyW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1659" y="644"/>
+            <point key="canvasLocation" x="-1659.4202898550725" y="643.52678571428567"/>
         </scene>
     </scenes>
     <resources>

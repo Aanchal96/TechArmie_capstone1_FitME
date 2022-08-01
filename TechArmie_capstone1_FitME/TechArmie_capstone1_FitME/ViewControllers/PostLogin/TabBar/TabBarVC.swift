@@ -15,6 +15,7 @@ class TabBarVC: UITabBarController {
         setImages()
     }
     
+    //TODO: Fix images
     private func setImages(){
         let vcs = self.viewControllers
         vcs?[0].tabBarItem.image = UIImage(named: "clock")

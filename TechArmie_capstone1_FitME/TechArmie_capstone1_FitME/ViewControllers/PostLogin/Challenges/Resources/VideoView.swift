@@ -3,7 +3,6 @@ import UIKit
 import AVKit
 import AVFoundation
 
-
 class CustomVideoView  : UIView{
     
     var player : AVPlayer?

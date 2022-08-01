@@ -6,16 +6,13 @@
 //
 
 import UIKit
-import SDWebImage
-
 import AVKit
+import SDWebImage
 import SwiftyJSON
 
 final class ExerciseLibraryViewController: BaseVC {
     
     //MARK: - OUTLETS
-//    @IBOutlet weak var tableView: UITableView!
-//    @IBOutlet weak var collectionView: UICollectionView!
     @IBOutlet weak var lblHeader: UILabel!
     @IBOutlet weak var backButton: UIButton!
     @IBOutlet weak var viewUnderLine: UIView!
@@ -37,12 +34,10 @@ final class ExerciseLibraryViewController: BaseVC {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        tabBarController?.tabBar.isHidden = false
     }
     
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
-        tabBarController?.tabBar.isHidden = true
     }
     
     //MARK::- BUTTON ACTION
@@ -84,12 +79,6 @@ extension ExerciseLibraryViewController : UITableViewDelegate , UITableViewDataS
     }
     func tableView(_ tableView: UITableView, estimatedHeightForRowAt indexPath: IndexPath) -> CGFloat {
         return 48
-    }
-    func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
-        return 0
-    }
-    func tableView(_ tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat {
-        return 0
     }
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: ExerciseLibraryCell.className, for: indexPath) as? ExerciseLibraryCell else {
@@ -151,6 +140,7 @@ extension ExerciseLibraryViewController : UICollectionViewDataSource, UICollecti
 //MARK::- API
 
 extension ExerciseLibraryViewController {
+    
     func getDataFromJSON() {
         var json = JSON()
         if let path = Bundle.main.path(forResource: "ExerciseLibraryData", ofType: "json") {

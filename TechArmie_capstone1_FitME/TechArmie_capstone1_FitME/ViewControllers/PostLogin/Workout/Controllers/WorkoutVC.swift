@@ -1,18 +1,22 @@
-
+//
+//  WorkoutVC.swift
+//  TechArmie_capstone1_FitME
+//
+//  Created by Aanchal Bansal
+//
 
 import UIKit
 
 enum ExerciseType : Int{
     case warmUp
-    case coolDown
     case normal
+    case coolDown
 }
 
 class WorkoutVC: UIViewController {
     
     //MARK::- OUTLET
     @IBOutlet weak var lblHeaderTime: UILabel!
-    @IBOutlet weak var progressMain: UIProgressView!
     @IBOutlet weak var progressDone: UIProgressView!
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var lblHeaderTitle: UILabel!
@@ -21,21 +25,24 @@ class WorkoutVC: UIViewController {
     //MARK::- PROPERTIES
     var challengeData : Challenge?
     var isFromChallenge = false
-    var lastContentOffset: CGFloat = 0
-    var cellIndexAtTop = 0
+    
+    var lastContentOffset: CGFloat = 0 // Add offset as cell is scrolled down
+    var cellIndexAtTop = 0 // Cell currently visible on screen
+    
     var workoutData : WorkoutModel?
     var programData : ProgramModel?
     var workoutArray : [ExerciseModel]? = []
+    
     var timer : Timer?
-    //var timerTotalTime : Timer?
     var totalTimeForWorkoutInSeconds = 0
     var initialTimeInSec = 0
-    var coolDownExerciseCount = 0
+    
     var warmUpExercideCount = 0
     var exerciseCount = 0
+    var coolDownExerciseCount = 0
     
-    var currentAvailableIndex = 0
-    var currentDoneIndex = 0
+    var currentAvailableIndex = 0 //Next Cell in line - to prepare
+    var currentDoneIndex = 0 // Previous cell that is just scrolled - to deinit
     
     var currentExerciseType = ExerciseType.warmUp
     var isWorkoutCompleted = 0
@@ -52,7 +59,8 @@ class WorkoutVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        progressMain.transform = progressMain.transform.scaledBy(x: 1, y: 0.5)
+        
+        // Progress bars on Top to show exerc
         progressDone.transform = progressDone.transform.scaledBy(x: 1, y: 0.5)
         setLocalizedString()
         onViewDidLoad()
@@ -84,6 +92,7 @@ class WorkoutVC: UIViewController {
 }
 //MARK::- FUNCTIONS
 extension WorkoutVC{
+    
     private func setLocalizedString(){
         lblHeaderTitle.text = "COOL-DOWN"
         
@@ -101,21 +110,23 @@ extension WorkoutVC{
         //self.lblHeaderTitle.isHidden = true//false
         self.lblHeaderTitle.isHidden = false
         
-        self.progressMain.setProgress( 0 , animated: false)
         self.progressDone.setProgress( 0 , animated: false)
+        
+        //Background notifications
         NotificationCenter.default.addObserver(self,
                                                selector: #selector(appWillEnterForegroundNotification),
                                                name: UIApplication.willEnterForegroundNotification, object: nil)
-        //        timerTotalTime = Timer.scheduledTimer(withTimeInterval: 1.0, repeats: true, block: { [weak self] (timer) in
-        //            guard let _ = self?.timerTotalTime else {return}
-        //            self?.totalTimeForWorkoutInSeconds = (self?.totalTimeForWorkoutInSeconds ?? 0) + 1
-        //        })
     }
     
     @objc func appWillEnterForegroundNotification() {
         guard let cellCentre = self.tableView.cellForRow(at: IndexPath.init(row: (self.cellIndexAtTop  ), section: 0)) as? WorkoutCell  else {return}
         cellCentre.videoView?.play()
     }
+    
+}
+
+//MARK: Timer Functions
+extension WorkoutVC{
     
     func formattedTime(val : Int) -> String{
         let min = (val / 60).description
@@ -129,14 +140,9 @@ extension WorkoutVC{
         })
     }
     func resetHeaderTime(isZero:Bool = false){
-        self.progressMain.setProgress(isZero ? 0 : 1, animated: false)
         self.progressDone.setProgress(isZero ? 0 : 1, animated: false)
-        // self.initialTimeInSec = 0
         self.currentAvailableIndex = 0
         self.currentDoneIndex = 0
-        // self.lblHeaderTime.text = "0:00"
-        //self.timer?.invalidate()
-        //self.timer = nil
     }
 }
 
@@ -149,12 +155,9 @@ extension WorkoutVC : UITableViewDelegate , UITableViewDataSource{
         return self.workoutArray?.count ?? 0
     }
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        //return ez.screenWidth
         return self.tableView.frame.size.height - 128
     }
     func tableView(_ tableView: UITableView, estimatedHeightForRowAt indexPath: IndexPath) -> CGFloat {
-        // return ez.screenWidth
-        
         return self.tableView.frame.size.height - 128
     }
     func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
@@ -332,14 +335,11 @@ extension WorkoutVC : WorkoutComplete , RestDelegate {
                     
                     switch self.currentExerciseType{
                     case .warmUp:
-                        self.progressMain.setProgress(Float(self.currentAvailableIndex) / Float(self.warmUpExercideCount ), animated: false)
                         self.progressDone.setProgress(Float(self.currentDoneIndex) / Float(self.warmUpExercideCount), animated: false)
                         
                     case .normal:
-                        self.progressMain.setProgress(Float(self.currentAvailableIndex) / Float((self.exerciseCount ) ), animated: false)
                         self.progressDone.setProgress(Float(self.currentDoneIndex) / Float((self.exerciseCount) ), animated: false)
                     case .coolDown:
-                        self.progressMain.setProgress(Float(self.currentAvailableIndex) / Float(self.coolDownExerciseCount), animated: false)
                         self.progressDone.setProgress(Float(self.currentDoneIndex) / Float(self.coolDownExerciseCount), animated: false)
                     }
                     break

@@ -7,29 +7,7 @@
 
 import UIKit
 
-
-
-extension UITableView {
-    func registerCell(with identifier: UITableViewCell.Type)  {
-        self.register(UINib(nibName: "\(identifier.self)",bundle:nil),
-                      forCellReuseIdentifier: "\(identifier.self)")
-    }
-    
-    ///Register Header Footer View Nib
-    func registerHeaderFooter(with identifier: UITableViewHeaderFooterView.Type)  {
-        self.register(UINib(nibName: "\(identifier.self)",bundle:nil), forHeaderFooterViewReuseIdentifier: "\(identifier.self)")
-    }
-    func dequeueCell <T: UITableViewCell> (with identifier: T.Type, indexPath: IndexPath? = nil) -> T {
-        if let index = indexPath {
-            return self.dequeueReusableCell(withIdentifier: "\(identifier.self)", for: index) as! T
-        } else {
-            return self.dequeueReusableCell(withIdentifier: "\(identifier.self)") as! T
-        }
-    }
-    
-}
-
-class ChallengeWorkoutDetailVC: BaseVC {
+class WorkoutDetailVC: BaseVC {
     
     //MARK::- OUTLETS
     @IBOutlet weak var lblPlan: UILabel!
@@ -47,23 +25,21 @@ class ChallengeWorkoutDetailVC: BaseVC {
     @IBOutlet weak var viewFooter: UIView!
     @IBOutlet weak var btnDownLoading: UIButton!
     @IBOutlet weak var btnStartWorkout: UIButton!
-    
     @IBOutlet weak var btnsBackgroundView: UIView!
-    
     
     //MARK::- PROPERTIES
     var isDownloadingAudios = false
     var isFromChallenge = true
-    var exerciseResult : ExerciseResult?
-    var shouldAddFooter = false
-    var workoutData : WorkoutModel?
-    var challengeData : Challenge?
-    var arrSets : [[ExerciseModel]]?
-    var arrWarmup : [ExerciseModel] = []
-    var arrCoolDown : [ExerciseModel] = []
-    var arrExercises : [ExerciseModel] = []//to find count
     var isWarmupExercisesFetched = false
-    var headerImage: UIImage?
+    
+    var exerciseResult : ExerciseResult?
+    var workoutData : WorkoutModel? //If coming from workout
+    var challengeData : Challenge? //If coming from challenge
+    
+    var arrSets : [[ExerciseModel]]? //Initial from JSON
+    var arrWarmup : [ExerciseModel] = [] //Initial From JSON - different object
+    var arrExercises : [ExerciseModel] = []//Created (arrSets * count)
+    var arrCoolDown : [ExerciseModel] = [] //Initial From JSON - different object
     
     //MARK::- LIFE CYCLE
     override func viewDidLoad() {
@@ -91,7 +67,7 @@ class ChallengeWorkoutDetailVC: BaseVC {
 }
 
 //MARK::- FUNCTION
-extension ChallengeWorkoutDetailVC{
+extension WorkoutDetailVC{
     func onViewDidLoad(){
         self.btnStartWorkout.isHidden =  true
         self.imgHeader.image = nil
@@ -103,7 +79,7 @@ extension ChallengeWorkoutDetailVC{
         tableView.tableHeaderView?.height = 280
         self.imgHeader.contentMode = .scaleAspectFill
         self.updateHeader()
-        self.getDataFromAPI()
+        self.getDataFromJSON()
     }
     func updateHeader(){
         self.lblPlan.text = workoutData?.name
@@ -114,30 +90,10 @@ extension ChallengeWorkoutDetailVC{
         lblHeading.text = workoutData?.workoutSubtitle ?? ""
     }
     
-    func gotoNext(newArr : [ExerciseModel]){
-        
-        tryDownload(workoutArray : newArr)
-    }
-}
-
-
-//MARK::- DELEGATE DOWNLOAD VIDEOS
-extension ChallengeWorkoutDetailVC {
-    func successDownload(workoutArray: [ExerciseModel]) {
-                let vc = WorkoutVC.instantiate(fromAppStoryboard: .Challenges)
-                vc.workoutData = self.workoutData
-                vc.workoutArray = workoutArray
-                vc.coolDownExerciseCount = self.arrCoolDown.count
-                vc.warmUpExercideCount = self.arrWarmup.count
-                vc.exerciseCount = self.arrExercises.count
-                vc.challengeData = self.challengeData
-                vc.isFromChallenge = isFromChallenge
-                self.navigationController?.pushViewController(vc, animated: true)
-    }
 }
 
 //MARK::- TABLE VIEW DELEGATE AND DATASOURCE
-extension ChallengeWorkoutDetailVC : UITableViewDelegate , UITableViewDataSource{
+extension WorkoutDetailVC : UITableViewDelegate , UITableViewDataSource{
     func numberOfSections(in tableView: UITableView) -> Int {
         return self.arrSets?.count ?? 0
     }
@@ -162,13 +118,15 @@ extension ChallengeWorkoutDetailVC : UITableViewDelegate , UITableViewDataSource
     func tableView(_ tableView: UITableView, estimatedHeightForFooterInSection section: Int) -> CGFloat {
         return 48
     }
+    
+    // MAIN CELL WITH EXERCISE NAME
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueCell(with: WorkoutDetailTableCell.self)
-        cell.imgShuffle.isHidden = true//option should always be there to swap
         cell.configureCell(data : self.arrSets?[indexPath.section][indexPath.row])
         return cell
     }
     
+    // HEADER WITH NUMBER OF ROUNDS
     func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
         guard let headerView = tableView.dequeueReusableHeaderFooterView(withIdentifier: WorkoutDetailHeader.className) as? WorkoutDetailHeader else {return UIView()}
         
@@ -179,6 +137,8 @@ extension ChallengeWorkoutDetailVC : UITableViewDelegate , UITableViewDataSource
         return headerView
         
     }
+    
+    // FOOTER WITH BOX BOTTOM
     func tableView(_ tableView: UITableView, viewForFooterInSection section: Int) -> UIView? {
         guard let footerView = tableView.dequeueReusableHeaderFooterView(withIdentifier: WorkoutDetailFooter.className) as? WorkoutDetailFooter else {return UIView()}
         return footerView
@@ -187,10 +147,10 @@ extension ChallengeWorkoutDetailVC : UITableViewDelegate , UITableViewDataSource
 }
 
 //MARK::- API FUNCTIONS
-extension ChallengeWorkoutDetailVC{
+extension WorkoutDetailVC{
     
-    //get only exercise set
-    func getDataFromAPI(){
+    //get only exercise set - Fills Data in Header and Exercise Cells
+    func getDataFromJSON(){
         guard let model = challengeData?.result else {return}
         arrSets = model.exerciseModel
         exerciseResult = model
@@ -201,29 +161,29 @@ extension ChallengeWorkoutDetailVC{
         if self.workoutData?.medias.first?.mediaUrl != ""{
             self.imgHeader.sd_setImage(with: URL.init(string: (self.workoutData?.medias.first?.mediaUrl ?? "")))
         }
-   
-        self.shouldAddFooter = true
+        
         self.btnsBackgroundView.isHidden = false
         self.updateHeader()
     }
     
     //get warmup and cooldown
     func getWorkoutExercises(){
-        if self.workoutData?.id == "" {
-            return
-        }
         
         self.arrWarmup = self.challengeData?.result.warmUpModel ?? []
         self.arrCoolDown = self.challengeData?.result.coolDownModel ?? []
         self.isWarmupExercisesFetched = true
         self.createCompleteWorkoutArray()
-        
     }
     
     func createCompleteWorkoutArray(){
+        
         var completeWorkoutArray : [ExerciseModel] = []
+        
+        //Add warm up initially
         completeWorkoutArray.append(contentsOf: arrWarmup)
         arrExercises = []
+        
+        // Add main exercises
         self.arrSets?.forEachEnumerated({  [weak self](index, arrExercise) in
             for _ in 0...((arrExercise.first?.noOfRounds ?? 0) - 1){
                 completeWorkoutArray.append(contentsOf: arrExercise)
@@ -231,17 +191,25 @@ extension ChallengeWorkoutDetailVC{
             }
         })
         
+        // Add cool down exercises
         completeWorkoutArray.append(contentsOf: self.arrCoolDown)
-        printDebug(completeWorkoutArray)
+        
+        // To add rest elements - static cells
         var newArray : [ExerciseModel] = []
         //flag = 0 exercise , 1 rest , 2 warmup start, 3 warmupEnd , 4 cool down start , 5 cool down finish
         completeWorkoutArray.forEachEnumerated { [weak self] (index, model) in
+            
+            // Copy all completeWorkoutArray to newArr temporarily
             if index < (self?.arrWarmup.count ?? 0) || index >= (completeWorkoutArray.count - (self?.arrCoolDown.count ?? 0) ) {
                 newArray.append(model)
-            }else{
+            } else {
+                
+                // To check if index is not for warm up or cool down
                 if index == (completeWorkoutArray.count - (self?.arrCoolDown.count ?? 0) - 1) {
                     newArray.append(model)
-                }else{
+                } else {
+                    
+                    // If index is for workout
                     newArray.append(model)
                     var modelRest = model
                     modelRest.flag = 1
@@ -249,48 +217,71 @@ extension ChallengeWorkoutDetailVC{
                 }
             }
         }
+        
+        // To add instruction elements - static cells
         var modelWarmupStart = ExerciseModel.init()
         modelWarmupStart.flag = 2
         newArray.insert(modelWarmupStart, at: 0)
+        
         var modelCoolDownFinish = ExerciseModel.init()
         modelCoolDownFinish.flag = 5
         newArray.append(modelCoolDownFinish)
+        
         var modelCoolDownStart = ExerciseModel.init()
         modelCoolDownStart.flag = 4
         newArray.insert(modelCoolDownStart, at: newArray.count - 1 - self.arrCoolDown.count)
+        
         var modelWarmupEnd = ExerciseModel.init()
         modelWarmupEnd.flag = 3
         newArray.insert(modelWarmupEnd, at: 1 + arrWarmup.count)
+        
         self.gotoNext(newArr : newArray)
+    }
+    
+    // To download the final array created -
+    func gotoNext(newArr : [ExerciseModel]){
+        
+        tryDownload(workoutArray : newArr)
     }
 }
 
 
 //DOWNLOAD FUNCTIONS
 //MARK::- FUNCTIONS
-extension ChallengeWorkoutDetailVC{
+extension WorkoutDetailVC{
+    
     func tryDownload(workoutArray : [ExerciseModel]){
         //download videos
         self.btnDownLoading.isHidden = false
-        var arrTemp : [ExerciseModel] = []
-        arrTemp.append(contentsOf: arrWarmup)
-        arrTemp.append(contentsOf: arrExercises)
-        arrTemp.append(contentsOf: arrCoolDown)
-        let videoArr : [String] = arrTemp.map({return $0.medias.first?.mediaUrl ?? ""})
-        let audioArr : [String] = arrTemp.map({return   ($0.medias.first?.audioUrlEn ?? "") })
-        let ids : [String] = arrTemp.map({return $0.medias.first?.id ?? ""})
+        
+        var completeWorkoutArray : [ExerciseModel] = []
+        completeWorkoutArray.append(contentsOf: arrWarmup)
+        completeWorkoutArray.append(contentsOf: arrExercises)
+        completeWorkoutArray.append(contentsOf: arrCoolDown)
+        
+        let videoArr : [String] = completeWorkoutArray.map({return $0.medias.first?.mediaUrl ?? ""})
+        let audioArr : [String] = completeWorkoutArray.map({return   ($0.medias.first?.audioUrlEn ?? "") })
+        let ids : [String] = completeWorkoutArray.map({return $0.medias.first?.id ?? ""})
+        
+        
         if isDownloadingAudios{
             self.downloadAudios(ids : ids , urls : audioArr , workoutArray : workoutArray)
             return
         }
+        
         CommonFunctions.showActivityLoader()
+        
+        // First we download and save videos
         DownloadController.shared.saveVideo(urls: videoArr, ids: ids, completed: {  (arrUrl) in
         }, progress: { [weak self] (val) in
             
             if val == videoArr.count{
                 CommonFunctions.hideActivityLoader()
+                
+                // Audios are saved after videos
                 self?.downloadAudios(ids : ids , urls : audioArr , workoutArray : workoutArray)
             }
+            
         }, failure: {[weak self] (error) in
             CommonFunctions.hideActivityLoader()
             CommonFunctions.showToastWithMessage(error.localizedDescription)
@@ -302,6 +293,7 @@ extension ChallengeWorkoutDetailVC{
         let urls = urls
         isDownloadingAudios = true
         CommonFunctions.showActivityLoader()
+        
         DownloadController.shared.saveAudio(urls: urls, ids: ids, completed: {  (arrUrl) in
         }, progress: { [weak self] (val) in
             
@@ -320,7 +312,17 @@ extension ChallengeWorkoutDetailVC{
     
     func gotoStartWorkout(workoutArray : [ExerciseModel]){
         self.btnDownLoading.isHidden = true
-        self.successDownload(workoutArray: workoutArray)
+        
+        let vc = WorkoutVC.instantiate(fromAppStoryboard: .Challenges)
+        vc.workoutData = self.workoutData
+        vc.workoutArray = workoutArray
+        vc.coolDownExerciseCount = self.arrCoolDown.count
+        vc.warmUpExercideCount = self.arrWarmup.count
+        vc.exerciseCount = self.arrExercises.count
+        vc.challengeData = self.challengeData
+        vc.isFromChallenge = isFromChallenge
+        self.navigationController?.pushViewController(vc, animated: true)
+        
     }
 }
 

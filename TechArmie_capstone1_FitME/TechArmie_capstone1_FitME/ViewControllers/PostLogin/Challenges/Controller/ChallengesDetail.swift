@@ -60,7 +60,7 @@ class ChallengeDetailVC: UIViewController {
         if currentDay > 30 {
             AppUserDefaults.removeValue(forKey: .currentChallengeDay)
         }
-        let vc = ChallengeWorkoutDetailVC.instantiate(fromAppStoryboard: .Challenges)
+        let vc = WorkoutDetailVC.instantiate(fromAppStoryboard: .Challenges)
         vc.challengeData = self.challenge
         vc.workoutData = self.challenge?.result.workoutData
         self.navigationController?.pushViewController(vc, animated: true)

@@ -11,7 +11,6 @@ class WorkoutDetailTableCell: UITableViewCell {
     @IBOutlet weak var lblExerciseName: UILabel!
     @IBOutlet weak var lblRepCount: UILabel!
     @IBOutlet weak var lblRestTime: UILabel!
-    @IBOutlet weak var imgShuffle: UIImageView!
     
     //MARK::- CELL CYCLE
     override func awakeFromNib() {

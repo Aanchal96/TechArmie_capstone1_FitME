@@ -28,28 +28,6 @@
 		87236F3C288DB3F400CC2BDD /* CommonFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87236F3B288DB3F400CC2BDD /* CommonFunctions.swift */; };
 		87236F40288DB77000CC2BDD /* InAppReceipt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87236F3E288DB77000CC2BDD /* InAppReceipt.swift */; };
 		87236F41288DB77000CC2BDD /* IAPController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87236F3F288DB77000CC2BDD /* IAPController.swift */; };
-		87236F6D288DB86D00CC2BDD /* WarmUpCompletedar.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 87236F49288DB86D00CC2BDD /* WarmUpCompletedar.mp3 */; };
-		87236F6E288DB86D00CC2BDD /* 321Goar.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 87236F4A288DB86D00CC2BDD /* 321Goar.mp3 */; };
-		87236F6F288DB86D00CC2BDD /* WarmUpCompleteden.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 87236F4B288DB86D00CC2BDD /* WarmUpCompleteden.mp3 */; };
-		87236F70288DB86D00CC2BDD /* 321Goen.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 87236F4C288DB86D00CC2BDD /* 321Goen.mp3 */; };
-		87236F71288DB86D00CC2BDD /* WorkoutCompleteden.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 87236F4D288DB86D00CC2BDD /* WorkoutCompleteden.mp3 */; };
-		87236F72288DB86D00CC2BDD /* ExerciseCompletedar.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 87236F4E288DB86D00CC2BDD /* ExerciseCompletedar.mp3 */; };
-		87236F73288DB86D00CC2BDD /* Resten.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 87236F4F288DB86D00CC2BDD /* Resten.mp3 */; };
-		87236F74288DB86D00CC2BDD /* WorkoutCompletedar.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 87236F50288DB86D00CC2BDD /* WorkoutCompletedar.mp3 */; };
-		87236F75288DB86D00CC2BDD /* ExerciseCompleteden.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 87236F51288DB86D00CC2BDD /* ExerciseCompleteden.mp3 */; };
-		87236F76288DB86D00CC2BDD /* Restar.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 87236F52288DB86D00CC2BDD /* Restar.mp3 */; };
-		87236F83288DB86D00CC2BDD /* en10.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 87236F61288DB86D00CC2BDD /* en10.mp3 */; };
-		87236F84288DB86D00CC2BDD /* en15.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 87236F62288DB86D00CC2BDD /* en15.mp3 */; };
-		87236F85288DB86D00CC2BDD /* en60.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 87236F63288DB86D00CC2BDD /* en60.mp3 */; };
-		87236F86288DB86D00CC2BDD /* en5.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 87236F64288DB86D00CC2BDD /* en5.mp3 */; };
-		87236F87288DB86D00CC2BDD /* en45.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 87236F65288DB86D00CC2BDD /* en45.mp3 */; };
-		87236F88288DB86D00CC2BDD /* en50.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 87236F66288DB86D00CC2BDD /* en50.mp3 */; };
-		87236F89288DB86D00CC2BDD /* en40.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 87236F67288DB86D00CC2BDD /* en40.mp3 */; };
-		87236F8A288DB86D00CC2BDD /* en55.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 87236F68288DB86D00CC2BDD /* en55.mp3 */; };
-		87236F8B288DB86D00CC2BDD /* en25.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 87236F69288DB86D00CC2BDD /* en25.mp3 */; };
-		87236F8C288DB86D00CC2BDD /* en30.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 87236F6A288DB86D00CC2BDD /* en30.mp3 */; };
-		87236F8D288DB86D00CC2BDD /* en20.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 87236F6B288DB86D00CC2BDD /* en20.mp3 */; };
-		87236F8E288DB86D00CC2BDD /* en35.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 87236F6C288DB86D00CC2BDD /* en35.mp3 */; };
 		87236F90288DBC0000CC2BDD /* UIDateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87236F8F288DBC0000CC2BDD /* UIDateExtension.swift */; };
 		87236F92288DBC3600CC2BDD /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87236F91288DBC3600CC2BDD /* UIViewExtension.swift */; };
 		87236F94288DC34700CC2BDD /* UIApplicationExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87236F93288DC34700CC2BDD /* UIApplicationExtension.swift */; };
@@ -81,7 +59,7 @@
 		874C1E3C28982A1000EE4E94 /* WorkoutHomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 874C1E2728982A1000EE4E94 /* WorkoutHomeVC.swift */; };
 		874C1E6028982C2F00EE4E94 /* Challenges.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 874C1E3E28982C2F00EE4E94 /* Challenges.storyboard */; };
 		874C1E6128982C2F00EE4E94 /* ChallengesDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 874C1E4028982C2F00EE4E94 /* ChallengesDetail.swift */; };
-		874C1E6228982C2F00EE4E94 /* ChallengeWorkoutDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 874C1E4128982C2F00EE4E94 /* ChallengeWorkoutDetail.swift */; };
+		874C1E6228982C2F00EE4E94 /* WorkoutDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 874C1E4128982C2F00EE4E94 /* WorkoutDetailVC.swift */; };
 		874C1E6328982C2F00EE4E94 /* WorkoutSubmitVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 874C1E4228982C2F00EE4E94 /* WorkoutSubmitVC.swift */; };
 		874C1E6428982C2F00EE4E94 /* WorkoutVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 874C1E4328982C2F00EE4E94 /* WorkoutVC.swift */; };
 		874C1E6528982C2F00EE4E94 /* ChallengesListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 874C1E4428982C2F00EE4E94 /* ChallengesListViewController.swift */; };
@@ -118,6 +96,7 @@
 		8795414A28960B850063E2BB /* AppEnums.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8795414928960B850063E2BB /* AppEnums.swift */; };
 		8795414C28961F370063E2BB /* BaseVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8795414B28961F370063E2BB /* BaseVC.swift */; };
 		8795416928962E450063E2BB /* NSObjectExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8795416828962E450063E2BB /* NSObjectExtension.swift */; };
+		87B7996428985E3000001A88 /* UITableViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87B7996328985E3000001A88 /* UITableViewExtension.swift */; };
 		87C4A30E28822B1000485A08 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87C4A30D28822B1000485A08 /* AppDelegate.swift */; };
 		87C4A31228822B1000485A08 /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87C4A31128822B1000485A08 /* OnboardingViewController.swift */; };
 		87C4A31728822B1200485A08 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 87C4A31628822B1200485A08 /* Assets.xcassets */; };
@@ -154,28 +133,6 @@
 		87236F3B288DB3F400CC2BDD /* CommonFunctions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommonFunctions.swift; sourceTree = "<group>"; };
 		87236F3E288DB77000CC2BDD /* InAppReceipt.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InAppReceipt.swift; sourceTree = "<group>"; };
 		87236F3F288DB77000CC2BDD /* IAPController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IAPController.swift; sourceTree = "<group>"; };
-		87236F49288DB86D00CC2BDD /* WarmUpCompletedar.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = WarmUpCompletedar.mp3; sourceTree = "<group>"; };
-		87236F4A288DB86D00CC2BDD /* 321Goar.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 321Goar.mp3; sourceTree = "<group>"; };
-		87236F4B288DB86D00CC2BDD /* WarmUpCompleteden.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = WarmUpCompleteden.mp3; sourceTree = "<group>"; };
-		87236F4C288DB86D00CC2BDD /* 321Goen.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 321Goen.mp3; sourceTree = "<group>"; };
-		87236F4D288DB86D00CC2BDD /* WorkoutCompleteden.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = WorkoutCompleteden.mp3; sourceTree = "<group>"; };
-		87236F4E288DB86D00CC2BDD /* ExerciseCompletedar.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = ExerciseCompletedar.mp3; sourceTree = "<group>"; };
-		87236F4F288DB86D00CC2BDD /* Resten.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Resten.mp3; sourceTree = "<group>"; };
-		87236F50288DB86D00CC2BDD /* WorkoutCompletedar.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = WorkoutCompletedar.mp3; sourceTree = "<group>"; };
-		87236F51288DB86D00CC2BDD /* ExerciseCompleteden.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = ExerciseCompleteden.mp3; sourceTree = "<group>"; };
-		87236F52288DB86D00CC2BDD /* Restar.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Restar.mp3; sourceTree = "<group>"; };
-		87236F61288DB86D00CC2BDD /* en10.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = en10.mp3; sourceTree = "<group>"; };
-		87236F62288DB86D00CC2BDD /* en15.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = en15.mp3; sourceTree = "<group>"; };
-		87236F63288DB86D00CC2BDD /* en60.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = en60.mp3; sourceTree = "<group>"; };
-		87236F64288DB86D00CC2BDD /* en5.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = en5.mp3; sourceTree = "<group>"; };
-		87236F65288DB86D00CC2BDD /* en45.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = en45.mp3; sourceTree = "<group>"; };
-		87236F66288DB86D00CC2BDD /* en50.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = en50.mp3; sourceTree = "<group>"; };
-		87236F67288DB86D00CC2BDD /* en40.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = en40.mp3; sourceTree = "<group>"; };
-		87236F68288DB86D00CC2BDD /* en55.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = en55.mp3; sourceTree = "<group>"; };
-		87236F69288DB86D00CC2BDD /* en25.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = en25.mp3; sourceTree = "<group>"; };
-		87236F6A288DB86D00CC2BDD /* en30.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = en30.mp3; sourceTree = "<group>"; };
-		87236F6B288DB86D00CC2BDD /* en20.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = en20.mp3; sourceTree = "<group>"; };
-		87236F6C288DB86D00CC2BDD /* en35.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = en35.mp3; sourceTree = "<group>"; };
 		87236F8F288DBC0000CC2BDD /* UIDateExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIDateExtension.swift; sourceTree = "<group>"; };
 		87236F91288DBC3600CC2BDD /* UIViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
 		87236F93288DC34700CC2BDD /* UIApplicationExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIApplicationExtension.swift; sourceTree = "<group>"; };
@@ -207,7 +164,7 @@
 		874C1E2728982A1000EE4E94 /* WorkoutHomeVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WorkoutHomeVC.swift; sourceTree = "<group>"; };
 		874C1E3E28982C2F00EE4E94 /* Challenges.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Challenges.storyboard; sourceTree = "<group>"; };
 		874C1E4028982C2F00EE4E94 /* ChallengesDetail.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChallengesDetail.swift; sourceTree = "<group>"; };
-		874C1E4128982C2F00EE4E94 /* ChallengeWorkoutDetail.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChallengeWorkoutDetail.swift; sourceTree = "<group>"; };
+		874C1E4128982C2F00EE4E94 /* WorkoutDetailVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WorkoutDetailVC.swift; sourceTree = "<group>"; };
 		874C1E4228982C2F00EE4E94 /* WorkoutSubmitVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WorkoutSubmitVC.swift; sourceTree = "<group>"; };
 		874C1E4328982C2F00EE4E94 /* WorkoutVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WorkoutVC.swift; sourceTree = "<group>"; };
 		874C1E4428982C2F00EE4E94 /* ChallengesListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChallengesListViewController.swift; sourceTree = "<group>"; };
@@ -244,6 +201,7 @@
 		8795414928960B850063E2BB /* AppEnums.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppEnums.swift; sourceTree = "<group>"; };
 		8795414B28961F370063E2BB /* BaseVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseVC.swift; sourceTree = "<group>"; };
 		8795416828962E450063E2BB /* NSObjectExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSObjectExtension.swift; sourceTree = "<group>"; };
+		87B7996328985E3000001A88 /* UITableViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITableViewExtension.swift; sourceTree = "<group>"; };
 		87C4A30A28822B1000485A08 /* TechArmie_capstone1_FitME.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TechArmie_capstone1_FitME.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		87C4A30D28822B1000485A08 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		87C4A31128822B1000485A08 /* OnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
@@ -305,13 +263,6 @@
 			path = SwiftUIViews;
 			sourceTree = "<group>";
 		};
-		87236F22288DB0F000CC2BDD /* JSON */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = JSON;
-			sourceTree = "<group>";
-		};
 		87236F23288DB16000CC2BDD /* AppUtilities */ = {
 			isa = PBXGroup;
 			children = (
@@ -342,59 +293,6 @@
 			path = IAP;
 			sourceTree = "<group>";
 		};
-		87236F46288DB86D00CC2BDD /* Audio */ = {
-			isa = PBXGroup;
-			children = (
-				87236F47288DB86D00CC2BDD /* WorkoutSecondsVoices */,
-			);
-			path = Audio;
-			sourceTree = "<group>";
-		};
-		87236F47288DB86D00CC2BDD /* WorkoutSecondsVoices */ = {
-			isa = PBXGroup;
-			children = (
-				87236F48288DB86D00CC2BDD /* audios */,
-				87236F60288DB86D00CC2BDD /* EN */,
-			);
-			path = WorkoutSecondsVoices;
-			sourceTree = "<group>";
-		};
-		87236F48288DB86D00CC2BDD /* audios */ = {
-			isa = PBXGroup;
-			children = (
-				87236F49288DB86D00CC2BDD /* WarmUpCompletedar.mp3 */,
-				87236F4A288DB86D00CC2BDD /* 321Goar.mp3 */,
-				87236F4B288DB86D00CC2BDD /* WarmUpCompleteden.mp3 */,
-				87236F4C288DB86D00CC2BDD /* 321Goen.mp3 */,
-				87236F4D288DB86D00CC2BDD /* WorkoutCompleteden.mp3 */,
-				87236F4E288DB86D00CC2BDD /* ExerciseCompletedar.mp3 */,
-				87236F4F288DB86D00CC2BDD /* Resten.mp3 */,
-				87236F50288DB86D00CC2BDD /* WorkoutCompletedar.mp3 */,
-				87236F51288DB86D00CC2BDD /* ExerciseCompleteden.mp3 */,
-				87236F52288DB86D00CC2BDD /* Restar.mp3 */,
-			);
-			path = audios;
-			sourceTree = "<group>";
-		};
-		87236F60288DB86D00CC2BDD /* EN */ = {
-			isa = PBXGroup;
-			children = (
-				87236F61288DB86D00CC2BDD /* en10.mp3 */,
-				87236F62288DB86D00CC2BDD /* en15.mp3 */,
-				87236F63288DB86D00CC2BDD /* en60.mp3 */,
-				87236F64288DB86D00CC2BDD /* en5.mp3 */,
-				87236F65288DB86D00CC2BDD /* en45.mp3 */,
-				87236F66288DB86D00CC2BDD /* en50.mp3 */,
-				87236F67288DB86D00CC2BDD /* en40.mp3 */,
-				87236F68288DB86D00CC2BDD /* en55.mp3 */,
-				87236F69288DB86D00CC2BDD /* en25.mp3 */,
-				87236F6A288DB86D00CC2BDD /* en30.mp3 */,
-				87236F6B288DB86D00CC2BDD /* en20.mp3 */,
-				87236F6C288DB86D00CC2BDD /* en35.mp3 */,
-			);
-			path = EN;
-			sourceTree = "<group>";
-		};
 		874C1E0C28982A0F00EE4E94 /* View */ = {
 			isa = PBXGroup;
 			children = (
@@ -407,15 +305,14 @@
 			isa = PBXGroup;
 			children = (
 				874C1E0F28982A0F00EE4E94 /* WorkoutCells.swift */,
+				874C1E4B28982C2F00EE4E94 /* FinishCoolDownCell.swift */,
+				874C1E4C28982C2F00EE4E94 /* RestCell.swift */,
+				874C1E4D28982C2F00EE4E94 /* WorkoutCell.swift */,
+				874C1E4E28982C2F00EE4E94 /* FinishWarmUpCell.swift */,
+				874C1E4F28982C2F00EE4E94 /* StartWarmUpCell.swift */,
+				874C1E5028982C2F00EE4E94 /* StartCoolDownCell.swift */,
 			);
 			path = Cells;
-			sourceTree = "<group>";
-		};
-		874C1E1028982A0F00EE4E94 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
 			sourceTree = "<group>";
 		};
 		874C1E1128982A0F00EE4E94 /* Resource */ = {
@@ -463,6 +360,9 @@
 			isa = PBXGroup;
 			children = (
 				874C1E2728982A1000EE4E94 /* WorkoutHomeVC.swift */,
+				874C1E4128982C2F00EE4E94 /* WorkoutDetailVC.swift */,
+				874C1E4328982C2F00EE4E94 /* WorkoutVC.swift */,
+				874C1E4228982C2F00EE4E94 /* WorkoutSubmitVC.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -479,9 +379,6 @@
 			isa = PBXGroup;
 			children = (
 				874C1E4028982C2F00EE4E94 /* ChallengesDetail.swift */,
-				874C1E4128982C2F00EE4E94 /* ChallengeWorkoutDetail.swift */,
-				874C1E4228982C2F00EE4E94 /* WorkoutSubmitVC.swift */,
-				874C1E4328982C2F00EE4E94 /* WorkoutVC.swift */,
 				874C1E4428982C2F00EE4E94 /* ChallengesListViewController.swift */,
 			);
 			path = Controller;
@@ -500,26 +397,12 @@
 			children = (
 				874C1E4828982C2F00EE4E94 /* WorkoutDetailTableCell.swift */,
 				874C1E4928982C2F00EE4E94 /* ChallengesCells.swift */,
-				874C1E4A28982C2F00EE4E94 /* WorkoutCells */,
 				874C1E5128982C2F00EE4E94 /* WorkoutDetailHeader.swift */,
 				874C1E5228982C2F00EE4E94 /* WorkoutDetailHeader.xib */,
 				874C1E5328982C2F00EE4E94 /* WorkoutDetailFooter.xib */,
 				874C1E5428982C2F00EE4E94 /* WorkoutDetailFooter.swift */,
 			);
 			path = Cells;
-			sourceTree = "<group>";
-		};
-		874C1E4A28982C2F00EE4E94 /* WorkoutCells */ = {
-			isa = PBXGroup;
-			children = (
-				874C1E4B28982C2F00EE4E94 /* FinishCoolDownCell.swift */,
-				874C1E4C28982C2F00EE4E94 /* RestCell.swift */,
-				874C1E4D28982C2F00EE4E94 /* WorkoutCell.swift */,
-				874C1E4E28982C2F00EE4E94 /* FinishWarmUpCell.swift */,
-				874C1E4F28982C2F00EE4E94 /* StartWarmUpCell.swift */,
-				874C1E5028982C2F00EE4E94 /* StartCoolDownCell.swift */,
-			);
-			path = WorkoutCells;
 			sourceTree = "<group>";
 		};
 		874C1E5528982C2F00EE4E94 /* Resources */ = {
@@ -630,7 +513,6 @@
 			children = (
 				874C1E0E28982A0F00EE4E94 /* Cells */,
 				874C1E2628982A1000EE4E94 /* Controllers */,
-				874C1E1028982A0F00EE4E94 /* Model */,
 				874C1E1128982A0F00EE4E94 /* Resource */,
 				874C1E0C28982A0F00EE4E94 /* View */,
 			);
@@ -741,7 +623,6 @@
 		ED7036DC2888BAA7002A312F /* Assets */ = {
 			isa = PBXGroup;
 			children = (
-				87236F46288DB86D00CC2BDD /* Audio */,
 				ED7036F32888C179002A312F /* Images */,
 				87C4A31628822B1200485A08 /* Assets.xcassets */,
 			);
@@ -753,7 +634,6 @@
 			children = (
 				8795414728960A1C0063E2BB /* UserModel.swift */,
 				8795414928960B850063E2BB /* AppEnums.swift */,
-				87236F22288DB0F000CC2BDD /* JSON */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -838,6 +718,7 @@
 				87236F99288DC88500CC2BDD /* DoubleExtension.swift */,
 				87236F9B288DCC8700CC2BDD /* NSErrorExtension.swift */,
 				87582724289652BE00BA3B26 /* IntExtension.swift */,
+				87B7996328985E3000001A88 /* UITableViewExtension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -902,67 +783,45 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				87236F70288DB86D00CC2BDD /* 321Goen.mp3 in Resources */,
 				874C1E2E28982A1000EE4E94 /* lock.png in Resources */,
-				87236F6F288DB86D00CC2BDD /* WarmUpCompleteden.mp3 in Resources */,
 				874C1E3628982A1000EE4E94 /* Intermediate3.jpg in Resources */,
-				87236F88288DB86D00CC2BDD /* en50.mp3 in Resources */,
 				874C1E3528982A1000EE4E94 /* Advanced3.jpg in Resources */,
 				874C1E7828982C3000EE4E94 /* volumelow.png in Resources */,
 				874C1E6028982C2F00EE4E94 /* Challenges.storyboard in Resources */,
-				87236F6E288DB86D00CC2BDD /* 321Goar.mp3 in Resources */,
 				874C1E2B28982A1000EE4E94 /* Beginner.jpg in Resources */,
 				874C1E3828982A1000EE4E94 /* Advanced.jpg in Resources */,
 				8758273F2896712400BA3B26 /* TabBar.storyboard in Resources */,
-				87236F87288DB86D00CC2BDD /* en45.mp3 in Resources */,
 				875827332896673900BA3B26 /* ExerciseLibraryData.json in Resources */,
 				ED7036E32888BAE9002A312F /* logo_FitME.png in Resources */,
 				87E58207288D7CA0003AFEA7 /* GoogleService-Info.plist in Resources */,
 				874C1E3728982A1000EE4E94 /* Beginner2.jpg in Resources */,
-				87236F89288DB86D00CC2BDD /* en40.mp3 in Resources */,
 				874C1E2C28982A1000EE4E94 /* Novice3.jpg in Resources */,
-				87236F83288DB86D00CC2BDD /* en10.mp3 in Resources */,
 				874C1E7528982C3000EE4E94 /* volumehigh.png in Resources */,
 				55EB744E288A07AA00DFD58D /* Authentication.storyboard in Resources */,
-				87236F8A288DB86D00CC2BDD /* en55.mp3 in Resources */,
-				87236F75288DB86D00CC2BDD /* ExerciseCompleteden.mp3 in Resources */,
-				87236F6D288DB86D00CC2BDD /* WarmUpCompletedar.mp3 in Resources */,
 				87582748289673E800BA3B26 /* Account.storyboard in Resources */,
 				874C1E3128982A1000EE4E94 /* Intermediate1.jpg in Resources */,
 				874C1E3B28982A1000EE4E94 /* Novice.jpg in Resources */,
 				874C1E2A28982A1000EE4E94 /* Workout.json in Resources */,
 				874C1E3928982A1000EE4E94 /* Beginner3.jpg in Resources */,
-				87236F73288DB86D00CC2BDD /* Resten.mp3 in Resources */,
 				87FF9560288B5DA300A05A07 /* bg_video.mp4 in Resources */,
-				87236F71288DB86D00CC2BDD /* WorkoutCompleteden.mp3 in Resources */,
-				87236F72288DB86D00CC2BDD /* ExerciseCompletedar.mp3 in Resources */,
 				874C1E2F28982A1000EE4E94 /* Novice1.jpg in Resources */,
 				ED7036E02888BAD4002A312F /* welcome_fitme.png in Resources */,
 				7C25508D288A501D00766C04 /* Main.storyboard in Resources */,
 				87C4A31A28822B1200485A08 /* LaunchScreen.storyboard in Resources */,
 				875827362896673900BA3B26 /* ExerciseLibrary.storyboard in Resources */,
 				874C1E3228982A1000EE4E94 /* Advanced1.jpg in Resources */,
-				87236F86288DB86D00CC2BDD /* en5.mp3 in Resources */,
 				874C1E2828982A1000EE4E94 /* Workout.storyboard in Resources */,
 				874C1E7A28982C3000EE4E94 /* ChallengesData.json in Resources */,
 				874C1E7628982C3000EE4E94 /* sad.png in Resources */,
 				874C1E2D28982A1000EE4E94 /* Novice2.jpg in Resources */,
 				87C4A31728822B1200485A08 /* Assets.xcassets in Resources */,
-				87236F74288DB86D00CC2BDD /* WorkoutCompletedar.mp3 in Resources */,
 				874C1E3328982A1000EE4E94 /* Intermediate2.jpg in Resources */,
-				87236F85288DB86D00CC2BDD /* en60.mp3 in Resources */,
-				87236F8E288DB86D00CC2BDD /* en35.mp3 in Resources */,
 				874C1E3428982A1000EE4E94 /* Advanced2.jpg in Resources */,
 				874C1E3A28982A1000EE4E94 /* Beginner1.jpg in Resources */,
-				87236F8B288DB86D00CC2BDD /* en25.mp3 in Resources */,
-				87236F8C288DB86D00CC2BDD /* en30.mp3 in Resources */,
 				874C1E7028982C2F00EE4E94 /* WorkoutDetailHeader.xib in Resources */,
 				874C1E3028982A1000EE4E94 /* Intermediate.jpg in Resources */,
 				874C1E7928982C3000EE4E94 /* hard.png in Resources */,
-				87236F76288DB86D00CC2BDD /* Restar.mp3 in Resources */,
 				874C1E7728982C3000EE4E94 /* Good .png in Resources */,
-				87236F8D288DB86D00CC2BDD /* en20.mp3 in Resources */,
-				87236F84288DB86D00CC2BDD /* en15.mp3 in Resources */,
 				874C1E7128982C3000EE4E94 /* WorkoutDetailFooter.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1022,6 +881,7 @@
 				8795414C28961F370063E2BB /* BaseVC.swift in Sources */,
 				87C4A31228822B1000485A08 /* OnboardingViewController.swift in Sources */,
 				87236F3C288DB3F400CC2BDD /* CommonFunctions.swift in Sources */,
+				87B7996428985E3000001A88 /* UITableViewExtension.swift in Sources */,
 				874C1E0B2896F12900EE4E94 /* TabBarVC.swift in Sources */,
 				875827352896673900BA3B26 /* ExerciseLibraryModel.swift in Sources */,
 				874C1E6528982C2F00EE4E94 /* ChallengesListViewController.swift in Sources */,
@@ -1044,7 +904,7 @@
 				87236F32288DB16000CC2BDD /* AppUserDefaults.swift in Sources */,
 				87236F9A288DC88500CC2BDD /* DoubleExtension.swift in Sources */,
 				55A6A623288F924D004A7C0C /* Login.swift in Sources */,
-				874C1E6228982C2F00EE4E94 /* ChallengeWorkoutDetail.swift in Sources */,
+				874C1E6228982C2F00EE4E94 /* WorkoutDetailVC.swift in Sources */,
 				874C1E6828982C2F00EE4E94 /* ChallengesCells.swift in Sources */,
 				87236F94288DC34700CC2BDD /* UIApplicationExtension.swift in Sources */,
 				87C4A31228822B1000485A08 /* OnboardingViewController.swift in Sources */,

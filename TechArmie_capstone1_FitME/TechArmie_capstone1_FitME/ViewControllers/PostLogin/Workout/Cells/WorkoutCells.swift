@@ -9,8 +9,8 @@ import UIKit
 import SDWebImage
 
 enum TypesOfWorkoutCell {
-    case pending
     case completed
+    case pending
     case locked
 }
 

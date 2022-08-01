@@ -28,13 +28,13 @@ enum ProgramLevelType: Int {
     }
 }
 
-class WorkoutHomeVC: UIViewController {
+class WorkoutHomeVC: BaseVC {
     
     //MARK: - PROPERTIES
     var selectedWeek : Int = 0
     var arrWorkout: [WorkoutModel] = []
     var currentWorkoutDay = 1 // max 5*4 = 20
-    var currentAssignedLevel: ProgramLevelType = .beginner // set this value from UserModel or Login
+    var currentAssignedLevel: ProgramLevelType = .beginner //TODO: set this value from UserModel or Login
     var assignedProgram: ProgramModel?
     
     //MARK: - OUTLETS
@@ -43,7 +43,6 @@ class WorkoutHomeVC: UIViewController {
     @IBOutlet weak var levelLabel: UILabel!
     @IBOutlet weak var progressView: UIProgressView!
     @IBOutlet weak var percentageLabel: UILabel!
-    @IBOutlet weak var partsLabel: UILabel!
     @IBOutlet weak var weeksBackView: UIView!
     @IBOutlet weak var weeksStackView: UIStackView!
     @IBOutlet weak var weekOneBtn: UIButton!
@@ -62,14 +61,9 @@ class WorkoutHomeVC: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        onViewWillAppear()
+        initialSetup()
     }
-    
-    override func viewWillDisappear(_ animated: Bool) {
-        super.viewWillDisappear(animated)
-        tabBarController?.tabBar.isHidden = true
-    }
-    
+
     //MARK: - BUTTON ACTION
     @IBAction func weekOneBtnTapped(_ sender: UIButton) {
         selectedWeek = 0
@@ -137,17 +131,16 @@ extension WorkoutHomeVC : UITableViewDelegate, UITableViewDataSource {
         let row = indexPath.row
         let currentWorkoutNumber = row + (selectedWeek * arrWorkout.count)
         if currentWorkoutNumber == currentWorkoutDay - 1 {
-            let vc = ChallengeWorkoutDetailVC.instantiate(fromAppStoryboard: .Challenges)
+            let vc = WorkoutDetailVC.instantiate(fromAppStoryboard: .Challenges)
             vc.isFromChallenge = false
-            vc.challengeData = Challenge.init(self.arrWorkout[indexPath.row].json)
-            vc.headerImage = self.headerImageView.image
+            vc.challengeData = Challenge(self.arrWorkout[indexPath.row].json)
             vc.workoutData = self.arrWorkout[indexPath.row]
             self.navigationController?.pushViewController(vc, animated: true)
-
+        } else {
+            return
         }
     }
 }
-
 
 // MARK: - Functions
 extension WorkoutHomeVC {
@@ -164,13 +157,6 @@ extension WorkoutHomeVC {
         fetchDataFromJSON()
     }
 
-    private func onViewWillAppear() {
-        initialSetup()
-        
-        tabBarController?.tabBar.isHidden = false
-    }
-    
-    
     private func fetchDataFromJSON() {
         var json = JSON()
         if let path = Bundle.main.path(forResource: "Workout", ofType: "json") {
@@ -192,9 +178,8 @@ extension WorkoutHomeVC {
     }
     
     private  func updateHeader(){
-        let progressDonePercentage = (currentWorkoutDay - 1) * 5
+        let progressDonePercentage = ((currentWorkoutDay - 1) * 100)/20
         self.levelLabel.text = self.assignedProgram?.levelName ?? ""
-        self.partsLabel.text = self.assignedProgram?.name ?? ""
         self.percentageLabel.text = "\(progressDonePercentage)" + " percent Completed"
         self.progressView.progress = Float(progressDonePercentage) / 100.0
         self.workoutTableView.isHidden = false
