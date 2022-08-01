@@ -6,16 +6,13 @@
 //
 
 import UIKit
-import SDWebImage
-import IBAnimatable
 import AVKit
+import SDWebImage
 import SwiftyJSON
 
-final class ExerciseLibraryViewController: UIViewController {
+final class ExerciseLibraryViewController: BaseVC {
     
     //MARK: - OUTLETS
-    @IBOutlet weak var tableView: UITableView!
-    @IBOutlet weak var collectionView: UICollectionView!
     @IBOutlet weak var lblHeader: UILabel!
     @IBOutlet weak var backButton: UIButton!
     @IBOutlet weak var viewUnderLine: UIView!
@@ -33,6 +30,14 @@ final class ExerciseLibraryViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         onViewDidLoad()
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
     }
     
     //MARK::- BUTTON ACTION
@@ -55,6 +60,7 @@ private extension ExerciseLibraryViewController {
         getDataFromJSON()
     }
     
+    // To make filter boxes as per text
     func widthOfText(str: String, _ height: CGFloat, font: UIFont) -> CGFloat {
         let constraintRect = CGSize(width: CGFloat.greatestFiniteMagnitude, height: height)
         let boundingBox = str.boundingRect(with: constraintRect, options: NSStringDrawingOptions.usesLineFragmentOrigin, attributes: [NSAttributedString.Key.font: font], context: nil)
@@ -64,23 +70,15 @@ private extension ExerciseLibraryViewController {
 
 //MARK::- TABLE VIEW DELEGATE AND DATASOURCE
 extension ExerciseLibraryViewController : UITableViewDelegate , UITableViewDataSource{
-    func numberOfSections(in tableView: UITableView) -> Int {
-        return 1
-    }
+
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return  self.filteredModel.count
+        return  filteredModel.count
     }
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return UITableView.automaticDimension
     }
     func tableView(_ tableView: UITableView, estimatedHeightForRowAt indexPath: IndexPath) -> CGFloat {
         return 48
-    }
-    func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
-        return 0
-    }
-    func tableView(_ tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat {
-        return 0
     }
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: ExerciseLibraryCell.className, for: indexPath) as? ExerciseLibraryCell else {
@@ -93,7 +91,8 @@ extension ExerciseLibraryViewController : UITableViewDelegate , UITableViewDataS
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        // open native player
+        
+        // open video controller
         guard let videoURL = URL(string: self.filteredModel[indexPath.row].media.first?.mediaUrl ?? "") else {return}
         let player = AVPlayer(url: videoURL)
         let playerViewController = AVPlayerViewController()
@@ -141,6 +140,7 @@ extension ExerciseLibraryViewController : UICollectionViewDataSource, UICollecti
 //MARK::- API
 
 extension ExerciseLibraryViewController {
+    
     func getDataFromJSON() {
         var json = JSON()
         if let path = Bundle.main.path(forResource: "ExerciseLibraryData", ofType: "json") {

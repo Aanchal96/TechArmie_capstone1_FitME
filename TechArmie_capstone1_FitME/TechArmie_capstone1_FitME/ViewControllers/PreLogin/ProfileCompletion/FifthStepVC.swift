@@ -44,8 +44,9 @@ class FifthStepVC : BaseVC{
     
     func googleSignInButton() {
         
-        GoogleLoginController.shared.login(fromViewController: self) { googleUser in
-            let vc = HomeController.instantiate(fromAppStoryboard: .Home)
+        GoogleLoginController.shared.loginWithGoogle(fromViewController: self) { googleUser in
+            let vc = TabBarVC.instantiate(fromAppStoryboard: .TabBar)
+            vc.navigationController?.isNavigationBarHidden = true
             self.navigationController?.pushViewController(vc, animated: true)
         } failure: { error in
             CommonFunctions.showToast(error.localizedDescription)

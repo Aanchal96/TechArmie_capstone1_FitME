@@ -25,21 +25,23 @@ class LoginController: BaseVC {
     
     func googleSignInButton() {
         
-        GoogleLoginController.shared.login(fromViewController: self) { googleUser in
-            let vc = HomeController.instantiate(fromAppStoryboard: .Home)
+        GoogleLoginController.shared.loginWithGoogle(fromViewController: self) { googleUser in
+            let vc = TabBarVC.instantiate(fromAppStoryboard: .TabBar)
+            vc.navigationController?.isNavigationBarHidden = true
             self.navigationController?.pushViewController(vc, animated: true)
         } failure: { error in
-            print("Failure")
+            CommonFunctions.showToast(error.localizedDescription)
         }
         
     }
     
     func emailPasswordFirebaseLogin(email: String, password: String) {
         GoogleLoginController.shared.loginWithEmail(email: email, password: password) { user in
-            let vc = HomeController.instantiate(fromAppStoryboard: .Home)
+            let vc = TabBarVC.instantiate(fromAppStoryboard: .TabBar)
+            vc.navigationController?.isNavigationBarHidden = true
             self.navigationController?.pushViewController(vc, animated: true)
         } failure: { error in
-            print(error)
+            CommonFunctions.showToast(error.localizedDescription)
         }
     }
 }

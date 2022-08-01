@@ -26,11 +26,12 @@ class SignUpController: BaseVC {
     func emailPasswordFirebaseLogin(email: String, password: String, name: String) {
         GoogleLoginController.shared.signUpWithEmail(email: email, password: password, name: name) { user in
             
-            let vc = HomeController.instantiate(fromAppStoryboard: .Home)
+            let vc = TabBarVC.instantiate(fromAppStoryboard: .TabBar)
+            vc.navigationController?.isNavigationBarHidden = true
             self.navigationController?.pushViewController(vc, animated: true)
             
         } failure: { error in
-            print(error)
+            CommonFunctions.showToast(error.localizedDescription)
         }
     }
 
