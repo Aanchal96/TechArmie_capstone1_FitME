@@ -25,7 +25,7 @@ class LoginController: BaseVC {
     
     func googleSignInButton() {
         
-        GoogleLoginController.shared.login(fromViewController: self) { googleUser in
+        GoogleLoginController.shared.loginWithGoogle(fromViewController: self) { googleUser in
             let vc = TabBarVC.instantiate(fromAppStoryboard: .TabBar)
             vc.navigationController?.isNavigationBarHidden = true
             self.navigationController?.pushViewController(vc, animated: true)

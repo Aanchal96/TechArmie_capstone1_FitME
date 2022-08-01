@@ -27,7 +27,7 @@ enum AudioName{
     
 }
 
-class AudioController : NSObject,AVAudioPlayerDelegate  {
+class AudioController : NSObject,AVAudioPlayerDelegate {
     
     static let shared = AudioController()
     var audioPlayer : AVAudioPlayer?
