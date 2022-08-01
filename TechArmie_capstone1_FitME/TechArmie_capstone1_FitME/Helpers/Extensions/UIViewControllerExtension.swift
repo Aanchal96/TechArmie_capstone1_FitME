@@ -11,7 +11,7 @@ import AssetsLibrary
 import AVFoundation
 import Photos
 import MobileCoreServices
-import NVActivityIndicatorView
+//import NVActivityIndicatorView
 
 private class SaveAlertHandle {
     static var alertHandle: UIAlertController?

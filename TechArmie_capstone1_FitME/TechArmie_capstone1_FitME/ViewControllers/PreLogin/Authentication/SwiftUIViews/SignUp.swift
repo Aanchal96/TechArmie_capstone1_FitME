@@ -85,7 +85,6 @@ struct SignUp: View {
                     }
                     Group {
                         SecureField("Password", text: $password) {
-                            print(self.password)
                         }
                             .padding(.bottom, isEmailValid ? 20 : 10)
                             .overlay(VStack{Divider().offset(x: 0, y: 10)})

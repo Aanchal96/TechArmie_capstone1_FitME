@@ -68,7 +68,7 @@ extension ReceiptItem {
             let purchaseDate = ReceiptItem.parseDate(from: receiptInfo, key: "purchase_date_ms"),
             let originalPurchaseDate = ReceiptItem.parseDate(from: receiptInfo, key: "original_purchase_date_ms")
             else {
-                print("could not parse receipt item: \(receiptInfo). Skipping...")
+                printDebug("could not parse receipt item: \(receiptInfo). Skipping...")
                 return nil
         }
         self.productId = productId
@@ -155,7 +155,7 @@ class InAppReceipt {
             let receiptItems = nonCancelledReceiptsInfo.flatMap { ReceiptItem(receiptInfo: $0) }
             
             if nonCancelledReceiptsInfo.count > receiptItems.count {
-                print("receipt has \(nonCancelledReceiptsInfo.count) items, but only \(receiptItems.count) were parsed")
+                printDebug("receipt has \(nonCancelledReceiptsInfo.count) items, but only \(receiptItems.count) were parsed")
             }
             
             let sortedExpiryDatesAndItems = expiryDatesAndItems(receiptItems: receiptItems, duration: duration).sorted { a, b in

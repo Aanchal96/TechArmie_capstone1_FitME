@@ -6,13 +6,13 @@
 //
 
 import UIKit
-import IBAnimatable
+
 
 class ExerciseLibraryCell: UITableViewCell {
     
     //MARK::- OUTLETS
     @IBOutlet weak var lblName: UILabel!
-    @IBOutlet weak var imgExercise: AnimatableImageView!
+    @IBOutlet weak var imgExercise: UIImageView!
     @IBOutlet weak var lblExerciseType: UILabel!
     
     //MARK:: CELL CYCLE
@@ -24,8 +24,7 @@ class ExerciseLibraryCell: UITableViewCell {
 class ExerciseCategoryCollectionCell : UICollectionViewCell{
     
     //MARK::- OUTLETS
-    
-    @IBOutlet weak var btnTitle: AnimatableButton?
+    @IBOutlet weak var btnTitle: UIButton?
     @IBOutlet weak var lblTitle: UILabel?
     @IBOutlet weak var imgIcon: UIImageView?
     

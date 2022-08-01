@@ -41,7 +41,7 @@ class SecondStepVC : BaseVC
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        debugPrint(profileModel.goal)
+        printDebug(profileModel.goal)
         
         txtWeightGoal.addBottomBorder()
         txtWeight.addBottomBorder()
