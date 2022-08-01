@@ -11,19 +11,12 @@ class BaseVC: UIViewController {
     
     // MARK:- Variables
     // ==================
-    private var networkError : NetworkErrorView?
     var isStatusBarWhite = false{
         didSet {
             setNeedsStatusBarAppearanceUpdate()
         }
     }
-    
-    var networkErrorPageWillShow : Bool = false{
-        didSet{
-            networkErrorHandling()
-        }
-    }
-    
+
     // MARK:- IBOutlets
     // ==================
     @IBOutlet weak var tableView: UITableView!
@@ -34,16 +27,12 @@ class BaseVC: UIViewController {
     // ===================
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.initialSetup()
     }
+    
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         self.view.endEditing(true)
     }
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
-        self.onViewAppear()
-    }
-    
+
     override var preferredStatusBarStyle: UIStatusBarStyle {
         if #available(iOS 13.0, *) {
             return self.isStatusBarWhite ? .lightContent : .darkContent
@@ -52,39 +41,9 @@ class BaseVC: UIViewController {
             return self.isStatusBarWhite ? .lightContent : .default
         }
     }
-    
-    
-    override func viewDidAppear(_ animated: Bool) {
-        super.viewDidDisappear(animated)
-        
-        // AppNetworking.reachability.stopListening()
-    }
-    
-    // Network error call back
-    func networkErrorRetryBtnTapped(retryButton: UIButton){
-        printDebug("Retry tapped" )
-    }
-    
-    // network status change call back
-    func networkStatusUpdated(networkAvailable: Bool) {
-        
-    }
-    
+
     deinit {
         printDebug("Deinit ==> \(self)")
-    }
-}
-
-// MARK:- Private Functions
-// ==========================
-extension BaseVC {
-    private func initialSetup() {
-        
-        self.setNetworkNotifier()
-    }
-    func onViewAppear(){
-        self.setupNetworkErrorView(willSetupPage: networkErrorPageWillShow)
-        self.view.endEditing(true)
     }
 }
 
@@ -171,44 +130,4 @@ extension BaseVC{
         }
     }
     
-}
-
-extension BaseVC{
-    
-    private func setNetworkNotifier() {
-        
-        // TODO: Uncomment
-//        AppNetworking.reachability.startListening()
-//        AppNetworking.reachability.listener = { [weak self] (networkStatus) in
-//            guard let wSelf = self else{return}
-//            if networkStatus == .notReachable {
-//                wSelf.networkStatusUpdated(networkAvailable: false)
-//            } else {
-//                wSelf.networkStatusUpdated(networkAvailable: true)
-//            }
-//        }
-    }
-    
-    private func setupNetworkErrorView(willSetupPage: Bool){
-        
-        if willSetupPage, self.networkError == nil{
-            
-            networkError = NetworkErrorView(frame: self.view.frame)
-            
-            networkError?.retryBtnTapped = {[weak self] (retryBtn) in
-                guard let wSelf = self else {return}
-                wSelf.networkErrorRetryBtnTapped(retryButton: retryBtn)
-            }
-            self.view.addSubview(networkError!)
-            networkError?.bringSubviewToFront(view)
-            self.view.layoutIfNeeded()
-        }
-        networkErrorHandling()
-    }
-    
-    private func networkErrorHandling(){
-        
-        self.networkError?.isHidden = !self.networkErrorPageWillShow
-        self.networkError?.viewNoInternet.isHidden = !self.networkErrorPageWillShow
-    }
 }

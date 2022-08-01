@@ -1,6 +1,11 @@
+//
+//  AppUserDefaults.swift
+//  TechArmie_capstone1_FitME
+//
+//  Created by Aanchal Bansal on 2022-07-15.
+//
 
-
-
+//TODO: Verify extensions
 import Foundation
 import UIKit
 

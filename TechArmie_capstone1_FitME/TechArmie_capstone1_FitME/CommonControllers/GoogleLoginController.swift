@@ -5,10 +5,10 @@
 //  Created by Aanchal Bansal on 2022-07-15.
 //
 
-import GoogleSignIn
 import UIKit
 import FirebaseCore
 import FirebaseAuth
+import GoogleSignIn
 
 class GoogleLoginController : NSObject {
     
@@ -38,7 +38,7 @@ class GoogleLoginController : NSObject {
     // MARK: - Method for google login...
     // MARK: ============================
     
-    func login(fromViewController viewController : UIViewController,
+    func loginWithGoogle(fromViewController viewController : UIViewController,
                success : @escaping(_ googleUser : GoogleUser) -> (),
                failure : @escaping(_ error : Error) -> ()) {
         
