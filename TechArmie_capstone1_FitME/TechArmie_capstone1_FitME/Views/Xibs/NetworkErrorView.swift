@@ -6,7 +6,7 @@
 //
 
 import UIKit
-import IBAnimatable
+
 
 class NetworkErrorView: UIView {
     
@@ -14,7 +14,7 @@ class NetworkErrorView: UIView {
     //=====================
     @IBOutlet var contentView           : UIView!
     @IBOutlet weak var viewNoInternet   : UIView!
-    @IBOutlet weak var retryBtn         : AnimatableButton!
+    @IBOutlet weak var retryBtn         : UIButton!
     @IBOutlet weak var noConnectionLbl: UILabel!
     @IBOutlet weak var noConnectionDescLbl: UILabel!
     

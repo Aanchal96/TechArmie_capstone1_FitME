@@ -19,7 +19,7 @@ class ChallengesViewController: BaseVC {
     }
     
     func goToDetailView() {
-        let vc = ChallengeDetailViewController.instantiate(fromAppStoryboard: .Home)
+        let vc = ChallengeDetailViewController.instantiate(fromAppStoryboard: .Challenges)
         self.navigationController?.pushViewController(vc, animated: true)
     }
 }

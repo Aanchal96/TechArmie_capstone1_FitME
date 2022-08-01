@@ -17,7 +17,7 @@ enum AppUserDefaults {
         
         guard let value = UserDefaults.standard.object(forKey: key.rawValue) else {
             
-            debugPrint("No Value Found in UserDefaults\nFile : \(file) \nLine Number : \(line) \nFunction : \(function)")
+            printDebug("No Value Found in UserDefaults\nFile : \(file) \nLine Number : \(line) \nFunction : \(function)")
             
             return JSON.null
         }
@@ -33,7 +33,7 @@ enum AppUserDefaults {
         
         guard let value = UserDefaults.standard.object(forKey: key.rawValue) else {
             
-            debugPrint("No Value Found in UserDefaults\nFile : \(file) \nFunction : \(function)")
+            printDebug("No Value Found in UserDefaults\nFile : \(file) \nFunction : \(function)")
             return JSON.null
         }
         
@@ -70,5 +70,9 @@ extension AppUserDefaults {
         
         case fullUserProfile
         case loginType
+        case currentChallengeID
+        case currentChallengeDay
+        case firebaseSessionToken
+        case currentWorkoutDay
     }
 }

@@ -49,7 +49,7 @@ class HealthKitController {
             guard let stepsCount = HKQuantityType.quantityType(forIdentifier: HKQuantityTypeIdentifier.stepCount)else{
                 return
             }
-            print( HKHealthStore().authorizationStatus(for: stepsCount))
+            printDebug( HKHealthStore().authorizationStatus(for: stepsCount))
             guard authorized else {
                 let baseMessage = "HealthKit Authorization Failed"
                 if let error = error {
@@ -123,10 +123,10 @@ class HealthKitController {
                     statistics, stop in
                     if let quantity = statistics.sumQuantity() {
                         let steps = quantity.doubleValue(for: HKUnit.count())
-                        print(statistics.startDate.day)
-                        print(start.day)
+                        printDebug(statistics.startDate.day)
+                        printDebug(start.day)
                         let daysBetween = statistics.startDate.daysFrom(start)
-                        print(daysBetween)
+                        printDebug(daysBetween)
                         arrSplitResults[daysBetween] = steps.toIntValue() ?? 0
                         printDebug(statistics.startDate.convertToString())
                         printDebug(statistics.endDate.convertToString())
@@ -240,9 +240,9 @@ class HealthKitController {
                 HKHealthStore().save(hkItemArray) { (success, error) in
                     
                     if let error = error {
-                        print("Error Saving BMI Sample: \(error.localizedDescription)")
+                        printDebug("Error Saving BMI Sample: \(error.localizedDescription)")
                     } else {
-                        print("Successfully saved BMI Sample")
+                        printDebug("Successfully saved BMI Sample")
                     }
                 }
             }

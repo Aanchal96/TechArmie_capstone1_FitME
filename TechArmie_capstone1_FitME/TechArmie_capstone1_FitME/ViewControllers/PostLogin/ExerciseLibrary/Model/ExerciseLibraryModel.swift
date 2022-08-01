@@ -7,12 +7,12 @@
 
 import SwiftyJSON
 
+//TODO: Remove extras -
+
 struct ExerciseDetailModel {
     var media: [ProgramMediaModel]
     var exerciseName: String
     var instructions: [String]
-    var tips: [String]
-    var muscleName: [String]
     var categoryName: [String]
     var id: String
     var nameCategory: String
@@ -23,8 +23,6 @@ struct ExerciseDetailModel {
         media = mediaArray.map( { ProgramMediaModel($0) } )
         exerciseName = json[ApiKey.exerciseName].stringValue
         instructions = json[ApiKey.instructions].arrayValue.map({$0.stringValue})
-        tips = json[ApiKey.tips].arrayValue.map({$0.stringValue})
-        muscleName = json[ApiKey.muscleName].arrayValue.map({$0.stringValue})
         categoryName = json[ApiKey.categoryName].arrayValue.map({$0.stringValue})
         id = json[ApiKey.id].stringValue
         nameCategory = json[ApiKey.categoryName].stringValue
