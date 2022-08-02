@@ -7,18 +7,17 @@ target 'TechArmie_capstone1_FitME' do
 
   # Pods for TechArmie_capstone1_FitME
 
-  pod 'IQKeyboardManagerSwift'
-  pod 'Toast-Swift'
-  
   pod 'FirebaseAuth'
   pod 'GoogleSignIn'
   
   pod 'SwiftyJSON'
+  pod 'Alamofire'
+  
+  pod 'IQKeyboardManagerSwift'
+  pod 'Toast-Swift'
   
   pod 'AWSCore'
   pod 'AWSS3'
   pod 'SDWebImage', '~> 4.0'
-  
-  pod 'NVActivityIndicatorView'
-  
+    
 end

@@ -1,17 +1,17 @@
+//
+//  TechArmie_capstone1_FitME
+//
+//  Created by Aanchal Bansal on 2022-07-15.
+//
 
 import Foundation
 import UIKit
-
 
 enum AppFonts : String {
     
     case regular = "SFProText-Regular"
     case medium = "SFProText-Medium"
-    case bold = "SFProText-Bold"
-    case light = "SFProText-Light"
     case semibold = "SFProText-Semibold"
-    case arabic = "FrutigerLTArabic-55Roman"
-    
 }
 
 extension AppFonts {
