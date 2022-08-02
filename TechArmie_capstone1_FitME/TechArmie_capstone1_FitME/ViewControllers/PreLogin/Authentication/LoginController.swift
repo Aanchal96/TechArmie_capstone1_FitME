@@ -53,7 +53,7 @@ class LoginController: BaseVC {
                 nvc.setNavigationBarHidden(true, animated: true)
                 AppDelegate.shared.window?.rootViewController = nvc
                 AppDelegate.shared.window?.makeKeyAndVisible()
-            }
+//            }
             
         } failure: { error in
             CommonFunctions.showToast(error.localizedDescription)
