@@ -258,7 +258,6 @@ extension WorkoutDetailVC{
         completeWorkoutArray.append(contentsOf: arrCoolDown)
         
         let videoArr : [String] = completeWorkoutArray.map({return $0.medias.first?.mediaUrl ?? ""})
-        let audioArr : [String] = completeWorkoutArray.map({return   ($0.medias.first?.audioUrlEn ?? "") })
         let ids : [String] = completeWorkoutArray.map({return $0.medias.first?.id ?? ""})
 
         CommonFunctions.showActivityLoader()

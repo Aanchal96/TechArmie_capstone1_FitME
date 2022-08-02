@@ -36,14 +36,11 @@ struct ExerciseDetailModel {
 struct ProgramMediaModel {
     let id: String
     let mediaUrl: String
-    let audioUrlEn: String
     let mediaUrlThumb1: String
     
     init(_ json: JSON = JSON()) {
         id = json[ApiKey.id].stringValue
         mediaUrl = json[ApiKey.mediaUrl].stringValue.trimTrailingWhitespace()
-        mediaUrlThumb1 = json[ApiKey.mediaUrlThumb1].stringValue.trimTrailingWhitespace()
-        audioUrlEn = json[ApiKey.audioUrlEn].stringValue.trimTrailingWhitespace()
-        
+        mediaUrlThumb1 = json[ApiKey.mediaUrlThumb1].stringValue.trimTrailingWhitespace()        
     }
 }
