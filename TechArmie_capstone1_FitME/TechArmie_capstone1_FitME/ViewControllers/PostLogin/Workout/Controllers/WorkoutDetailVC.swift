@@ -313,7 +313,7 @@ extension WorkoutDetailVC{
     func gotoStartWorkout(workoutArray : [ExerciseModel]){
         self.btnDownLoading.isHidden = true
         
-//        let vc = WorkoutHomeVC.instantiate(fromAppStoryboard: .Challenges)
+//        let vc = WorkoutVC.instantiate(fromAppStoryboard: .Challenges)
 //        vc.workoutData = self.workoutData
 //        vc.workoutArray = workoutArray
 //        vc.coolDownExerciseCount = self.arrCoolDown.count
