@@ -28,7 +28,6 @@ class WorkoutDetailVC: BaseVC {
     @IBOutlet weak var btnsBackgroundView: UIView!
     
     //MARK::- PROPERTIES
-    var isDownloadingAudios = false
     var isFromChallenge = true
     var isWarmupExercisesFetched = false
     
@@ -52,7 +51,6 @@ class WorkoutDetailVC: BaseVC {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(true)
         isStatusBarWhite = true
-        AudioController.shared.deInitializeAudioPlayer()
     }
     
     //MARK::- BUTTON ACTION
@@ -260,15 +258,8 @@ extension WorkoutDetailVC{
         completeWorkoutArray.append(contentsOf: arrCoolDown)
         
         let videoArr : [String] = completeWorkoutArray.map({return $0.medias.first?.mediaUrl ?? ""})
-        let audioArr : [String] = completeWorkoutArray.map({return   ($0.medias.first?.audioUrlEn ?? "") })
         let ids : [String] = completeWorkoutArray.map({return $0.medias.first?.id ?? ""})
-        
-        
-        if isDownloadingAudios{
-            self.downloadAudios(ids : ids , urls : audioArr , workoutArray : workoutArray)
-            return
-        }
-        
+
         CommonFunctions.showActivityLoader()
         
         // First we download and save videos
@@ -277,9 +268,7 @@ extension WorkoutDetailVC{
             
             if val == videoArr.count{
                 CommonFunctions.hideActivityLoader()
-                
-                // Audios are saved after videos
-                self?.downloadAudios(ids : ids , urls : audioArr , workoutArray : workoutArray)
+                self?.gotoStartWorkout(workoutArray : workoutArray)
             }
             
         }, failure: {[weak self] (error) in
@@ -288,40 +277,20 @@ extension WorkoutDetailVC{
             self?.btnDownLoading.isHidden = true
         })
     }
-    
-    func downloadAudios(ids : [String] , urls : [String] , workoutArray : [ExerciseModel]){
-        let urls = urls
-        isDownloadingAudios = true
-        CommonFunctions.showActivityLoader()
-        
-        DownloadController.shared.saveAudio(urls: urls, ids: ids, completed: {  (arrUrl) in
-        }, progress: { [weak self] (val) in
-            
-            if val == urls.count{
-                CommonFunctions.hideActivityLoader()
-                self?.gotoStartWorkout(workoutArray : workoutArray)
-            }
-        }, failure: {[weak self] (error) in
-            DispatchQueue.main.async { [weak self] in
-                CommonFunctions.hideActivityLoader()
-                CommonFunctions.showToastWithMessage(error.localizedDescription)
-                self?.btnDownLoading.isHidden = true
-            }
-        })
-    }
+
     
     func gotoStartWorkout(workoutArray : [ExerciseModel]){
         self.btnDownLoading.isHidden = true
         
-//        let vc = WorkoutVC.instantiate(fromAppStoryboard: .Challenges)
-//        vc.workoutData = self.workoutData
-//        vc.workoutArray = workoutArray
-//        vc.coolDownExerciseCount = self.arrCoolDown.count
-//        vc.warmUpExercideCount = self.arrWarmup.count
-//        vc.exerciseCount = self.arrExercises.count
-//        vc.challengeData = self.challengeData
-//        vc.isFromChallenge = isFromChallenge
-//        self.navigationController?.pushViewController(vc, animated: true)
+        let vc = WorkoutVC.instantiate(fromAppStoryboard: .Challenges)
+        vc.workoutData = self.workoutData
+        vc.workoutArray = workoutArray
+        vc.coolDownExerciseCount = self.arrCoolDown.count
+        vc.warmUpExercideCount = self.arrWarmup.count
+        vc.exerciseCount = self.arrExercises.count
+        vc.challengeData = self.challengeData
+        vc.isFromChallenge = isFromChallenge
+        self.navigationController?.pushViewController(vc, animated: true)
         
     }
 }

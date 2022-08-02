@@ -104,8 +104,8 @@ class ChallengeDetailCollectionCell : UICollectionViewCell{
     }
     
     //MARK::- Function
-    func configure(item : WorkoutModel?, isCompleted: Bool){
-        lblDay.text = item?.dayNo.description
+    func configure(isCompleted: Bool, index: Int){
+        lblDay.text = index.description
         imgGreenTick.isHidden = !isCompleted
     }
     override func draw(_ rect: CGRect) {

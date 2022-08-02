@@ -21,7 +21,6 @@
 		7CDA8CD4288A85730029ECB1 /* ThirdStepVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CDA8CD3288A85730029ECB1 /* ThirdStepVC.swift */; };
 		7CDA8CDA288A9E090029ECB1 /* FourthStepVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CDA8CD9288A9E090029ECB1 /* FourthStepVC.swift */; };
 		7CDA8CDC288A9E3B0029ECB1 /* FifthStepVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CDA8CDB288A9E3B0029ECB1 /* FifthStepVC.swift */; };
-		8702286A28984335007F31F2 /* AudioController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8702286928984335007F31F2 /* AudioController.swift */; };
 		87236F32288DB16000CC2BDD /* AppUserDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87236F27288DB16000CC2BDD /* AppUserDefaults.swift */; };
 		87236F33288DB16000CC2BDD /* ApiKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87236F28288DB16000CC2BDD /* ApiKeys.swift */; };
 		87236F34288DB16000CC2BDD /* AppColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87236F29288DB16000CC2BDD /* AppColors.swift */; };
@@ -38,6 +37,7 @@
 		87236F98288DC83300CC2BDD /* UIDeviceExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87236F97288DC83300CC2BDD /* UIDeviceExtension.swift */; };
 		87236F9A288DC88500CC2BDD /* DoubleExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87236F99288DC88500CC2BDD /* DoubleExtension.swift */; };
 		87236F9C288DCC8700CC2BDD /* NSErrorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87236F9B288DCC8700CC2BDD /* NSErrorExtension.swift */; };
+		874BC8AD28992C1D00A76D80 /* WorkoutVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 874C1E4328982C2F00EE4E94 /* WorkoutVC.swift */; };
 		874C1E0B2896F12900EE4E94 /* TabBarVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 874C1E0A2896F12900EE4E94 /* TabBarVC.swift */; };
 		874C1E2828982A1000EE4E94 /* Workout.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 874C1E0D28982A0F00EE4E94 /* Workout.storyboard */; };
 		874C1E2928982A1000EE4E94 /* WorkoutCells.swift in Sources */ = {isa = PBXBuildFile; fileRef = 874C1E0F28982A0F00EE4E94 /* WorkoutCells.swift */; };
@@ -80,11 +80,6 @@
 		874C1E7228982C3000EE4E94 /* WorkoutDetailFooter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 874C1E5428982C2F00EE4E94 /* WorkoutDetailFooter.swift */; };
 		874C1E7328982C3000EE4E94 /* DownloadController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 874C1E5628982C2F00EE4E94 /* DownloadController.swift */; };
 		874C1E7428982C3000EE4E94 /* VideoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 874C1E5728982C2F00EE4E94 /* VideoView.swift */; };
-		874C1E7528982C3000EE4E94 /* volumehigh.png in Resources */ = {isa = PBXBuildFile; fileRef = 874C1E5928982C2F00EE4E94 /* volumehigh.png */; };
-		874C1E7628982C3000EE4E94 /* sad.png in Resources */ = {isa = PBXBuildFile; fileRef = 874C1E5A28982C2F00EE4E94 /* sad.png */; };
-		874C1E7728982C3000EE4E94 /* Good .png in Resources */ = {isa = PBXBuildFile; fileRef = 874C1E5B28982C2F00EE4E94 /* Good .png */; };
-		874C1E7828982C3000EE4E94 /* volumelow.png in Resources */ = {isa = PBXBuildFile; fileRef = 874C1E5C28982C2F00EE4E94 /* volumelow.png */; };
-		874C1E7928982C3000EE4E94 /* hard.png in Resources */ = {isa = PBXBuildFile; fileRef = 874C1E5D28982C2F00EE4E94 /* hard.png */; };
 		874C1E7A28982C3000EE4E94 /* ChallengesData.json in Resources */ = {isa = PBXBuildFile; fileRef = 874C1E5F28982C2F00EE4E94 /* ChallengesData.json */; };
 		87582725289652BE00BA3B26 /* IntExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87582724289652BE00BA3B26 /* IntExtension.swift */; };
 		875827322896673900BA3B26 /* ExerciseLibraryCells.swift in Sources */ = {isa = PBXBuildFile; fileRef = 875827282896673900BA3B26 /* ExerciseLibraryCells.swift */; };
@@ -107,6 +102,7 @@
 		87E58209288D7FDF003AFEA7 /* GoogleLoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87E58208288D7FDF003AFEA7 /* GoogleLoginController.swift */; };
 		87E58211288DACE8003AFEA7 /* UIViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87E58210288DACE8003AFEA7 /* UIViewControllerExtension.swift */; };
 		87FF9560288B5DA300A05A07 /* bg_video.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 87FF955F288B5DA300A05A07 /* bg_video.mp4 */; };
+		D86BF5A92898CF9E00805DDD /* WorkoutVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 874C1E4328982C2F00EE4E94 /* WorkoutVC.swift */; };
 		ED7036E02888BAD4002A312F /* welcome_fitme.png in Resources */ = {isa = PBXBuildFile; fileRef = ED7036DD2888BAD4002A312F /* welcome_fitme.png */; };
 		ED7036E32888BAE9002A312F /* logo_FitME.png in Resources */ = {isa = PBXBuildFile; fileRef = ED7036E22888BAE9002A312F /* logo_FitME.png */; };
 		ED986BF2288AE45A005BCA62 /* FirstStepVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED986BF1288AE45A005BCA62 /* FirstStepVC.swift */; };
@@ -129,7 +125,6 @@
 		7CDA8CD3288A85730029ECB1 /* ThirdStepVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdStepVC.swift; sourceTree = "<group>"; };
 		7CDA8CD9288A9E090029ECB1 /* FourthStepVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FourthStepVC.swift; sourceTree = "<group>"; };
 		7CDA8CDB288A9E3B0029ECB1 /* FifthStepVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FifthStepVC.swift; sourceTree = "<group>"; };
-		8702286928984335007F31F2 /* AudioController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioController.swift; sourceTree = "<group>"; };
 		87236F27288DB16000CC2BDD /* AppUserDefaults.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppUserDefaults.swift; sourceTree = "<group>"; };
 		87236F28288DB16000CC2BDD /* ApiKeys.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiKeys.swift; sourceTree = "<group>"; };
 		87236F29288DB16000CC2BDD /* AppColors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppColors.swift; sourceTree = "<group>"; };
@@ -189,11 +184,6 @@
 		874C1E5428982C2F00EE4E94 /* WorkoutDetailFooter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WorkoutDetailFooter.swift; sourceTree = "<group>"; };
 		874C1E5628982C2F00EE4E94 /* DownloadController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DownloadController.swift; sourceTree = "<group>"; };
 		874C1E5728982C2F00EE4E94 /* VideoView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoView.swift; sourceTree = "<group>"; };
-		874C1E5928982C2F00EE4E94 /* volumehigh.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = volumehigh.png; sourceTree = "<group>"; };
-		874C1E5A28982C2F00EE4E94 /* sad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sad.png; sourceTree = "<group>"; };
-		874C1E5B28982C2F00EE4E94 /* Good .png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Good .png"; sourceTree = "<group>"; };
-		874C1E5C28982C2F00EE4E94 /* volumelow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = volumelow.png; sourceTree = "<group>"; };
-		874C1E5D28982C2F00EE4E94 /* hard.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hard.png; sourceTree = "<group>"; };
 		874C1E5F28982C2F00EE4E94 /* ChallengesData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = ChallengesData.json; sourceTree = "<group>"; };
 		87582724289652BE00BA3B26 /* IntExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntExtension.swift; sourceTree = "<group>"; };
 		875827282896673900BA3B26 /* ExerciseLibraryCells.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExerciseLibraryCells.swift; sourceTree = "<group>"; };
@@ -435,22 +425,9 @@
 			children = (
 				874C1E5628982C2F00EE4E94 /* DownloadController.swift */,
 				874C1E5728982C2F00EE4E94 /* VideoView.swift */,
-				874C1E5828982C2F00EE4E94 /* Icons */,
 				874C1E5E28982C2F00EE4E94 /* ChallengesJSON */,
 			);
 			path = Resources;
-			sourceTree = "<group>";
-		};
-		874C1E5828982C2F00EE4E94 /* Icons */ = {
-			isa = PBXGroup;
-			children = (
-				874C1E5928982C2F00EE4E94 /* volumehigh.png */,
-				874C1E5A28982C2F00EE4E94 /* sad.png */,
-				874C1E5B28982C2F00EE4E94 /* Good .png */,
-				874C1E5C28982C2F00EE4E94 /* volumelow.png */,
-				874C1E5D28982C2F00EE4E94 /* hard.png */,
-			);
-			path = Icons;
 			sourceTree = "<group>";
 		};
 		874C1E5E28982C2F00EE4E94 /* ChallengesJSON */ = {
@@ -669,7 +646,6 @@
 			isa = PBXGroup;
 			children = (
 				87E58208288D7FDF003AFEA7 /* GoogleLoginController.swift */,
-				8702286928984335007F31F2 /* AudioController.swift */,
 				87236F3D288DB77000CC2BDD /* IAP */,
 			);
 			path = CommonControllers;
@@ -813,7 +789,6 @@
 				874C1E2E28982A1000EE4E94 /* lock.png in Resources */,
 				874C1E3628982A1000EE4E94 /* Intermediate3.jpg in Resources */,
 				874C1E3528982A1000EE4E94 /* Advanced3.jpg in Resources */,
-				874C1E7828982C3000EE4E94 /* volumelow.png in Resources */,
 				874C1E6028982C2F00EE4E94 /* Challenges.storyboard in Resources */,
 				874C1E2B28982A1000EE4E94 /* Beginner.jpg in Resources */,
 				874C1E3828982A1000EE4E94 /* Advanced.jpg in Resources */,
@@ -823,7 +798,6 @@
 				87E58207288D7CA0003AFEA7 /* GoogleService-Info.plist in Resources */,
 				874C1E3728982A1000EE4E94 /* Beginner2.jpg in Resources */,
 				874C1E2C28982A1000EE4E94 /* Novice3.jpg in Resources */,
-				874C1E7528982C3000EE4E94 /* volumehigh.png in Resources */,
 				55EB744E288A07AA00DFD58D /* Authentication.storyboard in Resources */,
 				87582748289673E800BA3B26 /* Account.storyboard in Resources */,
 				874C1E3128982A1000EE4E94 /* Intermediate1.jpg in Resources */,
@@ -839,7 +813,6 @@
 				874C1E3228982A1000EE4E94 /* Advanced1.jpg in Resources */,
 				874C1E2828982A1000EE4E94 /* Workout.storyboard in Resources */,
 				874C1E7A28982C3000EE4E94 /* ChallengesData.json in Resources */,
-				874C1E7628982C3000EE4E94 /* sad.png in Resources */,
 				874C1E2D28982A1000EE4E94 /* Novice2.jpg in Resources */,
 				87C4A31728822B1200485A08 /* Assets.xcassets in Resources */,
 				874C1E3328982A1000EE4E94 /* Intermediate2.jpg in Resources */,
@@ -847,8 +820,6 @@
 				874C1E3A28982A1000EE4E94 /* Beginner1.jpg in Resources */,
 				874C1E7028982C2F00EE4E94 /* WorkoutDetailHeader.xib in Resources */,
 				874C1E3028982A1000EE4E94 /* Intermediate.jpg in Resources */,
-				874C1E7928982C3000EE4E94 /* hard.png in Resources */,
-				874C1E7728982C3000EE4E94 /* Good .png in Resources */,
 				874C1E7128982C3000EE4E94 /* WorkoutDetailFooter.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -902,7 +873,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8702286A28984335007F31F2 /* AudioController.swift in Sources */,
 				874C1E6B28982C2F00EE4E94 /* WorkoutCell.swift in Sources */,
 				874C1E6D28982C2F00EE4E94 /* StartWarmUpCell.swift in Sources */,
 				558CFFBD2898D4600035375B /* AppSettingViewController.swift in Sources */,
@@ -925,6 +895,7 @@
 				7CDA8CD0288A7CB90029ECB1 /* SecondStepVC.swift in Sources */,
 				ED986BF2288AE45A005BCA62 /* FirstStepVC.swift in Sources */,
 				874C1E7228982C3000EE4E94 /* WorkoutDetailFooter.swift in Sources */,
+				874BC8AD28992C1D00A76D80 /* WorkoutVC.swift in Sources */,
 				875827342896673900BA3B26 /* ExerciseLibraryViewController.swift in Sources */,
 				874C1E6128982C2F00EE4E94 /* ChallengesDetail.swift in Sources */,
 				ED986BF2288AE45A005BCA62 /* FirstStepVC.swift in Sources */,
@@ -968,6 +939,7 @@
 				558CFFBB2898D3420035375B /* AppSettingView.swift in Sources */,
 				874C1E6A28982C2F00EE4E94 /* RestCell.swift in Sources */,
 				EDAA77FA2894A43A00FCA3D0 /* LocalizedString.swift in Sources */,
+				D86BF5A92898CF9E00805DDD /* WorkoutVC.swift in Sources */,
 				874C1E6E28982C2F00EE4E94 /* StartCoolDownCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

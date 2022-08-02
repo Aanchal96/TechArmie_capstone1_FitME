@@ -168,6 +168,10 @@ extension WorkoutHomeVC {
                     let arrProgramLevels = json[ApiKey.result][ApiKey.data].arrayValue.map({ProgramModel($0)})
                     self.assignedProgram = arrProgramLevels[currentAssignedLevel.rawValue]
                     self.arrWorkout = self.assignedProgram?.pendingWorkouts ?? []
+                    let pendingWorkoutArray = json[ApiKey.result][ApiKey.pendingWorkout].arrayValue
+                    let pendingWorkouts = pendingWorkoutArray.map({WorkoutModel($0)})
+                    self.assignedProgram?.pendingWorkouts = pendingWorkouts
+                    self.arrWorkout = pendingWorkouts
                     self.workoutTableView.reloadData()
                     self.updateHeader()
                 }
