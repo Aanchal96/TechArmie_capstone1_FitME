@@ -56,14 +56,12 @@ class RestCell: UITableViewCell {
     func cellDisplayed(index  : Int){
         self.index = index
         //CommonFunctions.speak(val: "Rest".localized)
-        AudioController.shared.playAudioFromPath(name:  AudioName.rest)
         imgUpArrow.springAnnimate()
 
         timer = Timer.scheduledTimer(withTimeInterval: 1.0, repeats: true, block: { [weak self] (timer) in
             self?.timerVal = (self?.timerVal ?? 0) - 1
             self?.updateLabels()
             if (self?.timerVal ?? 0) == 3{
-               // AudioController.shared.playAudioFromPath(name:AudioName.go)
             }
         })
     }

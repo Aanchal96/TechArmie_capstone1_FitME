@@ -52,6 +52,7 @@ final class ExerciseLibraryViewController: BaseVC {
 //MARK::- FUNCTIONS
 private extension ExerciseLibraryViewController {
     func onViewDidLoad(){
+        backButton.isHidden = true
         tableView.delegate = self
         tableView.dataSource = self
         collectionView.delegate = self

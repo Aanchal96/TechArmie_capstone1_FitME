@@ -68,7 +68,6 @@ extension WorkoutSubmitVC{
     
     func onViewDidLoad(){
         // Deinitialise previous audios from Workout player
-        AudioController.shared.deInitializeAudioPlayer()
     }
 
 }

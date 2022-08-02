@@ -2,540 +2,362 @@
   "exerciseLibrary" : {
     "categoryData" : [
       {
-        "_id" : "5c41bddfa2f27011fcefa1c0",
+        "_id" : "1",
         "categoryName" : "Lower body"
       },
       {
-        "_id" : "5c41bddfa2f27011fcefa1c1",
+        "_id" : "2",
         "categoryName" : "Upper body"
       },
       {
-        "_id" : "5c41bddfa2f27011fcefa1c2",
+        "_id" : "3",
         "categoryName" : "Core & abs"
       },
       {
-        "_id" : "5c41bddfa2f27011fcefa1c3",
+        "_id" : "4",
         "categoryName" : "Flexibility"
       },
       {
-        "_id" : "5c4b0c1dd947c70ade10a3a8",
+        "_id" : "5",
         "categoryName" : "Cardio"
       }
     ],
     "libraryData" : {
       "data" : [
         {
-          "categoryId" : "5c41bddfa2f27011fcefa1c2",
+          "categoryId" : "3",
           "categoryName" : "Core & abs",
           "exerciseName" : "Ski Abs",
           "media" : [
             {
-              "audioUrlAr" : "https:\/\/mealbucket.s3.amazonaws.com\/156526160337901AR.mp3",
-              "mediaUrlThumb2" : "",
-              "_id" : "5daab667400ca941cd6e7bd5",
               "mediaUrlThumb1" : "https:\/\/mealbucket.s3.amazonaws.com\/thumbnails\/15714688852791-SkiAbs.0.jpg",
-              "audioUrlEn" : "https:\/\/mealbucket.s3.amazonaws.com\/156526158873501EN.mp3",
-              "mediaType" : 2,
               "mediaUrl" : "https:\/\/mealbucket.s3.amazonaws.com\/15714688852791-SkiAbs.0.mp4"
             }
           ],
-          "_id" : "5d4c002089f65a6e842b1820"
         },
         {
-          "categoryId" : "5c41bddfa2f27011fcefa1c2",
+          "categoryId" : "3",
           "categoryName" : "Core & abs",
           "exerciseName" : "Abdominal Cocoons",
           "media" : [
             {
-              "audioUrlAr" : "https:\/\/mealbucket.s3.amazonaws.com\/156727029481702AR.mp3",
-              "_id" : "5d6aa59e79c318216112e321",
-              "mediaType" : 2,
               "mediaUrlThumb1" : "https:\/\/mealbucket.s3.amazonaws.com\/thumbnails\/15652619572382.abscocoons.jpg",
-              "mediaUrlThumb2" : "",
-              "audioUrlEn" : "https:\/\/mealbucket.s3.amazonaws.com\/15672702824162.abdominalcocoons.mp3",
               "mediaUrl" : "https:\/\/mealbucket.s3.amazonaws.com\/15652619572382.abscocoons.mp4"
             }
           ],
-          "_id" : "5d4c015989f65a6e842b1828"
         },
         {
-          "categoryId" : "5c41bddfa2f27011fcefa1c2",
+          "categoryId" : "3",
           "categoryName" : "Core & abs",
           "exerciseName" : "Advanced Knee Raises",
           "media" : [
             {
               "mediaUrlThumb1" : "https:\/\/mealbucket.s3.amazonaws.com\/thumbnails\/15714689844734.AdvancedLegsRaise.0.jpg",
-              "audioUrlAr" : "https:\/\/mealbucket.s3.amazonaws.com\/156526231933203AR.mp3",
-              "mediaUrlThumb2" : "",
               "mediaUrl" : "https:\/\/mealbucket.s3.amazonaws.com\/15714689844734.AdvancedLegsRaise.0.mp4",
-              "_id" : "5daab6c6400ca941cd6e7be1",
-              "mediaType" : 2,
-              "audioUrlEn" : "https:\/\/mealbucket.s3.amazonaws.com\/156526231162803EN.mp3"
             }
           ],
-          "_id" : "5d4c028789f65a6e842b1830"
         },
         {
-          "categoryId" : "5c41bddfa2f27011fcefa1c2",
+          "categoryId" : "3",
           "categoryName" : "Core & abs",
           "exerciseName" : "Advanced Legs Raise",
           "media" : [
             {
               "mediaUrlThumb1" : "https:\/\/mealbucket.s3.amazonaws.com\/thumbnails\/15711404874934.AdvancedLegsRaise.0.jpg",
-              "audioUrlAr" : "https:\/\/mealbucket.s3.amazonaws.com\/156526291934404AR.mp3",
-              "mediaUrlThumb2" : "",
-              "audioUrlEn" : "https:\/\/mealbucket.s3.amazonaws.com\/156526291184904ENmp3.mp3",
-              "_id" : "5da5b3a1400ca941cd6c7633",
-              "mediaType" : 2,
               "mediaUrl" : "https:\/\/mealbucket.s3.amazonaws.com\/15711404874934.AdvancedLegsRaise.0.mp4"
             }
           ],
-          "_id" : "5d4c053389f65a6e842b1837"
         },
         {
-          "categoryId" : "5c41bddfa2f27011fcefa1c0",
+          "categoryId" : "1",
           "categoryName" : "Lower body",
           "exerciseName" : "Alternating Jump Lunges",
           "media" : [
             {
-              "audioUrlEn" : "https:\/\/mealbucket.s3.amazonaws.com\/156526322571105EN.mp3",
-              "mediaUrlThumb2" : "",
-              "mediaType" : 2,
-              "_id" : "5d65b33179c318216112da5a",
               "mediaUrl" : "https:\/\/mealbucket.s3.amazonaws.com\/15652632212915.Alternatingjumplunges.mp4",
-              "audioUrlAr" : "https:\/\/mealbucket.s3.amazonaws.com\/156526323089405AR.mp3",
               "mediaUrlThumb1" : "https:\/\/mealbucket.s3.amazonaws.com\/thumbnails\/15652632212915.Alternatingjumplunges.jpg"
             }
           ],
-          "_id" : "5d4c073189f65a6e842b1845"
         },
         {
-          "categoryId" : "5c41bddfa2f27011fcefa1c1",
+          "categoryId" : "2",
           "categoryName" : "Upper body",
           "exerciseName" : "Assisted Diamond Push-ups",
           "media" : [
             {
-              "audioUrlAr" : "https:\/\/mealbucket.s3.amazonaws.com\/156526385598407AR_1.mp3",
-              "mediaType" : 2,
               "mediaUrl" : "https:\/\/mealbucket.s3.amazonaws.com\/15652638351737.Assisteddiamondpush-ups.mp4",
               "mediaUrlThumb1" : "https:\/\/mealbucket.s3.amazonaws.com\/thumbnails\/15652638351737.Assisteddiamondpush-ups.jpg",
-              "mediaUrlThumb2" : "",
-              "audioUrlEn" : "https:\/\/mealbucket.s3.amazonaws.com\/156526384173007EN.mp3",
-              "_id" : "5d65b35779c318216112da62"
             }
           ],
-          "_id" : "5d4c08e889f65a6e842b1850"
         },
         {
-          "categoryId" : "5c41bddfa2f27011fcefa1c1",
+          "categoryId" : "2",
           "categoryName" : "Upper body",
           "exerciseName" : "Assisted Forearm Push-ups",
           "media" : [
             {
-              "audioUrlEn" : "https:\/\/mealbucket.s3.amazonaws.com\/156526422375808EN.mp3",
-              "mediaUrlThumb2" : "",
-              "audioUrlAr" : "https:\/\/mealbucket.s3.amazonaws.com\/156526423776408AR_1.mp3",
-              "mediaType" : 2,
               "mediaUrlThumb1" : "https:\/\/mealbucket.s3.amazonaws.com\/thumbnails\/15652642169908.Assistedforenamepush-ups.jpg",
-              "_id" : "5d65b38979c318216112da6a",
               "mediaUrl" : "https:\/\/mealbucket.s3.amazonaws.com\/15652642169908.Assistedforenamepush-ups.mp4"
             }
           ],
-          "_id" : "5d4c0a3689f65a6e842b1859"
         },
         {
-          "categoryId" : "5c41bddfa2f27011fcefa1c2",
+          "categoryId" : "3",
           "categoryName" : "Core & abs",
           "exerciseName" : "Lying leg rotations",
           "media" : [
             {
               "mediaUrl" : "https:\/\/mealbucket.s3.amazonaws.com\/156532203448851.Lyinglegrotations.mp4",
-              "mediaUrlThumb1" : "https:\/\/mealbucket.s3.amazonaws.com\/thumbnails\/156532203448851.Lyinglegrotations.jpg",
-              "mediaType" : 2,
-              "audioUrlAr" : "https:\/\/mealbucket.s3.amazonaws.com\/156532205042951ARmp3.mp3",
-              "audioUrlEn" : "https:\/\/mealbucket.s3.amazonaws.com\/156532204297151EN.mp3",
-              "mediaUrlThumb2" : "",
-              "_id" : "5d66515579c318216112dbb9"
+              "mediaUrlThumb1" : "https:\/\/mealbucket.s3.amazonaws.com\/thumbnails\/156532203448851.Lyinglegrotations.jpg"
             }
           ],
-          "_id" : "5d4cec4589f65a6e842b186d"
         },
         {
-          "categoryId" : "5c41bddfa2f27011fcefa1c2",
+          "categoryId" : "3",
           "categoryName" : "Core & abs",
           "exerciseName" : "Mountain climbers",
           "media" : [
             {
-              "audioUrlAr" : "https:\/\/mealbucket.s3.amazonaws.com\/156532264316752AR.mp3",
               "mediaUrlThumb1" : "https:\/\/mealbucket.s3.amazonaws.com\/thumbnails\/156532261785552.Mountainclimbers.jpg",
-              "mediaUrlThumb2" : "",
-              "audioUrlEn" : "https:\/\/mealbucket.s3.amazonaws.com\/156532262932152EN.mp3",
-              "mediaUrl" : "https:\/\/mealbucket.s3.amazonaws.com\/156532261785552.Mountainclimbers.mp4",
-              "_id" : "5d66517879c318216112dbc3",
-              "mediaType" : 2
+              "mediaUrl" : "https:\/\/mealbucket.s3.amazonaws.com\/156532261785552.Mountainclimbers.mp4"
             }
           ],
-          "_id" : "5d4cee8089f65a6e842b1874"
         },
         {
-          "categoryId" : "5c41bddfa2f27011fcefa1c0",
+          "categoryId" : "1",
           "categoryName" : "Lower body",
           "exerciseName" : "quadruped knee to hand - Left",
           "media" : [
             {
-              "mediaType" : 2,
               "mediaUrlThumb1" : "https:\/\/mealbucket.s3.amazonaws.com\/thumbnails\/157146977499755.quadrupedkneetohandL.0.jpg",
-              "mediaUrlThumb2" : "",
-              "audioUrlAr" : "https:\/\/mealbucket.s3.amazonaws.com\/156726855174355.MP3",
-              "audioUrlEn" : "https:\/\/mealbucket.s3.amazonaws.com\/156532315723955EN.mp3",
-              "_id" : "5daab9dc400ca941cd6e7d0b",
               "mediaUrl" : "https:\/\/mealbucket.s3.amazonaws.com\/157146977499755.quadrupedkneetohandL.0.mp4"
             }
           ],
-          "_id" : "5d4cf0dd89f65a6e842b187f"
         },
         {
-          "categoryId" : "5c41bddfa2f27011fcefa1c0",
+          "categoryId" : "1",
           "categoryName" : "Lower body",
           "exerciseName" : "quadruped knee to hand - Right",
           "media" : [
             {
-              "mediaType" : 2,
-              "audioUrlAr" : "https:\/\/mealbucket.s3.amazonaws.com\/156726852221255.MP3",
               "mediaUrlThumb1" : "https:\/\/mealbucket.s3.amazonaws.com\/thumbnails\/157146973355155.quadrupedkneetohandR.0.jpg",
               "mediaUrl" : "https:\/\/mealbucket.s3.amazonaws.com\/157146973355155.quadrupedkneetohandR.0.mp4",
-              "_id" : "5daab9b4400ca941cd6e7cec",
-              "mediaUrlThumb2" : "",
-              "audioUrlEn" : "https:\/\/mealbucket.s3.amazonaws.com\/156532362522255EN.mp3"
             }
           ],
-          "_id" : "5d4cf24a89f65a6e842b188a"
         },
         {
-          "categoryId" : "5c41bddfa2f27011fcefa1c2",
+          "categoryId" : "3",
           "categoryName" : "Core & abs",
           "exerciseName" : "Plank",
           "media" : [
             {
-              "mediaType" : 2,
-              "_id" : "5daaba0f400ca941cd6e7d1c",
-              "mediaUrlThumb2" : "",
-              "audioUrlEn" : "https:\/\/mealbucket.s3.amazonaws.com\/156532424728457EN.mp3",
               "mediaUrlThumb1" : "https:\/\/mealbucket.s3.amazonaws.com\/thumbnails\/157146982392057.plank.0.jpg",
-              "audioUrlAr" : "https:\/\/mealbucket.s3.amazonaws.com\/156698678962657.MP3",
               "mediaUrl" : "https:\/\/mealbucket.s3.amazonaws.com\/157146982392057.plank.0.mp4"
             }
           ],
-          "_id" : "5d4cf3f989f65a6e842b1895"
         },
         {
-          "categoryId" : "5c41bddfa2f27011fcefa1c2",
+          "categoryId" : "3",
           "categoryName" : "Core & abs",
           "exerciseName" : "Plank Jacks",
           "media" : [
             {
-              "_id" : "5d66526579c318216112dbed",
-              "audioUrlAr" : "https:\/\/mealbucket.s3.amazonaws.com\/156532445112358AR.mp3",
               "mediaUrlThumb1" : "https:\/\/mealbucket.s3.amazonaws.com\/thumbnails\/156532438682558.plankjacks.jpg",
-              "mediaType" : 2,
               "mediaUrl" : "https:\/\/mealbucket.s3.amazonaws.com\/156532438682558.plankjacks.mp4",
-              "mediaUrlThumb2" : "",
-              "audioUrlEn" : "https:\/\/mealbucket.s3.amazonaws.com\/156532444089658EN.mp3"
             }
           ],
-          "_id" : "5d4cf61f89f65a6e842b18a0"
         },
         {
-          "categoryId" : "5c41bddfa2f27011fcefa1c2",
+          "categoryId" : "3",
           "categoryName" : "Core & abs",
           "exerciseName" : "Plank walk ups",
           "media" : [
             {
               "mediaUrl" : "https:\/\/mealbucket.s3.amazonaws.com\/157146993373159.Plankwalkups-0.mp4",
-              "audioUrlEn" : "https:\/\/mealbucket.s3.amazonaws.com\/156532495208259EN.mp3",
-              "audioUrlAr" : "https:\/\/mealbucket.s3.amazonaws.com\/156532495934959AR.mp3",
-              "mediaUrlThumb2" : "",
               "mediaUrlThumb1" : "https:\/\/mealbucket.s3.amazonaws.com\/thumbnails\/157146993373159.Plankwalkups-0.jpg",
-              "_id" : "5daaba7b400ca941cd6e7d31",
-              "mediaType" : 2
             }
           ],
-          "_id" : "5d4cf7d289f65a6e842b18ad"
         },
         {
-          "categoryId" : "5c41bddfa2f27011fcefa1c0",
+          "categoryId" : "1",
           "categoryName" : "Lower body",
           "exerciseName" : "Prisoner jump squats",
           "media" : [
             {
               "mediaUrlThumb1" : "https:\/\/mealbucket.s3.amazonaws.com\/thumbnails\/156532633161260.Prisonerjumpsquats.jpg",
-              "_id" : "5d6aa5f179c318216112e32a",
-              "audioUrlAr" : "https:\/\/mealbucket.s3.amazonaws.com\/156532644014260AR_1.mp3",
-              "audioUrlEn" : "https:\/\/mealbucket.s3.amazonaws.com\/156727038095060.Prisonerjumpsquats.mp3",
               "mediaUrl" : "https:\/\/mealbucket.s3.amazonaws.com\/156532633161260.Prisonerjumpsquats.mp4",
-              "mediaType" : 2,
-              "mediaUrlThumb2" : ""
             }
           ],
-          "_id" : "5d4cfe5d89f65a6e842b18ba"
         },
         {
-          "categoryId" : "5c41bddfa2f27011fcefa1c1",
+          "categoryId" : "2",
           "categoryName" : "Upper body",
           "exerciseName" : "Push-ups",
           "media" : [
             {
-              "_id" : "5d6a9ce279c318216112e250",
-              "audioUrlAr" : "https:\/\/mealbucket.s3.amazonaws.com\/156726805815362.MP3",
               "mediaUrl" : "https:\/\/mealbucket.s3.amazonaws.com\/156532710426462.Push-ups.mp4",
-              "mediaType" : 2,
-              "mediaUrlThumb2" : "",
-              "audioUrlEn" : "https:\/\/mealbucket.s3.amazonaws.com\/156532711320862EN.mp3",
               "mediaUrlThumb1" : "https:\/\/mealbucket.s3.amazonaws.com\/thumbnails\/156532710426462.Push-ups.jpg"
             }
           ],
-          "_id" : "5d4cffe989f65a6e842b18c4"
         },
         {
-          "categoryId" : "5c41bddfa2f27011fcefa1c2",
+          "categoryId" : "3",
           "categoryName" : "Core & abs",
           "exerciseName" : "Table top crunches",
           "media" : [
             {
-              "mediaType" : 2,
-              "audioUrlAr" : "https:\/\/mealbucket.s3.amazonaws.com\/156532753970263AR.mp3",
-              "_id" : "5d6652ee79c318216112dc14",
-              "mediaUrlThumb2" : "",
-              "audioUrlEn" : "https:\/\/mealbucket.s3.amazonaws.com\/156532750756363EN.mp3",
               "mediaUrlThumb1" : "https:\/\/mealbucket.s3.amazonaws.com\/thumbnails\/156532749890963.Tabletopcrunches.jpg",
               "mediaUrl" : "https:\/\/mealbucket.s3.amazonaws.com\/156532749890963.Tabletopcrunches.mp4"
             }
           ],
-          "_id" : "5d4d017989f65a6e842b18ce"
         },
         {
-          "categoryId" : "5c41bddfa2f27011fcefa1c1",
+          "categoryId" : "2",
           "categoryName" : "Upper body",
           "exerciseName" : "Assisted Push-ups",
           "media" : [
             {
-              "_id" : "5daab6e7400ca941cd6e7bea",
-              "audioUrlEn" : "https:\/\/mealbucket.s3.amazonaws.com\/156540031554909EN.mp3",
               "mediaUrl" : "https:\/\/mealbucket.s3.amazonaws.com\/15714690212699.AssistedPush_ups.0.mp4",
-              "audioUrlAr" : "https:\/\/mealbucket.s3.amazonaws.com\/156540032834209AR.mp3",
-              "mediaUrlThumb2" : "",
               "mediaUrlThumb1" : "https:\/\/mealbucket.s3.amazonaws.com\/thumbnails\/15714690212699.AssistedPush_ups.0.jpg",
-              "mediaType" : 2
             }
           ],
-          "_id" : "5d4e1dcd89f65a6e842b18d9"
         },
         {
-          "categoryId" : "5c41bddfa2f27011fcefa1c0",
+          "categoryId" : "1",
           "categoryName" : "Lower body",
           "exerciseName" : "Backward Lunges",
           "media" : [
             {
-              "audioUrlEn" : "https:\/\/mealbucket.s3.amazonaws.com\/156540078640910EN.mp3",
-              "audioUrlAr" : "https:\/\/mealbucket.s3.amazonaws.com\/156726822104110.MP3",
               "mediaUrlThumb1" : "https:\/\/mealbucket.s3.amazonaws.com\/thumbnails\/157146906149010.Bakwardlunges.0.jpg",
-              "mediaUrlThumb2" : "",
-              "mediaType" : 2,
               "mediaUrl" : "https:\/\/mealbucket.s3.amazonaws.com\/157146906149010.Bakwardlunges.0.mp4",
-              "_id" : "5daab712400ca941cd6e7bfc"
             }
           ],
-          "_id" : "5d4e202b89f65a6e842b18e3"
         },
         {
-          "categoryId" : "5c41bddfa2f27011fcefa1c0",
+          "categoryId" : "1",
           "categoryName" : "Lower body",
           "exerciseName" : "Bent Calf Raises",
           "media" : [
             {
-              "_id" : "5d4e249989f65a6e842b18f4",
-              "audioUrlAr" : "https:\/\/mealbucket.s3.amazonaws.com\/156540206724511AR.mp3",
-              "audioUrlEn" : "https:\/\/mealbucket.s3.amazonaws.com\/156540205293911EN.mp3",
-              "mediaUrlThumb2" : "",
               "mediaUrl" : "https:\/\/mealbucket.s3.amazonaws.com\/156540204504811.Bentcalfraises.mp4",
-              "mediaType" : 2,
               "mediaUrlThumb1" : "https:\/\/mealbucket.s3.amazonaws.com\/thumbnails\/156540204504811.Bentcalfraises.jpg"
             }
           ],
-          "_id" : "5d4e249989f65a6e842b18ed"
         },
         {
-          "categoryId" : "5c41bddfa2f27011fcefa1c2",
+          "categoryId" : "3",
           "categoryName" : "Core & abs",
           "exerciseName" : "Bicycles",
           "media" : [
             {
-              "mediaType" : 2,
-              "mediaUrlThumb2" : "",
               "mediaUrlThumb1" : "https:\/\/mealbucket.s3.amazonaws.com\/thumbnails\/156540249275413.Bicycles.jpg",
-              "_id" : "5d662ca079c318216112da84",
               "mediaUrl" : "https:\/\/mealbucket.s3.amazonaws.com\/156540249275413.Bicycles.mp4",
-              "audioUrlAr" : "https:\/\/mealbucket.s3.amazonaws.com\/156540251050113AR.mp3",
-              "audioUrlEn" : "https:\/\/mealbucket.s3.amazonaws.com\/156540250068513EN.mp3"
             }
           ],
-          "_id" : "5d4e25cb89f65a6e842b18f5"
         },
         {
-          "categoryId" : "5c41bddfa2f27011fcefa1c2",
+          "categoryId" : "3",
           "categoryName" : "Core & abs",
           "exerciseName" : "Boat Pose",
           "media" : [
             {
               "mediaUrl" : "https:\/\/mealbucket.s3.amazonaws.com\/156540274762614.Boatpose.mp4",
-              "mediaType" : 2,
-              "_id" : "5d662cdb79c318216112da8b",
-              "audioUrlEn" : "https:\/\/mealbucket.s3.amazonaws.com\/156540277303414EN.mp3",
-              "audioUrlAr" : "https:\/\/mealbucket.s3.amazonaws.com\/156540278527114AR.mp3",
               "mediaUrlThumb1" : "https:\/\/mealbucket.s3.amazonaws.com\/thumbnails\/156540274762614.Boatpose.jpg",
-              "mediaUrlThumb2" : ""
             }
           ],
-          "_id" : "5d4e274489f65a6e842b18fe"
         },
         {
-          "categoryId" : "5c41bddfa2f27011fcefa1c0",
+          "categoryId" : "1",
           "categoryName" : "Lower body",
           "exerciseName" : "Plank to Dolphin",
           "media" : [
             {
-              "mediaUrlThumb2" : "",
               "mediaUrlThumb1" : "https:\/\/mealbucket.s3.amazonaws.com\/thumbnails\/156541058704765.PlanktoDolphin.jpg",
               "mediaUrl" : "https:\/\/mealbucket.s3.amazonaws.com\/156541058704765.PlanktoDolphin.mp4",
-              "audioUrlAr" : "https:\/\/mealbucket.s3.amazonaws.com\/156541061171365AR.mp3",
-              "audioUrlEn" : "https:\/\/mealbucket.s3.amazonaws.com\/156541060382065EN.mp3",
-              "mediaType" : 2,
-              "_id" : "5d66539079c318216112dc1a"
             }
           ],
-          "_id" : "5d4e45b889f65a6e842b1907"
         },
         {
-          "categoryId" : "5c41bddfa2f27011fcefa1c2",
+          "categoryId" : "3",
           "categoryName" : "Core & abs",
           "exerciseName" : "Russian twists",
           "media" : [
             {
-              "mediaType" : 2,
               "mediaUrl" : "https:\/\/mealbucket.s3.amazonaws.com\/156541081644166.Russiantwists.mp4",
-              "_id" : "5d6653aa79c318216112dc21",
               "mediaUrlThumb1" : "https:\/\/mealbucket.s3.amazonaws.com\/thumbnails\/156541081644166.Russiantwists.jpg",
-              "audioUrlEn" : "https:\/\/mealbucket.s3.amazonaws.com\/156541082511766EN.mp3",
-              "mediaUrlThumb2" : "",
-              "audioUrlAr" : "https:\/\/mealbucket.s3.amazonaws.com\/156541084409766AR.mp3"
             }
           ],
-          "_id" : "5d4e46df89f65a6e842b190e"
         },
         {
-          "categoryId" : "5c41bddfa2f27011fcefa1c0",
+          "categoryId" : "1",
           "categoryName" : "Lower body",
           "exerciseName" : "Side Leg Raises - Left",
           "media" : [
             {
-              "mediaUrlThumb2" : "",
-              "_id" : "5dab60d6400ca941cd6eabf9",
               "mediaUrlThumb1" : "https:\/\/mealbucket.s3.amazonaws.com\/thumbnails\/157151252097267.SidelegraisesL0.jpg",
-              "audioUrlAr" : "https:\/\/mealbucket.s3.amazonaws.com\/156541121644567AR_1.mp3",
               "mediaUrl" : "https:\/\/mealbucket.s3.amazonaws.com\/157151252097267.SidelegraisesL0.mp4",
-              "mediaType" : 2,
-              "audioUrlEn" : "https:\/\/mealbucket.s3.amazonaws.com\/156541120140767EN.mp3"
             }
           ],
-          "_id" : "5d4e485d89f65a6e842b1916"
         },
         {
-          "categoryId" : "5c41bddfa2f27011fcefa1c2",
+          "categoryId" : "3",
           "categoryName" : "Core & abs",
           "exerciseName" : "Side plank - Left",
           "media" : [
             {
-              "mediaUrlThumb2" : "",
               "mediaUrl" : "https:\/\/mealbucket.s3.amazonaws.com\/156541152447368.SideplankL_1.mp4",
               "mediaUrlThumb1" : "https:\/\/mealbucket.s3.amazonaws.com\/thumbnails\/156541152447368.SideplankL_1.jpg",
-              "_id" : "5d66550c79c318216112dc48",
-              "audioUrlAr" : "https:\/\/mealbucket.s3.amazonaws.com\/156541154327568AR.mp3",
-              "audioUrlEn" : "https:\/\/mealbucket.s3.amazonaws.com\/156541153538668EN.mp3",
-              "mediaType" : 2
             }
           ],
-          "_id" : "5d4e49f489f65a6e842b191f"
         },
         {
-          "categoryId" : "5c41bddfa2f27011fcefa1c2",
+          "categoryId" : "3",
           "categoryName" : "Core & abs",
           "exerciseName" : "Sit-ups",
           "media" : [
             {
-              "mediaUrlThumb2" : "",
               "mediaUrl" : "https:\/\/mealbucket.s3.amazonaws.com\/156541229886671.Sit-ups1_1.mp4",
-              "audioUrlAr" : "https:\/\/mealbucket.s3.amazonaws.com\/156541234096071AR.mp3",
-              "audioUrlEn" : "https:\/\/mealbucket.s3.amazonaws.com\/156541233233871EN.mp3",
               "mediaUrlThumb1" : "https:\/\/mealbucket.s3.amazonaws.com\/thumbnails\/156541229886671.Sit-ups1_1.jpg",
-              "mediaType" : 2,
-              "_id" : "5d66552a79c318216112dc4f"
             }
           ],
-          "_id" : "5d4e4cc289f65a6e842b1926"
         },
         {
-          "categoryId" : "5c41bddfa2f27011fcefa1c2",
+          "categoryId" : "3",
           "categoryName" : "Core & abs",
           "exerciseName" : "Cobra stretch",
           "media" : [
             {
               "mediaUrl" : "https:\/\/mealbucket.s3.amazonaws.com\/156541302776872.cobrastreetch_1.mp4",
-              "mediaType" : 2,
-              "_id" : "5d66554f79c318216112dc54",
-              "mediaUrlThumb2" : "",
-              "audioUrlAr" : "https:\/\/mealbucket.s3.amazonaws.com\/156541300150572AR.mp3",
               "mediaUrlThumb1" : "https:\/\/mealbucket.s3.amazonaws.com\/thumbnails\/156541302776872.cobrastreetch_1.jpg",
-              "audioUrlEn" : "https:\/\/mealbucket.s3.amazonaws.com\/156541301554772EN.mp3"
             }
           ],
-          "_id" : "5d4e4ebe89f65a6e842b192e"
         },
         {
-          "categoryId" : "5c41bddfa2f27011fcefa1c0",
+          "categoryId" : "1",
           "categoryName" : "Lower body",
           "exerciseName" : "Spiderman Steps",
           "media" : [
             {
-              "mediaUrlThumb2" : "",
-              "audioUrlAr" : "https:\/\/mealbucket.s3.amazonaws.com\/156541320075873AR.mp3",
-              "_id" : "5d66557d79c318216112dc5c",
               "mediaUrl" : "https:\/\/mealbucket.s3.amazonaws.com\/156541317445773.Spidermansteps.mp4",
               "mediaUrlThumb1" : "https:\/\/mealbucket.s3.amazonaws.com\/thumbnails\/156541317445773.Spidermansteps.jpg",
-              "audioUrlEn" : "https:\/\/mealbucket.s3.amazonaws.com\/156541319382673EN.mp3",
-              "mediaType" : 2
             }
           ],
           "_id" : "5d4e4fce89f65a6e842b1934"
         },
         {
-          "categoryId" : "5c41bddfa2f27011fcefa1c0",
+          "categoryId" : "1",
           "categoryName" : "Lower body",
           "exerciseName" : "Hip Flexor Stretch",
           "media" : [
             {
-              "mediaType" : 2,
               "mediaUrl" : "https:\/\/mealbucket.s3.amazonaws.com\/156541340807974.HipFlexorStretchL.mp4",
-              "mediaUrlThumb2" : "",
-              "audioUrlAr" : "https:\/\/mealbucket.s3.amazonaws.com\/156541344584774A.mp3",
-              "_id" : "5d6655b279c318216112dc61",
               "mediaUrlThumb1" : "https:\/\/mealbucket.s3.amazonaws.com\/thumbnails\/156541340807974.HipFlexorStretchL.jpg",
-              "audioUrlEn" : "https:\/\/mealbucket.s3.amazonaws.com\/156541343079674EN.mp3"
             }
           ],
           "_id" : "5d4e509989f65a6e842b193d"
         },
         {
-          "categoryId" : "5c4b0c1dd947c70ade10a3a8",
+          "categoryId" : "5",
           "categoryName" : "Cardio",
           "exerciseName" : "Snap jumps push-ups",
           "media" : [
@@ -546,13 +368,12 @@
               "mediaType" : 2,
               "mediaUrl" : "https:\/\/mealbucket.s3.amazonaws.com\/156541359801375.Snapjumpspush-ups.mp4",
               "_id" : "5d66560a79c318216112dc6d",
-              "audioUrlEn" : "https:\/\/mealbucket.s3.amazonaws.com\/156541361743775EN.mp3"
             }
           ],
           "_id" : "5d4e51e589f65a6e842b1943"
         },
         {
-          "categoryId" : "5c41bddfa2f27011fcefa1c0",
+          "categoryId" : "1",
           "categoryName" : "Lower body",
           "exerciseName" : "Squat Reaches",
           "media" : [
@@ -569,7 +390,7 @@
           "_id" : "5d4e54e889f65a6e842b1950"
         },
         {
-          "categoryId" : "5c41bddfa2f27011fcefa1c1",
+          "categoryId" : "2",
           "categoryName" : "Upper body",
           "exerciseName" : "Standing Lats Stretch",
           "media" : [
@@ -586,7 +407,7 @@
           "_id" : "5d4e56c689f65a6e842b195b"
         },
         {
-          "categoryId" : "5c4b0c1dd947c70ade10a3a8",
+          "categoryId" : "5",
           "categoryName" : "Cardio",
           "exerciseName" : "Star jumps",
           "media" : [
@@ -603,7 +424,7 @@
           "_id" : "5d4e5bf989f65a6e842b1965"
         },
         {
-          "categoryId" : "5c41bddfa2f27011fcefa1c0",
+          "categoryId" : "1",
           "categoryName" : "Lower body",
           "exerciseName" : "Superman raises",
           "media" : [
@@ -620,7 +441,7 @@
           "_id" : "5d4e5cc989f65a6e842b196c"
         },
         {
-          "categoryId" : "5c41bddfa2f27011fcefa1c0",
+          "categoryId" : "1",
           "categoryName" : "Lower body",
           "exerciseName" : "Swinging high kicks",
           "media" : [
@@ -637,7 +458,7 @@
           "_id" : "5d4e5db989f65a6e842b1973"
         },
         {
-          "categoryId" : "5c41bddfa2f27011fcefa1c0",
+          "categoryId" : "1",
           "categoryName" : "Lower body",
           "exerciseName" : "High flutter kicks",
           "media" : [
@@ -654,7 +475,7 @@
           "_id" : "5d4eff8789f65a6e842b197b"
         },
         {
-          "categoryId" : "5c41bddfa2f27011fcefa1c1",
+          "categoryId" : "2",
           "categoryName" : "Upper body",
           "exerciseName" : "Wide Push-ups",
           "media" : [
@@ -671,7 +492,7 @@
           "_id" : "5d4f015889f65a6e842b1983"
         },
         {
-          "categoryId" : "5c4b0c1dd947c70ade10a3a8",
+          "categoryId" : "5",
           "categoryName" : "Cardio",
           "exerciseName" : "March in place",
           "media" : [
@@ -688,7 +509,7 @@
           "_id" : "5d4f022b89f65a6e842b198d"
         },
         {
-          "categoryId" : "5c41bddfa2f27011fcefa1c1",
+          "categoryId" : "2",
           "categoryName" : "Upper body",
           "exerciseName" : "Arm Circles backward",
           "media" : [
@@ -705,7 +526,7 @@
           "_id" : "5d4f030389f65a6e842b1992"
         },
         {
-          "categoryId" : "5c4b0c1dd947c70ade10a3a8",
+          "categoryId" : "5",
           "categoryName" : "Cardio",
           "exerciseName" : "Wide Fast Feet",
           "media" : [
@@ -722,7 +543,7 @@
           "_id" : "5d4f04e089f65a6e842b1997"
         },
         {
-          "categoryId" : "5c4b0c1dd947c70ade10a3a8",
+          "categoryId" : "5",
           "categoryName" : "Cardio",
           "exerciseName" : "4-count",
           "media" : [
@@ -739,7 +560,7 @@
           "_id" : "5d4fa8aa89f65a6e842b199e"
         },
         {
-          "categoryId" : "5c4b0c1dd947c70ade10a3a8",
+          "categoryId" : "5",
           "categoryName" : "Cardio",
           "exerciseName" : "Bear walk",
           "media" : [
@@ -756,7 +577,7 @@
           "_id" : "5d4fab5d89f65a6e842b19a9"
         },
         {
-          "categoryId" : "5c41bddfa2f27011fcefa1c0",
+          "categoryId" : "1",
           "media" : [
             {
               "mediaUrl" : "https:\/\/mealbucket.s3.amazonaws.com\/156550249889499.Prisonerget-ups.mp4",
@@ -773,7 +594,7 @@
           "_id" : "5d4fad1489f65a6e842b19b0"
         },
         {
-          "categoryId" : "5c41bddfa2f27011fcefa1c0",
+          "categoryId" : "1",
           "media" : [
             {
               "mediaUrl" : "https:\/\/mealbucket.s3.amazonaws.com\/1568354500554100.Basicsquats_1.mp4",
@@ -790,7 +611,7 @@
           "_id" : "5d4faf0a89f65a6e842b19b7"
         },
         {
-          "categoryId" : "5c41bddfa2f27011fcefa1c1",
+          "categoryId" : "2",
           "_id" : "5d500bc589f65a6e842b19c0",
           "media" : [
             {
@@ -807,7 +628,7 @@
           "exerciseName" : "Lower back curl"
         },
         {
-          "categoryId" : "5c41bddfa2f27011fcefa1c2",
+          "categoryId" : "3",
           "_id" : "5d500cdb89f65a6e842b19c8",
           "media" : [
             {
@@ -824,7 +645,7 @@
           "exerciseName" : "Advanced Boat pose"
         },
         {
-          "categoryId" : "5c41bddfa2f27011fcefa1c2",
+          "categoryId" : "3",
           "_id" : "5d500e6089f65a6e842b19d0",
           "media" : [
             {
@@ -841,7 +662,7 @@
           "exerciseName" : "Side plank with rotations - Left"
         },
         {
-          "categoryId" : "5c41bddfa2f27011fcefa1c2",
+          "categoryId" : "3",
           "_id" : "5d500f5389f65a6e842b19d9",
           "media" : [
             {
@@ -858,7 +679,7 @@
           "exerciseName" : "Unilateral leg raises"
         },
         {
-          "categoryId" : "5c41bddfa2f27011fcefa1c0",
+          "categoryId" : "1",
           "_id" : "5d50102489f65a6e842b19e2",
           "media" : [
             {
@@ -888,7 +709,7 @@
               "mediaUrlThumb2" : ""
             }
           ],
-          "categoryId" : "5c41bddfa2f27011fcefa1c0",
+          "categoryId" : "1",
           "exerciseName" : "Jump Squat"
         },
         {
@@ -905,7 +726,7 @@
               "_id" : "5d67f02d79c318216112ddf6"
             }
           ],
-          "categoryId" : "5c41bddfa2f27011fcefa1c1",
+          "categoryId" : "2",
           "exerciseName" : "Yoga Child pose"
         },
         {
@@ -922,7 +743,7 @@
               "_id" : "5d67f05a79c318216112de00"
             }
           ],
-          "categoryId" : "5c41bddfa2f27011fcefa1c1",
+          "categoryId" : "2",
           "exerciseName" : "Decline Push-ups"
         },
         {
@@ -939,7 +760,7 @@
               "mediaUrlThumb2" : ""
             }
           ],
-          "categoryId" : "5c41bddfa2f27011fcefa1c2",
+          "categoryId" : "3",
           "exerciseName" : "Side Plank With Rotations - Right"
         },
         {
@@ -956,7 +777,7 @@
               "mediaUrl" : "https:\/\/mealbucket.s3.amazonaws.com\/1565806522715130.StraightLegRaise_1.mp4"
             }
           ],
-          "categoryId" : "5c41bddfa2f27011fcefa1c2",
+          "categoryId" : "3",
           "exerciseName" : "Straight Leg Raises"
         },
         {
@@ -973,7 +794,7 @@
               "audioUrlAr" : "https:\/\/mealbucket.s3.amazonaws.com\/156580768415568AR_1.mp3"
             }
           ],
-          "categoryId" : "5c41bddfa2f27011fcefa1c2",
+          "categoryId" : "3",
           "exerciseName" : "Side plank - Right"
         },
         {
@@ -990,7 +811,7 @@
               "mediaType" : 2
             }
           ],
-          "categoryId" : "5c41bddfa2f27011fcefa1c0",
+          "categoryId" : "1",
           "exerciseName" : "Hip Abduction - Right"
         },
         {
@@ -1007,7 +828,7 @@
               "_id" : "5d6aa2cb79c318216112e2ea"
             }
           ],
-          "categoryId" : "5c41bddfa2f27011fcefa1c0",
+          "categoryId" : "1",
           "exerciseName" : "Hip Abduction - Left"
         },
         {
@@ -1024,7 +845,7 @@
               "mediaUrlThumb1" : "https:\/\/mealbucket.s3.amazonaws.com\/thumbnails\/1568354697659139.Touchdownlunges_1.jpg"
             }
           ],
-          "categoryId" : "5c41bddfa2f27011fcefa1c0",
+          "categoryId" : "1",
           "exerciseName" : "Touchdown lunges"
         },
         {
@@ -1041,7 +862,7 @@
               "mediaUrlThumb2" : ""
             }
           ],
-          "categoryId" : "5c41bddfa2f27011fcefa1c0",
+          "categoryId" : "1",
           "exerciseName" : "Wall Sit"
         },
         {
@@ -1058,7 +879,7 @@
               "mediaUrlThumb2" : ""
             }
           ],
-          "categoryId" : "5c41bddfa2f27011fcefa1c1",
+          "categoryId" : "2",
           "exerciseName" : "Triceps Dip"
         },
         {
@@ -1075,7 +896,7 @@
               "mediaUrlThumb2" : ""
             }
           ],
-          "categoryId" : "5c41bddfa2f27011fcefa1c1",
+          "categoryId" : "2",
           "exerciseName" : "Bench Tricep Dips"
         },
         {
@@ -1092,7 +913,7 @@
               "_id" : "5d7b321ec99971643e0d9d75"
             }
           ],
-          "categoryId" : "5c4b0c1dd947c70ade10a3a8",
+          "categoryId" : "5",
           "exerciseName" : "Flat Burpee"
         },
         {
@@ -1109,7 +930,7 @@
               "mediaUrlThumb1" : "https:\/\/mealbucket.s3.amazonaws.com\/thumbnails\/1565811358881152.DynamicToeTouch_1.jpg"
             }
           ],
-          "categoryId" : "5c41bddfa2f27011fcefa1c3",
+          "categoryId" : "4",
           "exerciseName" : "Dynamic Toe Touch"
         },
         {
@@ -1126,7 +947,7 @@
               "mediaUrl" : "https:\/\/mealbucket.s3.amazonaws.com\/1565811495215153.singlelegBridgeL_1.mp4"
             }
           ],
-          "categoryId" : "5c41bddfa2f27011fcefa1c0",
+          "categoryId" : "1",
           "exerciseName" : "single leg Bridge - Left"
         },
         {
@@ -1143,7 +964,7 @@
               "_id" : "5d6837e579c318216112deab"
             }
           ],
-          "categoryId" : "5c41bddfa2f27011fcefa1c0",
+          "categoryId" : "1",
           "exerciseName" : "Single Leg Bridge - Right"
         },
         {
@@ -1160,7 +981,7 @@
               "mediaUrlThumb1" : "https:\/\/mealbucket.s3.amazonaws.com\/thumbnails\/1565812141062155.Inchworms_1.jpg"
             }
           ],
-          "categoryId" : "5c4b0c1dd947c70ade10a3a8",
+          "categoryId" : "5",
           "exerciseName" : "inchworms"
         },
         {
@@ -1176,7 +997,7 @@
               "_id" : "5d6836a579c318216112dea5"
             }
           ],
-          "categoryId" : "5c41bddfa2f27011fcefa1c2",
+          "categoryId" : "3",
           "exerciseName" : "Knee Tuck Crunches",
           "_id" : "5d546a1989f65a6e842b1aa2"
         },
@@ -1193,7 +1014,7 @@
               "audioUrlAr" : "https:\/\/mealbucket.s3.amazonaws.com\/1567111067974157.MP3"
             }
           ],
-          "categoryId" : "5c41bddfa2f27011fcefa1c3",
+          "categoryId" : "4",
           "exerciseName" : "Good Morning Stretch",
           "_id" : "5d546c8689f65a6e842b1aa9"
         },
@@ -1210,7 +1031,7 @@
               "_id" : "5d68391979c318216112deb7"
             }
           ],
-          "categoryId" : "5c41bddfa2f27011fcefa1c3",
+          "categoryId" : "4",
           "exerciseName" : "Butterfly Stretch",
           "_id" : "5d546d5389f65a6e842b1ab0"
         },
@@ -1227,7 +1048,7 @@
               "_id" : "5d7b33eac99971643e0d9d87"
             }
           ],
-          "categoryId" : "5c4b0c1dd947c70ade10a3a8",
+          "categoryId" : "5",
           "exerciseName" : "Clap Jacks",
           "_id" : "5d546e8989f65a6e842b1ab7"
         },
@@ -1244,7 +1065,7 @@
               "audioUrlAr" : "https:\/\/mealbucket.s3.amazonaws.com\/1567111702474161.MP3"
             }
           ],
-          "categoryId" : "5c4b0c1dd947c70ade10a3a8",
+          "categoryId" : "5",
           "exerciseName" : "Butt kicks",
           "_id" : "5d546f2389f65a6e842b1abf"
         },
@@ -1261,7 +1082,7 @@
               "audioUrlAr" : "https:\/\/mealbucket.s3.amazonaws.com\/1567269905925165.MP3"
             }
           ],
-          "categoryId" : "5c4b0c1dd947c70ade10a3a8",
+          "categoryId" : "5",
           "exerciseName" : "Frog Jumps",
           "_id" : "5d5471cc89f65a6e842b1ac5"
         },
@@ -1278,7 +1099,7 @@
               "mediaType" : 2
             }
           ],
-          "categoryId" : "5c41bddfa2f27011fcefa1c2",
+          "categoryId" : "3",
           "exerciseName" : "Prone Flutter Kicks",
           "_id" : "5d55249f89f65a6e842b1acd"
         },
@@ -1295,7 +1116,7 @@
               "mediaType" : 2
             }
           ],
-          "categoryId" : "5c41bddfa2f27011fcefa1c0",
+          "categoryId" : "1",
           "exerciseName" : "High knees",
           "_id" : "5d55255289f65a6e842b1ad3"
         },
@@ -1312,7 +1133,7 @@
               "mediaType" : 2
             }
           ],
-          "categoryId" : "5c41bddfa2f27011fcefa1c0",
+          "categoryId" : "1",
           "exerciseName" : "Chair Squats",
           "_id" : "5d55267f89f65a6e842b1ad9"
         },
@@ -1329,7 +1150,7 @@
               "mediaUrlThumb1" : "https:\/\/mealbucket.s3.amazonaws.com\/thumbnails\/157146908881715.BottomsUp.0.jpg"
             }
           ],
-          "categoryId" : "5c41bddfa2f27011fcefa1c2",
+          "categoryId" : "3",
           "exerciseName" : "Bottoms Up",
           "_id" : "5d55689289f65a6e842b1ae5"
         },
@@ -1346,7 +1167,7 @@
               "audioUrlAr" : "https:\/\/mealbucket.s3.amazonaws.com\/156587888997416AR_1.mp3"
             }
           ],
-          "categoryId" : "5c4b0c1dd947c70ade10a3a8",
+          "categoryId" : "5",
           "exerciseName" : "Basic Burpees",
           "_id" : "5d556a8889f65a6e842b1aed"
         },
@@ -1363,13 +1184,13 @@
               "mediaUrlThumb2" : ""
             }
           ],
-          "categoryId" : "5c41bddfa2f27011fcefa1c2",
+          "categoryId" : "3",
           "exerciseName" : "Scissor Abs",
           "_id" : "5d556b7d89f65a6e842b1af8"
         },
         {
           "_id" : "5d556c4189f65a6e842b1b00",
-          "categoryId" : "5c41bddfa2f27011fcefa1c2",
+          "categoryId" : "3",
           "exerciseName" : "Cross Body Crunch",
           "media" : [
             {
@@ -1386,7 +1207,7 @@
         },
         {
           "_id" : "5d556ceb89f65a6e842b1b09",
-          "categoryId" : "5c41bddfa2f27011fcefa1c2",
+          "categoryId" : "3",
           "exerciseName" : "Crunches",
           "media" : [
             {
@@ -1414,7 +1235,7 @@
             }
           ],
           "categoryName" : "Upper body",
-          "categoryId" : "5c41bddfa2f27011fcefa1c1",
+          "categoryId" : "2",
           "_id" : "5d556dee89f65a6e842b1b11",
           "exerciseName" : "Diamond Push-ups"
         },
@@ -1431,7 +1252,7 @@
             }
           ],
           "categoryName" : "Core & abs",
-          "categoryId" : "5c41bddfa2f27011fcefa1c2",
+          "categoryId" : "3",
           "_id" : "5d556ec089f65a6e842b1b1a",
           "exerciseName" : "Sit-ups Elbow to knee - Left"
         },
@@ -1448,7 +1269,7 @@
             }
           ],
           "categoryName" : "Core & abs",
-          "categoryId" : "5c41bddfa2f27011fcefa1c2",
+          "categoryId" : "3",
           "_id" : "5d556fa189f65a6e842b1b22",
           "exerciseName" : "High Leg Crunches"
         },
@@ -1465,7 +1286,7 @@
             }
           ],
           "categoryName" : "Flexibility",
-          "categoryId" : "5c41bddfa2f27011fcefa1c3",
+          "categoryId" : "4",
           "_id" : "5d5570c189f65a6e842b1b2b",
           "exerciseName" : "Forward standing toe touch - Left"
         },
@@ -1482,7 +1303,7 @@
             }
           ],
           "categoryName" : "Flexibility",
-          "categoryId" : "5c41bddfa2f27011fcefa1c3",
+          "categoryId" : "4",
           "_id" : "5d55718189f65a6e842b1b34",
           "exerciseName" : "Forward standing toe touch - Right"
         },
@@ -1499,7 +1320,7 @@
             }
           ],
           "categoryName" : "Upper body",
-          "categoryId" : "5c41bddfa2f27011fcefa1c1",
+          "categoryId" : "2",
           "_id" : "5d5572af89f65a6e842b1b3d",
           "exerciseName" : "Explosive push-ups"
         },
@@ -1516,7 +1337,7 @@
             }
           ],
           "categoryName" : "Upper body",
-          "categoryId" : "5c41bddfa2f27011fcefa1c1",
+          "categoryId" : "2",
           "_id" : "5d5573d389f65a6e842b1b46",
           "exerciseName" : "Barbwire Pushup"
         },
@@ -1533,7 +1354,7 @@
             }
           ],
           "categoryName" : "Upper body",
-          "categoryId" : "5c41bddfa2f27011fcefa1c1",
+          "categoryId" : "2",
           "_id" : "5d5574aa89f65a6e842b1b4f",
           "exerciseName" : "Forearm push-ups"
         },
@@ -1550,7 +1371,7 @@
             }
           ],
           "categoryName" : "Lower body",
-          "categoryId" : "5c41bddfa2f27011fcefa1c0",
+          "categoryId" : "1",
           "_id" : "5d55756989f65a6e842b1b57",
           "exerciseName" : "Forward Jump"
         },
@@ -1567,7 +1388,7 @@
             }
           ],
           "categoryName" : "Lower body",
-          "categoryId" : "5c41bddfa2f27011fcefa1c0",
+          "categoryId" : "1",
           "_id" : "5d5577f989f65a6e842b1b5f",
           "exerciseName" : "Forward lunges"
         },
@@ -1584,7 +1405,7 @@
             }
           ],
           "categoryName" : "Upper body",
-          "categoryId" : "5c41bddfa2f27011fcefa1c1",
+          "categoryId" : "2",
           "_id" : "5d56619689f65a6e842b1b69",
           "exerciseName" : "Shoulder Cross Stretch - Right"
         },
@@ -1601,7 +1422,7 @@
             }
           ],
           "categoryName" : "Upper body",
-          "categoryId" : "5c41bddfa2f27011fcefa1c1",
+          "categoryId" : "2",
           "_id" : "5d5662a789f65a6e842b1b6f",
           "exerciseName" : "Wall Push Ups"
         },
@@ -1618,7 +1439,7 @@
             }
           ],
           "categoryName" : "Upper body",
-          "categoryId" : "5c41bddfa2f27011fcefa1c1",
+          "categoryId" : "2",
           "_id" : "5d56646789f65a6e842b1b78",
           "exerciseName" : "incline Push-ups"
         },
@@ -1635,7 +1456,7 @@
             }
           ],
           "categoryName" : "Lower body",
-          "categoryId" : "5c41bddfa2f27011fcefa1c0",
+          "categoryId" : "1",
           "_id" : "5d5665cd89f65a6e842b1b82",
           "exerciseName" : "Deep Squats"
         },
@@ -1652,7 +1473,7 @@
             }
           ],
           "categoryName" : "Core & abs",
-          "categoryId" : "5c41bddfa2f27011fcefa1c2",
+          "categoryId" : "3",
           "_id" : "5d56922889f65a6e842b1b8d",
           "exerciseName" : "Full extension plank"
         },
@@ -1669,7 +1490,7 @@
             }
           ],
           "categoryName" : "Lower body",
-          "categoryId" : "5c41bddfa2f27011fcefa1c0",
+          "categoryId" : "1",
           "_id" : "5d5693e689f65a6e842b1b97",
           "exerciseName" : "Glute Bridge"
         },
@@ -1686,7 +1507,7 @@
             }
           ],
           "categoryName" : "Core & abs",
-          "categoryId" : "5c41bddfa2f27011fcefa1c2",
+          "categoryId" : "3",
           "_id" : "5d56966c89f65a6e842b1b9e",
           "exerciseName" : "Heel touches"
         },
@@ -1703,7 +1524,7 @@
             }
           ],
           "categoryName" : "Core & abs",
-          "categoryId" : "5c41bddfa2f27011fcefa1c2",
+          "categoryId" : "3",
           "_id" : "5d56985f89f65a6e842b1ba7",
           "exerciseName" : "Spreading Legs Apart"
         },
@@ -1720,7 +1541,7 @@
             }
           ],
           "categoryName" : "Lower body",
-          "categoryId" : "5c41bddfa2f27011fcefa1c0",
+          "categoryId" : "1",
           "_id" : "5d56996289f65a6e842b1baf",
           "exerciseName" : "Fast Feet"
         },
@@ -1736,7 +1557,7 @@
               "mediaUrlThumb2" : ""
             }
           ],
-          "categoryId" : "5c41bddfa2f27011fcefa1c0",
+          "categoryId" : "1",
           "_id" : "5d569d0889f65a6e842b1bb6",
           "exerciseName" : "Static Squat Hold",
           "categoryName" : "Lower body"
@@ -1753,7 +1574,7 @@
               "mediaUrlThumb2" : ""
             }
           ],
-          "categoryId" : "5c4b0c1dd947c70ade10a3a8",
+          "categoryId" : "5",
           "_id" : "5d56a0a489f65a6e842b1bc0",
           "exerciseName" : "Jumping jacks",
           "categoryName" : "Cardio"
@@ -1770,7 +1591,7 @@
               "mediaUrlThumb2" : ""
             }
           ],
-          "categoryId" : "5c41bddfa2f27011fcefa1c2",
+          "categoryId" : "3",
           "_id" : "5d56a28a89f65a6e842b1bc6",
           "exerciseName" : "Snap Jumps",
           "categoryName" : "Core & abs"
@@ -1787,7 +1608,7 @@
               "mediaUrlThumb2" : ""
             }
           ],
-          "categoryId" : "5c41bddfa2f27011fcefa1c1",
+          "categoryId" : "2",
           "_id" : "5d56bc6689f65a6e842b1bd1",
           "exerciseName" : "Spiderman push-ups",
           "categoryName" : "Upper body"
@@ -1804,7 +1625,7 @@
               "mediaUrlThumb2" : ""
             }
           ],
-          "categoryId" : "5c4b0c1dd947c70ade10a3a8",
+          "categoryId" : "5",
           "_id" : "5d56bd1389f65a6e842b1bdb",
           "exerciseName" : "Tuck Jumps",
           "categoryName" : "Cardio"
@@ -1821,7 +1642,7 @@
               "mediaUrlThumb2" : ""
             }
           ],
-          "categoryId" : "5c4b0c1dd947c70ade10a3a8",
+          "categoryId" : "5",
           "_id" : "5d56beff89f65a6e842b1be4",
           "exerciseName" : "Lateral Burpees",
           "categoryName" : "Cardio"
@@ -1838,7 +1659,7 @@
               "mediaUrlThumb2" : ""
             }
           ],
-          "categoryId" : "5c41bddfa2f27011fcefa1c2",
+          "categoryId" : "3",
           "_id" : "5d56c07389f65a6e842b1bef",
           "exerciseName" : "Lateral leg drives",
           "categoryName" : "Core & abs"
@@ -1855,7 +1676,7 @@
               "mediaUrlThumb2" : ""
             }
           ],
-          "categoryId" : "5c41bddfa2f27011fcefa1c2",
+          "categoryId" : "3",
           "_id" : "5d56c22089f65a6e842b1bf9",
           "exerciseName" : "Side plank with Leg Raises - Left",
           "categoryName" : "Core & abs"
@@ -1872,7 +1693,7 @@
               "mediaUrlThumb2" : ""
             }
           ],
-          "categoryId" : "5c4b0c1dd947c70ade10a3a8",
+          "categoryId" : "5",
           "_id" : "5d56c36089f65a6e842b1c03",
           "exerciseName" : "Lateral sprawls",
           "categoryName" : "Cardio"
@@ -1889,7 +1710,7 @@
               "mediaUrlThumb2" : ""
             }
           ],
-          "categoryId" : "5c41bddfa2f27011fcefa1c3",
+          "categoryId" : "4",
           "_id" : "5d56c43e89f65a6e842b1c0d",
           "exerciseName" : "Glute stretch - Left",
           "categoryName" : "Flexibility"
@@ -1906,7 +1727,7 @@
               "mediaUrlThumb2" : ""
             }
           ],
-          "categoryId" : "5c41bddfa2f27011fcefa1c3",
+          "categoryId" : "4",
           "_id" : "5d56c51989f65a6e842b1c13",
           "exerciseName" : "Glute stretch - Right",
           "categoryName" : "Flexibility"
@@ -1923,7 +1744,7 @@
               "mediaUrlThumb2" : ""
             }
           ],
-          "categoryId" : "5c41bddfa2f27011fcefa1c0",
+          "categoryId" : "1",
           "_id" : "5d57c2bd89f65a6e842b1c25",
           "exerciseName" : "Calf Raises",
           "categoryName" : "Lower body"
@@ -1940,7 +1761,7 @@
               "mediaUrlThumb2" : ""
             }
           ],
-          "categoryId" : "5c41bddfa2f27011fcefa1c2",
+          "categoryId" : "3",
           "_id" : "5d57c65f89f65a6e842b1c4e",
           "exerciseName" : "Arms extended crunch",
           "categoryName" : "Core & abs"
@@ -1957,7 +1778,7 @@
               "mediaUrlThumb2" : ""
             }
           ],
-          "categoryId" : "5c41bddfa2f27011fcefa1c3",
+          "categoryId" : "4",
           "_id" : "5d57c8ac89f65a6e842b1c68",
           "exerciseName" : "Hamstring Stretch - Left",
           "categoryName" : "Flexibility"
@@ -1974,7 +1795,7 @@
               "mediaUrlThumb2" : ""
             }
           ],
-          "categoryId" : "5c41bddfa2f27011fcefa1c3",
+          "categoryId" : "4",
           "_id" : "5d57c9b989f65a6e842b1c70",
           "exerciseName" : "Hamstring Stretch - Right",
           "categoryName" : "Flexibility"
@@ -1991,7 +1812,7 @@
               "mediaUrlThumb2" : ""
             }
           ],
-          "categoryId" : "5c41bddfa2f27011fcefa1c3",
+          "categoryId" : "4",
           "_id" : "5d57cc7089f65a6e842b1c78",
           "exerciseName" : "Arm Circles Forward",
           "categoryName" : "Flexibility"
@@ -2008,7 +1829,7 @@
               "mediaUrl" : "https:\/\/mealbucket.s3.amazonaws.com\/1566035301267261.overehadTricepsstretchR_1.mp4"
             }
           ],
-          "categoryId" : "5c41bddfa2f27011fcefa1c3",
+          "categoryId" : "4",
           "_id" : "5d57ce2089f65a6e842b1c7d",
           "exerciseName" : "Overhead Triceps Stretch - Right",
           "categoryName" : "Flexibility"
@@ -2025,7 +1846,7 @@
               "mediaUrlThumb1" : "https:\/\/mealbucket.s3.amazonaws.com\/thumbnails\/1566035673645261.overehadTricepsstretchL_1.jpg"
             }
           ],
-          "categoryId" : "5c41bddfa2f27011fcefa1c3",
+          "categoryId" : "4",
           "_id" : "5d57cfd989f65a6e842b1c84",
           "exerciseName" : "Overhead Triceps Stretch - Left",
           "categoryName" : "Flexibility"
@@ -2042,7 +1863,7 @@
               "mediaUrlThumb1" : "https:\/\/mealbucket.s3.amazonaws.com\/thumbnails\/1566036638740129.bentkneeraises_1.jpg"
             }
           ],
-          "categoryId" : "5c41bddfa2f27011fcefa1c2",
+          "categoryId" : "3",
           "_id" : "5d57d33a89f65a6e842b1c8b",
           "exerciseName" : "Bent Knee Raises",
           "categoryName" : "Core & abs"
@@ -2059,7 +1880,7 @@
               "_id" : "5d683cd179c318216112ded0"
             }
           ],
-          "categoryId" : "5c41bddfa2f27011fcefa1c3",
+          "categoryId" : "4",
           "_id" : "5d57db1a89f65a6e842b1c92",
           "exerciseName" : "Trunk Rotation",
           "categoryName" : "Flexibility"
@@ -2076,7 +1897,7 @@
               "_id" : "5d7b3465c99971643e0d9d9c"
             }
           ],
-          "categoryId" : "5c4b0c1dd947c70ade10a3a8",
+          "categoryId" : "5",
           "_id" : "5d57dc5789f65a6e842b1c9b",
           "exerciseName" : "Squat to Standing Crunch",
           "categoryName" : "Cardio"
@@ -2093,7 +1914,7 @@
               "audioUrlEn" : "https:\/\/mealbucket.s3.amazonaws.com\/156603929037801AR.mp3"
             }
           ],
-          "categoryId" : "5c41bddfa2f27011fcefa1c0",
+          "categoryId" : "1",
           "_id" : "5d57dd3689f65a6e842b1ca6",
           "exerciseName" : "Squat Pulse",
           "categoryName" : "Lower body"
@@ -2110,7 +1931,7 @@
               "mediaUrlThumb2" : ""
             }
           ],
-          "categoryId" : "5c41bddfa2f27011fcefa1c3",
+          "categoryId" : "4",
           "_id" : "5d57deda89f65a6e842b1cac",
           "exerciseName" : "Low Lunge Twist",
           "categoryName" : "Flexibility"
@@ -2127,7 +1948,7 @@
               "mediaUrlThumb2" : ""
             }
           ],
-          "categoryId" : "5c41bddfa2f27011fcefa1c2",
+          "categoryId" : "3",
           "_id" : "5d57df9d89f65a6e842b1cb4",
           "exerciseName" : "Plank to Downward Dog Tap",
           "categoryName" : "Core & abs"
@@ -2144,7 +1965,7 @@
               "mediaUrl" : "https:\/\/mealbucket.s3.amazonaws.com\/1566040184997174.BirdDogs_1.mp4"
             }
           ],
-          "categoryId" : "5c41bddfa2f27011fcefa1c0",
+          "categoryId" : "1",
           "_id" : "5d57e0c889f65a6e842b1cbc",
           "exerciseName" : "Bird Dogs",
           "categoryName" : "Lower body"
@@ -2161,7 +1982,7 @@
               "mediaUrl" : "https:\/\/mealbucket.s3.amazonaws.com\/1568354761562141.Walkinglunges_1.mp4"
             }
           ],
-          "categoryId" : "5c41bddfa2f27011fcefa1c0",
+          "categoryId" : "1",
           "_id" : "5d57e19e89f65a6e842b1cc3",
           "exerciseName" : "Walking Lunge",
           "categoryName" : "Lower body"
@@ -2178,7 +1999,7 @@
               "mediaUrl" : "https:\/\/mealbucket.s3.amazonaws.com\/1568355522525176.ArmSwing.mp4"
             }
           ],
-          "categoryId" : "5c41bddfa2f27011fcefa1c3",
+          "categoryId" : "4",
           "_id" : "5d57e22f89f65a6e842b1ccc",
           "exerciseName" : "Arm Swing",
           "categoryName" : "Flexibility"
@@ -2195,7 +2016,7 @@
               "_id" : "5d7b34ebc99971643e0d9da7"
             }
           ],
-          "categoryId" : "5c41bddfa2f27011fcefa1c3",
+          "categoryId" : "4",
           "_id" : "5d57e2bc89f65a6e842b1cd2",
           "exerciseName" : "Reverse Shoulder Stretch",
           "categoryName" : "Flexibility"
@@ -2212,7 +2033,7 @@
               "_id" : "5d69775379c318216112e04d"
             }
           ],
-          "categoryId" : "5c41bddfa2f27011fcefa1c0",
+          "categoryId" : "1",
           "_id" : "5d57e36b89f65a6e842b1cd9",
           "exerciseName" : "Marching Bridge",
           "categoryName" : "Lower body"
@@ -2229,7 +2050,7 @@
               "_id" : "5d6977cd79c318216112e054"
             }
           ],
-          "categoryId" : "5c41bddfa2f27011fcefa1c2",
+          "categoryId" : "3",
           "_id" : "5d57e46189f65a6e842b1ce0",
           "exerciseName" : "Plank Walk",
           "categoryName" : "Core & abs"
@@ -2246,7 +2067,7 @@
               "_id" : "5d69786b79c318216112e059"
             }
           ],
-          "categoryId" : "5c41bddfa2f27011fcefa1c3",
+          "categoryId" : "4",
           "_id" : "5d57e50589f65a6e842b1ce8",
           "exerciseName" : "Side Bend Stretch",
           "categoryName" : "Flexibility"
@@ -2263,7 +2084,7 @@
               "audioUrlAr" : "https:\/\/mealbucket.s3.amazonaws.com\/1568355656149186.MP3"
             }
           ],
-          "categoryId" : "5c4b0c1dd947c70ade10a3a8",
+          "categoryId" : "5",
           "_id" : "5d57e7ff89f65a6e842b1cee",
           "exerciseName" : "Drop Squats",
           "categoryName" : "Cardio"
@@ -2280,7 +2101,7 @@
               "_id" : "5d697ca079c318216112e06e"
             }
           ],
-          "categoryId" : "5c41bddfa2f27011fcefa1c3",
+          "categoryId" : "4",
           "_id" : "5d57e89d89f65a6e842b1cf6",
           "exerciseName" : "Standing Hamstring Stretch",
           "categoryName" : "Flexibility"
@@ -2297,7 +2118,7 @@
               "_id" : "5d697d6d79c318216112e074"
             }
           ],
-          "categoryId" : "5c41bddfa2f27011fcefa1c3",
+          "categoryId" : "4",
           "_id" : "5d57e98689f65a6e842b1cfd",
           "exerciseName" : "Knees to Chest",
           "categoryName" : "Flexibility"
@@ -2314,7 +2135,7 @@
               "mediaType" : 2
             }
           ],
-          "categoryId" : "5c41bddfa2f27011fcefa1c3",
+          "categoryId" : "4",
           "_id" : "5d57eabd89f65a6e842b1d0a",
           "exerciseName" : "Seated Straddle stretch",
           "categoryName" : "Flexibility"
@@ -2331,7 +2152,7 @@
               "mediaType" : 2
             }
           ],
-          "categoryId" : "5c41bddfa2f27011fcefa1c1",
+          "categoryId" : "2",
           "_id" : "5d57eb2489f65a6e842b1d11",
           "exerciseName" : "Floor T Raises",
           "categoryName" : "Upper body"
@@ -2348,7 +2169,7 @@
               "mediaUrlThumb1" : "https:\/\/mealbucket.s3.amazonaws.com\/thumbnails\/1566042941680193.WalkOuttoPush-Up_1.jpg"
             }
           ],
-          "categoryId" : "5c41bddfa2f27011fcefa1c1",
+          "categoryId" : "2",
           "_id" : "5d57eb9f89f65a6e842b1d17",
           "exerciseName" : "Walk Out to Push-Us",
           "categoryName" : "Upper body"
@@ -2365,7 +2186,7 @@
               "mediaUrlThumb1" : "https:\/\/mealbucket.s3.amazonaws.com\/thumbnails\/1566043072511194.EccentricPushUps_1.jpg"
             }
           ],
-          "categoryId" : "5c41bddfa2f27011fcefa1c1",
+          "categoryId" : "2",
           "_id" : "5d57ec2189f65a6e842b1d1f",
           "exerciseName" : "Eccentric Push-Ups",
           "categoryName" : "Upper body"
@@ -2382,7 +2203,7 @@
               "mediaUrlThumb1" : "https:\/\/mealbucket.s3.amazonaws.com\/thumbnails\/1566043191181195.SquatwithWalkout.jpg"
             }
           ],
-          "categoryId" : "5c41bddfa2f27011fcefa1c0",
+          "categoryId" : "1",
           "_id" : "5d57ecb989f65a6e842b1d27",
           "exerciseName" : "Squat with Walk Out",
           "categoryName" : "Lower body"
@@ -2399,7 +2220,7 @@
               "mediaUrlThumb1" : "https:\/\/mealbucket.s3.amazonaws.com\/thumbnails\/1566043428478199.Wideclimberjumps_1.jpg"
             }
           ],
-          "categoryId" : "5c4b0c1dd947c70ade10a3a8",
+          "categoryId" : "5",
           "_id" : "5d57ed8a89f65a6e842b1d30",
           "exerciseName" : "Wide climber jumps",
           "categoryName" : "Cardio"
@@ -2416,7 +2237,7 @@
               "mediaUrlThumb1" : "https:\/\/mealbucket.s3.amazonaws.com\/thumbnails\/1566043602685201.InchwormtoShoulderTap_1.jpg"
             }
           ],
-          "categoryId" : "5c4b0c1dd947c70ade10a3a8",
+          "categoryId" : "5",
           "_id" : "5d57ee4a89f65a6e842b1d39",
           "exerciseName" : "Inchworm to Shoulder Tap",
           "categoryName" : "Cardio"
@@ -2433,7 +2254,7 @@
               "audioUrlAr" : "https:\/\/mealbucket.s3.amazonaws.com\/1567196298585205.MP3"
             }
           ],
-          "categoryId" : "5c41bddfa2f27011fcefa1c3",
+          "categoryId" : "4",
           "_id" : "5d57f0aa89f65a6e842b1d42",
           "exerciseName" : "Star Toe Touches",
           "categoryName" : "Flexibility"
@@ -2450,7 +2271,7 @@
               "audioUrlAr" : "https:\/\/mealbucket.s3.amazonaws.com\/1567232378512206.MP3"
             }
           ],
-          "categoryId" : "5c41bddfa2f27011fcefa1c0",
+          "categoryId" : "1",
           "_id" : "5d57f11789f65a6e842b1d48",
           "exerciseName" : "Crossed Leg Glute Bridge - Right",
           "categoryName" : "Lower body"
@@ -2467,7 +2288,7 @@
               "audioUrlEn" : "https:\/\/mealbucket.s3.amazonaws.com\/1567232202158206.CrossedLegBridge.mp3"
             }
           ],
-          "categoryId" : "5c41bddfa2f27011fcefa1c0",
+          "categoryId" : "1",
           "_id" : "5d57f18389f65a6e842b1d4e",
           "exerciseName" : "Crossed Leg Glute Bridge - Left",
           "categoryName" : "Lower body"
@@ -2484,7 +2305,7 @@
               "mediaUrlThumb1" : "https:\/\/mealbucket.s3.amazonaws.com\/thumbnails\/1566044601998220.HurdlerStretchR_1.jpg"
             }
           ],
-          "categoryId" : "5c41bddfa2f27011fcefa1c3",
+          "categoryId" : "4",
           "_id" : "5d57f23c89f65a6e842b1d54",
           "exerciseName" : "Hurdler Stretch - Right",
           "categoryName" : "Flexibility"
@@ -2501,7 +2322,7 @@
               "audioUrlAr" : "https:\/\/mealbucket.s3.amazonaws.com\/1567232469868220.MP3"
             }
           ],
-          "categoryId" : "5c41bddfa2f27011fcefa1c3",
+          "categoryId" : "4",
           "_id" : "5d57f2a289f65a6e842b1d5b",
           "exerciseName" : "Hurdler Stretch - Left",
           "categoryName" : "Flexibility"
@@ -2518,7 +2339,7 @@
               "audioUrlAr" : "https:\/\/mealbucket.s3.amazonaws.com\/1567232850456240.MP3"
             }
           ],
-          "categoryId" : "5c41bddfa2f27011fcefa1c0",
+          "categoryId" : "1",
           "_id" : "5d57f3a889f65a6e842b1d62",
           "exerciseName" : "Reverse Lunge Knee Up - Left",
           "categoryName" : "Lower body"
@@ -2535,7 +2356,7 @@
               "audioUrlAr" : "https:\/\/mealbucket.s3.amazonaws.com\/1567233129013240.MP3"
             }
           ],
-          "categoryId" : "5c41bddfa2f27011fcefa1c0",
+          "categoryId" : "1",
           "_id" : "5d57f46289f65a6e842b1d6b",
           "exerciseName" : "Reverse Lunge Knee Up - Right",
           "categoryName" : "Lower body"
@@ -2552,7 +2373,7 @@
               "audioUrlAr" : "https:\/\/mealbucket.s3.amazonaws.com\/1567233608758245.MP3"
             }
           ],
-          "categoryId" : "5c41bddfa2f27011fcefa1c2",
+          "categoryId" : "3",
           "_id" : "5d57f6ac89f65a6e842b1d74",
           "exerciseName" : "Twist Mountain Climber",
           "categoryName" : "Core & abs"
@@ -2569,7 +2390,7 @@
               "mediaUrlThumb1" : "https:\/\/mealbucket.s3.amazonaws.com\/thumbnails\/1566046086285251.BulgarianSplitSquatR.jpg"
             }
           ],
-          "categoryId" : "5c41bddfa2f27011fcefa1c0",
+          "categoryId" : "1",
           "_id" : "5d57f81089f65a6e842b1d7b",
           "exerciseName" : "Bulgarian Split Squat - Right",
           "categoryName" : "Lower body"
@@ -2586,7 +2407,7 @@
               "mediaUrlThumb1" : "https:\/\/mealbucket.s3.amazonaws.com\/thumbnails\/1566046262010251.BulgarianSplitSquatL.jpg"
             }
           ],
-          "categoryId" : "5c41bddfa2f27011fcefa1c0",
+          "categoryId" : "1",
           "categoryName" : "Lower body",
           "exerciseName" : "Bulgarian Split Squat - Left",
           "_id" : "5d57f8ad89f65a6e842b1d83"
@@ -2603,7 +2424,7 @@
               "mediaUrlThumb1" : "https:\/\/mealbucket.s3.amazonaws.com\/thumbnails\/1566046408239258.GluteBridgeBench.jpg"
             }
           ],
-          "categoryId" : "5c41bddfa2f27011fcefa1c0",
+          "categoryId" : "1",
           "categoryName" : "Lower body",
           "exerciseName" : "Glute Bridge Bench",
           "_id" : "5d57f93b89f65a6e842b1d8b"
@@ -2620,7 +2441,7 @@
               "mediaUrlThumb1" : "https:\/\/mealbucket.s3.amazonaws.com\/thumbnails\/1567192792622259.MarchingGluteBridgebench.jpg"
             }
           ],
-          "categoryId" : "5c41bddfa2f27011fcefa1c0",
+          "categoryId" : "1",
           "categoryName" : "Lower body",
           "exerciseName" : "Marching Bridge bench",
           "_id" : "5d57fa4a89f65a6e842b1d92"
@@ -2637,7 +2458,7 @@
               "mediaUrlThumb1" : "https:\/\/mealbucket.s3.amazonaws.com\/thumbnails\/1566049846723260.Catcowstretch_1.jpg"
             }
           ],
-          "categoryId" : "5c41bddfa2f27011fcefa1c3",
+          "categoryId" : "4",
           "categoryName" : "Flexibility",
           "exerciseName" : "Cat Cow Stretch",
           "_id" : "5d5806c389f65a6e842b1d98"
@@ -2654,7 +2475,7 @@
               "mediaUrlThumb1" : "https:\/\/mealbucket.s3.amazonaws.com\/thumbnails\/1566050536128262.sidelungestouches-.jpg"
             }
           ],
-          "categoryId" : "5c41bddfa2f27011fcefa1c0",
+          "categoryId" : "1",
           "categoryName" : "Lower body",
           "exerciseName" : "Side Lunges Touches",
           "_id" : "5d58097d89f65a6e842b1d9e"
@@ -2671,7 +2492,7 @@
               "mediaUrlThumb1" : "https:\/\/mealbucket.s3.amazonaws.com\/thumbnails\/1566104189322158.Kneehugs-.jpg"
             }
           ],
-          "categoryId" : "5c41bddfa2f27011fcefa1c3",
+          "categoryId" : "4",
           "categoryName" : "Flexibility",
           "exerciseName" : "Knee Hugs",
           "_id" : "5d58db3689f65a6e842b1da7"
@@ -2688,7 +2509,7 @@
               "mediaUrlThumb1" : "https:\/\/mealbucket.s3.amazonaws.com\/thumbnails\/1571514620992264.wallbackstretch.0.jpg"
             }
           ],
-          "categoryId" : "5c41bddfa2f27011fcefa1c3",
+          "categoryId" : "4",
           "categoryName" : "Flexibility",
           "exerciseName" : "Wall Back Stretch",
           "_id" : "5d5902d089f65a6e842b1db1"
@@ -2705,7 +2526,7 @@
               "mediaUrlThumb1" : "https:\/\/mealbucket.s3.amazonaws.com\/thumbnails\/1566116772804120.shouldercrossstretchL_1.jpg"
             }
           ],
-          "categoryId" : "5c41bddfa2f27011fcefa1c3",
+          "categoryId" : "4",
           "categoryName" : "Flexibility",
           "exerciseName" : "Shoulder Cross Stretch - Left",
           "_id" : "5d590c2789f65a6e842b1dde"
@@ -2722,7 +2543,7 @@
               "mediaUrlThumb1" : "https:\/\/mealbucket.s3.amazonaws.com\/thumbnails\/157151244309767.SidelegraisesR0.jpg"
             }
           ],
-          "categoryId" : "5c41bddfa2f27011fcefa1c0",
+          "categoryId" : "1",
           "categoryName" : "Lower body",
           "exerciseName" : "Side Leg Raises - Right",
           "_id" : "5d5954e289f65a6e842b1f7c"
@@ -2739,7 +2560,7 @@
               "mediaUrlThumb1" : "https:\/\/mealbucket.s3.amazonaws.com\/thumbnails\/1566228370529185.LateralCrawl.jpg"
             }
           ],
-          "categoryId" : "5c4b0c1dd947c70ade10a3a8",
+          "categoryId" : "5",
           "categoryName" : "Cardio",
           "exerciseName" : "Lateral Crawl",
           "_id" : "5d5ac01889f65a6e842b26b7"
@@ -2756,7 +2577,7 @@
               "mediaUrlThumb1" : "https:\/\/mealbucket.s3.amazonaws.com\/thumbnails\/1566586812838163.Highplankleglifts_1.jpg"
             }
           ],
-          "categoryId" : "5c41bddfa2f27011fcefa1c2",
+          "categoryId" : "3",
           "categoryName" : "Core & abs",
           "exerciseName" : "High plank leg lifts",
           "_id" : "5d60380079c318216112c639"
@@ -2773,7 +2594,7 @@
               "mediaUrlThumb1" : "https:\/\/mealbucket.s3.amazonaws.com\/thumbnails\/15666548566222.abscocoons.jpg"
             }
           ],
-          "categoryId" : "5c41bddfa2f27011fcefa1c2",
+          "categoryId" : "3",
           "categoryName" : "Core & abs",
           "exerciseName" : "abs cocoons",
           "_id" : "5d61423079c318216112c844"
@@ -2790,7 +2611,7 @@
               "mediaUrlThumb1" : "https:\/\/mealbucket.s3.amazonaws.com\/thumbnails\/157146963919743.Lateraljumps.0.jpg"
             }
           ],
-          "categoryId" : "5c4b0c1dd947c70ade10a3a8",
+          "categoryId" : "5",
           "categoryName" : "Cardio",
           "exerciseName" : "Fast Lateral jumps",
           "_id" : "5d64e0f679c318216112d41f"
@@ -2807,7 +2628,7 @@
               "mediaUrlThumb1" : "https:\/\/mealbucket.s3.amazonaws.com\/thumbnails\/157146933306123.sit-upsElbowtokneeR.0.jpg"
             }
           ],
-          "categoryId" : "5c41bddfa2f27011fcefa1c2",
+          "categoryId" : "3",
           "categoryName" : "Core & abs",
           "exerciseName" : "Sit-ups Elbow to knee - Right",
           "_id" : "5d662f9b79c318216112dac7"
@@ -2824,7 +2645,7 @@
               "mediaUrlThumb1" : "https:\/\/mealbucket.s3.amazonaws.com\/thumbnails\/157151279753245.SideplankwithLegRaisesR0.jpg"
             }
           ],
-          "categoryId" : "5c41bddfa2f27011fcefa1c2",
+          "categoryId" : "3",
           "categoryName" : "Core & abs",
           "exerciseName" : "Side plank with Leg Raises - Right",
           "_id" : "5d6650bd79c318216112db8a"
@@ -2841,7 +2662,7 @@
               "mediaUrlThumb1" : "https:\/\/mealbucket.s3.amazonaws.com\/thumbnails\/15706901578501567195478218196.PlankReach_1.jpg"
             }
           ],
-          "categoryId" : "5c41bddfa2f27011fcefa1c2",
+          "categoryId" : "3",
           "categoryName" : "Core & abs",
           "exerciseName" : "Plank Reachs",
           "_id" : "5d69822c79c318216112e095"
@@ -2858,7 +2679,7 @@
               "mediaUrlThumb1" : "https:\/\/mealbucket.s3.amazonaws.com\/thumbnails\/15852953178785dd65f30660f1c4df4a850811580204937911.jpg"
             }
           ],
-          "categoryId" : "5c41bddfa2f27011fcefa1c0",
+          "categoryId" : "1",
           "categoryName" : "Lower body",
           "exerciseName" : "Test New",
           "_id" : "5e7db00dec08ad3669bbee8b"
