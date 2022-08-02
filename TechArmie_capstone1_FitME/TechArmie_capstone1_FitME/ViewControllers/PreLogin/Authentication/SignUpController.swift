@@ -8,6 +8,10 @@
 import Foundation
 import UIKit
 import SwiftUI
+import AWSS3
+import AWSCore
+import FirebaseAuth
+import FirebaseFirestore
 
 
 class SignUpController: BaseVC {
@@ -25,14 +29,38 @@ class SignUpController: BaseVC {
     
     func emailPasswordFirebaseLogin(email: String, password: String, name: String) {
         GoogleLoginController.shared.signUpWithEmail(email: email, password: password, name: name) { user in
-            
+            let authModel = AuthUser(AppUserDefaults.value(forKey: .fullUserProfile));
+            authModel.email = email;
+            authModel.name = name;
+            authModel.saveToUserDefaults();
+            let db = Firestore.firestore().collection("users");
+            db.document(user.uid)
+                .setData(AppUserDefaults.value(forKey: .fullUserProfile).rawValue as! [String : Any]);
             let vc = TabBarVC.instantiate(fromAppStoryboard: .TabBar)
-            vc.navigationController?.isNavigationBarHidden = true
-            self.navigationController?.pushViewController(vc, animated: true)
-            
+            let nvc = UINavigationController(rootViewController: vc)
+            nvc.isNavigationBarHidden = true
+            nvc.navigationBar.isHidden = true
+            nvc.setNavigationBarHidden(true, animated: true)
+            AppDelegate.shared.window?.rootViewController = nvc
+            AppDelegate.shared.window?.makeKeyAndVisible()
         } failure: { error in
             CommonFunctions.showToast(error.localizedDescription)
         }
+    }
+    
+    func uploadImage(image: UIImage) {
+        AWSS3Manager.shared.uploadImage(image: image, progress: {[weak self] ( uploadProgress) in
+                guard let strongSelf = self else { return }
+                print(strongSelf)
+            }) {[weak self] (uploadedFileUrl, error) in
+                guard self != nil else { return }
+                if let finalPath = uploadedFileUrl as? String { // 3
+                    print(finalPath);
+//                    strongSelf.s3UrlLabel.text = "Uploaded file url: " + finalPath
+                } else {
+                    print("\(String(describing: error?.localizedDescription))") // 4
+                }
+            }
     }
 
 }

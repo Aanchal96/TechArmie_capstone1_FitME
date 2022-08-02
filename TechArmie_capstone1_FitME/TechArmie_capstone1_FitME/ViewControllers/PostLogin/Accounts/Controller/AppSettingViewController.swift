@@ -18,4 +18,16 @@ class AppSettingViewController: UIViewController {
         view.addSubview(childView.view);
         // Do any additional setup after loading the view.
     }
+    
+    func logout() {
+        GoogleLoginController.shared.logout()
+        AppUserDefaults.removeAllValues()
+        let vc = OnboardingViewController.instantiate(fromAppStoryboard: .Main)
+        let nvc = UINavigationController(rootViewController: vc)
+        nvc.isNavigationBarHidden = true
+        nvc.navigationBar.isHidden = true
+        nvc.setNavigationBarHidden(true, animated: true)
+        AppDelegate.shared.window?.rootViewController = nvc
+        AppDelegate.shared.window?.makeKeyAndVisible()
+    }
 }
