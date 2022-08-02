@@ -124,7 +124,7 @@ class WorkoutCell: UITableViewCell {
     }
     
     private func animateTimer(){
-        if !(UIApplication.topViewController() is WorkoutVC){
+        if !(UIApplication.topViewController() is WorkoutHomeVC){
             self.timer?.invalidate()
             self.countDownTimer?.invalidate()
             return

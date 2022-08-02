@@ -8,7 +8,8 @@
 import Foundation
 import UIKit
 import SwiftUI
-
+import AWSS3
+import AWSCore
 
 class SignUpController: BaseVC {
     
@@ -27,12 +28,32 @@ class SignUpController: BaseVC {
         GoogleLoginController.shared.signUpWithEmail(email: email, password: password, name: name) { user in
             
             let vc = TabBarVC.instantiate(fromAppStoryboard: .TabBar)
-            vc.navigationController?.isNavigationBarHidden = true
-            self.navigationController?.pushViewController(vc, animated: true)
+            
+            let nvc = UINavigationController(rootViewController: vc)
+            nvc.isNavigationBarHidden = true
+            nvc.navigationBar.isHidden = true
+            nvc.setNavigationBarHidden(true, animated: true)
+            AppDelegate.shared.window?.rootViewController = nvc
+            AppDelegate.shared.window?.makeKeyAndVisible()
             
         } failure: { error in
             CommonFunctions.showToast(error.localizedDescription)
         }
+    }
+    
+    func uploadImage(image: UIImage) {
+        AWSS3Manager.shared.uploadImage(image: image, progress: {[weak self] ( uploadProgress) in
+                guard let strongSelf = self else { return }
+                print(strongSelf)
+            }) {[weak self] (uploadedFileUrl, error) in
+                guard self != nil else { return }
+                if let finalPath = uploadedFileUrl as? String { // 3
+                    print(finalPath);
+//                    strongSelf.s3UrlLabel.text = "Uploaded file url: " + finalPath
+                } else {
+                    print("\(String(describing: error?.localizedDescription))") // 4
+                }
+            }
     }
 
 }

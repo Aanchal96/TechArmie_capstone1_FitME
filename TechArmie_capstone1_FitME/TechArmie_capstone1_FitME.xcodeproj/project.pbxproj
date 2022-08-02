@@ -13,6 +13,7 @@
 		55A6A623288F924D004A7C0C /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55A6A622288F924D004A7C0C /* Login.swift */; };
 		55EB744E288A07AA00DFD58D /* Authentication.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 55EB744D288A07AA00DFD58D /* Authentication.storyboard */; };
 		55EB7450288A07D300DFD58D /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55EB744F288A07D300DFD58D /* LoginController.swift */; };
+		55FF36512898ACF60025B404 /* AWSS3Manager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55FF36502898ACF60025B404 /* AWSS3Manager.swift */; };
 		7C25508D288A501D00766C04 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 87C4A31328822B1000485A08 /* Main.storyboard */; };
 		7CDA8CD0288A7CB90029ECB1 /* SecondStepVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CDA8CCF288A7CB90029ECB1 /* SecondStepVC.swift */; };
 		7CDA8CD4288A85730029ECB1 /* ThirdStepVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CDA8CD3288A85730029ECB1 /* ThirdStepVC.swift */; };
@@ -119,6 +120,7 @@
 		55A6A622288F924D004A7C0C /* Login.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Login.swift; sourceTree = "<group>"; };
 		55EB744D288A07AA00DFD58D /* Authentication.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Authentication.storyboard; sourceTree = "<group>"; };
 		55EB744F288A07D300DFD58D /* LoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
+		55FF36502898ACF60025B404 /* AWSS3Manager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AWSS3Manager.swift; sourceTree = "<group>"; };
 		7CDA8CCF288A7CB90029ECB1 /* SecondStepVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondStepVC.swift; sourceTree = "<group>"; };
 		7CDA8CD3288A85730029ECB1 /* ThirdStepVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdStepVC.swift; sourceTree = "<group>"; };
 		7CDA8CD9288A9E090029ECB1 /* FourthStepVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FourthStepVC.swift; sourceTree = "<group>"; };
@@ -273,6 +275,7 @@
 				87236F2E288DB16000CC2BDD /* AppFonts.swift */,
 				87236F2A288DB16000CC2BDD /* AppStoryboards.swift */,
 				87236F2C288DB16000CC2BDD /* AppGlobals.swift */,
+				55FF36502898ACF60025B404 /* AWSS3Manager.swift */,
 			);
 			path = AppUtilities;
 			sourceTree = "<group>";
@@ -902,6 +905,7 @@
 				874C1E6128982C2F00EE4E94 /* ChallengesDetail.swift in Sources */,
 				ED986BF2288AE45A005BCA62 /* FirstStepVC.swift in Sources */,
 				874C1E2928982A1000EE4E94 /* WorkoutCells.swift in Sources */,
+				55FF36512898ACF60025B404 /* AWSS3Manager.swift in Sources */,
 				874C1E7328982C3000EE4E94 /* DownloadController.swift in Sources */,
 				87236F32288DB16000CC2BDD /* AppUserDefaults.swift in Sources */,
 				87236F9A288DC88500CC2BDD /* DoubleExtension.swift in Sources */,
