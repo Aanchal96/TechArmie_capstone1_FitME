@@ -29,6 +29,11 @@ class TabBarVC: UITabBarController {
         
         vcs?[3].tabBarItem.image = UIImage(named: "icProfile")
         vcs?[3].tabBarItem.selectedImage = UIImage(named: "icProfileSelected")
+        
+        vcs?[0].tabBarItem.imageInsets = UIEdgeInsets(top: 10, left: 0, bottom: 0, right: 0)
+        vcs?[1].tabBarItem.imageInsets = UIEdgeInsets(top: 10, left: 0, bottom: 0, right: 0)
+        vcs?[2].tabBarItem.imageInsets = UIEdgeInsets(top: 10, left: 0, bottom: 0, right: 0)
+        vcs?[3].tabBarItem.imageInsets = UIEdgeInsets(top: 10, left: 0, bottom: 0, right: 0)
     }
 
 }
