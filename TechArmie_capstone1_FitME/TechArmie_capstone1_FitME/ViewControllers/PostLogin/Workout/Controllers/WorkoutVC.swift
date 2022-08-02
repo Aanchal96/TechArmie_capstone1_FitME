@@ -17,6 +17,7 @@ class WorkoutVC: UIViewController {
     
     //MARK::- OUTLET
     @IBOutlet weak var lblHeaderTime: UILabel!
+    @IBOutlet weak var progressMain: UIProgressView!
     @IBOutlet weak var progressDone: UIProgressView!
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var lblHeaderTitle: UILabel!
@@ -61,6 +62,7 @@ class WorkoutVC: UIViewController {
         super.viewDidLoad()
         btnMute.isHidden = true
         // Progress bars on Top to show exerc
+        progressMain.transform = progressMain.transform.scaledBy(x: 1, y: 0.5)
         progressDone.transform = progressDone.transform.scaledBy(x: 1, y: 0.5)
         setLocalizedString()
         onViewDidLoad()
@@ -102,6 +104,7 @@ extension WorkoutVC{
         //self.lblHeaderTitle.isHidden = true//false
         self.lblHeaderTitle.isHidden = false
         
+        self.progressMain.setProgress( 0 , animated: false)
         self.progressDone.setProgress( 0 , animated: false)
         
         //Background notifications
@@ -132,6 +135,7 @@ extension WorkoutVC{
         })
     }
     func resetHeaderTime(isZero:Bool = false){
+        self.progressMain.setProgress(isZero ? 0 : 1, animated: false)
         self.progressDone.setProgress(isZero ? 0 : 1, animated: false)
         self.currentAvailableIndex = 0
         self.currentDoneIndex = 0
@@ -327,11 +331,15 @@ extension WorkoutVC : WorkoutComplete , RestDelegate {
                     
                     switch self.currentExerciseType{
                     case .warmUp:
+                        self.progressMain.setProgress(Float(self.currentAvailableIndex) / Float(self.warmUpExercideCount ), animated: false)
                         self.progressDone.setProgress(Float(self.currentDoneIndex) / Float(self.warmUpExercideCount), animated: false)
                         
                     case .normal:
+                        self.progressMain.setProgress(Float(self.currentAvailableIndex) / Float((self.exerciseCount ) ), animated: false)
                         self.progressDone.setProgress(Float(self.currentDoneIndex) / Float((self.exerciseCount) ), animated: false)
+                        
                     case .coolDown:
+                        self.progressMain.setProgress(Float(self.currentAvailableIndex) / Float(self.coolDownExerciseCount), animated: false)
                         self.progressDone.setProgress(Float(self.currentDoneIndex) / Float(self.coolDownExerciseCount), animated: false)
                     }
                     break
