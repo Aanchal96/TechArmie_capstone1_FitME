@@ -1,7 +1,31 @@
 {
     
     "result" : {
-        
+        "data" : [
+            {
+                "description" : "If you want to start your fitness journey, this beginner plan has everything you need to practice proper form and gain endurance during your workouts. Learn an array of dynamic movements that target the core, upper body, lower body, and the entire body to help you melt fat and lean out.",
+                "programName" : "Plan 1",
+                "levelName" : "Beginner",
+            } ,
+            
+            {
+                "description" : "If you want to start your fitness journey, this beginner plan has everything you need to practice proper form and gain endurance during your workouts. Learn an array of dynamic movements that target the core, upper body, lower body, and the entire body to help you melt fat and lean out.",
+                "programName" : "Plan 1",
+                "levelName" : "Novice",
+            } ,
+            
+            {
+                "programName" : "Plan 1",
+                "levelName" : "Intermediate",
+                "description" : "Strengthen your abdominal muscles, raise your heart-rate, and practice resistance training with this intermediate workout plan. This plan is designed for those who would like to build high capacity and boost their endurance in the meantime.",
+            },
+            {
+                "programName" : "Plan 1",
+                "levelName" : "Advanced",
+                "description" : "Strengthen your abdominal muscles, raise your heart-rate, and practice resistance training with this intermediate workout plan. This plan is designed for those who would like to build high capacity and boost their endurance in the meantime.",
+            }
+            
+        ],
         "pendingWorkouts": [
             {
                 "workoutSubtitle" : "Cardio Routine",
@@ -907,105 +931,6 @@
                 "programId" : "5c1c99a3039b2a4d2cdb7838",
                 "createdAt" : "2019-08-18T14:59:47.139Z"
             }
-        ],
-        "data" : [
-            {
-                "description" : "If you want to start your fitness journey, this beginner plan has everything you need to practice proper form and gain endurance during your workouts. Learn an array of dynamic movements that target the core, upper body, lower body, and the entire body to help you melt fat and lean out.",
-                "programName" : "Plan 1",
-                "duration" : 4,
-                "_id" : "5c1c99a3039b2a4d2cdb7838",
-                "progressStatus" : 0,
-                "ongoingWeek" : 1,
-                "weeklyProgressStatus" : 0,
-                "level" : 1,
-                "levelId" : "5c1c9781a718a84c2a27f149",
-                "createdAt" : "2018-12-21T07:43:31.610Z",
-                "requestedWeek" : 1,
-                "priorityLevel" : 1,
-                "joinedId" : "62dd64e4f68c5e11908fe613",
-                "programId" : "5c1c99a3039b2a4d2cdb7838",
-                "noOfWorkouts" : 20,
-                "levelName" : "Beginner",
-            } ,
-            
-            {
-                "description" : "If you want to start your fitness journey, this beginner plan has everything you need to practice proper form and gain endurance during your workouts. Learn an array of dynamic movements that target the core, upper body, lower body, and the entire body to help you melt fat and lean out.",
-                "programName" : "Plan 1",
-                "duration" : 4,
-                "_id" : "5c1c99a3039b2a4d2cdb7838",
-                "progressStatus" : 0,
-                "ongoingWeek" : 1,
-                "weeklyProgressStatus" : 0,
-                "level" : 1,
-                "levelId" : "5c1c9781a718a84c2a27f149",
-                "createdAt" : "2018-12-21T07:43:31.610Z",
-                "requestedWeek" : 1,
-                "priorityLevel" : 1,
-                "joinedId" : "62dd64e4f68c5e11908fe613",
-                "programId" : "5c1c99a3039b2a4d2cdb7838",
-                "noOfWorkouts" : 20,
-                "levelName" : "Novice",
-            } ,
-            
-            {
-                "programName" : "Plan 1",
-                "requestedWeek" : 1,
-                "createdAt" : "2018-12-21T07:46:13.244Z",
-                "joinedId" : "62dd72bcf68c5e11908fe614",
-                "programId" : "5c1c9a45039b2a4d2cdb7840",
-                "levelName" : "Intermediate",
-                "duration" : 4,
-                "noOfWorkouts" : 24,
-                "media" : [
-                    {
-                        "mediaType" : 1,
-                        "_id" : "5c1c9a45039b2a4d2cdb7841",
-                        "mediaUrl" : "http:\/\/localhost:3011\/api\/v1\/admin\/exercise\/",
-                        "mediaUrlThumb" : "http:\/\/localhost:3011\/api\/v1\/admin\/exercise\/"
-                    }
-                ],
-                "levelId" : "5c1c9795a718a84c2a27f14b",
-                "description" : "Strengthen your abdominal muscles, raise your heart-rate, and practice resistance training with this intermediate workout plan. This plan is designed for those who would like to build high capacity and boost their endurance in the meantime.",
-                "ongoingWeek" : 1,
-                "level" : 8,
-                "progressStatus" : 0,
-                "priorityLevel" : 3,
-                "weeklyProgressStatus" : 0,
-                "completedWorkouts" : [
-                    
-                ],
-                "_id" : "5c1c9a45039b2a4d2cdb7840"
-            },
-            {
-                "programName" : "Plan 1",
-                "requestedWeek" : 1,
-                "createdAt" : "2018-12-21T07:46:13.244Z",
-                "joinedId" : "62dd72bcf68c5e11908fe614",
-                "programId" : "5c1c9a45039b2a4d2cdb7840",
-                "levelName" : "Advanced",
-                "duration" : 4,
-                "noOfWorkouts" : 24,
-                "media" : [
-                    {
-                        "mediaType" : 1,
-                        "_id" : "5c1c9a45039b2a4d2cdb7841",
-                        "mediaUrl" : "http:\/\/localhost:3011\/api\/v1\/admin\/exercise\/",
-                        "mediaUrlThumb" : "http:\/\/localhost:3011\/api\/v1\/admin\/exercise\/"
-                    }
-                ],
-                "levelId" : "5c1c9795a718a84c2a27f14b",
-                "description" : "Strengthen your abdominal muscles, raise your heart-rate, and practice resistance training with this intermediate workout plan. This plan is designed for those who would like to build high capacity and boost their endurance in the meantime.",
-                "ongoingWeek" : 1,
-                "level" : 8,
-                "progressStatus" : 0,
-                "priorityLevel" : 3,
-                "weeklyProgressStatus" : 0,
-                "completedWorkouts" : [
-                    
-                ],
-                "_id" : "5c1c9a45039b2a4d2cdb7840"
-            }
-            
         ]
     }
 }
