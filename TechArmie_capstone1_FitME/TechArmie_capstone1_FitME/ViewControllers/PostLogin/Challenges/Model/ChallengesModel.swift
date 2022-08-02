@@ -38,7 +38,7 @@ struct Challenge {
     var progressStatus: Float
     var duration: Int
     var currentDay: Int
-    var workoutData: [WorkoutModel]
+//    var workoutData: [WorkoutModel]
     var isJoined: Bool = false
     
     var result: ExerciseResult
@@ -53,7 +53,7 @@ struct Challenge {
         userChallengeId = json[ApiKey.userChallengeId].stringValue
         progressStatus = Float(json[ApiKey.progressStatus].intValue)
         media = json[ApiKey.media].arrayValue.map({ProgramMediaModel($0)})
-        workoutData = json[ApiKey.workoutDetail].arrayValue.map({WorkoutModel($0)})
+//        workoutData = json[ApiKey.workoutDetail].arrayValue.map({WorkoutModel($0)})
         duration = json[ApiKey.duration].intValue
         currentDay = json[ApiKey.currentDay].intValue
         isJoined = userChallengeId != ""
