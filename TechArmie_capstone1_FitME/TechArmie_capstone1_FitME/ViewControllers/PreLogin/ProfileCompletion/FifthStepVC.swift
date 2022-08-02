@@ -18,6 +18,7 @@ class FifthStepVC : BaseVC{
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        navigationController?.navigationBar.isHidden = true
         self.navigationController?.setNavigationBarHidden(true, animated: false)
     }
     

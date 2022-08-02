@@ -44,6 +44,7 @@ class SecondStepVC : BaseVC
     override func viewDidLoad() {
         super.viewDidLoad()
         onViewDidLoad()
+        navigationController?.navigationBar.isHidden = true
 
         //debugPrint(profileModel.goal)
         

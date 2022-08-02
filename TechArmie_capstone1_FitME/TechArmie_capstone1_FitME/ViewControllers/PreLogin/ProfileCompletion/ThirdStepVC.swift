@@ -20,6 +20,7 @@ class ThirdStepVC : BaseVC{
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        navigationController?.navigationBar.isHidden = true
 
 //        debugPrint(profileModel.heightDict ?? "Height NULL")
 //        debugPrint(profileModel.weightDict ?? "Weight Null")
