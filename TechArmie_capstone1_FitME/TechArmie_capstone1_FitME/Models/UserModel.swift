@@ -21,8 +21,8 @@ class AuthUser {
     }
     
     let id: String
-    let name: String
-    let email: String
+    var name: String
+    var email: String
     let createdAt: String
     let token, authToken: String
     var isAlreadyLogin : Bool = false

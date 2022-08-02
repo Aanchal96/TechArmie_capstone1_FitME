@@ -8,6 +8,7 @@ target 'TechArmie_capstone1_FitME' do
   # Pods for TechArmie_capstone1_FitME
 
   pod 'FirebaseAuth'
+  pod 'FirebaseFirestore'
   pod 'GoogleSignIn'
   
   pod 'SwiftyJSON'

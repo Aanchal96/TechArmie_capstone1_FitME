@@ -20,7 +20,7 @@ struct Login: View {
     }
     
     func textFieldValidatorEmail(value: String) -> Bool {
-        return false
+        return email.checkIfValid(.email)
     }
     
     var body: some View {
@@ -71,8 +71,11 @@ struct Login: View {
                         return
                     }
                     if password.count < 6 {
-                        if password.isBlank {isPasswordValid = false}; return;
+                        isPasswordValid = false;
+                        return;
                     }
+                    isPasswordValid = true;
+                    isEmailValid = true;
                     self.controller.emailPasswordFirebaseLogin(email: email, password: password);
                 } label: {
                     Text("Sign In")
@@ -99,22 +102,6 @@ struct Login: View {
                     .background(Color(red: 0.886, green: 0.498, blue: 0.475))
                     .frame(width: 300)
                     .clipShape(RoundedRectangle(cornerRadius: 10, style: .continuous))
-                    
-//                    EmptySpace(spacing: 5)
-//                    Button {
-//
-//                    } label: {
-//                        Spacer()
-//                        Image("Apple")
-//                        Text("Sign Up with Apple")
-//                            .foregroundColor(.white)
-//                            .padding()
-//                            .padding(.trailing, 12)
-//                        Spacer()
-//                    }
-//                    .background(Color(red: 0, green: 0, blue: 0))
-//                    .frame(width: 300)
-//                    .clipShape(RoundedRectangle(cornerRadius: 10, style: .continuous))
                 }
                 
                 Spacer()

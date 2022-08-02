@@ -30,7 +30,7 @@ struct SignUp: View {
     }
 //
     func textFieldValidatorEmail(value: String) -> Bool {
-        return false
+        return email.checkIfValid(.email)
     }
     
     
