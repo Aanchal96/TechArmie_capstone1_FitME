@@ -7,7 +7,6 @@
                 "progData" : [
                     {
                         "warmupData" : {
-                            "success" : true,
                             "result" : {
                                 "cooldownExe" : [
                                     {
@@ -384,12 +383,10 @@
                                 ],
                                 "_id" : "5d6ad72279c318216112e352"
                             },
-                            "statusCode" : 200,
-                            "message" : "Exercise data fetched successfully"
+                          
                         },
                         "exerciseData" : {
-                            "message" : "Exercise data fetched successfully",
-                            "statusCode" : 200,
+                   
                             "result" : {
                                 "workoutExe" : [
                                     [
@@ -584,7 +581,6 @@
                                 "workoutSubtitle" : "SIX-PACK ROUTINE",
                                 "totalWorkoutDuration" : 1020
                             },
-                            "success" : true
                         },
                         
                         "workoutDetail" : [
@@ -730,8 +726,7 @@
                     },
                     {
                         "warmupData" : {
-                            "statusCode" : 200,
-                            "message" : "Exercise data fetched successfully",
+                    
                             "result" : {
                                 "warmupExe" : [
                                     {
@@ -1062,10 +1057,8 @@
                                 "_id" : "5ed940da1649863403c7c8bc",
                                 "challengeId" : "5ed8cd8901854f36f8615a18"
                             },
-                            "success" : true
                         },
                         "exerciseData" : {
-                            "success" : true,
                             "result" : {
                                 "description" : "Burn large amounts of calories and rev up your metabolism with this novice workout routine . Learn to perform at high-intensity levels to improve your heart rat",
                                 "totalWorkoutDuration" : 1080,
@@ -1260,8 +1253,7 @@
                                     }
                                 ]
                             },
-                            "message" : "Exercise data fetched successfully",
-                            "statusCode" : 200
+                   
                         },
                         "workoutDetail" : [
                             {
@@ -1406,8 +1398,7 @@
                     },
                     {
                         "warmupData" : {
-                            "statusCode" : 200,
-                            "success" : true,
+             
                             "result" : {
                                 "challengeId" : "5f37ee92f83dc73e79d71e51",
                                 "warmupExe" : [
@@ -1807,10 +1798,8 @@
                                     }
                                 ]
                             },
-                            "message" : "Exercise data fetched successfully"
                         },
                         "exerciseData" : {
-                            "statusCode" : 200,
                             "result" : {
                                 "totalWorkoutDuration" : 1020,
                                 "workoutName" : "DAY 1",
@@ -2005,8 +1994,7 @@
                                 "updatedAt" : "2020-08-24T07:14:43.101Z",
                                 "workoutSubtitle" : "FULL BODY ROUTINE"
                             },
-                            "success" : true,
-                            "message" : "Exercise data fetched successfully"
+                  
                         },
                         "workoutDetail" : [
                             {
@@ -2160,8 +2148,7 @@
                 "progData" : [
                     {
                         "warmupData" : {
-                            "message" : "Exercise data fetched successfully",
-                            "success" : true,
+                 
                             "result" : {
                                 "cooldownExe" : [
                                     {
@@ -2538,10 +2525,8 @@
                                 ],
                                 "_id" : "5d64051a79c318216112d0c2"
                             },
-                            "statusCode" : 200
                         },
                         "exerciseData" : {
-                            "statusCode" : 200,
                             "result" : {
                                 "totalBurnCalories" : 220,
                                 "_id" : "5d64051a79c318216112d0c2",
@@ -2784,8 +2769,7 @@
                                     ]
                                 ]
                             },
-                            "message" : "Exercise data fetched successfully",
-                            "success" : true
+                     
                         },
                         "workoutDetail" : [
                             {
@@ -2930,7 +2914,6 @@
                     },
                     {
                         "warmupData" : {
-                            "success" : true,
                             "result" : {
                                 "_id" : "5f41d09df83dc73e79d7334e",
                                 "challengeId" : "5f41cf32f83dc73e79d7334c",
@@ -3307,8 +3290,7 @@
                                     }
                                 ]
                             },
-                            "message" : "Exercise data fetched successfully",
-                            "statusCode" : 200
+                   
                         },
                         "exerciseData" : {
                             "result" : {
@@ -3553,9 +3535,7 @@
                                 "workoutName" : "DAY 1",
                                 "description" : "Activate and target your core muscles with great exercises like planks, crunches, and mountain climbers that will leave your abs feeling sore and strong"
                             },
-                            "statusCode" : 200,
-                            "message" : "Exercise data fetched successfully",
-                            "success" : true
+                  
                         },
                         "workoutDetail" : [
                             {
@@ -4108,9 +4088,7 @@
                                 ],
                                 "challengeId" : "5f452f41daaa3d59c5844c56"
                             },
-                            "success" : true,
-                            "message" : "Exercise data fetched successfully",
-                            "statusCode" : 200
+               
                         },
                         "exerciseData" : {
                             "result" : {
@@ -4355,9 +4333,7 @@
                                 "workoutSubtitle" : "Full Body Routine",
                                 "totalBurnCalories" : 295
                             },
-                            "success" : true,
-                            "statusCode" : 200,
-                            "message" : "Exercise data fetched successfully"
+                     
                         },
                         "workoutDetail" : [
                             {
@@ -4508,3 +4484,4 @@
         ]
     }
 }
+

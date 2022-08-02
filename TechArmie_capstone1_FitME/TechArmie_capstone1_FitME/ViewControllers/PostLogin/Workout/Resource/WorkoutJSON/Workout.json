@@ -345,14 +345,10 @@
                                     }
                                 ]
                             },
-                            "statusCode" : 200,
-                            "message" : "Successful",
-                            "success" : true
+        
                         },
                         "exerciseData" : {
-                            "success" : true,
-                            "statusCode" : 200,
-                            "message" : "Exercise data fetched successfully",
+                       
                             "result" : {
                                 "_id" : "5d59615089f65a6e842b1f85",
                                 "programId" : "5c1c99a3039b2a4d2cdb7838",
@@ -503,9 +499,7 @@
                     },
                     {
                         "warmupData" : {
-                            "statusCode" : 200,
-                            "message" : "Successful",
-                            "success" : true,
+                       
                             "result" : {
                                 "warmupExe" : [
                                     {
@@ -815,7 +809,6 @@
                             }
                         },
                         "exerciseData" : {
-                            "statusCode" : 200,
                             "result" : {
                                 "workoutExe" : [
                                     [
@@ -1010,8 +1003,7 @@
                                 "updatedAt" : "2021-01-06T18:37:23.957Z",
                                 "programId" : "5c1c99a3039b2a4d2cdb7838"
                             },
-                            "success" : true,
-                            "message" : "Exercise data fetched successfully"
+                          
                         },
                         "workoutSubtitle" : "Full Body Routine",
                         "noOfExercise" : 7,
@@ -1034,7 +1026,6 @@
                     },
                     {
                         "warmupData" : {
-                            "statusCode" : 200,
                             "result" : {
                                 "_id" : "5d59646e89f65a6e842b1fa9",
                                 "programId" : "5c1c99a3039b2a4d2cdb7838",
@@ -1319,12 +1310,10 @@
                                     }
                                 ]
                             },
-                            "message" : "Successful",
-                            "success" : true
+                    
                         },
                         "exerciseData" : {
-                            "message" : "Exercise data fetched successfully",
-                            "statusCode" : 200,
+                  
                             "result" : {
                                 "description" : "Learn new exercises as well as the proper form to add lean muscle to your upper body including arms, shoulders, upper back, and core",
                                 "totalWorkoutDuration" : 900,
@@ -1471,7 +1460,6 @@
                                 ],
                                 "updatedAt" : "2020-12-04T13:02:26.817Z"
                             },
-                            "success" : true
                         },
                         "workoutSubtitle" : "Upper Body Routine",
                         "noOfExercise" : 5,
@@ -1494,8 +1482,7 @@
                     },
                     {
                         "warmupData" : {
-                            "message" : "Successful",
-                            "success" : true,
+               
                             "result" : {
                                 "cooldownExe" : [
                                     {
@@ -1803,12 +1790,9 @@
                                     }
                                 ]
                             },
-                            "statusCode" : 200
                         },
                         "exerciseData" : {
-                            "success" : true,
-                            "message" : "Exercise data fetched successfully",
-                            "statusCode" : 200,
+                    
                             "result" : {
                                 "totalBurnCalories" : 112,
                                 "workoutName" : "DAY 4",
@@ -2001,7 +1985,6 @@
                     },
                     {
                         "warmupData" : {
-                            "message" : "Successful",
                             "result" : {
                                 "_id" : "5d5967e389f65a6e842b1fff",
                                 "programId" : "5c1c99a3039b2a4d2cdb7838",
@@ -2378,8 +2361,6 @@
                                     }
                                 ]
                             },
-                            "success" : true,
-                            "statusCode" : 200
                         },
                         "exerciseData" : {
                             "result" : {
@@ -2528,9 +2509,7 @@
                                 "totalWorkoutDuration" : 1020,
                                 "workoutSubtitle" : "Core Routine"
                             },
-                            "statusCode" : 200,
-                            "message" : "Exercise data fetched successfully",
-                            "success" : true
+                      
                         },
                         "workoutSubtitle" : "Core Routine",
                         "noOfExercise" : 5,
@@ -2899,14 +2878,10 @@
                                     }
                                 ]
                             },
-                            "statusCode" : 200,
-                            "message" : "Successful",
-                            "success" : true
+                        
                         },
                         "exerciseData" : {
-                            "success" : true,
-                            "statusCode" : 200,
-                            "message" : "Exercise data fetched successfully",
+               
                             "result" : {
                                 "_id" : "5d59615089f65a6e842b1f85",
                                 "programId" : "5c1c99a3039b2a4d2cdb7838",
@@ -3057,9 +3032,7 @@
                     },
                     {
                         "warmupData" : {
-                            "statusCode" : 200,
-                            "message" : "Successful",
-                            "success" : true,
+              
                             "result" : {
                                 "warmupExe" : [
                                     {
@@ -3369,7 +3342,6 @@
                             }
                         },
                         "exerciseData" : {
-                            "statusCode" : 200,
                             "result" : {
                                 "workoutExe" : [
                                     [
@@ -3564,8 +3536,7 @@
                                 "updatedAt" : "2021-01-06T18:37:23.957Z",
                                 "programId" : "5c1c99a3039b2a4d2cdb7838"
                             },
-                            "success" : true,
-                            "message" : "Exercise data fetched successfully"
+                       
                         },
                         "workoutSubtitle" : "Full Body Routine",
                         "noOfExercise" : 7,
@@ -3588,7 +3559,6 @@
                     },
                     {
                         "warmupData" : {
-                            "statusCode" : 200,
                             "result" : {
                                 "_id" : "5d59646e89f65a6e842b1fa9",
                                 "programId" : "5c1c99a3039b2a4d2cdb7838",
@@ -3873,12 +3843,10 @@
                                     }
                                 ]
                             },
-                            "message" : "Successful",
-                            "success" : true
+                     
                         },
                         "exerciseData" : {
-                            "message" : "Exercise data fetched successfully",
-                            "statusCode" : 200,
+                        
                             "result" : {
                                 "description" : "Learn new exercises as well as the proper form to add lean muscle to your upper body including arms, shoulders, upper back, and core",
                                 "totalWorkoutDuration" : 900,
@@ -4025,7 +3993,6 @@
                                 ],
                                 "updatedAt" : "2020-12-04T13:02:26.817Z"
                             },
-                            "success" : true
                         },
                         "workoutSubtitle" : "Upper Body Routine",
                         "noOfExercise" : 5,
@@ -4048,8 +4015,7 @@
                     },
                     {
                         "warmupData" : {
-                            "message" : "Successful",
-                            "success" : true,
+                        
                             "result" : {
                                 "cooldownExe" : [
                                     {
@@ -4357,12 +4323,9 @@
                                     }
                                 ]
                             },
-                            "statusCode" : 200
                         },
                         "exerciseData" : {
-                            "success" : true,
-                            "message" : "Exercise data fetched successfully",
-                            "statusCode" : 200,
+                       
                             "result" : {
                                 "totalBurnCalories" : 112,
                                 "workoutName" : "DAY 4",
@@ -4555,7 +4518,6 @@
                     },
                     {
                         "warmupData" : {
-                            "message" : "Successful",
                             "result" : {
                                 "_id" : "5d5967e389f65a6e842b1fff",
                                 "programId" : "5c1c99a3039b2a4d2cdb7838",
@@ -4932,8 +4894,7 @@
                                     }
                                 ]
                             },
-                            "success" : true,
-                            "statusCode" : 200
+              
                         },
                         "exerciseData" : {
                             "result" : {
@@ -5082,9 +5043,7 @@
                                 "totalWorkoutDuration" : 1020,
                                 "workoutSubtitle" : "Core Routine"
                             },
-                            "statusCode" : 200,
-                            "message" : "Exercise data fetched successfully",
-                            "success" : true
+           
                         },
                         "workoutSubtitle" : "Core Routine",
                         "noOfExercise" : 5,
@@ -5132,8 +5091,7 @@
                 "pendingWorkouts" : [
                     {
                         "warmupData" : {
-                            "message" : "Successful",
-                            "statusCode" : 200,
+       
                             "result" : {
                                 "warmupExe" : [
                                     {
@@ -5556,10 +5514,8 @@
                                 ],
                                 "_id" : "5d5fab510b91c73aafb0b029"
                             },
-                            "success" : true
                         },
                         "exerciseData" : {
-                            "statusCode" : 200,
                             "result" : {
                                 "totalBurnCalories" : 273,
                                 "media" : [
@@ -5946,8 +5902,7 @@
                                 "programId" : "5c1c9a45039b2a4d2cdb7840",
                                 "workoutSubtitle" : "Cardio Routine"
                             },
-                            "success" : true,
-                            "message" : "Exercise data fetched successfully"
+           
                         },
                         "totalWorkoutDuration" : 1560,
                         "_id" : "5d5fab510b91c73aafb0b029",
@@ -5970,9 +5925,6 @@
                     },
                     {
                         "warmupData" : {
-                            "statusCode" : 200,
-                            "success" : true,
-                            "message" : "Successful",
                             "result" : {
                                 "programId" : "5c1c9a45039b2a4d2cdb7840",
                                 "warmupExe" : [
@@ -6420,7 +6372,6 @@
                             }
                         },
                         "exerciseData" : {
-                            "success" : true,
                             "result" : {
                                 "noOfExercise" : 15,
                                 "totalBurnCalories" : 263,
@@ -6807,8 +6758,7 @@
                                 "_id" : "5d5ff23f79c318216112c5ce",
                                 "workoutName" : "DAY 2"
                             },
-                            "message" : "Exercise data fetched successfully",
-                            "statusCode" : 200
+                  
                         } ,
                         "totalWorkoutDuration" : 1560,
                         "_id" : "5d5ff23f79c318216112c5ce",
@@ -6831,7 +6781,6 @@
                     },
                     {
                         "warmupData" : {
-                            "message" : "Successful",
                             "result" : {
                                 "cooldownExe" : [
                                     {
@@ -7231,12 +7180,10 @@
                                     }
                                 ]
                             },
-                            "statusCode" : 200,
-                            "success" : true
+        
                         },
                         "exerciseData" :  {
-                            "success" : true,
-                            "statusCode" : 200,
+  
                             "result" : {
                                 "workoutSubtitle" : "Upper Body Routine",
                                 "_id" : "5d6031d179c318216112c5ea",
@@ -7551,7 +7498,6 @@
                                 "description" : "Build your biceps, shoulders, and back muscles that you always dreamed of with this intermediate upper body workout",
                                 "workoutName" : "DAY 3"
                             },
-                            "message" : "Exercise data fetched successfully"
                         },
                         "totalWorkoutDuration" : 1680,
                         "_id" : "5d6031d179c318216112c5ea",
@@ -7574,7 +7520,6 @@
                     },
                     {
                         "warmupData" : {
-                            "message" : "Successful",
                             "result" : {
                                 "programId" : "5c1c9a45039b2a4d2cdb7840",
                                 "warmupExe" : [
@@ -7951,8 +7896,7 @@
                                 ],
                                 "_id" : "5d60337c79c318216112c604"
                             },
-                            "success" : true,
-                            "statusCode" : 200
+                 
                         },
                         "exerciseData" : {
                             "result" : {
@@ -8293,9 +8237,7 @@
                                 "updatedAt" : "2020-10-25T17:56:57.230Z",
                                 "workoutSubtitle" : "Lower Body Routine"
                             },
-                            "message" : "Exercise data fetched successfully",
-                            "statusCode" : 200,
-                            "success" : true
+
                         },
                         "totalWorkoutDuration" : 1380,
                         "_id" : "5d60337c79c318216112c604",
@@ -8318,8 +8260,7 @@
                     },
                     {
                         "warmupData" : {
-                            "message" : "Successful",
-                            "statusCode" : 200,
+    
                             "result" : {
                                 "programId" : "5c1c9a45039b2a4d2cdb7840",
                                 "_id" : "5d60363979c318216112c61e",
@@ -8696,10 +8637,8 @@
                                     }
                                 ]
                             },
-                            "success" : true
                         },
                         "exerciseData" : {
-                            "success" : true,
                             "result" : {
                                 "_id" : "5d60363979c318216112c61e",
                                 "updatedAt" : "2020-10-25T17:57:29.760Z",
@@ -9014,8 +8953,7 @@
                                     }
                                 ]
                             },
-                            "statusCode" : 200,
-                            "message" : "Exercise data fetched successfully"
+              
                         },
                         "totalWorkoutDuration" : 1380,
                         "_id" : "5d60363979c318216112c61e",
@@ -9069,8 +9007,7 @@
                 "pendingWorkouts" : [
                     {
                         "warmupData" : {
-                            "message" : "Successful",
-                            "statusCode" : 200,
+       
                             "result" : {
                                 "warmupExe" : [
                                     {
@@ -9493,10 +9430,8 @@
                                 ],
                                 "_id" : "5d5fab510b91c73aafb0b029"
                             },
-                            "success" : true
                         },
                         "exerciseData" : {
-                            "statusCode" : 200,
                             "result" : {
                                 "totalBurnCalories" : 273,
                                 "media" : [
@@ -9883,8 +9818,7 @@
                                 "programId" : "5c1c9a45039b2a4d2cdb7840",
                                 "workoutSubtitle" : "Cardio Routine"
                             },
-                            "success" : true,
-                            "message" : "Exercise data fetched successfully"
+                     
                         },
                         "totalWorkoutDuration" : 1560,
                         "_id" : "5d5fab510b91c73aafb0b029",
@@ -9907,9 +9841,7 @@
                     },
                     {
                         "warmupData" : {
-                            "statusCode" : 200,
-                            "success" : true,
-                            "message" : "Successful",
+               
                             "result" : {
                                 "programId" : "5c1c9a45039b2a4d2cdb7840",
                                 "warmupExe" : [
@@ -10357,7 +10289,6 @@
                             }
                         },
                         "exerciseData" : {
-                            "success" : true,
                             "result" : {
                                 "noOfExercise" : 15,
                                 "totalBurnCalories" : 263,
@@ -10744,8 +10675,7 @@
                                 "_id" : "5d5ff23f79c318216112c5ce",
                                 "workoutName" : "DAY 2"
                             },
-                            "message" : "Exercise data fetched successfully",
-                            "statusCode" : 200
+               
                         } ,
                         "totalWorkoutDuration" : 1560,
                         "_id" : "5d5ff23f79c318216112c5ce",
@@ -10768,7 +10698,6 @@
                     },
                     {
                         "warmupData" : {
-                            "message" : "Successful",
                             "result" : {
                                 "cooldownExe" : [
                                     {
@@ -11168,12 +11097,10 @@
                                     }
                                 ]
                             },
-                            "statusCode" : 200,
-                            "success" : true
+           
                         },
                         "exerciseData" :  {
-                            "success" : true,
-                            "statusCode" : 200,
+               
                             "result" : {
                                 "workoutSubtitle" : "Upper Body Routine",
                                 "_id" : "5d6031d179c318216112c5ea",
@@ -11488,7 +11415,6 @@
                                 "description" : "Build your biceps, shoulders, and back muscles that you always dreamed of with this intermediate upper body workout",
                                 "workoutName" : "DAY 3"
                             },
-                            "message" : "Exercise data fetched successfully"
                         },
                         "totalWorkoutDuration" : 1680,
                         "_id" : "5d6031d179c318216112c5ea",
@@ -11511,7 +11437,6 @@
                     },
                     {
                         "warmupData" : {
-                            "message" : "Successful",
                             "result" : {
                                 "programId" : "5c1c9a45039b2a4d2cdb7840",
                                 "warmupExe" : [
@@ -11888,8 +11813,7 @@
                                 ],
                                 "_id" : "5d60337c79c318216112c604"
                             },
-                            "success" : true,
-                            "statusCode" : 200
+            
                         },
                         "exerciseData" : {
                             "result" : {
@@ -12230,9 +12154,7 @@
                                 "updatedAt" : "2020-10-25T17:56:57.230Z",
                                 "workoutSubtitle" : "Lower Body Routine"
                             },
-                            "message" : "Exercise data fetched successfully",
-                            "statusCode" : 200,
-                            "success" : true
+                   
                         },
                         "totalWorkoutDuration" : 1380,
                         "_id" : "5d60337c79c318216112c604",
@@ -12255,8 +12177,7 @@
                     },
                     {
                         "warmupData" : {
-                            "message" : "Successful",
-                            "statusCode" : 200,
+                   
                             "result" : {
                                 "programId" : "5c1c9a45039b2a4d2cdb7840",
                                 "_id" : "5d60363979c318216112c61e",
@@ -12633,10 +12554,8 @@
                                     }
                                 ]
                             },
-                            "success" : true
                         },
                         "exerciseData" : {
-                            "success" : true,
                             "result" : {
                                 "_id" : "5d60363979c318216112c61e",
                                 "updatedAt" : "2020-10-25T17:57:29.760Z",
@@ -12951,8 +12870,7 @@
                                     }
                                 ]
                             },
-                            "statusCode" : 200,
-                            "message" : "Exercise data fetched successfully"
+                      
                         },
                         "totalWorkoutDuration" : 1380,
                         "_id" : "5d60363979c318216112c61e",
@@ -12987,3 +12905,4 @@
         ]
     }
 }
+
