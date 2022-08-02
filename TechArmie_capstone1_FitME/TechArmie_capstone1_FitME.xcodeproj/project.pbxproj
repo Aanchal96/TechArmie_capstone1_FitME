@@ -10,6 +10,8 @@
 		369A43555261385AE48E3196 /* Pods_TechArmie_capstone1_FitME.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9B1E93B6AAF5BFADC09ECDE /* Pods_TechArmie_capstone1_FitME.framework */; };
 		553D67C4289078FD00CE57E3 /* SignUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 553D67C3289078FD00CE57E3 /* SignUp.swift */; };
 		557D6E24288A134A00906AAA /* SignUpController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 557D6E23288A134A00906AAA /* SignUpController.swift */; };
+		558CFFBB2898D3420035375B /* AppSettingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 558CFFBA2898D3420035375B /* AppSettingView.swift */; };
+		558CFFBD2898D4600035375B /* AppSettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 558CFFBC2898D4600035375B /* AppSettingViewController.swift */; };
 		55A6A623288F924D004A7C0C /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55A6A622288F924D004A7C0C /* Login.swift */; };
 		55EB744E288A07AA00DFD58D /* Authentication.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 55EB744D288A07AA00DFD58D /* Authentication.storyboard */; };
 		55EB7450288A07D300DFD58D /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55EB744F288A07D300DFD58D /* LoginController.swift */; };
@@ -104,9 +106,6 @@
 		87E58209288D7FDF003AFEA7 /* GoogleLoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87E58208288D7FDF003AFEA7 /* GoogleLoginController.swift */; };
 		87E58211288DACE8003AFEA7 /* UIViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87E58210288DACE8003AFEA7 /* UIViewControllerExtension.swift */; };
 		87FF9560288B5DA300A05A07 /* bg_video.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 87FF955F288B5DA300A05A07 /* bg_video.mp4 */; };
-		A2192F0D289498D400FEFC92 /* AppSettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2192F0C289498D400FEFC92 /* AppSettingsView.swift */; };
-		A2192F0F289498E700FEFC92 /* AppSettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2192F0E289498E700FEFC92 /* AppSettingsViewController.swift */; };
-		ED27FF32288B0A2900F5C657 /* ColorTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED27FF31288B0A2900F5C657 /* ColorTheme.swift */; };
 		ED7036E02888BAD4002A312F /* welcome_fitme.png in Resources */ = {isa = PBXBuildFile; fileRef = ED7036DD2888BAD4002A312F /* welcome_fitme.png */; };
 		ED7036E32888BAE9002A312F /* logo_FitME.png in Resources */ = {isa = PBXBuildFile; fileRef = ED7036E22888BAE9002A312F /* logo_FitME.png */; };
 		ED986BF2288AE45A005BCA62 /* FirstStepVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED986BF1288AE45A005BCA62 /* FirstStepVC.swift */; };
@@ -119,6 +118,8 @@
 		44F9DA4C26DB4FB650F74678 /* Pods-TechArmie_capstone1_FitME.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TechArmie_capstone1_FitME.release.xcconfig"; path = "Target Support Files/Pods-TechArmie_capstone1_FitME/Pods-TechArmie_capstone1_FitME.release.xcconfig"; sourceTree = "<group>"; };
 		553D67C3289078FD00CE57E3 /* SignUp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUp.swift; sourceTree = "<group>"; };
 		557D6E23288A134A00906AAA /* SignUpController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpController.swift; sourceTree = "<group>"; };
+		558CFFBA2898D3420035375B /* AppSettingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppSettingView.swift; sourceTree = "<group>"; };
+		558CFFBC2898D4600035375B /* AppSettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppSettingViewController.swift; sourceTree = "<group>"; };
 		55A6A622288F924D004A7C0C /* Login.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Login.swift; sourceTree = "<group>"; };
 		55EB744D288A07AA00DFD58D /* Authentication.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Authentication.storyboard; sourceTree = "<group>"; };
 		55EB744F288A07D300DFD58D /* LoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
@@ -216,8 +217,6 @@
 		87E58208288D7FDF003AFEA7 /* GoogleLoginController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GoogleLoginController.swift; sourceTree = "<group>"; };
 		87E58210288DACE8003AFEA7 /* UIViewControllerExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtension.swift; sourceTree = "<group>"; };
 		87FF955F288B5DA300A05A07 /* bg_video.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = bg_video.mp4; sourceTree = "<group>"; };
-		A2192F0C289498D400FEFC92 /* AppSettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppSettingsView.swift; sourceTree = "<group>"; };
-		A2192F0E289498E700FEFC92 /* AppSettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppSettingsViewController.swift; sourceTree = "<group>"; };
 		D9B1E93B6AAF5BFADC09ECDE /* Pods_TechArmie_capstone1_FitME.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TechArmie_capstone1_FitME.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E6CB01F1DE75F6DB4537983D /* Pods-TechArmie_capstone1_FitME.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TechArmie_capstone1_FitME.debug.xcconfig"; path = "Target Support Files/Pods-TechArmie_capstone1_FitME/Pods-TechArmie_capstone1_FitME.debug.xcconfig"; sourceTree = "<group>"; };
 		ED7036DD2888BAD4002A312F /* welcome_fitme.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = welcome_fitme.png; sourceTree = "<group>"; };
@@ -248,6 +247,22 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		55389BEF2898C95700CDEE89 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				558CFFBC2898D4600035375B /* AppSettingViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		55389BF22898C98100CDEE89 /* SwiftUIViews */ = {
+			isa = PBXGroup;
+			children = (
+				558CFFBA2898D3420035375B /* AppSettingView.swift */,
+			);
+			path = SwiftUIViews;
+			sourceTree = "<group>";
+		};
 		553D67C72890B52500CE57E3 /* PostLogin */ = {
 			isa = PBXGroup;
 			children = (
@@ -258,30 +273,6 @@
 				8758273B2896688800BA3B26 /* Accounts */,
 			);
 			path = PostLogin;
-			sourceTree = "<group>";
-		};
-		553D67CA2890BC0600CE57E3 /* SwiftUIViews */ = {
-			isa = PBXGroup;
-			children = (
-				553D67CE2890BC4900CE57E3 /* WorkoutView.swift */,
-				553D67D228933B4D00CE57E3 /* InAppPurchaseView.swift */,
-				553D67D628933CD600CE57E3 /* ChallengesView.swift */,
-				553D67D828935ADE00CE57E3 /* ChallengeDetailView.swift */,
-				A2192F0C289498D400FEFC92 /* AppSettingsView.swift */,
-			);
-			path = SwiftUIViews;
-			sourceTree = "<group>";
-		};
-		553D67CB2890BC1B00CE57E3 /* Controllers */ = {
-			isa = PBXGroup;
-			children = (
-				553D67CC2890BC3700CE57E3 /* WorkoutController.swift */,
-				553D67D02890C03D00CE57E3 /* HomeController.swift */,
-				553D67D428933BAC00CE57E3 /* ChallengesViewController.swift */,
-				553D67DA28935AEF00CE57E3 /* ChallengeDetailViewController.swift */,
-				A2192F0E289498E700FEFC92 /* AppSettingsViewController.swift */,
-			);
-			path = Controllers;
 			sourceTree = "<group>";
 		};
 		55A6A61F288F920A004A7C0C /* SwiftUIViews */ = {
@@ -576,6 +567,8 @@
 		8758273B2896688800BA3B26 /* Accounts */ = {
 			isa = PBXGroup;
 			children = (
+				55389BF22898C98100CDEE89 /* SwiftUIViews */,
+				55389BEF2898C95700CDEE89 /* Controller */,
 				87582746289673DC00BA3B26 /* View */,
 			);
 			path = Accounts;
@@ -909,6 +902,7 @@
 				8702286A28984335007F31F2 /* AudioController.swift in Sources */,
 				874C1E6B28982C2F00EE4E94 /* WorkoutCell.swift in Sources */,
 				874C1E6D28982C2F00EE4E94 /* StartWarmUpCell.swift in Sources */,
+				558CFFBD2898D4600035375B /* AppSettingViewController.swift in Sources */,
 				8795414C28961F370063E2BB /* BaseVC.swift in Sources */,
 				87C4A31228822B1000485A08 /* OnboardingViewController.swift in Sources */,
 				87236F3C288DB3F400CC2BDD /* CommonFunctions.swift in Sources */,
@@ -926,11 +920,7 @@
 				8795414A28960B850063E2BB /* AppEnums.swift in Sources */,
 				8795414828960A1C0063E2BB /* UserModel.swift in Sources */,
 				7CDA8CD0288A7CB90029ECB1 /* SecondStepVC.swift in Sources */,
-				A2192F0D289498D400FEFC92 /* AppSettingsView.swift in Sources */,
-				553D67D928935ADE00CE57E3 /* ChallengeDetailView.swift in Sources */,
 				ED986BF2288AE45A005BCA62 /* FirstStepVC.swift in Sources */,
-				553D67D328933B4D00CE57E3 /* InAppPurchaseView.swift in Sources */,
-				A2192F0F289498E700FEFC92 /* AppSettingsViewController.swift in Sources */,
 				874C1E7228982C3000EE4E94 /* WorkoutDetailFooter.swift in Sources */,
 				875827342896673900BA3B26 /* ExerciseLibraryViewController.swift in Sources */,
 				874C1E6128982C2F00EE4E94 /* ChallengesDetail.swift in Sources */,
@@ -971,6 +961,7 @@
 				557D6E24288A134A00906AAA /* SignUpController.swift in Sources */,
 				874C1E6C28982C2F00EE4E94 /* FinishWarmUpCell.swift in Sources */,
 				553D67C4289078FD00CE57E3 /* SignUp.swift in Sources */,
+				558CFFBB2898D3420035375B /* AppSettingView.swift in Sources */,
 				874C1E6A28982C2F00EE4E94 /* RestCell.swift in Sources */,
 				EDAA77FA2894A43A00FCA3D0 /* LocalizedString.swift in Sources */,
 				874C1E6E28982C2F00EE4E94 /* StartCoolDownCell.swift in Sources */,
