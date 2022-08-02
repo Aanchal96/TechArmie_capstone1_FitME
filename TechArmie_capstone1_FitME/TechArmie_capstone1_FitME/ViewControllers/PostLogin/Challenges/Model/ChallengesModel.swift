@@ -183,7 +183,7 @@ struct ProgramModel {
     
     let description : String
     let level : Int
-    let pendingWorkouts : [WorkoutModel]
+    var pendingWorkouts : [WorkoutModel]
     let createdAt : String
     let duration : Int //In Weeks
     let name : String
