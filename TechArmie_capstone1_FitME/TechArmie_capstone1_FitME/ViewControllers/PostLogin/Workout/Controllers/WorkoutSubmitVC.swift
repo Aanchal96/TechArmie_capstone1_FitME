@@ -40,7 +40,6 @@ class WorkoutSubmitVC: BaseVC {
         setStrings()
         
         lblCalories.text = (workoutData?.calories ?? 0).description
-        lblExercises.text = (workoutData?.noOfExecises ?? 0).description
         lblTime.text = totalTimeForWorkoutInMin
         
         onViewDidLoad()
