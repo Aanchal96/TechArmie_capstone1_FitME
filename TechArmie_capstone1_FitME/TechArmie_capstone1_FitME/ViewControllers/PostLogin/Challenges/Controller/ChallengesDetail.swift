@@ -101,7 +101,7 @@ extension ChallengeDetailVC {
 extension ChallengeDetailVC : UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout {
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return self.challenge?.workoutData.count ?? 0
+        return 30
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
@@ -111,9 +111,9 @@ extension ChallengeDetailVC : UICollectionViewDataSource, UICollectionViewDelega
         let currentDay = AppUserDefaults.value(forKey: .currentChallengeDay).int ?? 1
         let currentJoinedChallenge = AppUserDefaults.value(forKey: .currentChallengeID).stringValue
         if (self.challenge?.id ?? "") == currentJoinedChallenge {
-            cell.configure(item :self.challenge?.workoutData[indexPath.item], isCompleted: indexPath.item < currentDay - 1)
+            cell.configure(isCompleted: indexPath.item < currentDay - 1, index: indexPath.item + 1)
         } else {
-            cell.configure(item :self.challenge?.workoutData[indexPath.item], isCompleted: false)
+            cell.configure(isCompleted: false, index: indexPath.item + 1)
         }
         return cell
     }
