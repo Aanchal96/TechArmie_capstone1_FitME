@@ -28,7 +28,6 @@ class StartCoolDownCell: UITableViewCell {
     //MARK::- FINISHED
     func cellDisplayed(index : Int){
         setText()
-         AudioController.shared.playAudioFromPath(name: AudioName.workoutComplete)
         imgArrowUp.springAnnimate()
     }
     

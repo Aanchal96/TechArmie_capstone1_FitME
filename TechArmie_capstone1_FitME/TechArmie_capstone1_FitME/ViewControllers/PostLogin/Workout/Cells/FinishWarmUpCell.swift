@@ -32,7 +32,6 @@ class FinishWarmUpCell: UITableViewCell {
         swipeBtn.setTitle("SWIPE UP TO START", for: .normal)
         lblReadyForWorkout.text = "Ready for the workout?"
         imgUpArrow.springAnnimate()
-        AudioController.shared.playAudioFromPath(name: AudioName.warmupComplete)
 
     }
 }

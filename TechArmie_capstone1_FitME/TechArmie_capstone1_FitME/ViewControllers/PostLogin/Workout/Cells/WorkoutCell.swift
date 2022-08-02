@@ -99,14 +99,8 @@ class WorkoutCell: UITableViewCell {
         progressView.setProgress(0, animated: false)
        // self.progressView.trackTintColor = AppColors.themeGreenColor
         
-        guard let urlToPlay = DownloadController.shared.checkIfFileExists(data?.medias.first?.id ?? "", isAudio: true).1 else {return}
         
-        if data?.exeDuration == 5 || data?.exeDuration == 10 || data?.exeDuration == 15 || data?.exeDuration == 20 || data?.exeDuration == 25 || data?.exeDuration == 30 || data?.exeDuration == 35 || data?.exeDuration == 40 || data?.exeDuration == 45 || data?.exeDuration == 50 || data?.exeDuration == 55 || data?.exeDuration == 60 {
-            AudioController.shared.playAudioFromLocal(url: urlToPlay , nextAudioName: "en" + (data?.exeDuration.description ?? "") )
-
-        }else{
-            AudioController.shared.playAudioFromLocal(url: urlToPlay )
-        }
+   
         
         //        if isFirst{
         videoView?.play()
@@ -147,9 +141,7 @@ class WorkoutCell: UITableViewCell {
             }, completion: { [weak self] (val) in
                 self?.lblCircleCountDown.isHidden = true
                 if self?.timerCountdown == 3{
-                    DispatchQueue.main.async {
-                        AudioController.shared.playAudioFromPath(name:AudioName.go)
-                    }
+               
                 }else{
                     //play exercise time audios here when value is 7 or 8 //TODO
                 }
@@ -171,9 +163,7 @@ class WorkoutCell: UITableViewCell {
             }
             self?.timerVal = (self?.timerVal ?? 1) - 1
             self?.updateLabel()
-            if (self?.timerVal ?? 0) == 5{
-                AudioController.shared.playAudioFromPath(name: AudioName.exerciseComplete)
-            }
+        
         })
         
     }

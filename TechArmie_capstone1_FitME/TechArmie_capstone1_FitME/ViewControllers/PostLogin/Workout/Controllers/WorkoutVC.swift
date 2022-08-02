@@ -59,7 +59,7 @@ class WorkoutVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        btnMute.isHidden = true
         // Progress bars on Top to show exerc
         progressDone.transform = progressDone.transform.scaledBy(x: 1, y: 0.5)
         setLocalizedString()
@@ -71,8 +71,6 @@ class WorkoutVC: UIViewController {
     }
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(true)
-        AudioController.shared.unMuteAudio()
-        AudioController.shared.deInitializeAudioPlayer()
     }
     
     //MARK::- BUTTON ACTIONS
@@ -80,13 +78,7 @@ class WorkoutVC: UIViewController {
         self.navigationController?.popViewController(animated: true)
     }
     @IBAction func btnActionMute(_ sender: UIButton) {
-        sender.isSelected = !sender.isSelected
-        
-        if sender.isSelected{
-            AudioController.shared.muteAudio()
-        }else{
-            AudioController.shared.unMuteAudio()
-        }
+
     }
     
 }
