@@ -21,6 +21,7 @@ class AppSettingViewController: UIViewController {
     
     func logout() {
         GoogleLoginController.shared.logout()
+        AppUserDefaults.removeAllValues()
         let vc = OnboardingViewController.instantiate(fromAppStoryboard: .Main)
         let nvc = UINavigationController(rootViewController: vc)
         nvc.isNavigationBarHidden = true
