@@ -14,6 +14,7 @@ class FourthStepVC : BaseVC{
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        navigationController?.navigationBar.isHidden = true
     }
     
     @IBAction func back(_ sender: Any) {
