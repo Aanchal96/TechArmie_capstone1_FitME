@@ -20,6 +20,7 @@ class FirstStepVC: BaseVC {
     override func viewDidLoad() {
         super.viewDidLoad()
         onViewDidLoad()
+        navigationController?.navigationBar.isHidden = true
         //printDebug(AppUserDefaults.value(forKey: .fullUserProfile))
     }
     
