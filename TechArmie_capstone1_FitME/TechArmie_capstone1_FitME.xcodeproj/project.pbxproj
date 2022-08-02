@@ -36,6 +36,7 @@
 		87236F98288DC83300CC2BDD /* UIDeviceExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87236F97288DC83300CC2BDD /* UIDeviceExtension.swift */; };
 		87236F9A288DC88500CC2BDD /* DoubleExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87236F99288DC88500CC2BDD /* DoubleExtension.swift */; };
 		87236F9C288DCC8700CC2BDD /* NSErrorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87236F9B288DCC8700CC2BDD /* NSErrorExtension.swift */; };
+		874BC8AD28992C1D00A76D80 /* WorkoutVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 874C1E4328982C2F00EE4E94 /* WorkoutVC.swift */; };
 		874C1E0B2896F12900EE4E94 /* TabBarVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 874C1E0A2896F12900EE4E94 /* TabBarVC.swift */; };
 		874C1E2828982A1000EE4E94 /* Workout.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 874C1E0D28982A0F00EE4E94 /* Workout.storyboard */; };
 		874C1E2928982A1000EE4E94 /* WorkoutCells.swift in Sources */ = {isa = PBXBuildFile; fileRef = 874C1E0F28982A0F00EE4E94 /* WorkoutCells.swift */; };
@@ -891,6 +892,7 @@
 				7CDA8CD0288A7CB90029ECB1 /* SecondStepVC.swift in Sources */,
 				ED986BF2288AE45A005BCA62 /* FirstStepVC.swift in Sources */,
 				874C1E7228982C3000EE4E94 /* WorkoutDetailFooter.swift in Sources */,
+				874BC8AD28992C1D00A76D80 /* WorkoutVC.swift in Sources */,
 				875827342896673900BA3B26 /* ExerciseLibraryViewController.swift in Sources */,
 				874C1E6128982C2F00EE4E94 /* ChallengesDetail.swift in Sources */,
 				ED986BF2288AE45A005BCA62 /* FirstStepVC.swift in Sources */,
