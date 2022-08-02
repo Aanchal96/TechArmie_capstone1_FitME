@@ -29,7 +29,7 @@ extension UIApplication {
     public static var topMostVC: UIViewController? {
         let topVC = topViewController()
         if topVC == nil {
-            print("Error: You don't have any views set. You may be calling them in viewDidLoad. Try viewDidAppear instead.")
+            printDebug("Error: You don't have any views set. You may be calling them in viewDidLoad. Try viewDidAppear instead.")
         }
         return topVC
     }

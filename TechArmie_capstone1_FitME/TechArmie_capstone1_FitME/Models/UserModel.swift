@@ -13,6 +13,7 @@ import SwiftyJSON
 // MARK: ==============================================
 class AuthUser {
     
+    //TODO: remove extra
     static var main = AuthUser(AppUserDefaults.value(forKey: .fullUserProfile)) {
         didSet {
             main.saveToUserDefaults()
@@ -75,14 +76,7 @@ class AuthUser {
         let sub = json[ApiKey.subscription].dictionaryValue
         self.subscription = SubscriptionModel(JSON(sub))
     }
-    
-//    required init(_ googleUser: User?) {
-//
-//        id = googleUser?.uid ?? ""
-//        name = googleUser?.displayName ?? ""
-//        email = googleUser?.email ?? ""
-//    }
-    
+
     func saveToUserDefaults() {
         
         let dict: JSONDictionary = [ApiKey.email:email,
@@ -162,6 +156,7 @@ struct ProfileModel{
     var targetCalories = 0
 }
 
+// TODO: Remove if extra
 struct FitnessModel {
     
     let totalNo : Int

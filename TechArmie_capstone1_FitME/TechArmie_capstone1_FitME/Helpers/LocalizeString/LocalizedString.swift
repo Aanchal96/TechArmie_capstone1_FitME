@@ -14,11 +14,29 @@ enum LocalizedString: String{
     case ft = "ft"
     case kg = "kg"
     case lbs = "lbs"
+    case inch = "inch"
+    case yourAge = "Your Age"
+    case yourHeight = "Your Height"
+    case yourWeight = "Your Weight"
+    case yourWeightGoal = "Your Weight Goal"
+    case yearsOld = " years old"
     
     case noInternetConnection = "NoInternetConnection"
     case checkConnectionDesc = "checkConnectionDesc"
     case retry = "Retry"
     case error = "Error"
+    
+    case enterWeight = "Please enter your weight"
+    case enterHeight = "Please enter your height"
+    case enterWeightGoal = "Please enter weight goal"
+    
+    case enterValidHeight = "Height must be between 122 to 302 cm"
+    case enterValidWeightKg = "Weight must be between 20 to 300 kg"
+    case enterValidWeightKgGoal = "Goal Weight must be between 20 to 300 kg"
+
+    case enterValidWeightLbs = "Weight must be between 44 to 661 lbs"
+    case enterValidWeightLbsGoal = "Goal Weight must be between 44 to 661 lbs"
+    
     
     //MARK:- UIViewController Extension
     //=================================

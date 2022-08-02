@@ -6,7 +6,8 @@
 
 import Foundation
 
-//MARK:- Api Keys
+//TODO: - Remove extras
+//MARK: - Api Keys
 
 //=======================
 enum ApiKey {
@@ -33,7 +34,6 @@ enum ApiKey {
     static let taggedMeals = "taggedMeals"
     static let mealData = "mealData"
     //profile
-    static let currentLanguage = "currentLanguage"
     static let currentUnitMeasure = "currentUnitMeasure"
     static let initialUserWeight = "initialUserWeight"
     static let oldPassword = "oldPassword"

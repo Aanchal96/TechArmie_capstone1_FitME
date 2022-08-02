@@ -12,7 +12,7 @@
         <!--Onboarding View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController modalPresentationStyle="fullScreen" id="BYZ-38-t0r" customClass="OnboardingViewController" customModule="TechArmie_capstone1_FitME" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="OnboardingViewController" modalPresentationStyle="fullScreen" id="BYZ-38-t0r" customClass="OnboardingViewController" customModule="TechArmie_capstone1_FitME" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5q2-Zb-nTk">
                         <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -309,6 +309,9 @@
                                 </constraints>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="16"/>
                                 <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
+                                <connections>
+                                    <action selector="txtActionPickHeight:" destination="2FF-MP-frl" eventType="editingDidBegin" id="6ny-ag-Jfh"/>
+                                </connections>
                             </textField>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="8L6-0a-ddh">
                                 <rect key="frame" x="301" y="438" width="85" height="32"/>
@@ -536,7 +539,6 @@
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="exclusiveTouchEnabled" value="YES"/>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <action selector="back:" destination="2FF-MP-frl" eventType="touchUpInside" id="aWR-hZ-eeX"/>
                                     <action selector="back:" destination="Xxb-J2-ZqM" eventType="touchUpInside" id="fmy-JH-wDy"/>
                                 </connections>
                             </button>
@@ -1010,7 +1012,6 @@
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="exclusiveTouchEnabled" value="YES"/>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <action selector="back:" destination="2FF-MP-frl" eventType="touchUpInside" id="CPH-vB-5Oy"/>
                                     <action selector="back:" destination="0TC-cE-CCs" eventType="touchUpInside" id="O6o-9r-h7E"/>
                                 </connections>
                             </button>
@@ -1083,6 +1084,21 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XhL-bD-JQX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="121.96261682242989" y="74.514038876889856"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="brH-LG-7tg">
+            <objects>
+                <viewController id="kVG-Yc-QJu" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="QZa-uK-TyJ">
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="uQB-ku-BLf"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SS2-Yl-In3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="193" y="872"/>
         </scene>
     </scenes>
     <resources>

@@ -9,7 +9,7 @@ import UIKit
 
 enum AppStoryboard : String {
     
-    case Authentication, Main, Home
+    case Authentication, Main, TabBar, Workout, Challenges, ExerciseLibrary, Account
 }
 
 extension AppStoryboard {
