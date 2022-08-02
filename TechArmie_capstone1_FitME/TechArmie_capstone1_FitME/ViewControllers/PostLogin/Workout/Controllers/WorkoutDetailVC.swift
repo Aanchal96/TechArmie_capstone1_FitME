@@ -313,15 +313,15 @@ extension WorkoutDetailVC{
     func gotoStartWorkout(workoutArray : [ExerciseModel]){
         self.btnDownLoading.isHidden = true
         
-        let vc = WorkoutVC.instantiate(fromAppStoryboard: .Challenges)
-        vc.workoutData = self.workoutData
-        vc.workoutArray = workoutArray
-        vc.coolDownExerciseCount = self.arrCoolDown.count
-        vc.warmUpExercideCount = self.arrWarmup.count
-        vc.exerciseCount = self.arrExercises.count
-        vc.challengeData = self.challengeData
-        vc.isFromChallenge = isFromChallenge
-        self.navigationController?.pushViewController(vc, animated: true)
+//        let vc = WorkoutVC.instantiate(fromAppStoryboard: .Challenges)
+//        vc.workoutData = self.workoutData
+//        vc.workoutArray = workoutArray
+//        vc.coolDownExerciseCount = self.arrCoolDown.count
+//        vc.warmUpExercideCount = self.arrWarmup.count
+//        vc.exerciseCount = self.arrExercises.count
+//        vc.challengeData = self.challengeData
+//        vc.isFromChallenge = isFromChallenge
+//        self.navigationController?.pushViewController(vc, animated: true)
         
     }
 }
