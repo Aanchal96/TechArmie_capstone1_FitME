@@ -64,7 +64,7 @@ class WorkoutCell: UITableViewCell {
         self.timer?.invalidate()
         greenView.alpha = 0
         self.data = data
-        guard let urlToPlay = DownloadController.shared.checkIfFileExists(data?.medias.first?.id ?? "", isVideo: true).1 else {return}
+        guard let urlToPlay = DownloadController.shared.checkIfFileExists(AppDelegate.shared.videoURLChallenge, isVideo: true).1 else {return}
         videoView?.configure(url: urlToPlay , isLocal : true)
         self.timerVal = data?.exeDuration ?? 0
         self.initalExerciseTime = data?.exeDuration ?? 0
