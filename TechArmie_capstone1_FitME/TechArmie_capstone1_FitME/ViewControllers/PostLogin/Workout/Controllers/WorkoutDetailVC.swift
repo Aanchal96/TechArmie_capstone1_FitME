@@ -257,8 +257,8 @@ extension WorkoutDetailVC{
         completeWorkoutArray.append(contentsOf: arrExercises)
         completeWorkoutArray.append(contentsOf: arrCoolDown)
         
-        let videoArr : [String] = completeWorkoutArray.map({return $0.medias.first?.mediaUrl ?? ""})
-        let ids : [String] = completeWorkoutArray.map({return $0.medias.first?.id ?? ""})
+        let videoArr : [String] = completeWorkoutArray.map({_ in return AppDelegate.shared.videoURLChallenge})
+        let ids : [String] = videoArr
 
         CommonFunctions.showActivityLoader()
         

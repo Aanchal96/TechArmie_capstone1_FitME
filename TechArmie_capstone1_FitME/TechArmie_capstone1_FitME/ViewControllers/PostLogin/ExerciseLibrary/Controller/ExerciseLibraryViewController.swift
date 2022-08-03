@@ -94,7 +94,7 @@ extension ExerciseLibraryViewController : UITableViewDelegate , UITableViewDataS
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
         // open video controller
-        guard let videoURL = URL(string: self.filteredModel[indexPath.row].media.first?.mediaUrl ?? "") else {return}
+        guard let videoURL = URL(string: AppDelegate.shared.videoURLExercise) else {return}
         let player = AVPlayer(url: videoURL)
         let playerViewController = AVPlayerViewController()
         playerViewController.player = player

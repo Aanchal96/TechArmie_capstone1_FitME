@@ -16,6 +16,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     static let shared = UIApplication.shared.delegate as! AppDelegate
     var window: UIWindow?
     
+    
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         
         FirebaseApp.configure()
@@ -58,5 +59,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             self.window?.makeKeyAndVisible()
         }
     }
+    var videoURLExercise = "https://mealbucket.s3.amazonaws.com/15652632212915.Alternatingjumplunges.mp4"
+    var videoURLChallenge = "https://mealbucket.s3.amazonaws.com/15652638351737.Assisteddiamondpush-ups.mp4"
+
 }
 
