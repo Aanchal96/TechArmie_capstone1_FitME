@@ -10,6 +10,7 @@ import SwiftUI
 
 class AppSettingViewController: UIViewController {
 
+    @IBOutlet weak var profilePicture: UIImageView!
     override func viewDidLoad() {
         super.viewDidLoad()
 //        let childView = UIHostingController(rootView: AppSettingView(controller: self));
