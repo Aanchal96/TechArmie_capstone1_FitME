@@ -10,9 +10,13 @@ import SwiftUI
 
 class AppSettingViewController: UIViewController {
 
+    @IBOutlet weak var accountSettingView: UIView!
+    
     @IBOutlet weak var profilePicture: UIImageView!
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        addTapsOnView()
 //        let childView = UIHostingController(rootView: AppSettingView(controller: self));
 //        addChild(childView);
 //        childView.view.frame = view.bounds;
@@ -20,7 +24,7 @@ class AppSettingViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
-    func logout() {
+    @IBAction func logout(_ sender: Any) {
         GoogleLoginController.shared.logout()
         AppUserDefaults.removeAllValues()
         let vc = OnboardingViewController.instantiate(fromAppStoryboard: .Main)
@@ -30,5 +34,17 @@ class AppSettingViewController: UIViewController {
         nvc.setNavigationBarHidden(true, animated: true)
         AppDelegate.shared.window?.rootViewController = nvc
         AppDelegate.shared.window?.makeKeyAndVisible()
+    }
+    
+    @objc func accountSettingTap(tapGestureRecognizer: UITapGestureRecognizer) {
+        print("did tap view")
+    }
+}
+extension AppSettingViewController{
+    func addTapsOnView(){
+        let accountSettingTapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(accountSettingTap(tapGestureRecognizer:)))
+        
+        accountSettingView.isUserInteractionEnabled = true
+        accountSettingView.addGestureRecognizer(accountSettingTapGestureRecognizer)
     }
 }

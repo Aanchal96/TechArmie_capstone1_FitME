@@ -418,6 +418,9 @@
                                                         <real key="value" value="6"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="logout:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="2c7-Qi-b5s"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <color key="backgroundColor" systemColor="systemGray5Color"/>
@@ -477,6 +480,7 @@
                     </view>
                     <navigationItem key="navigationItem" title="User" id="4Eh-v5-9PW"/>
                     <connections>
+                        <outlet property="accountSettingView" destination="Lne-we-n6U" id="p4P-fG-DsQ"/>
                         <outlet property="profilePicture" destination="A9a-Xp-0ke" id="k8g-Kg-jYj"/>
                     </connections>
                 </viewController>
