@@ -124,7 +124,7 @@ struct AppSettingView: View {
             }.background(Color(CustomColors.white))
         }.padding()
         Button {
-            self.controller.logout()
+            
         } label: {
             Text("Logout").frame(width: 200).padding()
         }.background(Color(CustomColors.lightGray)).foregroundColor(Color(CustomColors.black)).cornerRadius(15)
