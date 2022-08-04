@@ -105,10 +105,12 @@
 		87E58211288DACE8003AFEA7 /* UIViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87E58210288DACE8003AFEA7 /* UIViewControllerExtension.swift */; };
 		87FF9560288B5DA300A05A07 /* bg_video.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 87FF955F288B5DA300A05A07 /* bg_video.mp4 */; };
 		D86BF5A92898CF9E00805DDD /* WorkoutVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 874C1E4328982C2F00EE4E94 /* WorkoutVC.swift */; };
+		ED0D1C38289C847100939D64 /* PrivacyPolicyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED0D1C37289C847100939D64 /* PrivacyPolicyViewController.swift */; };
 		ED19CC2B289B300A00C50FA8 /* AccountSettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED19CC2A289B300A00C50FA8 /* AccountSettingViewController.swift */; };
 		ED7036E02888BAD4002A312F /* welcome_fitme.png in Resources */ = {isa = PBXBuildFile; fileRef = ED7036DD2888BAD4002A312F /* welcome_fitme.png */; };
 		ED7036E32888BAE9002A312F /* logo_FitME.png in Resources */ = {isa = PBXBuildFile; fileRef = ED7036E22888BAE9002A312F /* logo_FitME.png */; };
 		ED986BF2288AE45A005BCA62 /* FirstStepVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED986BF1288AE45A005BCA62 /* FirstStepVC.swift */; };
+		EDA1EE23289C7B9F00C1D436 /* TermsAndConditionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDA1EE22289C7B9F00C1D436 /* TermsAndConditionsViewController.swift */; };
 		EDAA77FA2894A43A00FCA3D0 /* LocalizedString.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDAA77F92894A43A00FCA3D0 /* LocalizedString.swift */; };
 		EDF8F41F289880D000D3345F /* UIMultiPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDF8F41E289880D000D3345F /* UIMultiPicker.swift */; };
 		EDFD6210288B4EC70026F779 /* UITextFieldExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDFD620F288B4EC70026F779 /* UITextFieldExtension.swift */; };
@@ -216,10 +218,12 @@
 		87FF955F288B5DA300A05A07 /* bg_video.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = bg_video.mp4; sourceTree = "<group>"; };
 		D9B1E93B6AAF5BFADC09ECDE /* Pods_TechArmie_capstone1_FitME.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TechArmie_capstone1_FitME.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E6CB01F1DE75F6DB4537983D /* Pods-TechArmie_capstone1_FitME.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TechArmie_capstone1_FitME.debug.xcconfig"; path = "Target Support Files/Pods-TechArmie_capstone1_FitME/Pods-TechArmie_capstone1_FitME.debug.xcconfig"; sourceTree = "<group>"; };
+		ED0D1C37289C847100939D64 /* PrivacyPolicyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrivacyPolicyViewController.swift; sourceTree = "<group>"; };
 		ED19CC2A289B300A00C50FA8 /* AccountSettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountSettingViewController.swift; sourceTree = "<group>"; };
 		ED7036DD2888BAD4002A312F /* welcome_fitme.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = welcome_fitme.png; sourceTree = "<group>"; };
 		ED7036E22888BAE9002A312F /* logo_FitME.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo_FitME.png; sourceTree = "<group>"; };
 		ED986BF1288AE45A005BCA62 /* FirstStepVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstStepVC.swift; sourceTree = "<group>"; };
+		EDA1EE22289C7B9F00C1D436 /* TermsAndConditionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TermsAndConditionsViewController.swift; sourceTree = "<group>"; };
 		EDAA77F92894A43A00FCA3D0 /* LocalizedString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalizedString.swift; sourceTree = "<group>"; };
 		EDF8F41E289880D000D3345F /* UIMultiPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIMultiPicker.swift; sourceTree = "<group>"; };
 		EDFD620F288B4EC70026F779 /* UITextFieldExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITextFieldExtension.swift; sourceTree = "<group>"; };
@@ -663,6 +667,7 @@
 		ED7036EE2888BFD1002A312F /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				EDA1EE24289C7EA200C1D436 /* HelpAndSupport */,
 				ED7036EF2888C011002A312F /* Base */,
 				ED7036F02888C020002A312F /* PreLogin */,
 				553D67C72890B52500CE57E3 /* PostLogin */,
@@ -706,6 +711,15 @@
 				ED7036E22888BAE9002A312F /* logo_FitME.png */,
 			);
 			path = Images;
+			sourceTree = "<group>";
+		};
+		EDA1EE24289C7EA200C1D436 /* HelpAndSupport */ = {
+			isa = PBXGroup;
+			children = (
+				EDA1EE22289C7B9F00C1D436 /* TermsAndConditionsViewController.swift */,
+				ED0D1C37289C847100939D64 /* PrivacyPolicyViewController.swift */,
+			);
+			path = HelpAndSupport;
 			sourceTree = "<group>";
 		};
 		EDAA77F82894A41F00FCA3D0 /* LocalizeString */ = {
@@ -952,6 +966,8 @@
 				874C1E6A28982C2F00EE4E94 /* RestCell.swift in Sources */,
 				EDAA77FA2894A43A00FCA3D0 /* LocalizedString.swift in Sources */,
 				D86BF5A92898CF9E00805DDD /* WorkoutVC.swift in Sources */,
+				EDA1EE23289C7B9F00C1D436 /* TermsAndConditionsViewController.swift in Sources */,
+				ED0D1C38289C847100939D64 /* PrivacyPolicyViewController.swift in Sources */,
 				874C1E6E28982C2F00EE4E94 /* StartCoolDownCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
