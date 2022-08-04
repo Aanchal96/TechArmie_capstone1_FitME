@@ -18,6 +18,16 @@ class ForgotPasswordViewController: UIViewController {
         view.addSubview(childView.view);
     }
     
+    func sendPasswordResetLink(email: String, success : @escaping() -> (), completion : @escaping() -> ()) {
+        GoogleLoginController.shared.sendForgotPasswordLink(email: email, fromViewController: self) {
+            success()
+            completion()
+        } error: {
+            printDebug("error")
+            completion()
+        }
+    }
+    
 
     /*
     // MARK: - Navigation
@@ -28,5 +38,7 @@ class ForgotPasswordViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
+    
+    
 
 }

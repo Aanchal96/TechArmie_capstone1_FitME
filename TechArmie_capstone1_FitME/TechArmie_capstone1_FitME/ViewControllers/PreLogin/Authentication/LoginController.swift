@@ -59,6 +59,11 @@ class LoginController: BaseVC {
             CommonFunctions.showToast(error.localizedDescription)
         }
     }
+    
+    func navigateToForgotPassword() {
+        let vc = ForgotPasswordViewController.instantiate(fromAppStoryboard: .Authentication)
+        self.navigationController?.pushViewController(vc, animated: true)
+    }
 }
 
 extension DocumentSnapshot {

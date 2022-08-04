@@ -59,7 +59,11 @@ struct Login: View {
                 
                 HStack {
                     Spacer()
-                    Text("Forgot Your Password ?")
+                    Button {
+                        self.controller.navigateToForgotPassword();
+                    } label: {
+                        Text("Forgot Your Password ?")
+                    }
                 }
                 
                 EmptySpace()
