@@ -6,13 +6,14 @@
 //
 
 import UIKit
-//import SwiftUI
+import StoreKit
 
 class AppSettingViewController: UIViewController {
 
     @IBOutlet weak var accountSettingView: UIView!
-    
     @IBOutlet weak var shareView: UIView!
+    @IBOutlet weak var rateUsView: UIView!
+    
     @IBOutlet weak var profilePicture: UIImageView!
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -72,6 +73,12 @@ class AppSettingViewController: UIViewController {
         activityViewController.isModalInPresentation = true
         self.present(activityViewController, animated: true, completion: nil)
     }
+    
+    @objc func rateUs(tapGestureRecognizer: UITapGestureRecognizer) {
+        if let scene = UIApplication.shared.connectedScenes.first(where: { $0.activationState == .foregroundActive }) as? UIWindowScene {
+            SKStoreReviewController.requestReview(in: scene)
+        }
+    }
 }
 extension AppSettingViewController{
     func addTapsOnView(){
@@ -83,5 +90,9 @@ extension AppSettingViewController{
         let shareTapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(share(tapGestureRecognizer:)))
         shareView.isUserInteractionEnabled = true;
         shareView.addGestureRecognizer(shareTapGestureRecognizer)
+        
+        let rateUsTapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(rateUs(tapGestureRecognizer:)))
+        rateUsView.isUserInteractionEnabled = true;
+        rateUsView.addGestureRecognizer(rateUsTapGestureRecognizer)
     }
 }
