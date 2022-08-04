@@ -37,7 +37,8 @@ class AppSettingViewController: UIViewController {
     }
     
     @objc func accountSettingTap(tapGestureRecognizer: UITapGestureRecognizer) {
-        print("did tap view")
+        let vc = AccountSettingViewController.instantiate(fromAppStoryboard: .Account)
+        self.navigationController?.pushViewController(vc, animated: true)
     }
 }
 extension AppSettingViewController{
