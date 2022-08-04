@@ -6,7 +6,7 @@
 //
 
 import UIKit
-import SwiftUI
+//import SwiftUI
 
 class AppSettingViewController: UIViewController {
 
