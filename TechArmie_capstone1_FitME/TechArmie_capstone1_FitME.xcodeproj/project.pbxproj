@@ -103,6 +103,7 @@
 		87E58211288DACE8003AFEA7 /* UIViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87E58210288DACE8003AFEA7 /* UIViewControllerExtension.swift */; };
 		87FF9560288B5DA300A05A07 /* bg_video.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 87FF955F288B5DA300A05A07 /* bg_video.mp4 */; };
 		D86BF5A92898CF9E00805DDD /* WorkoutVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 874C1E4328982C2F00EE4E94 /* WorkoutVC.swift */; };
+		ED0D1C38289C847100939D64 /* PrivacyPolicyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED0D1C37289C847100939D64 /* PrivacyPolicyViewController.swift */; };
 		ED19CC2B289B300A00C50FA8 /* AccountSettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED19CC2A289B300A00C50FA8 /* AccountSettingViewController.swift */; };
 		ED7036E02888BAD4002A312F /* welcome_fitme.png in Resources */ = {isa = PBXBuildFile; fileRef = ED7036DD2888BAD4002A312F /* welcome_fitme.png */; };
 		ED7036E32888BAE9002A312F /* logo_FitME.png in Resources */ = {isa = PBXBuildFile; fileRef = ED7036E22888BAE9002A312F /* logo_FitME.png */; };
@@ -213,6 +214,7 @@
 		87FF955F288B5DA300A05A07 /* bg_video.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = bg_video.mp4; sourceTree = "<group>"; };
 		D9B1E93B6AAF5BFADC09ECDE /* Pods_TechArmie_capstone1_FitME.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TechArmie_capstone1_FitME.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E6CB01F1DE75F6DB4537983D /* Pods-TechArmie_capstone1_FitME.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TechArmie_capstone1_FitME.debug.xcconfig"; path = "Target Support Files/Pods-TechArmie_capstone1_FitME/Pods-TechArmie_capstone1_FitME.debug.xcconfig"; sourceTree = "<group>"; };
+		ED0D1C37289C847100939D64 /* PrivacyPolicyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrivacyPolicyViewController.swift; sourceTree = "<group>"; };
 		ED19CC2A289B300A00C50FA8 /* AccountSettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountSettingViewController.swift; sourceTree = "<group>"; };
 		ED7036DD2888BAD4002A312F /* welcome_fitme.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = welcome_fitme.png; sourceTree = "<group>"; };
 		ED7036E22888BAE9002A312F /* logo_FitME.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo_FitME.png; sourceTree = "<group>"; };
@@ -709,6 +711,7 @@
 			isa = PBXGroup;
 			children = (
 				EDA1EE22289C7B9F00C1D436 /* TermsAndConditionsViewController.swift */,
+				ED0D1C37289C847100939D64 /* PrivacyPolicyViewController.swift */,
 			);
 			path = HelpAndSupport;
 			sourceTree = "<group>";
@@ -956,6 +959,7 @@
 				EDAA77FA2894A43A00FCA3D0 /* LocalizedString.swift in Sources */,
 				D86BF5A92898CF9E00805DDD /* WorkoutVC.swift in Sources */,
 				EDA1EE23289C7B9F00C1D436 /* TermsAndConditionsViewController.swift in Sources */,
+				ED0D1C38289C847100939D64 /* PrivacyPolicyViewController.swift in Sources */,
 				874C1E6E28982C2F00EE4E94 /* StartCoolDownCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -15,8 +15,8 @@ class AppSettingViewController: UIViewController {
     @IBOutlet weak var rateUsView: UIView!
     @IBOutlet weak var termsAndConditionsView: UIView!
     @IBOutlet weak var privacyPolicyView: UIView!
-    
     @IBOutlet weak var profilePicture: UIImageView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -81,15 +81,19 @@ class AppSettingViewController: UIViewController {
         if let scene = UIApplication.shared.connectedScenes.first(where: { $0.activationState == .foregroundActive }) as? UIWindowScene {
             SKStoreReviewController.requestReview(in: scene)
         }
+    }
+    
     @objc func termsAndConditionTap(tapGestureRecognizer: UITapGestureRecognizer) {
         let vc = TermsAndConditionsViewController.instantiate(fromAppStoryboard: .Account)
         self.navigationController?.pushViewController(vc, animated: true)
     }
     
     @objc func privacyPolicyTap(tapGestureRecognizer: UITapGestureRecognizer) {
-        
+        let vc = PrivacyPolicyViewController.instantiate(fromAppStoryboard: .Account)
+        self.navigationController?.pushViewController(vc, animated: true)
     }
 }
+
 extension AppSettingViewController{
     func addTapsOnView(){
         let accountSettingTapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(accountSettingTap(tapGestureRecognizer:)))
@@ -103,8 +107,13 @@ extension AppSettingViewController{
         let rateUsTapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(rateUs(tapGestureRecognizer:)))
         rateUsView.isUserInteractionEnabled = true;
         rateUsView.addGestureRecognizer(rateUsTapGestureRecognizer)
+        
         let termsAndConditionTapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(termsAndConditionTap(tapGestureRecognizer:)))
         termsAndConditionsView.isUserInteractionEnabled = true
         termsAndConditionsView.addGestureRecognizer(termsAndConditionTapGestureRecognizer)
+        
+        let privacyPolicyTapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(privacyPolicyTap(tapGestureRecognizer:)))
+        privacyPolicyView.isUserInteractionEnabled = true
+        privacyPolicyView.addGestureRecognizer(privacyPolicyTapGestureRecognizer)
     }
 }
