@@ -482,6 +482,7 @@
                     <connections>
                         <outlet property="accountSettingView" destination="Lne-we-n6U" id="p4P-fG-DsQ"/>
                         <outlet property="profilePicture" destination="A9a-Xp-0ke" id="k8g-Kg-jYj"/>
+                        <outlet property="shareView" destination="EjV-hS-Ijy" id="36w-XJ-UNK"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
