@@ -21,6 +21,8 @@
 		7CDA8CD4288A85730029ECB1 /* ThirdStepVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CDA8CD3288A85730029ECB1 /* ThirdStepVC.swift */; };
 		7CDA8CDA288A9E090029ECB1 /* FourthStepVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CDA8CD9288A9E090029ECB1 /* FourthStepVC.swift */; };
 		7CDA8CDC288A9E3B0029ECB1 /* FifthStepVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CDA8CDB288A9E3B0029ECB1 /* FifthStepVC.swift */; };
+		7CF9CB84289BAAD200482628 /* subscription.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 7CF9CB83289BAAD200482628 /* subscription.mp4 */; };
+		7CF9CB88289BAC8600482628 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CF9CB87289BAC8600482628 /* ViewController.swift */; };
 		87236F32288DB16000CC2BDD /* AppUserDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87236F27288DB16000CC2BDD /* AppUserDefaults.swift */; };
 		87236F33288DB16000CC2BDD /* ApiKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87236F28288DB16000CC2BDD /* ApiKeys.swift */; };
 		87236F34288DB16000CC2BDD /* AppColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87236F29288DB16000CC2BDD /* AppColors.swift */; };
@@ -128,6 +130,8 @@
 		7CDA8CD3288A85730029ECB1 /* ThirdStepVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdStepVC.swift; sourceTree = "<group>"; };
 		7CDA8CD9288A9E090029ECB1 /* FourthStepVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FourthStepVC.swift; sourceTree = "<group>"; };
 		7CDA8CDB288A9E3B0029ECB1 /* FifthStepVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FifthStepVC.swift; sourceTree = "<group>"; };
+		7CF9CB83289BAAD200482628 /* subscription.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = subscription.mp4; sourceTree = "<group>"; };
+		7CF9CB87289BAC8600482628 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		87236F27288DB16000CC2BDD /* AppUserDefaults.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppUserDefaults.swift; sourceTree = "<group>"; };
 		87236F28288DB16000CC2BDD /* ApiKeys.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiKeys.swift; sourceTree = "<group>"; };
 		87236F29288DB16000CC2BDD /* AppColors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppColors.swift; sourceTree = "<group>"; };
@@ -250,6 +254,7 @@
 			children = (
 				558CFFBC2898D4600035375B /* AppSettingViewController.swift */,
 				ED19CC2A289B300A00C50FA8 /* AccountSettingViewController.swift */,
+				7CF9CB87289BAC8600482628 /* ViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -281,6 +286,14 @@
 				553D67C3289078FD00CE57E3 /* SignUp.swift */,
 			);
 			path = SwiftUIViews;
+			sourceTree = "<group>";
+		};
+		7CF9CB82289BAAAA00482628 /* Video */ = {
+			isa = PBXGroup;
+			children = (
+				7CF9CB83289BAAD200482628 /* subscription.mp4 */,
+			);
+			path = Video;
 			sourceTree = "<group>";
 		};
 		87236F23288DB16000CC2BDD /* AppUtilities */ = {
@@ -634,6 +647,7 @@
 		ED7036DC2888BAA7002A312F /* Assets */ = {
 			isa = PBXGroup;
 			children = (
+				7CF9CB82289BAAAA00482628 /* Video */,
 				ED7036F32888C179002A312F /* Images */,
 				87C4A31628822B1200485A08 /* Assets.xcassets */,
 			);
@@ -823,6 +837,7 @@
 				874C1E3928982A1000EE4E94 /* Beginner3.jpg in Resources */,
 				87FF9560288B5DA300A05A07 /* bg_video.mp4 in Resources */,
 				874C1E2F28982A1000EE4E94 /* Novice1.jpg in Resources */,
+				7CF9CB84289BAAD200482628 /* subscription.mp4 in Resources */,
 				ED7036E02888BAD4002A312F /* welcome_fitme.png in Resources */,
 				7C25508D288A501D00766C04 /* Main.storyboard in Resources */,
 				87C4A31A28822B1200485A08 /* LaunchScreen.storyboard in Resources */,
@@ -950,6 +965,7 @@
 				874C1E6628982C2F00EE4E94 /* ChallengesModel.swift in Sources */,
 				874C1E7428982C3000EE4E94 /* VideoView.swift in Sources */,
 				87C4A30E28822B1000485A08 /* AppDelegate.swift in Sources */,
+				7CF9CB88289BAC8600482628 /* ViewController.swift in Sources */,
 				874C1E6F28982C2F00EE4E94 /* WorkoutDetailHeader.swift in Sources */,
 				557D6E24288A134A00906AAA /* SignUpController.swift in Sources */,
 				874C1E6C28982C2F00EE4E94 /* FinishWarmUpCell.swift in Sources */,
