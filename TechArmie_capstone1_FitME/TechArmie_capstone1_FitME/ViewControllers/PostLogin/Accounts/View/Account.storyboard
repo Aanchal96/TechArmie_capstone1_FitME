@@ -605,8 +605,8 @@
                                                         <color key="textColor" red="0.15686274510000001" green="0.15686274510000001" blue="0.15686274510000001" alpha="1" colorSpace="calibratedRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="bhautikpethani42@gmail.com" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ufW-am-iyl">
-                                                        <rect key="frame" x="163" y="13" width="212" height="22"/>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="user@something.com" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ufW-am-iyl">
+                                                        <rect key="frame" x="221" y="13" width="154" height="22"/>
                                                         <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="16"/>
                                                         <color key="textColor" red="0.15686274510000001" green="0.15686274510000001" blue="0.15686274510000001" alpha="1" colorSpace="calibratedRGB"/>
                                                         <nil key="highlightedColor"/>
@@ -692,15 +692,15 @@
                                         </userDefinedRuntimeAttributes>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="XUW-MC-3DQ">
-                                        <rect key="frame" x="12" y="272" width="390" height="48"/>
+                                        <rect key="frame" x="12" y="252" width="390" height="48"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TOW-wY-mtf">
                                                 <rect key="frame" x="0.0" y="0.0" width="390" height="48"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Delete The Account" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b8L-RB-JqH">
-                                                        <rect key="frame" x="15" y="11.5" width="167" height="25"/>
+                                                        <rect key="frame" x="15" y="13" width="144.5" height="22"/>
                                                         <color key="tintColor" red="0.94899999999999995" green="0.30783791830000001" blue="0.1340853467" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                        <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="18"/>
+                                                        <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="16"/>
                                                         <color key="textColor" systemColor="systemRedColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
@@ -730,7 +730,7 @@
                                     <constraint firstAttribute="trailing" secondItem="0ch-9q-pt4" secondAttribute="trailing" constant="12" id="Dyz-OB-Nlw"/>
                                     <constraint firstAttribute="width" secondItem="MEC-PM-vge" secondAttribute="height" multiplier="414:787" id="LmS-BP-fKz"/>
                                     <constraint firstItem="0ch-9q-pt4" firstAttribute="top" secondItem="MEC-PM-vge" secondAttribute="top" constant="40" id="R9V-38-319"/>
-                                    <constraint firstItem="XUW-MC-3DQ" firstAttribute="top" secondItem="0ch-9q-pt4" secondAttribute="bottom" constant="40" id="XhV-VX-3lc"/>
+                                    <constraint firstItem="XUW-MC-3DQ" firstAttribute="top" secondItem="0ch-9q-pt4" secondAttribute="bottom" constant="20" id="XhV-VX-3lc"/>
                                     <constraint firstItem="XUW-MC-3DQ" firstAttribute="leading" secondItem="MEC-PM-vge" secondAttribute="leading" constant="12" id="hV8-BX-uj2"/>
                                 </constraints>
                             </view>
@@ -748,6 +748,9 @@
                         </constraints>
                     </view>
                     <extendedEdge key="edgesForExtendedLayout" bottom="YES"/>
+                    <connections>
+                        <outlet property="backButton" destination="LCA-fW-h85" id="g7M-bS-1Mz"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ROn-Xp-Nlc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
