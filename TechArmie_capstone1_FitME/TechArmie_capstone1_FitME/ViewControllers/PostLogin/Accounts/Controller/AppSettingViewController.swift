@@ -11,6 +11,7 @@ import StoreKit
 class AppSettingViewController: UIViewController {
 
     @IBOutlet weak var accountSettingView: UIView!
+    @IBOutlet weak var subscriptionView: UIView!
     @IBOutlet weak var shareView: UIView!
     @IBOutlet weak var rateUsView: UIView!
     @IBOutlet weak var termsAndConditionsView: UIView!
@@ -49,6 +50,14 @@ class AppSettingViewController: UIViewController {
         let vc = AccountSettingViewController.instantiate(fromAppStoryboard: .Account)
         self.navigationController?.pushViewController(vc, animated: true)
     }
+
+    @objc func subscriptionViewTap(tapGestureRecognizer: UITapGestureRecognizer) {
+        let vc = SubscriptionViewController.instantiate(fromAppStoryboard: .Account)
+        vc.modalPresentationStyle = .overCurrentContext
+        vc.modalTransitionStyle = .coverVertical
+        self.navigationController?.presentVC(vc)
+    }
+
     @objc func share(tapGestureRecognizer: UITapGestureRecognizer) {
         let firstActivityItem = "Share FitMe with loved ones 🚴🏻‍♀️🏊🏻‍♀️🏋🏻‍♀️🧘🏻‍♀️🤸🏻🎉 \n\n\n https://fitme.test-project.link/share.html"
         let activityViewController : UIActivityViewController = UIActivityViewController(
@@ -109,6 +118,14 @@ class AppSettingViewController: UIViewController {
 extension AppSettingViewController{
     func addTapsOnView(){
         let accountSettingTapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(accountSettingTap(tapGestureRecognizer:)))
+
+        let subscriptionViewTapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(subscriptionViewTap(tapGestureRecognizer:)))
+        
+        accountSettingView.isUserInteractionEnabled = true
+        accountSettingView.addGestureRecognizer(accountSettingTapGestureRecognizer)
+        
+        subscriptionView.isUserInteractionEnabled = true
+        subscriptionView.addGestureRecognizer(subscriptionViewTapGestureRecognizer)
         accountSettingView.isUserInteractionEnabled = true
         accountSettingView.addGestureRecognizer(accountSettingTapGestureRecognizer)
         
