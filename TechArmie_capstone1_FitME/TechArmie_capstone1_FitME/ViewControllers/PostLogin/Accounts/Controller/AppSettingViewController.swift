@@ -119,11 +119,11 @@ class AppSettingViewController: UIViewController {
     }
     
     @objc func feedbackAndSupportTap(tapGestureRecognizer: UITapGestureRecognizer) {
-//        let mailtoString = "mailto:nemecek@support.com".addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed)
-//        let mailtoUrl = URL(string: mailtoString!)!
-//        if UIApplication.shared.canOpenURL(mailtoUrl) {
-//                UIApplication.shared.canOpenURL(mailtoUrl)
-//        }
+        let mailtoString = "mailto:fitme@support.com".addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed)
+        let mailtoUrl = URL(string: mailtoString!)!
+        if UIApplication.shared.canOpenURL(mailtoUrl) {
+                UIApplication.shared.canOpenURL(mailtoUrl)
+        }
     }
 
 }
