@@ -13,15 +13,26 @@ class SubscriptionViewController : BaseVC {
     //MARK::- OUTLETS
 
     
-
+    @IBOutlet weak var btnBack: UIImageView!
+    @IBOutlet weak var btnGoPremium: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.navigationController?.navigationBar.isHidden = true
+        
+        addTapsOnView()
+      }
     
-
-    
-   
-   
+    @objc func btnBackTap(tapGestureRecognizer: UITapGestureRecognizer) {
+        self.navigationController?.popViewController(animated: true)
+    }
 }
+extension SubscriptionViewController{
+    func addTapsOnView(){
+        let btnBackTapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(btnBackTap(tapGestureRecognizer:)))
+        
+        btnBack.isUserInteractionEnabled = true
+        btnBack.addGestureRecognizer(btnBackTapGestureRecognizer)
+    }
 }
 
     
