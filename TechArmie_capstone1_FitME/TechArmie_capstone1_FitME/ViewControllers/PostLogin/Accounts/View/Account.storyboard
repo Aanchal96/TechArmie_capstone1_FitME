@@ -753,7 +753,12 @@
                     </view>
                     <extendedEdge key="edgesForExtendedLayout" bottom="YES"/>
                     <connections>
+                        <outlet property="ageView" destination="lVP-NS-QTD" id="J9n-3y-opm"/>
                         <outlet property="backButton" destination="LCA-fW-h85" id="g7M-bS-1Mz"/>
+                        <outlet property="currentWeightView" destination="X2x-bN-Hnm" id="lGs-Zi-DP3"/>
+                        <outlet property="deleteAccountView" destination="TOW-wY-mtf" id="dYH-Dd-0fT"/>
+                        <outlet property="nameView" destination="Jzg-WM-6pk" id="F6U-5L-kKV"/>
+                        <outlet property="profilePictureView" destination="pGq-DN-wbT" id="1Mw-ZV-gMU"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ROn-Xp-Nlc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
