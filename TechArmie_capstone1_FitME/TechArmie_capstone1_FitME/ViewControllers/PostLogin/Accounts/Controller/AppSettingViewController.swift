@@ -48,7 +48,6 @@ class AppSettingViewController: UIViewController {
         let vc = AccountSettingViewController.instantiate(fromAppStoryboard: .Account)
         self.navigationController?.pushViewController(vc, animated: true)
     }
-    
     @objc func share(tapGestureRecognizer: UITapGestureRecognizer) {
         let firstActivityItem = "Share FitMe with loved ones 🚴🏻‍♀️🏊🏻‍♀️🏋🏻‍♀️🧘🏻‍♀️🤸🏻🎉 \n\n\n https://fitme.test-project.link/share.html"
         let activityViewController : UIActivityViewController = UIActivityViewController(
@@ -95,6 +94,10 @@ class AppSettingViewController: UIViewController {
         let vc = PrivacyPolicyViewController.instantiate(fromAppStoryboard: .Account)
         self.navigationController?.pushViewController(vc, animated: true)
     }
+//    @objc func goPremiumTap(tapGestureRecognizer: UITapGestureRecognizer) {
+//        let vc = SubscriptionViewController.instantiate(fromAppStoryboard: .Account)
+//        self.navigationController?.pushViewController(vc, animated: true)
+//    }
 }
 
 extension AppSettingViewController{
@@ -118,5 +121,13 @@ extension AppSettingViewController{
         let privacyPolicyTapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(privacyPolicyTap(tapGestureRecognizer:)))
         privacyPolicyView.isUserInteractionEnabled = true
         privacyPolicyView.addGestureRecognizer(privacyPolicyTapGestureRecognizer)
+
+       // let goPremiumTapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(goPremiumTap(tapGestureRecognizer:)))
+        
+        accountSettingView.isUserInteractionEnabled = true
+        accountSettingView.addGestureRecognizer(accountSettingTapGestureRecognizer)
+        
+//        accountSettingView.isUserInteractionEnabled = true
+//        accountSettingView.addGestureRecognizer(goPremiumTapGestureRecognizer)
     }
 }
