@@ -61,7 +61,7 @@ struct SignUp: View {
                         Group {
                             TextField("Name", text: $name, onEditingChanged: { (isChanged) in
                                 if !isChanged {
-                                    if textFieldValidatorEmail(value: self.name) {
+                                    if self.name.count < 2 {
                                         self.isNameValid = true
                                     } else {
                                         self.isNameValid = false
@@ -128,7 +128,10 @@ struct SignUp: View {
                             return
                         }
                         if password.count < 6 {
-                            if password.isBlank {isPasswordValid = false}; return;
+                            isPasswordValid = false; return;
+                        }
+                        if password != cPassword {
+                            isCPasswordValid = false; return;
                         }
                         self.controller.emailPasswordFirebaseLogin(email: email, password: password, name: name)
                     } label: {
