@@ -3,9 +3,9 @@
 <plist version="1.0">
 <dict>
 	<key>CLIENT_ID</key>
-	<string>263999661827-6c4c50qasrsngd6438u7jd6j3i7akl3c.apps.googleusercontent.com</string>
+	<string>263999661827-r9r35d6kjmii1n3vfibom7q9rgr9crlb.apps.googleusercontent.com</string>
 	<key>REVERSED_CLIENT_ID</key>
-	<string>com.googleusercontent.apps.263999661827-6c4c50qasrsngd6438u7jd6j3i7akl3c</string>
+	<string>com.googleusercontent.apps.263999661827-r9r35d6kjmii1n3vfibom7q9rgr9crlb</string>
 	<key>API_KEY</key>
 	<string>AIzaSyBRMxPU7zFmBZ92wzkFnWa3qOLmNy96L5c</string>
 	<key>GCM_SENDER_ID</key>
@@ -13,7 +13,7 @@
 	<key>PLIST_VERSION</key>
 	<string>1</string>
 	<key>BUNDLE_ID</key>
-	<string>com.techArmie.fitME</string>
+	<string>com.techArmie.fitME.app</string>
 	<key>PROJECT_ID</key>
 	<string>fitme-12385</string>
 	<key>STORAGE_BUCKET</key>
@@ -29,6 +29,8 @@
 	<key>IS_SIGNIN_ENABLED</key>
 	<true></true>
 	<key>GOOGLE_APP_ID</key>
-	<string>1:263999661827:ios:64241f0b346cb5ef076b36</string>
+	<string>1:263999661827:ios:b1b8d4b4b319e668076b36</string>
+	<key>DATABASE_URL</key>
+	<string>https://fitme-12385-default-rtdb.firebaseio.com</string>
 </dict>
 </plist>
