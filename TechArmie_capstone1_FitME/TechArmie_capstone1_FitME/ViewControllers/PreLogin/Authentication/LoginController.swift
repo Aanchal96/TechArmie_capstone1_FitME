@@ -18,6 +18,7 @@ class LoginController: BaseVC {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         let childView = UIHostingController(rootView: Login(controller: self));
         addChild(childView);
         childView.view.frame = theContainer.bounds;

@@ -143,7 +143,20 @@ struct SignUp: View {
                     EmptySpace()
                     Group {
                         Text("By continue, you agree to our")
-                        Text("Privacy policy | Terms of Service").bold()
+                        HStack {
+                            Button {
+                                self.controller.privacyPolicy()
+                            } label: {
+                                Text("Privacy policy")
+                            }
+                            Text(" | ")
+                            
+                                Button {
+                                    self.controller.termsAndConditions()
+                                } label: {
+                                    Text("Terms of Service")
+                                }
+                        }
                     }
                 }
                 .padding(.horizontal, 20)

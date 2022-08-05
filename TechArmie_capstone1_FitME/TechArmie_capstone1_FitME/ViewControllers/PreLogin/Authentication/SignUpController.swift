@@ -21,6 +21,7 @@ class SignUpController: BaseVC {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        navigationController?.navigationBar.isHidden = true
         let childView = UIHostingController(rootView: SignUp(controller: self));
         addChild(childView);
         childView.view.frame = theContainer.bounds;
@@ -61,6 +62,16 @@ class SignUpController: BaseVC {
                     print("\(String(describing: error?.localizedDescription))") // 4
                 }
             }
+    }
+    
+    func privacyPolicy(){
+        let vc = PrivacyPolicyViewController.instantiate(fromAppStoryboard: .Account)
+        self.navigationController?.pushViewController(vc, animated: true)
+    }
+    
+    func termsAndConditions(){
+        let vc = TermsAndConditionsViewController.instantiate(fromAppStoryboard: .Account)
+        self.navigationController?.pushViewController(vc, animated: true)
     }
 
 }
