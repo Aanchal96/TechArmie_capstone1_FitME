@@ -137,7 +137,6 @@ class GoogleLoginController : NSObject {
                     }
                     // User is signed in
                     // ...
-                    
                     let googleUser = GoogleUser(user)
                     //                    self.currentGoogleUser = googleUser
                     success(googleUser)

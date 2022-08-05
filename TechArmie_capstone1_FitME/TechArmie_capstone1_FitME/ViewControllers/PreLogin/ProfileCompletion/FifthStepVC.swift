@@ -8,6 +8,8 @@
 import Foundation
 import UIKit
 import GoogleSignIn
+import FirebaseAuth
+import FirebaseFirestore
 
 class FifthStepVC : BaseVC{
     
@@ -49,15 +51,40 @@ class FifthStepVC : BaseVC{
         authUser.saveToUserDefaults()
     }
     
-    func googleSignInButton() {
+    @IBAction func googleSignInButton(_ sender: Any) {
         
         GoogleLoginController.shared.loginWithGoogle(fromViewController: self) { googleUser in
+            self.authUser.name = googleUser.name;
+            self.authUser.email = googleUser.email;
+            if let image = googleUser.image {
+                self.authUser.profileImage = image.absoluteString;
+            }
             
             self.saveToDefaults();
+            guard let user = Auth.auth().currentUser else {  return }
+            let db = Firestore.firestore().collection("users");
+            db.document(user.uid)
+                .setData(AppUserDefaults.value(forKey: .fullUserProfile).rawValue as! [String : Any]);
+            db.document(user.uid).getDocument(completion: { data, error in
+                if error != nil {
+                    return;
+                }
+                if data == nil {
+                    return;
+                }
+                if let data = data {
+                    do {
+                        try AuthUser(data.toObject()).saveToUserDefaults();
+                        let vc = TabBarVC.instantiate(fromAppStoryboard: .TabBar)
+                        vc.navigationController?.isNavigationBarHidden = true
+                        self.navigationController?.pushViewController(vc, animated: true)
+                    } catch {
+                        print(error)
+                    }
+                }
+            })
             
-            let vc = TabBarVC.instantiate(fromAppStoryboard: .TabBar)
-            vc.navigationController?.isNavigationBarHidden = true
-            self.navigationController?.pushViewController(vc, animated: true)
+            
         } failure: { error in
             CommonFunctions.showToast(error.localizedDescription)
         }

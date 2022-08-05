@@ -11,7 +11,6 @@ import StoreKit
 class AppSettingViewController: UIViewController {
 
     @IBOutlet weak var accountSettingView: UIView!
-    @IBOutlet weak var subscriptionView: UIView!
     @IBOutlet weak var shareView: UIView!
     @IBOutlet weak var rateUsView: UIView!
     @IBOutlet weak var termsAndConditionsView: UIView!
@@ -108,10 +107,6 @@ class AppSettingViewController: UIViewController {
 //        let vc = SubscriptionViewController.instantiate(fromAppStoryboard: .Account)
 //        self.navigationController?.pushViewController(vc, animated: true)
 //    }
-    @objc func subscriptionViewTap(tapGestureRecognizer: UITapGestureRecognizer) {
-        let vc = SubscriptionViewController.instantiate(fromAppStoryboard: .Account)
-        self.navigationController?.pushViewController(vc, animated: true)
-    }
 
 }
 
@@ -145,12 +140,5 @@ extension AppSettingViewController{
         privacyPolicyView.isUserInteractionEnabled = true
         privacyPolicyView.addGestureRecognizer(privacyPolicyTapGestureRecognizer)
 
-        let subscriptionViewTapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(subscriptionViewTap(tapGestureRecognizer:)))
-        
-        accountSettingView.isUserInteractionEnabled = true
-        accountSettingView.addGestureRecognizer(accountSettingTapGestureRecognizer)
-        
-        subscriptionView.isUserInteractionEnabled = true
-        subscriptionView.addGestureRecognizer(subscriptionViewTapGestureRecognizer)
     }
 }
