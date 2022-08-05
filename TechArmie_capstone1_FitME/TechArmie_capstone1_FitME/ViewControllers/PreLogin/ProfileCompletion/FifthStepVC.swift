@@ -27,6 +27,14 @@ class FifthStepVC : BaseVC{
     }
     
     @IBAction func goToSignUp(_ sender: UIButton) {
+        self.saveToDefaults();
+
+        let vc = SignUpController.instantiate(fromAppStoryboard: .Authentication)
+        vc.profileModel = profileModel
+        self.navigationController?.pushViewController(vc, animated: true)
+    }
+    
+    func saveToDefaults() {
         authUser.goalToJoin = profileModel.goal.rawValue
         authUser.gender = profileModel.gender
         authUser.age = profileModel.age
@@ -34,18 +42,19 @@ class FifthStepVC : BaseVC{
         authUser.userHeight = UserHeight([ApiKey.unitSetting: profileModel.heightDict![ApiKey.unitSetting], ApiKey.weight: profileModel.heightDict![ApiKey.height]])
         authUser.usergoal = UserWeight([ApiKey.unitSetting: profileModel.weightGoalDict![ApiKey.unitSetting], ApiKey.weight: profileModel.weightGoalDict![ApiKey.weight]])
         
+        authUser.initialUserWeight = UserWeight([ApiKey.unitSetting: profileModel.weightDict![ApiKey.unitSetting], ApiKey.weight: profileModel.weightDict![ApiKey.weight]])
+        
         authUser.priorityLevel = profileModel.level.rawValue
         
         authUser.saveToUserDefaults()
-
-        let vc = SignUpController.instantiate(fromAppStoryboard: .Authentication)
-        vc.profileModel = profileModel
-        self.navigationController?.pushViewController(vc, animated: true)
     }
     
     func googleSignInButton() {
         
         GoogleLoginController.shared.loginWithGoogle(fromViewController: self) { googleUser in
+            
+            self.saveToDefaults();
+            
             let vc = TabBarVC.instantiate(fromAppStoryboard: .TabBar)
             vc.navigationController?.isNavigationBarHidden = true
             self.navigationController?.pushViewController(vc, animated: true)

@@ -29,13 +29,6 @@ class SignUpController: BaseVC {
     
     func emailPasswordFirebaseLogin(email: String, password: String, name: String) {
         GoogleLoginController.shared.signUpWithEmail(email: email, password: password, name: name) { user in
-            let authModel = AuthUser(AppUserDefaults.value(forKey: .fullUserProfile));
-            authModel.email = email;
-            authModel.name = name;
-            authModel.saveToUserDefaults();
-            let db = Firestore.firestore().collection("users");
-            db.document(user.uid)
-                .setData(AppUserDefaults.value(forKey: .fullUserProfile).rawValue as! [String : Any]);
             let vc = TabBarVC.instantiate(fromAppStoryboard: .TabBar)
             let nvc = UINavigationController(rootViewController: vc)
             nvc.isNavigationBarHidden = true

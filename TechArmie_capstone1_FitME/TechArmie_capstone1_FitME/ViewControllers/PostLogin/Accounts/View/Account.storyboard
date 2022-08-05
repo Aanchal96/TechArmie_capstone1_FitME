@@ -486,6 +486,9 @@
                         <outlet property="rateUsView" destination="ogE-Ub-PoY" id="ROs-Xa-JTo"/>
                         <outlet property="shareView" destination="EjV-hS-Ijy" id="36w-XJ-UNK"/>
                         <outlet property="termsAndConditionsView" destination="Txg-bF-q3K" id="4pQ-LP-LW6"/>
+                        <outlet property="userCurrentWeightTextLabel" destination="6x6-Wn-f36" id="E9U-iP-paJ"/>
+                        <outlet property="userStartWeightTextLabel" destination="gn3-x9-ZAF" id="Liu-M4-rFa"/>
+                        <outlet property="userWeightChangeTextLabel" destination="vux-S7-cFc" id="eaf-vg-uwO"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -561,7 +564,7 @@
                                                             <constraint firstAttribute="height" constant="1" id="bId-bg-cgl"/>
                                                         </constraints>
                                                     </view>
-                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Intermediate3.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="8LQ-Lu-iO7">
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="user_profile" translatesAutoresizingMaskIntoConstraints="NO" id="8LQ-Lu-iO7">
                                                         <rect key="frame" x="335" y="4" width="40" height="40"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" constant="40" id="a98-q0-oZS"/>
@@ -753,11 +756,15 @@
                     </view>
                     <extendedEdge key="edgesForExtendedLayout" bottom="YES"/>
                     <connections>
+                        <outlet property="ageTextLabel" destination="Fhr-CD-mCy" id="qng-sl-Ma3"/>
                         <outlet property="ageView" destination="lVP-NS-QTD" id="J9n-3y-opm"/>
                         <outlet property="backButton" destination="LCA-fW-h85" id="g7M-bS-1Mz"/>
+                        <outlet property="currentWeightTextLabel" destination="UWo-W9-67g" id="jK3-09-up8"/>
                         <outlet property="currentWeightView" destination="X2x-bN-Hnm" id="lGs-Zi-DP3"/>
                         <outlet property="deleteAccountView" destination="TOW-wY-mtf" id="dYH-Dd-0fT"/>
+                        <outlet property="nameTextLabel" destination="ufW-am-iyl" id="od7-7b-VGq"/>
                         <outlet property="nameView" destination="Jzg-WM-6pk" id="F6U-5L-kKV"/>
+                        <outlet property="profileImageView" destination="8LQ-Lu-iO7" id="dz1-XF-fMk"/>
                         <outlet property="profilePictureView" destination="pGq-DN-wbT" id="1Mw-ZV-gMU"/>
                     </connections>
                 </viewController>
@@ -904,7 +911,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="Intermediate3.jpg" width="240" height="159.89999389648438"/>
         <image name="bg_user_settings" width="500" height="1500"/>
         <image name="chevron_left" width="12" height="20.5"/>
         <image name="icBack" width="12" height="20.5"/>

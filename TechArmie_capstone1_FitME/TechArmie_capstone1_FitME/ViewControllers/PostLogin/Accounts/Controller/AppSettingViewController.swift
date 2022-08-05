@@ -16,10 +16,19 @@ class AppSettingViewController: UIViewController {
     @IBOutlet weak var termsAndConditionsView: UIView!
     @IBOutlet weak var privacyPolicyView: UIView!
     @IBOutlet weak var profilePicture: UIImageView!
+    @IBOutlet weak var userStartWeightTextLabel: UILabel!
+    @IBOutlet weak var userCurrentWeightTextLabel: UILabel!
+    @IBOutlet weak var userWeightChangeTextLabel: UILabel!
+    var user: AuthUser!;
     
     override func viewDidLoad() {
         super.viewDidLoad()
         self.navigationController?.navigationBar.isHidden = true
+        self.user = AuthUser(AppUserDefaults.value(forKey: .fullUserProfile));
+        userStartWeightTextLabel.text = "\(user.initialUserWeight.weight) \(user.userWeight.unitSetting)";
+        userCurrentWeightTextLabel.text = "\(user.userWeight.weight) \(user.userWeight.unitSetting)";
+        
+        userWeightChangeTextLabel.text = "\(abs(user.userWeight.weight - user.initialUserWeight.weight)) \(user.userWeight.unitSetting)"
         addTapsOnView()
     }
     

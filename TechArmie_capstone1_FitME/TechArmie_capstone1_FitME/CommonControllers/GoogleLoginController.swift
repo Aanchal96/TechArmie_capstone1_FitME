@@ -9,6 +9,7 @@ import UIKit
 import FirebaseCore
 import FirebaseAuth
 import GoogleSignIn
+import FirebaseFirestore
 
 class GoogleLoginController : NSObject {
     
@@ -157,9 +158,23 @@ class GoogleLoginController : NSObject {
         failure : @escaping(_ error : Error) -> ()) {
             Auth.auth().signIn(withEmail: email, password: password) { authResult, error in
                 guard let user = authResult?.user else { failure(error!); return }
-                let currentUser = GoogleUser(user)
-                //            self.currentGoogleUser = currentUser
-                success(user)
+                let db = Firestore.firestore().collection("users");
+                db.document(user.uid).getDocument(completion: { data, error in
+                    if error != nil {
+                        return;
+                    }
+                    if data == nil {
+                        return;
+                    }
+                    if let data = data {
+                        do {
+                            try AuthUser(data.toObject()).saveToUserDefaults();
+                            success(user)
+                        } catch {
+                            print(error)
+                        }
+                    }
+                })
             }
         }
     
@@ -178,10 +193,33 @@ class GoogleLoginController : NSObject {
                     if let error1 = error1 {
                         failure(error1);
                     } else {
-                        success(user)
-                        
-                        //TODO: - save complete user model
-                        AppUserDefaults.save(value: user.uid, forKey: .fullUserProfile)
+                        guard let user = authResult?.user else { failure(error!); return }
+                        let authModel = AuthUser(AppUserDefaults.value(forKey: .fullUserProfile));
+                        authModel.email = email;
+                        authModel.name = name;
+                        if let url = user.photoURL {
+                            authModel.profileImage = url.absoluteString;
+                        }
+                        authModel.saveToUserDefaults();
+                        let db = Firestore.firestore().collection("users");
+                        db.document(user.uid)
+                            .setData(AppUserDefaults.value(forKey: .fullUserProfile).rawValue as! [String : Any]);
+                        db.document(user.uid).getDocument(completion: { data, error in
+                            if error != nil {
+                                return;
+                            }
+                            if data == nil {
+                                return;
+                            }
+                            if let data = data {
+                                do {
+                                    try AuthUser(data.toObject()).saveToUserDefaults();
+                                    success(user)
+                                } catch {
+                                    print(error)
+                                }
+                            }
+                        })
                     }
                 }
                 
