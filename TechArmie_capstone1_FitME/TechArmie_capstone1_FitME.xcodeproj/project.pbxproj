@@ -22,7 +22,7 @@
 		7CDA8CDA288A9E090029ECB1 /* FourthStepVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CDA8CD9288A9E090029ECB1 /* FourthStepVC.swift */; };
 		7CDA8CDC288A9E3B0029ECB1 /* FifthStepVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CDA8CDB288A9E3B0029ECB1 /* FifthStepVC.swift */; };
 		7CF9CB84289BAAD200482628 /* subscription.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 7CF9CB83289BAAD200482628 /* subscription.mp4 */; };
-		7CF9CB88289BAC8600482628 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CF9CB87289BAC8600482628 /* ViewController.swift */; };
+		7CF9CB88289BAC8600482628 /* SubscriptionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CF9CB87289BAC8600482628 /* SubscriptionViewController.swift */; };
 		87236F32288DB16000CC2BDD /* AppUserDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87236F27288DB16000CC2BDD /* AppUserDefaults.swift */; };
 		87236F33288DB16000CC2BDD /* ApiKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87236F28288DB16000CC2BDD /* ApiKeys.swift */; };
 		87236F34288DB16000CC2BDD /* AppColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87236F29288DB16000CC2BDD /* AppColors.swift */; };
@@ -129,7 +129,7 @@
 		7CDA8CD9288A9E090029ECB1 /* FourthStepVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FourthStepVC.swift; sourceTree = "<group>"; };
 		7CDA8CDB288A9E3B0029ECB1 /* FifthStepVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FifthStepVC.swift; sourceTree = "<group>"; };
 		7CF9CB83289BAAD200482628 /* subscription.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = subscription.mp4; sourceTree = "<group>"; };
-		7CF9CB87289BAC8600482628 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		7CF9CB87289BAC8600482628 /* SubscriptionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubscriptionViewController.swift; sourceTree = "<group>"; };
 		87236F27288DB16000CC2BDD /* AppUserDefaults.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppUserDefaults.swift; sourceTree = "<group>"; };
 		87236F28288DB16000CC2BDD /* ApiKeys.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiKeys.swift; sourceTree = "<group>"; };
 		87236F29288DB16000CC2BDD /* AppColors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppColors.swift; sourceTree = "<group>"; };
@@ -250,7 +250,7 @@
 			children = (
 				558CFFBC2898D4600035375B /* AppSettingViewController.swift */,
 				ED19CC2A289B300A00C50FA8 /* AccountSettingViewController.swift */,
-				7CF9CB87289BAC8600482628 /* ViewController.swift */,
+				7CF9CB87289BAC8600482628 /* SubscriptionViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -951,7 +951,7 @@
 				874C1E6628982C2F00EE4E94 /* ChallengesModel.swift in Sources */,
 				874C1E7428982C3000EE4E94 /* VideoView.swift in Sources */,
 				87C4A30E28822B1000485A08 /* AppDelegate.swift in Sources */,
-				7CF9CB88289BAC8600482628 /* ViewController.swift in Sources */,
+				7CF9CB88289BAC8600482628 /* SubscriptionViewController.swift in Sources */,
 				874C1E6F28982C2F00EE4E94 /* WorkoutDetailHeader.swift in Sources */,
 				557D6E24288A134A00906AAA /* SignUpController.swift in Sources */,
 				874C1E6C28982C2F00EE4E94 /* FinishWarmUpCell.swift in Sources */,

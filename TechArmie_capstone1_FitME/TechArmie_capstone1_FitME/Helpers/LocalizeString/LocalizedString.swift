@@ -57,6 +57,26 @@ enum LocalizedString: String{
     case removePhoto = "Remove photo"
     
     case ok = "Ok"
+    
+    case iHaveOnlyHadThisAppForFewWeek
+    case reallyEnjoyingThisAppSoFar
+    case IHaveBeenLovingThisAppFor
+    case theAbilityToScanAndDetect
+    case iReallyEnjoyUsingTheFitMEApp
+    
+    
+    case greatWorkOuts
+    case bestApp
+    case reallyWorkOnMe
+    case easyToTrackCalories
+    case loveThisApp
+    
+    case sofia
+    case mike
+    case emily
+    case noah
+    case cooper
+    
 }
 
 extension LocalizedString {

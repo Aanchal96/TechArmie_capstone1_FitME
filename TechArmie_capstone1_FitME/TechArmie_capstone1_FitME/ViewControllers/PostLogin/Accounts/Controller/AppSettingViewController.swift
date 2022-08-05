@@ -40,12 +40,21 @@ class AppSettingViewController: UIViewController {
         let vc = AccountSettingViewController.instantiate(fromAppStoryboard: .Account)
         self.navigationController?.pushViewController(vc, animated: true)
     }
+//    @objc func goPremiumTap(tapGestureRecognizer: UITapGestureRecognizer) {
+//        let vc = SubscriptionViewController.instantiate(fromAppStoryboard: .Account)
+//        self.navigationController?.pushViewController(vc, animated: true)
+//    }
+
 }
 extension AppSettingViewController{
     func addTapsOnView(){
         let accountSettingTapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(accountSettingTap(tapGestureRecognizer:)))
+       // let goPremiumTapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(goPremiumTap(tapGestureRecognizer:)))
         
         accountSettingView.isUserInteractionEnabled = true
         accountSettingView.addGestureRecognizer(accountSettingTapGestureRecognizer)
+        
+//        accountSettingView.isUserInteractionEnabled = true
+//        accountSettingView.addGestureRecognizer(goPremiumTapGestureRecognizer)
     }
 }
