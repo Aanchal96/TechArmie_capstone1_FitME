@@ -15,6 +15,7 @@ class AppSettingViewController: UIViewController {
     @IBOutlet weak var rateUsView: UIView!
     @IBOutlet weak var termsAndConditionsView: UIView!
     @IBOutlet weak var privacyPolicyView: UIView!
+    @IBOutlet weak var subscriptionView: UIView!
     @IBOutlet weak var profilePicture: UIImageView!
     @IBOutlet weak var userStartWeightTextLabel: UILabel!
     @IBOutlet weak var userCurrentWeightTextLabel: UILabel!
@@ -98,6 +99,11 @@ class AppSettingViewController: UIViewController {
 //        let vc = SubscriptionViewController.instantiate(fromAppStoryboard: .Account)
 //        self.navigationController?.pushViewController(vc, animated: true)
 //    }
+    @objc func subscriptionViewTap(tapGestureRecognizer: UITapGestureRecognizer) {
+        let vc = SubscriptionViewController.instantiate(fromAppStoryboard: .Account)
+        self.navigationController?.pushViewController(vc, animated: true)
+    }
+
 }
 
 extension AppSettingViewController{
@@ -122,12 +128,12 @@ extension AppSettingViewController{
         privacyPolicyView.isUserInteractionEnabled = true
         privacyPolicyView.addGestureRecognizer(privacyPolicyTapGestureRecognizer)
 
-       // let goPremiumTapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(goPremiumTap(tapGestureRecognizer:)))
+        let subscriptionViewTapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(subscriptionViewTap(tapGestureRecognizer:)))
         
         accountSettingView.isUserInteractionEnabled = true
         accountSettingView.addGestureRecognizer(accountSettingTapGestureRecognizer)
         
-//        accountSettingView.isUserInteractionEnabled = true
-//        accountSettingView.addGestureRecognizer(goPremiumTapGestureRecognizer)
+        subscriptionView.isUserInteractionEnabled = true
+        subscriptionView.addGestureRecognizer(subscriptionViewTapGestureRecognizer)
     }
 }
