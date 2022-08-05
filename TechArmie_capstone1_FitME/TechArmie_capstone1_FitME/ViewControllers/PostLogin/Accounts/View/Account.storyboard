@@ -487,6 +487,9 @@
                         <outlet property="shareView" destination="EjV-hS-Ijy" id="36w-XJ-UNK"/>
                         <outlet property="subscriptionView" destination="REY-Sx-pn5" id="V1d-xx-tms"/>
                         <outlet property="termsAndConditionsView" destination="Txg-bF-q3K" id="4pQ-LP-LW6"/>
+                        <outlet property="userCurrentWeightTextLabel" destination="6x6-Wn-f36" id="Cz3-zV-Vjf"/>
+                        <outlet property="userStartWeightTextLabel" destination="gn3-x9-ZAF" id="pfA-FP-9re"/>
+                        <outlet property="userWeightChangeTextLabel" destination="vux-S7-cFc" id="zL8-WM-qAh"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -754,11 +757,15 @@
                     </view>
                     <extendedEdge key="edgesForExtendedLayout" bottom="YES"/>
                     <connections>
+                        <outlet property="ageTextLabel" destination="Fhr-CD-mCy" id="P03-9H-RKc"/>
                         <outlet property="ageView" destination="lVP-NS-QTD" id="J9n-3y-opm"/>
                         <outlet property="backButton" destination="LCA-fW-h85" id="g7M-bS-1Mz"/>
+                        <outlet property="currentWeightTextLabel" destination="UWo-W9-67g" id="ERM-rf-Cf5"/>
                         <outlet property="currentWeightView" destination="X2x-bN-Hnm" id="lGs-Zi-DP3"/>
                         <outlet property="deleteAccountView" destination="TOW-wY-mtf" id="dYH-Dd-0fT"/>
+                        <outlet property="nameTextLabel" destination="ufW-am-iyl" id="R8E-PH-MqM"/>
                         <outlet property="nameView" destination="Jzg-WM-6pk" id="F6U-5L-kKV"/>
+                        <outlet property="profileImageView" destination="8LQ-Lu-iO7" id="XdO-dX-4Za"/>
                         <outlet property="profilePictureView" destination="pGq-DN-wbT" id="1Mw-ZV-gMU"/>
                     </connections>
                 </viewController>

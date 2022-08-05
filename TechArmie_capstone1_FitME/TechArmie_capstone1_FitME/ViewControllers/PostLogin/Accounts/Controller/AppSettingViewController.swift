@@ -11,16 +11,25 @@ import StoreKit
 class AppSettingViewController: UIViewController {
 
     @IBOutlet weak var accountSettingView: UIView!
-    @IBOutlet weak var subscriptionView: UIView!
     @IBOutlet weak var shareView: UIView!
     @IBOutlet weak var rateUsView: UIView!
     @IBOutlet weak var termsAndConditionsView: UIView!
     @IBOutlet weak var privacyPolicyView: UIView!
+    @IBOutlet weak var subscriptionView: UIView!
     @IBOutlet weak var profilePicture: UIImageView!
+    @IBOutlet weak var userStartWeightTextLabel: UILabel!
+    @IBOutlet weak var userCurrentWeightTextLabel: UILabel!
+    @IBOutlet weak var userWeightChangeTextLabel: UILabel!
+    var user: AuthUser!;
     
     override func viewDidLoad() {
         super.viewDidLoad()
         self.navigationController?.navigationBar.isHidden = true
+        self.user = AuthUser(AppUserDefaults.value(forKey: .fullUserProfile));
+        userStartWeightTextLabel.text = "\(user.initialUserWeight.weight) \(user.userWeight.unitSetting)";
+        userCurrentWeightTextLabel.text = "\(user.userWeight.weight) \(user.userWeight.unitSetting)";
+        
+        userWeightChangeTextLabel.text = "\(abs(user.userWeight.weight - user.initialUserWeight.weight)) \(user.userWeight.unitSetting)"
         addTapsOnView()
     }
     
@@ -94,6 +103,11 @@ class AppSettingViewController: UIViewController {
         let vc = PrivacyPolicyViewController.instantiate(fromAppStoryboard: .Account)
         self.navigationController?.pushViewController(vc, animated: true)
     }
+//    @objc func goPremiumTap(tapGestureRecognizer: UITapGestureRecognizer) {
+//        let vc = SubscriptionViewController.instantiate(fromAppStoryboard: .Account)
+//        self.navigationController?.pushViewController(vc, animated: true)
+//    }
+
 }
 
 extension AppSettingViewController{
@@ -125,5 +139,6 @@ extension AppSettingViewController{
         let privacyPolicyTapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(privacyPolicyTap(tapGestureRecognizer:)))
         privacyPolicyView.isUserInteractionEnabled = true
         privacyPolicyView.addGestureRecognizer(privacyPolicyTapGestureRecognizer)
+
     }
 }

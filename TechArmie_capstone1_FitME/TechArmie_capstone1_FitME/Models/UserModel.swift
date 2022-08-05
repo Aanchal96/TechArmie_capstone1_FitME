@@ -89,6 +89,7 @@ class AuthUser {
                                     ApiKey.regType:regType,
                                     ApiKey.gender:gender.rawValue,
                                     ApiKey.userWeight:userWeight.getDict(),ApiKey.lastUpdatedWeight:lastUpdatedWeight.getDict(),
+                                    ApiKey.initialUserWeight: initialUserWeight.getDict(),
                                     ApiKey.userHeight:userHeight.getDict(), ApiKey.userGoal : usergoal.getDict()  ,
                                     ApiKey.priorityLevel : priorityLevel,
                                     ApiKey.currentUnitMeasure : currentUnitMeasure,
@@ -122,8 +123,8 @@ struct UserHeight {
 
 struct UserWeight {
     
-    let unitSetting : String
-    let weight : Double
+    var unitSetting : String
+    var weight : Double
     
     init() {
         self.init(JSON())
