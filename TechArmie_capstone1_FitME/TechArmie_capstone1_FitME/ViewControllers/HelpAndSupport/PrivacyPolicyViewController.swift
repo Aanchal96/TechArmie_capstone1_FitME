@@ -15,7 +15,7 @@ class PrivacyPolicyViewController: UIViewController, WKUIDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        navigationController?.navigationBar.isHidden = true
         addTapsOnView()
         
         var myURL: URL!

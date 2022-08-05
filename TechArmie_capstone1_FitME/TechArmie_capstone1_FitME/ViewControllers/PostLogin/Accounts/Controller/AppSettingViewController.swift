@@ -20,6 +20,7 @@ class AppSettingViewController: UIViewController {
     @IBOutlet weak var userStartWeightTextLabel: UILabel!
     @IBOutlet weak var userCurrentWeightTextLabel: UILabel!
     @IBOutlet weak var userWeightChangeTextLabel: UILabel!
+    @IBOutlet weak var feedbackAndSupportView: UIView!
     var user: AuthUser!;
     
     override func viewDidLoad() {
@@ -32,6 +33,19 @@ class AppSettingViewController: UIViewController {
         userWeightChangeTextLabel.text = "\(abs(user.userWeight.weight - user.initialUserWeight.weight)) \(user.userWeight.unitSetting)"
         addTapsOnView()
     }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        self.user = AuthUser(AppUserDefaults.value(forKey: .fullUserProfile));
+        self.loadValues()
+    }
+    
+    func loadValues() {
+        userStartWeightTextLabel.text = "\(user.initialUserWeight.weight) \(user.userWeight.unitSetting)";
+        userCurrentWeightTextLabel.text = "\(user.userWeight.weight) \(user.userWeight.unitSetting)";
+        
+        userWeightChangeTextLabel.text = "\(abs(user.userWeight.weight - user.initialUserWeight.weight)) \(user.userWeight.unitSetting)"
+    }
+    
     
     @IBAction func logout(_ sender: Any) {
         GoogleLoginController.shared.logout()
@@ -103,10 +117,14 @@ class AppSettingViewController: UIViewController {
         let vc = PrivacyPolicyViewController.instantiate(fromAppStoryboard: .Account)
         self.navigationController?.pushViewController(vc, animated: true)
     }
-//    @objc func goPremiumTap(tapGestureRecognizer: UITapGestureRecognizer) {
-//        let vc = SubscriptionViewController.instantiate(fromAppStoryboard: .Account)
-//        self.navigationController?.pushViewController(vc, animated: true)
-//    }
+    
+    @objc func feedbackAndSupportTap(tapGestureRecognizer: UITapGestureRecognizer) {
+//        let mailtoString = "mailto:nemecek@support.com".addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed)
+//        let mailtoUrl = URL(string: mailtoString!)!
+//        if UIApplication.shared.canOpenURL(mailtoUrl) {
+//                UIApplication.shared.canOpenURL(mailtoUrl)
+//        }
+    }
 
 }
 
@@ -139,6 +157,10 @@ extension AppSettingViewController{
         let privacyPolicyTapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(privacyPolicyTap(tapGestureRecognizer:)))
         privacyPolicyView.isUserInteractionEnabled = true
         privacyPolicyView.addGestureRecognizer(privacyPolicyTapGestureRecognizer)
+        
+        let feedbackAndSupportTapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(feedbackAndSupportTap(tapGestureRecognizer:)))
+                feedbackAndSupportView.isUserInteractionEnabled = true
+                feedbackAndSupportView.addGestureRecognizer(feedbackAndSupportTapGestureRecognizer)
 
     }
 }

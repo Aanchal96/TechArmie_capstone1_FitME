@@ -27,6 +27,16 @@ class SignUpController: BaseVC {
         theContainer.addSubview(childView.view);
     }
     
+    func privacyPolicy(){
+         let vc = PrivacyPolicyViewController.instantiate(fromAppStoryboard: .Account)
+         self.navigationController?.pushViewController(vc, animated: true)
+     }
+
+     func termsAndConditions(){
+         let vc = TermsAndConditionsViewController.instantiate(fromAppStoryboard: .Account)
+         self.navigationController?.pushViewController(vc, animated: true)
+     }
+    
     func emailPasswordFirebaseLogin(email: String, password: String, name: String) {
         GoogleLoginController.shared.signUpWithEmail(email: email, password: password, name: name) { user in
             let vc = TabBarVC.instantiate(fromAppStoryboard: .TabBar)

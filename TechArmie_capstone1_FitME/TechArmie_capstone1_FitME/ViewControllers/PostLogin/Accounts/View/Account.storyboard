@@ -481,6 +481,7 @@
                     <navigationItem key="navigationItem" title="User" id="4Eh-v5-9PW"/>
                     <connections>
                         <outlet property="accountSettingView" destination="Lne-we-n6U" id="p4P-fG-DsQ"/>
+                        <outlet property="feedbackAndSupportView" destination="U2E-Zz-QPO" id="R9M-zu-xew"/>
                         <outlet property="privacyPolicyView" destination="0YU-rL-7DU" id="bB6-st-nFH"/>
                         <outlet property="profilePicture" destination="A9a-Xp-0ke" id="k8g-Kg-jYj"/>
                         <outlet property="rateUsView" destination="ogE-Ub-PoY" id="ROs-Xa-JTo"/>
