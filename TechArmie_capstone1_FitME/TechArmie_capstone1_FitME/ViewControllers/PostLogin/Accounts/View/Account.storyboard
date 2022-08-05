@@ -481,8 +481,12 @@
                     <navigationItem key="navigationItem" title="User" id="4Eh-v5-9PW"/>
                     <connections>
                         <outlet property="accountSettingView" destination="Lne-we-n6U" id="p4P-fG-DsQ"/>
+                        <outlet property="privacyPolicyView" destination="0YU-rL-7DU" id="bB6-st-nFH"/>
                         <outlet property="profilePicture" destination="A9a-Xp-0ke" id="k8g-Kg-jYj"/>
                         <outlet property="subscriptionView" destination="REY-Sx-pn5" id="V1d-xx-tms"/>
+                        <outlet property="rateUsView" destination="ogE-Ub-PoY" id="ROs-Xa-JTo"/>
+                        <outlet property="shareView" destination="EjV-hS-Ijy" id="36w-XJ-UNK"/>
+                        <outlet property="termsAndConditionsView" destination="Txg-bF-q3K" id="4pQ-LP-LW6"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -750,12 +754,154 @@
                     </view>
                     <extendedEdge key="edgesForExtendedLayout" bottom="YES"/>
                     <connections>
+                        <outlet property="ageView" destination="lVP-NS-QTD" id="J9n-3y-opm"/>
                         <outlet property="backButton" destination="LCA-fW-h85" id="g7M-bS-1Mz"/>
+                        <outlet property="currentWeightView" destination="X2x-bN-Hnm" id="lGs-Zi-DP3"/>
+                        <outlet property="deleteAccountView" destination="TOW-wY-mtf" id="dYH-Dd-0fT"/>
+                        <outlet property="nameView" destination="Jzg-WM-6pk" id="F6U-5L-kKV"/>
+                        <outlet property="profilePictureView" destination="pGq-DN-wbT" id="1Mw-ZV-gMU"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ROn-Xp-Nlc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1605.7971014492755" y="93.75"/>
+            <point key="canvasLocation" x="1597" y="94"/>
+        </scene>
+        <!--Terms And Conditions View Controller-->
+        <scene sceneID="Ueo-52-IUi">
+            <objects>
+                <viewController storyboardIdentifier="TermsAndConditionsViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="LG3-dv-gZh" customClass="TermsAndConditionsViewController" customModule="TechArmie_capstone1_FitME" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="y7o-g6-eeQ">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="guF-BU-7Gc">
+                                <rect key="frame" x="0.0" y="44" width="414" height="57"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icBack" translatesAutoresizingMaskIntoConstraints="NO" id="05J-tl-wNS">
+                                        <rect key="frame" x="20" y="13.5" width="30" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="30" id="mcr-Ih-1Ja"/>
+                                            <constraint firstAttribute="height" constant="30" id="saX-py-lvj"/>
+                                        </constraints>
+                                        <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="default"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Terms &amp; Conditions" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oBL-7v-v6y">
+                                        <rect key="frame" x="126" y="17.5" width="162" height="22"/>
+                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="18"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="05J-tl-wNS" firstAttribute="leading" secondItem="guF-BU-7Gc" secondAttribute="leading" constant="20" id="1Yi-CO-CbO"/>
+                                    <constraint firstItem="oBL-7v-v6y" firstAttribute="centerY" secondItem="guF-BU-7Gc" secondAttribute="centerY" id="PNa-KU-30v"/>
+                                    <constraint firstAttribute="width" secondItem="guF-BU-7Gc" secondAttribute="height" multiplier="138:19" id="Pnm-yu-xPA"/>
+                                    <constraint firstItem="oBL-7v-v6y" firstAttribute="centerX" secondItem="guF-BU-7Gc" secondAttribute="centerX" id="TI2-VB-LLC"/>
+                                    <constraint firstItem="05J-tl-wNS" firstAttribute="centerY" secondItem="guF-BU-7Gc" secondAttribute="centerY" id="uOY-cL-BGJ"/>
+                                </constraints>
+                            </view>
+                            <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VeT-Jb-277">
+                                <rect key="frame" x="0.0" y="109" width="414" height="787"/>
+                                <color key="backgroundColor" systemColor="systemGray5Color"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="VeT-Jb-277" secondAttribute="height" multiplier="414:787" id="ujK-Ke-BF4"/>
+                                </constraints>
+                                <wkWebViewConfiguration key="configuration">
+                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                    <wkPreferences key="preferences"/>
+                                </wkWebViewConfiguration>
+                            </wkWebView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="dc8-hf-5Uf"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="VeT-Jb-277" firstAttribute="top" secondItem="guF-BU-7Gc" secondAttribute="bottom" constant="8" id="0QY-lg-VHW"/>
+                            <constraint firstItem="guF-BU-7Gc" firstAttribute="top" secondItem="dc8-hf-5Uf" secondAttribute="top" id="0R6-ng-ACu"/>
+                            <constraint firstItem="VeT-Jb-277" firstAttribute="trailing" secondItem="dc8-hf-5Uf" secondAttribute="trailing" id="6c1-Hr-H9X"/>
+                            <constraint firstAttribute="bottom" secondItem="VeT-Jb-277" secondAttribute="bottom" id="YMO-KX-Y2I"/>
+                            <constraint firstItem="guF-BU-7Gc" firstAttribute="leading" secondItem="dc8-hf-5Uf" secondAttribute="leading" id="g6w-jQ-Rdt"/>
+                            <constraint firstItem="guF-BU-7Gc" firstAttribute="trailing" secondItem="dc8-hf-5Uf" secondAttribute="trailing" id="l21-AZ-9Zo"/>
+                            <constraint firstItem="VeT-Jb-277" firstAttribute="leading" secondItem="dc8-hf-5Uf" secondAttribute="leading" id="qyC-cr-dJa"/>
+                        </constraints>
+                    </view>
+                    <extendedEdge key="edgesForExtendedLayout" bottom="YES"/>
+                    <connections>
+                        <outlet property="backButton" destination="05J-tl-wNS" id="1sG-97-Q6k"/>
+                        <outlet property="webView" destination="VeT-Jb-277" id="9B5-IB-Dpa"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Kcy-me-vqZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2286.9565217391305" y="93.75"/>
+        </scene>
+        <!--Privacy Policy View Controller-->
+        <scene sceneID="fDG-4H-LZh">
+            <objects>
+                <viewController storyboardIdentifier="PrivacyPolicyViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="wf2-Fa-2lj" customClass="PrivacyPolicyViewController" customModule="TechArmie_capstone1_FitME" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="d15-vI-cOD">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KpO-7b-pmn">
+                                <rect key="frame" x="0.0" y="44" width="414" height="57"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icBack" translatesAutoresizingMaskIntoConstraints="NO" id="Jkx-jF-XUX">
+                                        <rect key="frame" x="20" y="13.5" width="30" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="30" id="4mh-Dz-CDs"/>
+                                            <constraint firstAttribute="height" constant="30" id="uuW-Ed-kbb"/>
+                                        </constraints>
+                                        <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="default"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Privacy Policy" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lsz-oL-DX5">
+                                        <rect key="frame" x="149.5" y="17.5" width="115" height="22"/>
+                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="18"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="Jkx-jF-XUX" firstAttribute="leading" secondItem="KpO-7b-pmn" secondAttribute="leading" constant="20" id="2if-Pa-mDd"/>
+                                    <constraint firstItem="Jkx-jF-XUX" firstAttribute="centerY" secondItem="KpO-7b-pmn" secondAttribute="centerY" id="Iyz-MW-l6g"/>
+                                    <constraint firstAttribute="width" secondItem="KpO-7b-pmn" secondAttribute="height" multiplier="138:19" id="QeT-6G-I1x"/>
+                                    <constraint firstItem="Lsz-oL-DX5" firstAttribute="centerY" secondItem="KpO-7b-pmn" secondAttribute="centerY" id="aB4-3E-6V9"/>
+                                    <constraint firstItem="Lsz-oL-DX5" firstAttribute="centerX" secondItem="KpO-7b-pmn" secondAttribute="centerX" id="mnu-iG-LPN"/>
+                                </constraints>
+                            </view>
+                            <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2ka-7C-gGu">
+                                <rect key="frame" x="0.0" y="109" width="414" height="787"/>
+                                <color key="backgroundColor" systemColor="systemGray5Color"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="2ka-7C-gGu" secondAttribute="height" multiplier="414:787" id="BnY-9J-Wv7"/>
+                                </constraints>
+                                <wkWebViewConfiguration key="configuration">
+                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                    <wkPreferences key="preferences"/>
+                                </wkWebViewConfiguration>
+                            </wkWebView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="pUX-71-db2"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="KpO-7b-pmn" firstAttribute="leading" secondItem="pUX-71-db2" secondAttribute="leading" id="07T-5o-Gab"/>
+                            <constraint firstItem="2ka-7C-gGu" firstAttribute="leading" secondItem="pUX-71-db2" secondAttribute="leading" id="3IU-BS-OOB"/>
+                            <constraint firstItem="KpO-7b-pmn" firstAttribute="trailing" secondItem="pUX-71-db2" secondAttribute="trailing" id="4RI-UC-pJv"/>
+                            <constraint firstItem="2ka-7C-gGu" firstAttribute="trailing" secondItem="pUX-71-db2" secondAttribute="trailing" id="8RF-qi-2xj"/>
+                            <constraint firstItem="KpO-7b-pmn" firstAttribute="top" secondItem="pUX-71-db2" secondAttribute="top" id="VQk-5R-p0g"/>
+                            <constraint firstAttribute="bottom" secondItem="2ka-7C-gGu" secondAttribute="bottom" id="u91-6G-pof"/>
+                            <constraint firstItem="2ka-7C-gGu" firstAttribute="top" secondItem="KpO-7b-pmn" secondAttribute="bottom" constant="8" id="vhu-gU-Oh8"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="backButton" destination="Jkx-jF-XUX" id="zhn-YU-T6x"/>
+                        <outlet property="webView" destination="2ka-7C-gGu" id="zI4-s9-fex"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PkV-GX-P4q" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2992.753623188406" y="93.75"/>
         </scene>
         <!--Subscription View Controller-->
         <scene sceneID="hjd-4V-RDA">

@@ -227,6 +227,20 @@ class GoogleLoginController : NSObject {
         
     }
     
+    func sendForgotPasswordLink(email: String, fromViewController viewController : UIViewController,
+                                success : @escaping() -> (),
+                                error : @escaping() -> ()) {
+        let firebaseAuth = Auth.auth();
+        firebaseAuth.sendPasswordReset(withEmail: email) { e in
+            if e != nil {
+                viewController.showMessagePrompt(e!.localizedDescription)
+                error();
+                return;
+            }
+            success();
+        }
+    }
+    
 }
 
 class GoogleUser {
