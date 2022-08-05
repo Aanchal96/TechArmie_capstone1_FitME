@@ -43,7 +43,9 @@ class AppSettingViewController: UIViewController {
 
     @objc func subscriptionViewTap(tapGestureRecognizer: UITapGestureRecognizer) {
         let vc = SubscriptionViewController.instantiate(fromAppStoryboard: .Account)
-        self.navigationController?.pushViewController(vc, animated: true)
+        vc.modalPresentationStyle = .overCurrentContext
+        vc.modalTransitionStyle = .coverVertical
+        self.navigationController?.presentVC(vc)
     }
 
     @objc func share(tapGestureRecognizer: UITapGestureRecognizer) {
