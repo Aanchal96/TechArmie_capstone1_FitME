@@ -26,7 +26,6 @@ class SubscriptionViewController : BaseVC {
     @IBOutlet weak var btnBack: UIImageView!
     @IBOutlet weak var btnGoPremium: UIButton!
 
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.navigationController?.navigationBar.isHidden = true
