@@ -103,7 +103,7 @@ class IAPController: NSObject {
         fetchReceiptBlock = success
         recieptFailureBlock = failure
         iapRequestType = .fetchReceipt
-        self.sharedSecrete = sharedSecrete
+//        self.sharedSecrete dd= sharedSecrete
         
         if forceRefresh {
             refreshReceipt()

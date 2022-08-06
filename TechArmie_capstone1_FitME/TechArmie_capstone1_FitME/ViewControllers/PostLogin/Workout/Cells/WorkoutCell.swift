@@ -118,16 +118,16 @@ class WorkoutCell: UITableViewCell {
     }
     
     private func animateTimer(){
-//        if !(UIApplication.topViewController() is WorkoutVC){
-//            self.timer?.invalidate()
-//            self.countDownTimer?.invalidate()
-//            return
-//        }
-//        if self.timerCountdown == -1{
-//            self.countDownTimer?.invalidate()
-//            self.countDownTimerFinished()
-//            return
-//        }
+        if !(UIApplication.topViewController() is WorkoutVC){
+            self.timer?.invalidate()
+            self.countDownTimer?.invalidate()
+            return
+        }
+        if self.timerCountdown == -1{
+            self.countDownTimer?.invalidate()
+            self.countDownTimerFinished()
+            return
+        }
         self.viewOverlay.isHidden = true
         
         self.lblCircleCountDown.transform = CGAffineTransform(scaleX: 2, y: 2)
