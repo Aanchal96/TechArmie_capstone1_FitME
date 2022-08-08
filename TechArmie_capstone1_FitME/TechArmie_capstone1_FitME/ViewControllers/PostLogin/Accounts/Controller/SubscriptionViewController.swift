@@ -9,11 +9,17 @@ import Foundation
 import UIKit
 import StoreKit
 
+enum FromVC{
+    case WorkoutVC, ChallengeVC, ExerciseLibraryVC
+}
+
 class SubscriptionViewController : BaseVC {
      
     var iapProducts = [SKProduct]()
     var iapProductIdentifiers:Set<String>! = ["com.techArmie.fitME.app.monthlysubscription"]
     let sharedSecret = "0fe25e333d874cffa4e09e8059a7c311"
+    
+    var fromVC: FromVC = .WorkoutVC
     
     let purchaseCompletionBlock:((_ purchasedPID:Set<String>,_ restoredPID:Set<String>,_ failedPID:Set<String>)->Void) = {
         (purchasedPID,restoredPID,failedPID) in
@@ -32,6 +38,15 @@ class SubscriptionViewController : BaseVC {
         
         addTapsOnView()
         
+        switch fromVC {
+        case .WorkoutVC:
+            self.btnBack.isHidden = false
+        case .ChallengeVC:
+            self.btnBack.isHidden = true
+        case .ExerciseLibraryVC:
+            self.btnBack.isHidden = true
+        }
+        
         setupIAP()
       }
     
@@ -49,7 +64,7 @@ class SubscriptionViewController : BaseVC {
                 if purchaseId.count > 0 {
                     strongSelf.getAppReceipt(willSuccessToastVisible: true)
                 }else if failureId.count > 0{
-                    //CommonFunctions.showToastWithMessage(LocalizedString.somethingWentWrong.localized, completion: nil)
+                    CommonFunctions.showToastWithMessage(LocalizedString.somethingWentWrong.localized, completion: nil)
                 }
             }
         }
@@ -102,11 +117,10 @@ class SubscriptionViewController : BaseVC {
     
     func getAppReceipt(willSuccessToastVisible: Bool, isFromRestorePurchase: Bool = false, rID : String = ""){
         IAPController.shared.fetchIAPReceipt(forceRefresh: false, sharedSecrete: sharedSecret, success: { [weak self] (receipt , receiptToken) in
-            guard let strongSelf = self else {return}
-            let morningDate =   Calendar.current.startOfDay(for: Date())
-            let reqMilliSecond = Int64(morningDate.timeIntervalSince1970 * 1000)
+//            guard let strongSelf = self else {return}
+//            let morningDate =   Calendar.current.startOfDay(for: Date())
+//            let reqMilliSecond = Int64(morningDate.timeIntervalSince1970 * 1000)
 //            var dictToSend : JSONDictionary = [:]
-          
 //            dictToSend = ["receiptToken" : receiptToken , "productId" : "com.techArmie.fitME.app.monthlysubscription" , "currency" : (iapProducts.first?.priceLocale.currencyCode ?? "") ,"subscriptionPrice" : (iapProducts.first?.price ?? 0) , "subscriptionType" : 1 , "action" : "subscription" , "startDate" : reqMilliSecond.description]
             
 //            self?.dictToSend = dictToSend

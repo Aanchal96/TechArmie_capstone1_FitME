@@ -58,10 +58,19 @@ class WorkoutHomeVC: BaseVC {
         super.viewDidLoad()
         initialSetup()
     }
-    
+
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
+        
         initialSetup()
+        
+        let isPremium = AppUserDefaults.value(forKey: .isPremium).boolValue
+        if !isPremium{
+            let vc = SubscriptionViewController.instantiate(fromAppStoryboard: .Account)
+            vc.modalPresentationStyle = .overCurrentContext
+            vc.modalTransitionStyle = .coverVertical
+            self.navigationController?.presentVC(vc)
+        }
     }
 
     //MARK: - BUTTON ACTION

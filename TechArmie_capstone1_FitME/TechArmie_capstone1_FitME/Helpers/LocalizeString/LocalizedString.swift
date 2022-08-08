@@ -37,6 +37,7 @@ enum LocalizedString: String{
     case enterValidWeightLbs = "Weight must be between 44 to 661 lbs"
     case enterValidWeightLbsGoal = "Goal Weight must be between 44 to 661 lbs"
     
+    case somethingWentWrong = "Something went wrong"
     
     //MARK:- UIViewController Extension
     //=================================
@@ -57,25 +58,7 @@ enum LocalizedString: String{
     case removePhoto = "Remove photo"
     
     case ok = "Ok"
-    
-    case iHaveOnlyHadThisAppForFewWeek
-    case reallyEnjoyingThisAppSoFar
-    case IHaveBeenLovingThisAppFor
-    case theAbilityToScanAndDetect
-    case iReallyEnjoyUsingTheFitMEApp
-    
-    
-    case greatWorkOuts
-    case bestApp
-    case reallyWorkOnMe
-    case easyToTrackCalories
-    case loveThisApp
-    
-    case sofia
-    case mike
-    case emily
-    case noah
-    case cooper
+
     
 }
 
