@@ -1,5 +1,4 @@
 
-
 import Foundation
 import Alamofire
 import AVFoundation
@@ -9,7 +8,6 @@ extension Array {
         enumerated().forEach(body)
     }
 }
-
 
 class BackendAPIManager: NSObject {
     
@@ -44,14 +42,11 @@ class DownloadController {
         }
         var arrIds : [String] = []
         
-        
-        
         urls.forEachEnumerated({[weak self] (offset, element) in
             
             guard let strongSelf = self else {
                 return
             }
-            
             
             dispatch.enter()
             if arrIds.contains(ids[offset]){
@@ -117,11 +112,6 @@ class DownloadController {
             }
         })
         
-        //TODO:- dispatch cancel
-        //        dispatch.notify(queue: DispatchQueue.main) {
-        //            dispatch.leave()
-        //        }
-        
     }
     
     func saveImage(urls: [String], ids: [String], completed : @escaping ([UIImage]) -> Void, failure : @escaping (Error) -> Void) {
@@ -178,9 +168,7 @@ class DownloadController {
                 dispatch.leave()
             }
         })
-    }
-    
-    
+    }    
     
     private func downloadImage(URLString : String,
                                id : String,
@@ -270,7 +258,7 @@ class DownloadController {
             let fileManager = FileManager.default
             if fileManager.fileExists(atPath: filePath) {
                 printDebug("FILE AVAILABLE")
-                if let fileStr = URL(string: filePath) {
+                if URL(string: filePath) != nil {
                     return (true,pathComponent)
                 } else {
                     printDebug("FILE NOT CONVERTIBLE TO URL")

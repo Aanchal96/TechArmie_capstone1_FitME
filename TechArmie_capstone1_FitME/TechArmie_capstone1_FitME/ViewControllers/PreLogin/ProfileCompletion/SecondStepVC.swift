@@ -45,8 +45,6 @@ class SecondStepVC : BaseVC
         super.viewDidLoad()
         onViewDidLoad()
         navigationController?.navigationBar.isHidden = true
-
-        //debugPrint(profileModel.goal)
         
         txtWeightGoal.addBottomBorder()
         txtWeight.addBottomBorder()
@@ -55,7 +53,6 @@ class SecondStepVC : BaseVC
 
         
         let maleTapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(maleImageTapped(tapGestureRecognizer:)))
-        
         let femaleTapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(femaleImageTapped(tapGestureRecognizer:)))
         
         imgFemale.isUserInteractionEnabled = true
@@ -181,7 +178,6 @@ class SecondStepVC : BaseVC
             self.txtHeight.text =  (self.txtHeight.text ?? "") + " " + self.heightUnitKey.localized
         }
 
-        
     }
     
     @IBAction func back(_ sender: Any) {
@@ -342,7 +338,7 @@ extension SecondStepVC : UITextFieldDelegate{
         let isNumeric = newText.isEmpty || (Double(final) != nil)
         let numberOfDots = newText.components(separatedBy: ".").count - 1
         let numberOfDecimalDigits: Int
-        if let dotIndex = newText.index(of: ".") {
+        if let dotIndex = newText.firstIndex(of: ".") {
             numberOfDecimalDigits = newText.distance(from: dotIndex, to: newText.endIndex) - 1
         } else {
             numberOfDecimalDigits = 0

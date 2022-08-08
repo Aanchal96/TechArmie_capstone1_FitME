@@ -74,5 +74,6 @@ extension AppUserDefaults {
         case currentChallengeDay
         case firebaseSessionToken
         case currentWorkoutDay
+        case isPremium
     }
 }

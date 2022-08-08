@@ -78,17 +78,11 @@ class SubscriptionViewController : BaseVC {
             guard let self = self else {return}
             
             self.iapProducts = products
-            self.iapProducts.removeAll { (product) -> Bool in
-                product.productIdentifier.lowercased() == self.iapProductIdentifiers.first?.lowercased()
-            }
-          
-            self.iapProducts.sort { (prod1, prod2) -> Bool in
-                return prod1.price.compare(prod2.price) == .orderedDescending
-            }
+
             let numberFormatter = NumberFormatter()
             numberFormatter.formatterBehavior = .behavior10_4
             numberFormatter.numberStyle = .currency
-            numberFormatter.locale = self.iapProducts.first?.priceLocale
+            numberFormatter.locale = .current//self.iapProducts.first?.priceLocale
             let price1Str = numberFormatter.string(from: self.iapProducts.first?.price ?? 0)
            
             DispatchQueue.main.async {

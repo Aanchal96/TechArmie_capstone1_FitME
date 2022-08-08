@@ -13,7 +13,6 @@ import SwiftyJSON
 // MARK: ==============================================
 class AuthUser {
     
-    //TODO: remove extra
     static var main = AuthUser(AppUserDefaults.value(forKey: .fullUserProfile)) {
         didSet {
             main.saveToUserDefaults()
@@ -28,7 +27,6 @@ class AuthUser {
     var isAlreadyLogin : Bool = false
     
     var profileImage : String
-    let regType: Int // Registeration type: 1- Email sign up, 2- Social sign up
     
     var goalToJoin: Int
     var gender: Gender
@@ -42,8 +40,6 @@ class AuthUser {
     var initialUserWeight : UserWeight
     var lastUpdatedWeight : UserWeight
 
-    var subscription : SubscriptionModel
-
     init (_ json: JSON = JSON()) {
         
         id = json[ApiKey.id].stringValue
@@ -54,7 +50,6 @@ class AuthUser {
         authToken = json[ApiKey.authtoken].stringValue
         
         profileImage = json[ApiKey.profileImage].stringValue
-        regType = json[ApiKey.regType].intValue
         
         goalToJoin = json[ApiKey.goalToJoin].intValue
         gender =   json[ApiKey.gender].stringValue == Gender.male.rawValue ? .male : .female
@@ -73,8 +68,6 @@ class AuthUser {
         let lastWeight = json[ApiKey.lastUpdatedWeight].dictionaryValue
         lastUpdatedWeight = UserWeight(JSON(lastWeight))
 
-        let sub = json[ApiKey.subscription].dictionaryValue
-        self.subscription = SubscriptionModel(JSON(sub))
     }
 
     func saveToUserDefaults() {
@@ -86,15 +79,13 @@ class AuthUser {
                                     ApiKey.id:id,
                                     ApiKey.authtoken:authToken,
                                     ApiKey.goalToJoin:goalToJoin,
-                                    ApiKey.regType:regType,
                                     ApiKey.gender:gender.rawValue,
                                     ApiKey.userWeight:userWeight.getDict(),ApiKey.lastUpdatedWeight:lastUpdatedWeight.getDict(),
                                     ApiKey.initialUserWeight: initialUserWeight.getDict(),
                                     ApiKey.userHeight:userHeight.getDict(), ApiKey.userGoal : usergoal.getDict()  ,
                                     ApiKey.priorityLevel : priorityLevel,
                                     ApiKey.currentUnitMeasure : currentUnitMeasure,
-                                    ApiKey.age : age,
-                                    ApiKey.subscription : subscription.getDict(),
+                                    ApiKey.age : age
         ]
         
         AppUserDefaults.save(value: dict, forKey: .fullUserProfile)
@@ -155,54 +146,4 @@ struct ProfileModel{
     var weightGoalDict : JSONDictionary?
     var pace = 0
     var targetCalories = 0
-}
-
-// TODO: Remove if extra
-struct FitnessModel {
-    
-    let totalNo : Int
-    let id : String
-    let points : Int
-    let fitnessQuesId : Int
-    let fitnessQues : String
-    
-    init() {
-        self.init(JSON())
-    }
-    
-    init(_ json: JSON = JSON()) {
-        
-        totalNo = json[ApiKey.totalNo].intValue
-        id = json[ApiKey.id].stringValue
-        points = json[ApiKey.points].intValue
-        fitnessQuesId = json[ApiKey.fitnessQuesId].intValue
-        fitnessQues = json[ApiKey.fitnessQues].stringValue
-    }
-    
-    func getDict() -> JSONDictionary{
-        return [ApiKey.totalNo : totalNo , ApiKey.id : id , ApiKey.points : points , ApiKey.fitnessQuesId : fitnessQuesId ,ApiKey.fitnessQues : fitnessQues ]
-    }
-}
-
-struct SubscriptionModel{
-    
-    var subscriptionStatus : Int
-    let subscriptionExpiryDate : String
-    
-    init(_ json : JSON = JSON()){
-        subscriptionStatus = json["subscriptionStatus"].intValue
-        subscriptionExpiryDate = json["subscriptionExpiryDate"].stringValue
-    }
-    
-    func getDict() -> JSONDictionary{
-        return ["subscriptionStatus" : subscriptionStatus , "subscriptionExpiryDate" : subscriptionExpiryDate]
-    }
-}
-
-struct UserInputModel {
-    var firstName: String = ""
-    var email: String = ""
-    var phone: String = ""
-    var password: String = ""
-    init() {}
 }

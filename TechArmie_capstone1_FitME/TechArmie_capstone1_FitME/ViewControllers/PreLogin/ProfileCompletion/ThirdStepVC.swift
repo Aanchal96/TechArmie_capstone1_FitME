@@ -21,16 +21,12 @@ class ThirdStepVC : BaseVC{
     override func viewDidLoad() {
         super.viewDidLoad()
         navigationController?.navigationBar.isHidden = true
-
-//        debugPrint(profileModel.heightDict ?? "Height NULL")
-//        debugPrint(profileModel.weightDict ?? "Weight Null")
-//        debugPrint(profileModel.weightGoalDict ?? "Weight Goal Null")
-//        debugPrint(profileModel.age)
-        
     }
+    
     @IBAction func back(_ sender: Any) {
         self.navigationController?.popViewController(animated: true)
     }
+    
     @IBAction func goToNext(_ sender: Any) {
         let vc = FourthStepVC.instantiate(fromAppStoryboard: .Main)
         vc.profileModel = profileModel
@@ -53,7 +49,7 @@ class ThirdStepVC : BaseVC{
         
         sender.backgroundColor = CustomColors.primaryColor
         sender.tintColor = CustomColors.white
-
+        
         switch(sender){
         case btnSedentery:
             profileModel.level = .beginner

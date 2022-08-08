@@ -277,7 +277,6 @@ extension WorkoutDetailVC{
             self?.btnDownLoading.isHidden = true
         })
     }
-
     
     func gotoStartWorkout(workoutArray : [ExerciseModel]){
         self.btnDownLoading.isHidden = true

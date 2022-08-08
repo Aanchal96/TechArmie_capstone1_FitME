@@ -40,11 +40,11 @@ class FifthStepVC : BaseVC{
         authUser.goalToJoin = profileModel.goal.rawValue
         authUser.gender = profileModel.gender
         authUser.age = profileModel.age
-        authUser.userWeight = UserWeight([ApiKey.unitSetting: profileModel.weightDict![ApiKey.unitSetting], ApiKey.weight: profileModel.weightDict![ApiKey.weight]])
-        authUser.userHeight = UserHeight([ApiKey.unitSetting: profileModel.heightDict![ApiKey.unitSetting], ApiKey.weight: profileModel.heightDict![ApiKey.height]])
-        authUser.usergoal = UserWeight([ApiKey.unitSetting: profileModel.weightGoalDict![ApiKey.unitSetting], ApiKey.weight: profileModel.weightGoalDict![ApiKey.weight]])
+        authUser.userWeight = UserWeight([ApiKey.unitSetting: profileModel.weightDict![ApiKey.unitSetting] ?? "", ApiKey.weight: profileModel.weightDict![ApiKey.weight] ?? ""])
+        authUser.userHeight = UserHeight([ApiKey.unitSetting: profileModel.heightDict![ApiKey.unitSetting] ?? "", ApiKey.weight: profileModel.heightDict![ApiKey.height] ?? ""])
+        authUser.usergoal = UserWeight([ApiKey.unitSetting: profileModel.weightGoalDict![ApiKey.unitSetting] ?? "", ApiKey.weight: profileModel.weightGoalDict![ApiKey.weight] ?? ""])
         
-        authUser.initialUserWeight = UserWeight([ApiKey.unitSetting: profileModel.weightDict![ApiKey.unitSetting], ApiKey.weight: profileModel.weightDict![ApiKey.weight]])
+        authUser.initialUserWeight = UserWeight([ApiKey.unitSetting: profileModel.weightDict![ApiKey.unitSetting] ?? "", ApiKey.weight: profileModel.weightDict![ApiKey.weight] ?? ""])
         
         authUser.priorityLevel = profileModel.level.rawValue
         
@@ -62,7 +62,7 @@ class FifthStepVC : BaseVC{
             
             self.saveToDefaults();
             guard let user = Auth.auth().currentUser else {  return }
-            let db = Firestore.firestore().collection("users");
+            let db = Firestore.firestore().collection(ApiKey.users);
             db.document(user.uid)
                 .setData(AppUserDefaults.value(forKey: .fullUserProfile).rawValue as! [String : Any]);
             db.document(user.uid).getDocument(completion: { data, error in

@@ -15,20 +15,19 @@ class TabBarVC: UITabBarController {
         setImages()
     }
     
-    //TODO: Fix images
     private func setImages(){
         let vcs = self.viewControllers
-        vcs?[0].tabBarItem.image = UIImage(named: "clock")
-        vcs?[0].tabBarItem.selectedImage = UIImage(named: "clockSelected")
+        vcs?[0].tabBarItem.image = #imageLiteral(resourceName: "clock")
+        vcs?[0].tabBarItem.selectedImage = #imageLiteral(resourceName: "clockSelected")
         
-        vcs?[1].tabBarItem.image = UIImage(named: "icChallenge")
-        vcs?[1].tabBarItem.selectedImage = UIImage(named: "icChallengeSelected")
+        vcs?[1].tabBarItem.image = #imageLiteral(resourceName: "icChallenge")
+        vcs?[1].tabBarItem.selectedImage = #imageLiteral(resourceName: "icChallengeSelected")
         
-        vcs?[2].tabBarItem.image = UIImage(named: "icLibrary")
-        vcs?[2].tabBarItem.selectedImage = UIImage(named: "icLibrarySelected")
+        vcs?[2].tabBarItem.image = #imageLiteral(resourceName: "icLibrary")
+        vcs?[2].tabBarItem.selectedImage = #imageLiteral(resourceName: "icLibrarySelected")
         
-        vcs?[3].tabBarItem.image = UIImage(named: "icProfile")
-        vcs?[3].tabBarItem.selectedImage = UIImage(named: "icProfileSelected")
+        vcs?[3].tabBarItem.image = #imageLiteral(resourceName: "icProfile")
+        vcs?[3].tabBarItem.selectedImage = #imageLiteral(resourceName: "icProfileSelected")
         
         vcs?[0].tabBarItem.imageInsets = UIEdgeInsets(top: 10, left: 0, bottom: 0, right: 0)
         vcs?[1].tabBarItem.imageInsets = UIEdgeInsets(top: 10, left: 0, bottom: 0, right: 0)

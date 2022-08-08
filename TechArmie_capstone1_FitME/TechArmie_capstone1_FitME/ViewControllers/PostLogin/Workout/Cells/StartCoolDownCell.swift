@@ -1,7 +1,11 @@
-
+//
+//  WorkoutHomeVC.swift
+//  TechArmie_capstone1_FitME
+//
+//  Created by Aanchal Bansal
+//
 
 import UIKit
-
 
 class StartCoolDownCell: UITableViewCell {
 
@@ -19,7 +23,6 @@ class StartCoolDownCell: UITableViewCell {
     ///MARK::- CELL CYCLE
     override func awakeFromNib() {
         super.awakeFromNib()
-       // imgArrowUp.springAnnimate()
         imgArrowUp.stopAnimating()
         setText()
         btnWarmupComplete.titleLabel?.textAlignment = NSTextAlignment.center

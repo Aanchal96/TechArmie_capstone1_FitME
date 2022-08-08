@@ -1,4 +1,9 @@
-
+//
+//  WorkoutHomeVC.swift
+//  TechArmie_capstone1_FitME
+//
+//  Created by Aanchal Bansal
+//
 
 import UIKit
 
@@ -31,15 +36,13 @@ class RestCell: UITableViewCell {
         viewTitleAndTime.alpha = 1
         lblTimer.alpha = 0
         timer?.invalidate()
-
+        
     }
     
     private func setLocalizedString(){
         restTime.text = "REST TIME"
         skipRest.setTitle("SKIP REST", for: .normal)
     }
-    
- 
     
     //MARK::- CONFIGURE CELL
     func configure(data : ExerciseModel?){
@@ -52,12 +55,11 @@ class RestCell: UITableViewCell {
     
     ///MARK::- FUNCTIONS
     
-  
     func cellDisplayed(index  : Int){
         self.index = index
         //CommonFunctions.speak(val: "Rest".localized)
         imgUpArrow.springAnnimate()
-
+        
         timer = Timer.scheduledTimer(withTimeInterval: 1.0, repeats: true, block: { [weak self] (timer) in
             self?.timerVal = (self?.timerVal ?? 0) - 1
             self?.updateLabels()
@@ -74,10 +76,8 @@ class RestCell: UITableViewCell {
         let min = time / 60
         let sec = time % 60
         if self.timerVal == 0{
-//            self.lblTime.text = "0:00"
-//            self.lblTimer.text = "0:00"
             self.lblTime.text = "0"
-                     self.lblTimer.text = "0"
+            self.lblTimer.text = "0"
             self.gotoNext()
             self.timer?.invalidate()
         }else{
@@ -85,7 +85,7 @@ class RestCell: UITableViewCell {
             self.lblTimer.text = sec.description.count == 1 ? min.description + ":0" + sec.description   : (min.description + ":" + sec.description)
             self.lblTime.text = self.timerVal.description
             self.lblTimer.text = self.timerVal.description
-
+            
         }
     }
 }

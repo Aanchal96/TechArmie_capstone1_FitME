@@ -55,10 +55,20 @@ extension NewChallengeTableViewCell : UICollectionViewDataSource, UICollectionVi
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        let vc = ChallengeDetailVC.instantiate(fromAppStoryboard: .Challenges)
-        vc.challenge = self.challengeModel?.challengeList[indexPath.item]
-        vc.level = lblChallengeType.text ?? ""
-        UIApplication.topMostVC?.navigationController?.pushViewController(vc, animated: true)
+        
+        let isPremium = AppUserDefaults.value(forKey: .isPremium).boolValue
+        if isPremium{
+            let vc = ChallengeDetailVC.instantiate(fromAppStoryboard: .Challenges)
+            vc.challenge = self.challengeModel?.challengeList[indexPath.item]
+            vc.level = lblChallengeType.text ?? ""
+            UIApplication.topMostVC?.navigationController?.pushViewController(vc, animated: true)
+        } else {
+            let vc = SubscriptionViewController.instantiate(fromAppStoryboard: .Account)
+            vc.modalPresentationStyle = .overCurrentContext
+            vc.modalTransitionStyle = .coverVertical
+            self.parentViewController?.navigationController?.presentVC(vc)
+        }
+        
         
     }
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets{

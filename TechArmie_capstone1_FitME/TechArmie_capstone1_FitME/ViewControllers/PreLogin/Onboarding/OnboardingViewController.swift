@@ -19,7 +19,7 @@ class OnboardingViewController: BaseVC {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+
         playVideo()
     }
     
@@ -48,8 +48,6 @@ class OnboardingViewController: BaseVC {
         
         videoLayer.bringSubviewToFront(welcomeImg)
         videoLayer.bringSubviewToFront(btnNewAccount)
-//        videoLayer.bringSubviewToFront(btnLogin)
-//        videoLayer.bringSubviewToFront(lblAlreadyHaveAccount)
         videoLayer.bringSubviewToFront(stackView)
     }
 }

@@ -7,7 +7,6 @@
 
 import UIKit
 
-
 class ExerciseLibraryCell: UITableViewCell {
     
     //MARK::- OUTLETS

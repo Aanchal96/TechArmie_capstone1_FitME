@@ -109,12 +109,14 @@ class AppSettingViewController: UIViewController {
     }
     
     @objc func termsAndConditionTap(tapGestureRecognizer: UITapGestureRecognizer) {
-        let vc = TermsAndConditionsViewController.instantiate(fromAppStoryboard: .Account)
+        let vc = WebViewController.instantiate(fromAppStoryboard: .Account)
+        vc.urlType = .tnc
         self.navigationController?.pushViewController(vc, animated: true)
     }
     
     @objc func privacyPolicyTap(tapGestureRecognizer: UITapGestureRecognizer) {
-        let vc = PrivacyPolicyViewController.instantiate(fromAppStoryboard: .Account)
+        let vc = WebViewController.instantiate(fromAppStoryboard: .Account)
+        vc.urlType = .privacyPolicy
         self.navigationController?.pushViewController(vc, animated: true)
     }
     

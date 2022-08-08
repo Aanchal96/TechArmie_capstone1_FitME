@@ -42,7 +42,6 @@ class WorkoutSubmitVC: BaseVC {
         lblCalories.text = (workoutData?.calories ?? 0).description
         lblTime.text = totalTimeForWorkoutInMin
         
-        onViewDidLoad()
     }
 
     //MARK::- BUTTON ACTION
@@ -63,10 +62,6 @@ extension WorkoutSubmitVC{
         caloriesLbl.text = "Calories"
         exerciseLbl.text = "Exercises"
         continueButton.setTitle("Save and Continue", for: .normal)
-    }
-    
-    func onViewDidLoad(){
-        // Deinitialise previous audios from Workout player
     }
 
 }

@@ -34,6 +34,14 @@ final class ExerciseLibraryViewController: BaseVC {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
+        
+        let isPremium = AppUserDefaults.value(forKey: .isPremium).boolValue
+        if !isPremium{
+            let vc = SubscriptionViewController.instantiate(fromAppStoryboard: .Account)
+            vc.modalPresentationStyle = .overCurrentContext
+            vc.modalTransitionStyle = .coverVertical
+            self.navigationController?.presentVC(vc)
+        }
     }
     
     override func viewWillDisappear(_ animated: Bool) {

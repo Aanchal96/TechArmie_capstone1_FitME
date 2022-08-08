@@ -1,3 +1,9 @@
+//
+//  WorkoutHomeVC.swift
+//  TechArmie_capstone1_FitME
+//
+//  Created by Aanchal Bansal
+//
 
 import UIKit
 import AVFoundation
@@ -39,8 +45,6 @@ class WorkoutCell: UITableViewCell {
         self.countDownTimer?.invalidate()
         self.timer?.invalidate()
         timerCountdown = 10
-       // self.timer = nil
-        //self.countDownTimer = nil
         progressView.trackTintColor = AppColors.themePrimaryColor
         progressView.progressTintColor = UIColor.white
         progressView.isHidden = false
@@ -73,7 +77,6 @@ class WorkoutCell: UITableViewCell {
         self.isRepBasedExercise = data?.exerciseType == 1
         if self.isRepBasedExercise{
             self.lblTime.text = self.timerVal.description
-            //+ (self.isRepBasedExercise  ? LocalizedString.repetitions.localized : LocalizedString.seconds.localized)
         }
         self.mainImageView.image = createThumbnailOfVideoFromFileURL(videoURL: urlToPlay.absoluteString)
     }
@@ -97,15 +100,8 @@ class WorkoutCell: UITableViewCell {
         self.topCellIndex = index
         progressView.isHidden = false // set it to false //comment
         progressView.setProgress(0, animated: false)
-       // self.progressView.trackTintColor = AppColors.themeGreenColor
-        
-        
-   
-        
-        //        if isFirst{
         videoView?.play()
-        //        }
-        //        isFirst = false
+
         self.mainImageView.isHidden = true
         self.videoView?.isHidden = false
         self.animateTimer()
@@ -143,7 +139,6 @@ class WorkoutCell: UITableViewCell {
                 if self?.timerCountdown == 3{
                
                 }else{
-                    //play exercise time audios here when value is 7 or 8 //TODO
                 }
         })
     }
@@ -195,7 +190,6 @@ class WorkoutCell: UITableViewCell {
         }else{
             self.lblTime.text = ( sec.description.count == 1 ? min.description + ":0" + sec.description   : (min.description + ":" + sec.description))
             self.lblTime.text = time.description
-            //+ (LocalizedString.seconds.localized)
         }
     }
 }
