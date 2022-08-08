@@ -45,7 +45,7 @@ struct SignUp: View {
                     Group {
                         ZStack (alignment: Alignment.bottomTrailing){
                             if isSet {
-                                Image(uiImage: selection).resizable().cornerRadius(50).frame(width: 100, height: 100)
+                                Image(uiImage: selection).resizable().scaledToFill().frame(width: 100, height: 100).clipped().cornerRadius(50)
                             } else {
                                 Image("user_profile").frame(width: 100, height: 100)
                             }
