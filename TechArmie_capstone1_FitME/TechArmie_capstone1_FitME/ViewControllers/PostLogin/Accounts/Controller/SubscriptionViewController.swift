@@ -62,6 +62,7 @@ class SubscriptionViewController : BaseVC {
                 guard let strongSelf = self else {return}
                 strongSelf.purchaseCompletionBlock(purchaseId, restoreId, failureId)
                 if purchaseId.count > 0 {
+                    AppUserDefaults.save(value: true, forKey: .isPremium)
                     strongSelf.getAppReceipt(willSuccessToastVisible: true)
                 }else if failureId.count > 0{
                     CommonFunctions.showToastWithMessage(LocalizedString.somethingWentWrong.localized, completion: nil)

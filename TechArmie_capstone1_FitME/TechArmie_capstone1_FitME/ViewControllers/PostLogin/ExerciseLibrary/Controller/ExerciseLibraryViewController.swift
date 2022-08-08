@@ -34,14 +34,6 @@ final class ExerciseLibraryViewController: BaseVC {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        
-        let isPremium = AppUserDefaults.value(forKey: .isPremium).boolValue
-        if !isPremium{
-            let vc = SubscriptionViewController.instantiate(fromAppStoryboard: .Account)
-            vc.modalPresentationStyle = .overCurrentContext
-            vc.modalTransitionStyle = .coverVertical
-            self.navigationController?.presentVC(vc)
-        }
     }
     
     override func viewWillDisappear(_ animated: Bool) {
@@ -101,13 +93,21 @@ extension ExerciseLibraryViewController : UITableViewDelegate , UITableViewDataS
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
-        // open video controller
-        guard let videoURL = URL(string: AppDelegate.shared.videoURLExercise) else {return}
-        let player = AVPlayer(url: videoURL)
-        let playerViewController = AVPlayerViewController()
-        playerViewController.player = player
-        self.present(playerViewController, animated: true) {
-            playerViewController.player?.play()
+        let isPremium = AppUserDefaults.value(forKey: .isPremium).boolValue
+        if !isPremium{
+            let vc = SubscriptionViewController.instantiate(fromAppStoryboard: .Account)
+            vc.modalPresentationStyle = .overCurrentContext
+            vc.modalTransitionStyle = .coverVertical
+            self.navigationController?.presentVC(vc)
+        } else {
+            // open video controller
+            guard let videoURL = URL(string: AppDelegate.shared.videoURLExercise) else {return}
+            let player = AVPlayer(url: videoURL)
+            let playerViewController = AVPlayerViewController()
+            playerViewController.player = player
+            self.present(playerViewController, animated: true) {
+                playerViewController.player?.play()
+            }
         }
     }
 }
