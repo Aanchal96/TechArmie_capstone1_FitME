@@ -90,7 +90,7 @@ class AuthUser {
                                     ApiKey.age : age,
                                     ApiKey.isPremium : isPremium
         ]
-        
+        AppUserDefaults.save(value: isPremium, forKey: .isPremium)
         AppUserDefaults.save(value: dict, forKey: .fullUserProfile)
     }
     

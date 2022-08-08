@@ -8,6 +8,8 @@
 import Foundation
 import UIKit
 import StoreKit
+import FirebaseAuth
+import FirebaseFirestore
 
 enum FromVC{
     case WorkoutVC, ChallengeVC, ExerciseLibraryVC
@@ -124,6 +126,13 @@ class SubscriptionViewController : BaseVC {
         IAPController.shared.fetchIAPReceipt(forceRefresh: false, sharedSecrete: sharedSecret, success: { [weak self] (receipt , receiptToken) in
             
             // Send at backend
+            guard let user = Auth.auth().currentUser else {  return }
+            let db = Firestore.firestore().collection("users");
+            let firebaseUser = db.document(user.uid)
+            firebaseUser.setData([ "is_premium": true ], merge: true);
+            let authUser = AuthUser(AppUserDefaults.value(forKey: .fullUserProfile));
+            authUser.isPremium = true;
+            authUser.saveToUserDefaults()
             
 //            guard let strongSelf = self else {return}
 //            let morningDate =   Calendar.current.startOfDay(for: Date())
