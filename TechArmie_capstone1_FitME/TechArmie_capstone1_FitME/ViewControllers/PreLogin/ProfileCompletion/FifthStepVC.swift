@@ -47,6 +47,7 @@ class FifthStepVC : BaseVC{
         authUser.initialUserWeight = UserWeight([ApiKey.unitSetting: profileModel.weightDict![ApiKey.unitSetting] ?? "", ApiKey.weight: profileModel.weightDict![ApiKey.weight] ?? ""])
         
         authUser.priorityLevel = profileModel.level.rawValue
+        authUser.isPremium = false
         
         authUser.saveToUserDefaults()
     }
