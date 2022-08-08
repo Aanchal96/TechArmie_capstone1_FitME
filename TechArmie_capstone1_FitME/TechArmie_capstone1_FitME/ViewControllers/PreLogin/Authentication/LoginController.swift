@@ -41,6 +41,7 @@ class LoginController: BaseVC {
                 if let data = data {
                     do {
                         try AuthUser(data.toObject()).saveToUserDefaults();
+                        printDebug(AuthUser());
                         let vc = TabBarVC.instantiate(fromAppStoryboard: .TabBar)
                         let nvc = UINavigationController(rootViewController: vc)
                         nvc.isNavigationBarHidden = true
