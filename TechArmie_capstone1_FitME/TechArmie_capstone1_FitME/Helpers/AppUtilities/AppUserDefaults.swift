@@ -25,20 +25,20 @@ enum AppUserDefaults {
         return JSON(value)
     }
     
-    static func value<T>(forKey key: Key,
-                      fallBackValue : T,
-                      file : String = #file,
-                      line : Int = #line,
-                      function : String = #function) -> JSON {
-        
-        guard let value = UserDefaults.standard.object(forKey: key.rawValue) else {
-            
-            printDebug("No Value Found in UserDefaults\nFile : \(file) \nFunction : \(function)")
-            return JSON.null
-        }
-        
-        return JSON(value)
-    }
+//    static func value<T>(forKey key: Key,
+//                      fallBackValue : T,
+//                      file : String = #file,
+//                      line : Int = #line,
+//                      function : String = #function) -> JSON {
+//
+//        guard let value = UserDefaults.standard.object(forKey: key.rawValue) else {
+//
+//            printDebug("No Value Found in UserDefaults\nFile : \(file) \nFunction : \(function)")
+//            return JSON.null
+//        }
+//
+//        return JSON(value)
+//    }
     
     static func save(value : Any, forKey key : Key) {
         

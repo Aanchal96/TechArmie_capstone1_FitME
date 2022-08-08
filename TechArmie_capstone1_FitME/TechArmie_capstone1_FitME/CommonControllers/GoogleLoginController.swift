@@ -40,8 +40,8 @@ class GoogleLoginController : NSObject {
     // MARK: ============================
     
     func loginWithGoogle(fromViewController viewController : UIViewController,
-               success : @escaping(_ googleUser : GoogleUser) -> (),
-               failure : @escaping(_ error : Error) -> ()) {
+                         success : @escaping(_ googleUser : GoogleUser) -> (),
+                         failure : @escaping(_ error : Error) -> ()) {
         
         GIDSignIn.sharedInstance.signOut()
         
@@ -312,5 +312,3 @@ class GoogleUser {
         return dictionary
     }
 }
-
-

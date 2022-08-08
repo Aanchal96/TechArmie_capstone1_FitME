@@ -209,6 +209,7 @@ extension UIViewController {
             
         case .denied:
             alertPromptToAllowCameraAccessViaSetting(LocalizedString.changePrivacySettingAndAllowAccessToCamera.localized)
+ 
         }
     }
     
