@@ -61,7 +61,7 @@ struct SignUp: View {
                         Group {
                             TextField("Name", text: $name, onEditingChanged: { (isChanged) in
                                 if !isChanged {
-                                    if self.name.count < 2 {
+                                    if self.name.count > 2 {
                                         self.isNameValid = true
                                     } else {
                                         self.isNameValid = false

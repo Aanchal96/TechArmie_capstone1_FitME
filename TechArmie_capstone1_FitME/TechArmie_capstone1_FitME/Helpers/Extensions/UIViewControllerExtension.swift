@@ -377,89 +377,8 @@ extension UIViewController {
         self.present(alert, animated: true, completion: nil)
     }
     
-    func addLeftBarButton(title : String?, titleColor: UIColor, image: UIImage?){
-        let leftButton = UIButton(type: .custom)
-        if let title = title{
-            leftButton.setTitle(title, for: .normal)
-        }
-        leftButton.setTitleColor(titleColor, for: .normal)
-        
-        let titleSize = UIDevice.current.userInterfaceIdiom == .pad ? CGFloat(28) : CGFloat(17)
-        leftButton.titleLabel?.font =  UIFont.init(name: AppFonts.regular.rawValue, size: titleSize)
-        if let image = image{
-            leftButton.setImage(image, for: .normal)
-        }
-        leftButton.addTarget(self, action: #selector(leftBarButtonTapped(_:)), for: .touchUpInside)
-        let leftBarButton = UIBarButtonItem(customView: leftButton)
-        navigationItem.leftBarButtonItem = leftBarButton
-    }
-    
-    @objc func leftBarButtonTapped(_ sender: UIButton){
-        
-    }
-    
-    func addRightBarButton(title : String?, titleColor: UIColor, image: UIImage?){
-        let rightButton = UIButton(type: .custom)
-        if let title = title{
-            rightButton.setTitle(title, for: .normal)
-        }
-        rightButton.setTitleColor(titleColor, for: .normal)
-        
-        let titleSize = UIDevice.current.userInterfaceIdiom == .pad ? CGFloat(28) : CGFloat(18)
-        rightButton.titleLabel?.font =  UIFont.init(name: AppFonts.medium.rawValue, size: titleSize)
-        if let image = image{
-            rightButton.setImage(image, for: .normal)
-        }
-        rightButton.addTarget(self, action: #selector(rightBarButtonTapped(_:)), for: .touchUpInside)
-        let rightBarButton = UIBarButtonItem(customView: rightButton)
-        navigationItem.rightBarButtonItem = rightBarButton
-    }
-    
-    @objc func rightBarButtonTapped(_ sender: UIButton) {
-        
-    }
-    
-    func setupNavigationBar(title: String,
-                            titleColor : UIColor = .white,
-                            titleImage : UIImage? = nil,
-                            backButton: Bool,
-                            sideMenu: Bool = false) {
-        
-        let navButton = UIButton(type: .custom)
-        navButton.setTitle(title, for: .normal)
-        navButton.setTitleColor(titleColor, for: .normal)
-
-        let titleSize = UIDevice.current.userInterfaceIdiom == .pad ? CGFloat(31) : CGFloat(17)
-        navButton.titleLabel?.font =  UIFont(name: AppFonts.semibold.rawValue, size: titleSize)
-        
-        if let titleImage = titleImage {
-         navButton.setImage(titleImage, for: .normal)
-         navButton.semanticContentAttribute = UIApplication.shared
-                .userInterfaceLayoutDirection == .rightToLeft ? .forceLeftToRight : .forceRightToLeft
-        }
-        navButton.isUserInteractionEnabled = false
-        self.navigationItem.titleView = navButton
-        self.navigationController?.navigationBar.setBackgroundImage(UIImage(), for: .default)
-        self.navigationController?.navigationBar.shadowImage = UIImage()
-        self.navigationController?.navigationBar.topItem?.title = ""
-        self.navigationController?.navigationBar.isTranslucent = false
-        self.navigationItem.setHidesBackButton(true, animated:true)
-        self.extendedLayoutIncludesOpaqueBars = true
-        
-        if backButton {
-//                    let leftButton: UIBarButtonItem = UIBarButtonItem(image: PreLoginImages.backButton.image, style: UIBarButtonItemStyle.plain, target: self, action: #selector(self.pop))
-//            navigationItem.leftBarButtonItem = leftButton
-        }
-    }
-    
     @objc func pop(){
         self.navigationController?.popViewController(animated: true)
-    }
-    
-    /// Start Loader
-    func startNYLoader() {
-        //TODO: Uncomment
-//        startAnimating(CGSize(width: 50, height: 50), type: NVActivityIndicatorType.circleStrokeSpin, color: AppColors.themeGreenColor, backgroundColor: AppColors.loaderBkgroundColor)
     }
 }
 

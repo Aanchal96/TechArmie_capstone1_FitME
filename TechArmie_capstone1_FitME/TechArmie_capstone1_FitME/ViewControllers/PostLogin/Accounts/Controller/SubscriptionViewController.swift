@@ -62,8 +62,12 @@ class SubscriptionViewController : BaseVC {
                 guard let strongSelf = self else {return}
                 strongSelf.purchaseCompletionBlock(purchaseId, restoreId, failureId)
                 if purchaseId.count > 0 {
+                    
                     AppUserDefaults.save(value: true, forKey: .isPremium)
+                    self?.dismiss(animated: true)
+                    
                     strongSelf.getAppReceipt(willSuccessToastVisible: true)
+                    
                 }else if failureId.count > 0{
                     CommonFunctions.showToastWithMessage(LocalizedString.somethingWentWrong.localized, completion: nil)
                 }
@@ -118,6 +122,9 @@ class SubscriptionViewController : BaseVC {
     
     func getAppReceipt(willSuccessToastVisible: Bool, isFromRestorePurchase: Bool = false, rID : String = ""){
         IAPController.shared.fetchIAPReceipt(forceRefresh: false, sharedSecrete: sharedSecret, success: { [weak self] (receipt , receiptToken) in
+            
+            // Send at backend
+            
 //            guard let strongSelf = self else {return}
 //            let morningDate =   Calendar.current.startOfDay(for: Date())
 //            let reqMilliSecond = Int64(morningDate.timeIntervalSince1970 * 1000)

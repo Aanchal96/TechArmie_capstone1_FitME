@@ -32,6 +32,11 @@ class AppSettingViewController: UIViewController, MFMailComposeViewControllerDel
         userCurrentWeightTextLabel.text = "\(user.userWeight.weight) \(user.userWeight.unitSetting)";
         
         userWeightChangeTextLabel.text = "\(abs(user.userWeight.weight - user.initialUserWeight.weight)) \(user.userWeight.unitSetting)"
+        
+        
+        let isPremium = AppUserDefaults.value(forKey: .isPremium).boolValue
+        subscriptionView.isHidden = isPremium
+        
         addTapsOnView()
     }
     
