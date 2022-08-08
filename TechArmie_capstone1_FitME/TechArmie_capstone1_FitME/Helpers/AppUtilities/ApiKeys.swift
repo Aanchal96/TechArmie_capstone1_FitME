@@ -34,6 +34,7 @@ enum ApiKey {
     static var profileImage : String {return "profileImage"}
     static var gender: String { return "gender" }
     static var token: String { return "token" }
+    static var isPremium: String { return "is_premium" }
 
     //new data
     static var height : String{return "height"}

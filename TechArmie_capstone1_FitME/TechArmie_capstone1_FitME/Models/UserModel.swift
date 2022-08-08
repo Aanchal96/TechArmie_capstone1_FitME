@@ -39,6 +39,7 @@ class AuthUser {
     
     var initialUserWeight : UserWeight
     var lastUpdatedWeight : UserWeight
+    var isPremium: Bool
 
     init (_ json: JSON = JSON()) {
         
@@ -48,6 +49,7 @@ class AuthUser {
         createdAt = json[ApiKey.createdAt].stringValue
         token = json[ApiKey.token].stringValue
         authToken = json[ApiKey.authtoken].stringValue
+        isPremium = json[ApiKey.isPremium].boolValue
         
         profileImage = json[ApiKey.profileImage].stringValue
         
@@ -85,7 +87,8 @@ class AuthUser {
                                     ApiKey.userHeight:userHeight.getDict(), ApiKey.userGoal : usergoal.getDict()  ,
                                     ApiKey.priorityLevel : priorityLevel,
                                     ApiKey.currentUnitMeasure : currentUnitMeasure,
-                                    ApiKey.age : age
+                                    ApiKey.age : age,
+                                    ApiKey.isPremium : isPremium
         ]
         
         AppUserDefaults.save(value: dict, forKey: .fullUserProfile)
