@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  OnboardingViewController.swift
 //  TechArmie_capstone1_FitME
 //
 //  Created by Aanchal Bansal on 2022-07-15.
@@ -8,30 +8,29 @@
 import UIKit
 import AVFoundation
 
-class ViewController: UIViewController {
-
+class OnboardingViewController: BaseVC {
+    
     @IBOutlet weak var videoLayer: UIView!
     @IBOutlet weak var welcomeImg: UIImageView!
     @IBOutlet weak var lblAlreadyHaveAccount: UILabel!
     @IBOutlet weak var btnNewAccount: UIButton!
     @IBOutlet weak var btnLogin: UIButton!
+    @IBOutlet weak var stackView: UIStackView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+
         playVideo()
     }
-
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-                if segue.identifier == "Step1"{
-                    if let destination = segue.destination as? FirstStepVC{
-                    _ = destination
-                    }
-                }
-            }
     
     @IBAction func btnCreateAccount (_ sender: UIButton) {
-        performSegue(withIdentifier: "Step1", sender: self)
+        let vc = FirstStepVC.instantiate(fromAppStoryboard: .Main)
+        self.navigationController?.pushViewController(vc, animated: true)
+    }
+    
+    @IBAction func goToLogin(_ sender:UIButton) {
+        let vc = LoginController.instantiate(fromAppStoryboard: .Authentication)
+        self.navigationController?.pushViewController(vc, animated: true)
     }
     
     func playVideo(){
@@ -49,9 +48,7 @@ class ViewController: UIViewController {
         
         videoLayer.bringSubviewToFront(welcomeImg)
         videoLayer.bringSubviewToFront(btnNewAccount)
-        videoLayer.bringSubviewToFront(btnLogin)
-        videoLayer.bringSubviewToFront(lblAlreadyHaveAccount)
+        videoLayer.bringSubviewToFront(stackView)
     }
-
 }
 
