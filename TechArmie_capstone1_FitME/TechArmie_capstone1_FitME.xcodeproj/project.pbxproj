@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		369A43555261385AE48E3196 /* Pods_TechArmie_capstone1_FitME.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9B1E93B6AAF5BFADC09ECDE /* Pods_TechArmie_capstone1_FitME.framework */; };
 		552B99BB289C13E4009A9ECC /* ForgotPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 552B99BA289C13E4009A9ECC /* ForgotPasswordViewController.swift */; };
 		552B99BD289C145F009A9ECC /* ForgotPasswordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 552B99BC289C145F009A9ECC /* ForgotPasswordView.swift */; };
 		553D67C4289078FD00CE57E3 /* SignUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 553D67C3289078FD00CE57E3 /* SignUp.swift */; };
@@ -38,9 +37,6 @@
 		87236F92288DBC3600CC2BDD /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87236F91288DBC3600CC2BDD /* UIViewExtension.swift */; };
 		87236F94288DC34700CC2BDD /* UIApplicationExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87236F93288DC34700CC2BDD /* UIApplicationExtension.swift */; };
 		87236F96288DC76A00CC2BDD /* StringExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87236F95288DC76A00CC2BDD /* StringExtensions.swift */; };
-		87236F98288DC83300CC2BDD /* UIDeviceExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87236F97288DC83300CC2BDD /* UIDeviceExtension.swift */; };
-		87236F9A288DC88500CC2BDD /* DoubleExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87236F99288DC88500CC2BDD /* DoubleExtension.swift */; };
-		87236F9C288DCC8700CC2BDD /* NSErrorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87236F9B288DCC8700CC2BDD /* NSErrorExtension.swift */; };
 		874BC8AD28992C1D00A76D80 /* WorkoutVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 874C1E4328982C2F00EE4E94 /* WorkoutVC.swift */; };
 		874C1E0B2896F12900EE4E94 /* TabBarVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 874C1E0A2896F12900EE4E94 /* TabBarVC.swift */; };
 		874C1E2828982A1000EE4E94 /* Workout.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 874C1E0D28982A0F00EE4E94 /* Workout.storyboard */; };
@@ -103,10 +99,13 @@
 		87C4A31728822B1200485A08 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 87C4A31628822B1200485A08 /* Assets.xcassets */; };
 		87C4A31A28822B1200485A08 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 87C4A31828822B1200485A08 /* LaunchScreen.storyboard */; };
 		87C51C78289DF5B500CE47EE /* AppConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87C51C77289DF5B500CE47EE /* AppConstants.swift */; };
+		87DCAF7E28A3674F00904043 /* DoubleExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87DCAF7B28A3674F00904043 /* DoubleExtension.swift */; };
+		87DCAF7F28A3674F00904043 /* NSErrorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87DCAF7C28A3674F00904043 /* NSErrorExtension.swift */; };
+		87DCAF8028A3674F00904043 /* UIDeviceExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87DCAF7D28A3674F00904043 /* UIDeviceExtension.swift */; };
 		87E58207288D7CA0003AFEA7 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 87E58206288D7CA0003AFEA7 /* GoogleService-Info.plist */; };
 		87E58209288D7FDF003AFEA7 /* GoogleLoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87E58208288D7FDF003AFEA7 /* GoogleLoginController.swift */; };
 		87E58211288DACE8003AFEA7 /* UIViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87E58210288DACE8003AFEA7 /* UIViewControllerExtension.swift */; };
-		87FF9560288B5DA300A05A07 /* bg_video.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 87FF955F288B5DA300A05A07 /* bg_video.mp4 */; };
+		C8C21941047710D96C6B869A /* Pods_TechArmie_capstone1_FitME.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CE957DDD8E5C011A0295099 /* Pods_TechArmie_capstone1_FitME.framework */; };
 		D86BF5A92898CF9E00805DDD /* WorkoutVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 874C1E4328982C2F00EE4E94 /* WorkoutVC.swift */; };
 		ED19CC2B289B300A00C50FA8 /* AccountSettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED19CC2A289B300A00C50FA8 /* AccountSettingViewController.swift */; };
 		ED7036E02888BAD4002A312F /* welcome_fitme.png in Resources */ = {isa = PBXBuildFile; fileRef = ED7036DD2888BAD4002A312F /* welcome_fitme.png */; };
@@ -119,7 +118,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		44F9DA4C26DB4FB650F74678 /* Pods-TechArmie_capstone1_FitME.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TechArmie_capstone1_FitME.release.xcconfig"; path = "Target Support Files/Pods-TechArmie_capstone1_FitME/Pods-TechArmie_capstone1_FitME.release.xcconfig"; sourceTree = "<group>"; };
+		05753C506BB2FC49D601C24B /* Pods-TechArmie_capstone1_FitME.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TechArmie_capstone1_FitME.debug.xcconfig"; path = "Target Support Files/Pods-TechArmie_capstone1_FitME/Pods-TechArmie_capstone1_FitME.debug.xcconfig"; sourceTree = "<group>"; };
+		1B7E4B4AF3A1B6E893A76742 /* Pods-TechArmie_capstone1_FitME.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TechArmie_capstone1_FitME.release.xcconfig"; path = "Target Support Files/Pods-TechArmie_capstone1_FitME/Pods-TechArmie_capstone1_FitME.release.xcconfig"; sourceTree = "<group>"; };
+		4CE957DDD8E5C011A0295099 /* Pods_TechArmie_capstone1_FitME.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TechArmie_capstone1_FitME.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		552B99BA289C13E4009A9ECC /* ForgotPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordViewController.swift; sourceTree = "<group>"; };
 		552B99BC289C145F009A9ECC /* ForgotPasswordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordView.swift; sourceTree = "<group>"; };
 		553D67C3289078FD00CE57E3 /* SignUp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUp.swift; sourceTree = "<group>"; };
@@ -149,9 +150,6 @@
 		87236F91288DBC3600CC2BDD /* UIViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
 		87236F93288DC34700CC2BDD /* UIApplicationExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIApplicationExtension.swift; sourceTree = "<group>"; };
 		87236F95288DC76A00CC2BDD /* StringExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtensions.swift; sourceTree = "<group>"; };
-		87236F97288DC83300CC2BDD /* UIDeviceExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIDeviceExtension.swift; sourceTree = "<group>"; };
-		87236F99288DC88500CC2BDD /* DoubleExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoubleExtension.swift; sourceTree = "<group>"; };
-		87236F9B288DCC8700CC2BDD /* NSErrorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSErrorExtension.swift; sourceTree = "<group>"; };
 		874C1E0A2896F12900EE4E94 /* TabBarVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarVC.swift; sourceTree = "<group>"; };
 		874C1E0D28982A0F00EE4E94 /* Workout.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Workout.storyboard; sourceTree = "<group>"; };
 		874C1E0F28982A0F00EE4E94 /* WorkoutCells.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WorkoutCells.swift; sourceTree = "<group>"; };
@@ -217,12 +215,12 @@
 		87C4A31928822B1200485A08 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		87C4A31B28822B1200485A08 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		87C51C77289DF5B500CE47EE /* AppConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConstants.swift; sourceTree = "<group>"; };
+		87DCAF7B28A3674F00904043 /* DoubleExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DoubleExtension.swift; sourceTree = "<group>"; };
+		87DCAF7C28A3674F00904043 /* NSErrorExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSErrorExtension.swift; sourceTree = "<group>"; };
+		87DCAF7D28A3674F00904043 /* UIDeviceExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIDeviceExtension.swift; sourceTree = "<group>"; };
 		87E58206288D7CA0003AFEA7 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		87E58208288D7FDF003AFEA7 /* GoogleLoginController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GoogleLoginController.swift; sourceTree = "<group>"; };
 		87E58210288DACE8003AFEA7 /* UIViewControllerExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtension.swift; sourceTree = "<group>"; };
-		87FF955F288B5DA300A05A07 /* bg_video.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = bg_video.mp4; sourceTree = "<group>"; };
-		D9B1E93B6AAF5BFADC09ECDE /* Pods_TechArmie_capstone1_FitME.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TechArmie_capstone1_FitME.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		E6CB01F1DE75F6DB4537983D /* Pods-TechArmie_capstone1_FitME.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TechArmie_capstone1_FitME.debug.xcconfig"; path = "Target Support Files/Pods-TechArmie_capstone1_FitME/Pods-TechArmie_capstone1_FitME.debug.xcconfig"; sourceTree = "<group>"; };
 		ED19CC2A289B300A00C50FA8 /* AccountSettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountSettingViewController.swift; sourceTree = "<group>"; };
 		ED7036DD2888BAD4002A312F /* welcome_fitme.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = welcome_fitme.png; sourceTree = "<group>"; };
 		ED7036E22888BAE9002A312F /* logo_FitME.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo_FitME.png; sourceTree = "<group>"; };
@@ -238,21 +236,13 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				369A43555261385AE48E3196 /* Pods_TechArmie_capstone1_FitME.framework in Frameworks */,
+				C8C21941047710D96C6B869A /* Pods_TechArmie_capstone1_FitME.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		535BEE47880AAEDE177C94F7 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				D9B1E93B6AAF5BFADC09ECDE /* Pods_TechArmie_capstone1_FitME.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 		55389BEF2898C95700CDEE89 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
@@ -291,6 +281,14 @@
 				552B99BC289C145F009A9ECC /* ForgotPasswordView.swift */,
 			);
 			path = SwiftUIViews;
+			sourceTree = "<group>";
+		};
+		6F570E717CBEEEC2230DA2C0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4CE957DDD8E5C011A0295099 /* Pods_TechArmie_capstone1_FitME.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		7CF9CB82289BAAAA00482628 /* Video */ = {
@@ -604,7 +602,7 @@
 				87C4A30C28822B1000485A08 /* TechArmie_capstone1_FitME */,
 				87C4A30B28822B1000485A08 /* Products */,
 				ACF1B1F9B81EE7807C536B6B /* Pods */,
-				535BEE47880AAEDE177C94F7 /* Frameworks */,
+				6F570E717CBEEEC2230DA2C0 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -634,8 +632,8 @@
 		ACF1B1F9B81EE7807C536B6B /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				E6CB01F1DE75F6DB4537983D /* Pods-TechArmie_capstone1_FitME.debug.xcconfig */,
-				44F9DA4C26DB4FB650F74678 /* Pods-TechArmie_capstone1_FitME.release.xcconfig */,
+				05753C506BB2FC49D601C24B /* Pods-TechArmie_capstone1_FitME.debug.xcconfig */,
+				1B7E4B4AF3A1B6E893A76742 /* Pods-TechArmie_capstone1_FitME.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -721,7 +719,6 @@
 		ED7036F32888C179002A312F /* Images */ = {
 			isa = PBXGroup;
 			children = (
-				87FF955F288B5DA300A05A07 /* bg_video.mp4 */,
 				ED7036DD2888BAD4002A312F /* welcome_fitme.png */,
 				ED7036E22888BAE9002A312F /* logo_FitME.png */,
 			);
@@ -747,6 +744,9 @@
 		EDFD620E288B4EAF0026F779 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				87DCAF7B28A3674F00904043 /* DoubleExtension.swift */,
+				87DCAF7C28A3674F00904043 /* NSErrorExtension.swift */,
+				87DCAF7D28A3674F00904043 /* UIDeviceExtension.swift */,
 				8795416828962E450063E2BB /* NSObjectExtension.swift */,
 				87E58210288DACE8003AFEA7 /* UIViewControllerExtension.swift */,
 				EDFD620F288B4EC70026F779 /* UITextFieldExtension.swift */,
@@ -754,9 +754,6 @@
 				87236F91288DBC3600CC2BDD /* UIViewExtension.swift */,
 				87236F93288DC34700CC2BDD /* UIApplicationExtension.swift */,
 				87236F95288DC76A00CC2BDD /* StringExtensions.swift */,
-				87236F97288DC83300CC2BDD /* UIDeviceExtension.swift */,
-				87236F99288DC88500CC2BDD /* DoubleExtension.swift */,
-				87236F9B288DCC8700CC2BDD /* NSErrorExtension.swift */,
 				87582724289652BE00BA3B26 /* IntExtension.swift */,
 				87B7996328985E3000001A88 /* UITableViewExtension.swift */,
 			);
@@ -770,11 +767,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 87C4A31E28822B1200485A08 /* Build configuration list for PBXNativeTarget "TechArmie_capstone1_FitME" */;
 			buildPhases = (
-				D7014F34D3539E9173CBCAD7 /* [CP] Check Pods Manifest.lock */,
+				B8D7666A1FBDB5E19B91BA71 /* [CP] Check Pods Manifest.lock */,
 				87C4A30628822B1000485A08 /* Sources */,
 				87C4A30728822B1000485A08 /* Frameworks */,
 				87C4A30828822B1000485A08 /* Resources */,
-				8EAE59D57CA873ED99A9B9C0 /* [CP] Embed Pods Frameworks */,
+				B85A03E3D809508F20E79C0B /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -841,7 +838,6 @@
 				874C1E3B28982A1000EE4E94 /* Novice.jpg in Resources */,
 				874C1E2A28982A1000EE4E94 /* Workout.json in Resources */,
 				874C1E3928982A1000EE4E94 /* Beginner3.jpg in Resources */,
-				87FF9560288B5DA300A05A07 /* bg_video.mp4 in Resources */,
 				874C1E2F28982A1000EE4E94 /* Novice1.jpg in Resources */,
 				7CF9CB84289BAAD200482628 /* subscription.mp4 in Resources */,
 				ED7036E02888BAD4002A312F /* welcome_fitme.png in Resources */,
@@ -865,7 +861,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		8EAE59D57CA873ED99A9B9C0 /* [CP] Embed Pods Frameworks */ = {
+		B85A03E3D809508F20E79C0B /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -882,7 +878,7 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TechArmie_capstone1_FitME/Pods-TechArmie_capstone1_FitME-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		D7014F34D3539E9173CBCAD7 /* [CP] Check Pods Manifest.lock */ = {
+		B8D7666A1FBDB5E19B91BA71 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -943,7 +939,6 @@
 				874C1E7328982C3000EE4E94 /* DownloadController.swift in Sources */,
 				ED19CC2B289B300A00C50FA8 /* AccountSettingViewController.swift in Sources */,
 				87236F32288DB16000CC2BDD /* AppUserDefaults.swift in Sources */,
-				87236F9A288DC88500CC2BDD /* DoubleExtension.swift in Sources */,
 				55A6A623288F924D004A7C0C /* Login.swift in Sources */,
 				874C1E6228982C2F00EE4E94 /* WorkoutDetailVC.swift in Sources */,
 				874C1E6828982C2F00EE4E94 /* ChallengesCells.swift in Sources */,
@@ -959,13 +954,14 @@
 				87236F37288DB16000CC2BDD /* AppGlobals.swift in Sources */,
 				874C1E6928982C2F00EE4E94 /* FinishCoolDownCell.swift in Sources */,
 				87236F35288DB16000CC2BDD /* AppStoryboards.swift in Sources */,
+				87DCAF8028A3674F00904043 /* UIDeviceExtension.swift in Sources */,
 				EDF8F41F289880D000D3345F /* UIMultiPicker.swift in Sources */,
+				87DCAF7E28A3674F00904043 /* DoubleExtension.swift in Sources */,
 				87E58211288DACE8003AFEA7 /* UIViewControllerExtension.swift in Sources */,
 				7CDA8CD4288A85730029ECB1 /* ThirdStepVC.swift in Sources */,
-				87236F9C288DCC8700CC2BDD /* NSErrorExtension.swift in Sources */,
 				87236F40288DB77000CC2BDD /* InAppReceipt.swift in Sources */,
+				87DCAF7F28A3674F00904043 /* NSErrorExtension.swift in Sources */,
 				87236F33288DB16000CC2BDD /* ApiKeys.swift in Sources */,
-				87236F98288DC83300CC2BDD /* UIDeviceExtension.swift in Sources */,
 				87236F34288DB16000CC2BDD /* AppColors.swift in Sources */,
 				7CDA8CDA288A9E090029ECB1 /* FourthStepVC.swift in Sources */,
 				8795416928962E450063E2BB /* NSObjectExtension.swift in Sources */,
@@ -1126,7 +1122,7 @@
 		};
 		87C4A31F28822B1200485A08 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E6CB01F1DE75F6DB4537983D /* Pods-TechArmie_capstone1_FitME.debug.xcconfig */;
+			baseConfigurationReference = 05753C506BB2FC49D601C24B /* Pods-TechArmie_capstone1_FitME.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -1160,7 +1156,7 @@
 		};
 		87C4A32028822B1200485A08 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 44F9DA4C26DB4FB650F74678 /* Pods-TechArmie_capstone1_FitME.release.xcconfig */;
+			baseConfigurationReference = 1B7E4B4AF3A1B6E893A76742 /* Pods-TechArmie_capstone1_FitME.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
